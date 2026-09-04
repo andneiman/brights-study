@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Course assistant">
+  <rect width="96" height="96" rx="48" fill="#FBF5EC"/>
+  <!-- hair tufts -->
+  <g stroke="#8A4B2A" stroke-width="4.5" stroke-linecap="round" fill="none">
+    <path d="M41 18c-2-6-1-11 2-14"/>
+    <path d="M55 18c2-6 1-11-2-14"/>
+  </g>
+  <!-- shoulders -->
+  <path d="M6 96c0-21 19-33 42-33s42 12 42 33z" fill="#A9633A"/>
+  <!-- ears -->
+  <circle cx="16" cy="47" r="9.5" fill="#A9633A"/>
+  <circle cx="80" cy="47" r="9.5" fill="#A9633A"/>
+  <!-- head -->
+  <ellipse cx="48" cy="45" rx="31" ry="29" fill="#B06B3C"/>
+  <!-- face patch -->
+  <ellipse cx="48" cy="51" rx="20.5" ry="18.5" fill="#F7E3C6"/>
+  <!-- round glasses -->
+  <g stroke="#33241B" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <circle cx="39" cy="46" r="8.6"/>
+    <circle cx="57" cy="46" r="8.6"/>
+    <path d="M47.6 46h0.8"/>
+    <path d="M30.4 44.5c-3.4-1.3-6.2-1.1-8.6.6"/>
+    <path d="M65.6 44.5c3.4-1.3 6.2-1.1 8.6.6"/>
+  </g>
+  <!-- eyes -->
+  <circle cx="39" cy="46" r="3.6" fill="#2A1D16"/>
+  <circle cx="57" cy="46" r="3.6" fill="#2A1D16"/>
+  <!-- nose -->
+  <ellipse cx="44.4" cy="57" rx="1.7" ry="1.3" fill="#96603C"/>
+  <ellipse cx="51.6" cy="57" rx="1.7" ry="1.3" fill="#96603C"/>
+  <!-- smile -->
+  <path d="M41.5 62c2.4 3 10.6 3 13 0" stroke="#96603C" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+</svg>
