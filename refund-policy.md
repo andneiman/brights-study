@@ -2,7 +2,7 @@
 
 **Effective date:** August 26, 2026
 
-This Refund Policy applies to course purchases made through **brights.ai**, **brights.study**, or the related Services from **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**).
+This Refund Policy applies to course purchases made through **brights.ai**, **brights.study**, **aplusbrights.com**, or the related Services from **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**).
 
 ## 1. 30-day refund period
 

@@ -2,7 +2,7 @@
 
 **Effective date:** August 26, 2026
 
-These Terms of Use (the **“Terms”**) are a binding agreement between you and **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**). They govern your access to and use of **brights.ai**, **brights.study**, related parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, progress reports, course documentation, and other services we make available (collectively, the **“Services”**).
+These Terms of Use (the **“Terms”**) are a binding agreement between you and **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**). They govern your access to and use of **brights.ai**, **brights.study**, **aplusbrights.com**, related parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, progress reports, course documentation, and other services we make available (collectively, the **“Services”**).
 
 By creating an account, purchasing or accessing a course, or otherwise using the Services, you agree to these Terms and acknowledge our [Privacy Policy](./privacy-policy.md). If you do not agree, do not use the Services.
 

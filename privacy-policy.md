@@ -3,7 +3,7 @@
 **Effective date:** August 26, 2026  
 **Last updated:** August 26, 2026
 
-This Privacy Policy explains how **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**), collects, uses, discloses, retains, and protects personal information when families use **brights.ai**, **brights.study**, parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, parent progress reporting, course documentation, and related services (collectively, the **“Services”**).
+This Privacy Policy explains how **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**), collects, uses, discloses, retains, and protects personal information when families use **brights.ai**, **brights.study**, **aplusbrights.com**, parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, parent progress reporting, course documentation, and related services (collectively, the **“Services”**).
 
 Brights provides K–12 curriculum and educational software. Because children may use the Services, this Policy includes a dedicated children's privacy section and is intended to support compliance with the U.S. Children's Online Privacy Protection Act and Rule (**“COPPA”**).
 
