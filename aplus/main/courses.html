@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses — Brights.ai</title>
+  <meta name="description" content="Browse the full Brights.ai catalog: Math, Science, Social Studies, and Languages from kindergarten through grade 12, with every unit listed. Choose a course and we deliver the personalized version in 72 hours.">
+  <link rel="icon" href="/main/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/main/css/styles.css">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/main/">
+        <img src="/main/img/logo-full.svg" alt="brights" width="148" height="53">
+      </a>
+      <nav class="nav">
+        <a class="is-active" href="/main/courses.html">Courses</a>
+        <a href="/main/#how">How it works</a>
+        <a href="/main/#esa">ESA families</a>
+        <a href="/main/#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-light" href="#">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======= Page hero ======= -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Course catalog</span>
+          <h1>Find the right course.<br>We personalize it</h1>
+          <p class="serif">Browse by subject, grade or level, and course type. Every course below shows its full unit sequence, so you can see exactly what the student will learn before you enroll. Personalization changes pacing, examples, practice, and review — not the learning objectives.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Toolbar ======= -->
+    <div class="toolbar">
+      <div class="container">
+        <div class="toolbar-row">
+          <input class="search" id="search" type="search" placeholder="Search a course or a unit — “fractions”, “photosynthesis”, “subjunctive”" aria-label="Search courses and units">
+          <span class="count" id="count"></span>
+        </div>
+        <div class="toolbar-row" role="group" aria-label="Filter by subject">
+          <span class="filter-label">Subject</span>
+          <button class="filter is-active" type="button" data-kind="subject" data-value="all">All</button>
+          <button class="filter" type="button" data-kind="subject" data-value="Math">Math</button>
+          <button class="filter" type="button" data-kind="subject" data-value="Science">Science</button>
+          <button class="filter" type="button" data-kind="subject" data-value="Social Studies">Social Studies</button>
+          <button class="filter" type="button" data-kind="subject" data-value="Languages">Languages</button>
+        </div>
+        <div class="toolbar-row" role="group" aria-label="Filter by level">
+          <span class="filter-label">Level</span>
+          <button class="filter is-active" type="button" data-kind="band" data-value="all">All</button>
+          <button class="filter" type="button" data-kind="band" data-value="K-2">K–2</button>
+          <button class="filter" type="button" data-kind="band" data-value="3-5">3–5</button>
+          <button class="filter" type="button" data-kind="band" data-value="6-8">6–8</button>
+          <button class="filter" type="button" data-kind="band" data-value="9-12">9–12</button>
+          <button class="filter" type="button" data-kind="band" data-value="Elective">Electives</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Catalog ======= -->
+    <section class="catalog">
+      <div class="container">
+        <div id="catalog"></div>
+        <div class="empty" id="empty">
+          <b>No courses match that search</b>
+          Try a different subject, level, or keyword.
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= What a personalized course looks like ======= -->
+    <section class="split split-wide" id="example">
+      <div class="container split-inner">
+        <div class="split-text">
+          <div class="h2-wrap">
+            <h2>What you get back</h2>
+          </div>
+          <p class="serif">Here is the same Grade 6 Math course after personalization, 72 hours after you enrolled. The unit sequence you saw in the catalog is unchanged and the learning objective is unchanged — what moved is the context, the format, and the length of each practice set.</p>
+          <ul class="feature-list">
+            <li><strong>The objective stays fixed:</strong> Find a percentage of a quantity and explain the reasoning.</li>
+            <li><strong>The context changes:</strong> Examples are rewritten around what the student already cares about.</li>
+            <li><strong>The format follows the profile:</strong> A visual learner gets charts and pictures, not walls of text.</li>
+            <li><strong>The path adapts:</strong> Module order, pacing, and practice length follow the diagnostic.</li>
+          </ul>
+          <p class="turnaround" style="margin-top:26px;">Delivered <b>72 hours</b> after onboarding is complete</p>
+        </div>
+
+        <div class="split-visual split-visual-doc">
+          <img class="deco deco-burst" src="/main/img/burst.svg" alt="" aria-hidden="true">
+          <div id="quiz-mount"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= How it works ======= -->
+    <section class="esa-section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2>What happens after you pick one</h2>
+          <p class="serif">Three steps, and only the first one asks anything of you.</p>
+        </div>
+
+        <div class="process">
+          <article class="process-step">
+            <p class="process-kicker">Step 1</p>
+            <h4>You choose a course</h4>
+            <p>Pick a subject and grade from the catalog above, fill in a short parent questionnaire, and let your child take the diagnostic. You tell us the goals, the interests, and how much time there is in a week.</p>
+          </article>
+          <article class="process-step is-key">
+            <p class="process-kicker">Step 2</p>
+            <h4>We build it around your child</h4>
+            <p>Our teachers select and sequence the modules, set the pacing, and rewrite examples, practice, projects, and review to fit the profile you described. It takes 72 hours, and then the finished course is in your account.</p>
+          </article>
+          <article class="process-step">
+            <p class="process-kicker">Step 3</p>
+            <h4>Learn at your own pace</h4>
+            <p>Your child can pause, go back over a topic, or move ahead. You watch it happen in the parent dashboard, where you review completion, assessment results, strengths, and next steps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= What's on every course page ======= -->
+    <section class="included-section">
+      <div class="container">
+        <div class="section-head center">
+          <h2>What you will find on every course page</h2>
+          <p class="serif">The same six sections on every course, so families can compare offerings and prepare documentation.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="tile">
+            <div class="tile-mark" aria-hidden="true">✳</div>
+            <h4>Course overview</h4>
+            <p>Exact title, subject, grade or level, educational purpose, and estimated completion time.</p>
+          </article>
+          <article class="tile">
+            <div class="tile-mark" aria-hidden="true">✳</div>
+            <h4>Learning outcomes</h4>
+            <p>Defined objectives and a clear scope and sequence.</p>
+          </article>
+          <article class="tile">
+            <div class="tile-mark" aria-hidden="true">✳</div>
+            <h4>Personalization</h4>
+            <p>What may change based on the student's diagnostic, goals, interests, and study time.</p>
+          </article>
+          <article class="tile">
+            <div class="tile-mark" aria-hidden="true">✳</div>
+            <h4>Course format</h4>
+            <p>Lessons, practice, projects, assessments, required materials, and technology requirements.</p>
+          </article>
+          <article class="tile">
+            <div class="tile-mark" aria-hidden="true">✳</div>
+            <h4>Standards alignment</h4>
+            <p>The named standards used and the course's documented mapping.</p>
+          </article>
+          <article class="tile">
+            <div class="tile-mark" aria-hidden="true">✳</div>
+            <h4>ESA information</h4>
+            <p>Price, access period, documentation, purchase method, and exact state-specific status.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Documentation ======= -->
+    <section class="split">
+      <div class="container split-inner">
+        <div class="split-text">
+          <div class="h2-wrap">
+            <h2>A personalized curriculum you can document clearly</h2>
+          </div>
+          <p class="serif">Each course has a defined subject, grade or level, learning objectives, scope and sequence, included materials, access period, assessment plan, and price. This helps families understand the purchase and prepare the documentation required by their ESA program.</p>
+          <ul class="feature-list">
+            <li><strong>What families purchase:</strong> A complete student-specific curriculum package for a defined subject, grade or level, and access period.</li>
+            <li><strong>What it is not:</strong> Personalization adapts an established academic course; it does not turn the product into an open-ended teaching or tutoring service.</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-dark" href="#states">Check State Availability <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn btn-light" href="#">Download a Sample Documentation Pack</a>
+          </div>
+        </div>
+
+        <div class="split-visual split-visual-doc">
+          <img class="deco deco-burst" src="/main/img/burst.svg" alt="" aria-hidden="true">
+          <div class="card dash-card">
+            <div class="dash-head">
+              <h4>Documents available for each course</h4>
+              <span>PDF</span>
+            </div>
+            <ul class="dash-rows">
+              <li><span><b>Course description</b><br>Subject, grade or level, purpose, delivery format.</span><span class="badge badge-blue">Included</span></li>
+              <li><span><b>Syllabus</b><br>Objectives, scope and sequence, lessons, projects, assessments.</span><span class="badge badge-blue">Included</span></li>
+              <li><span><b>Standards information</b><br>Named standards and a documented alignment map.</span><span class="badge badge-blue">Included</span></li>
+              <li><span><b>Purchase documentation</b><br>Price, access period, itemized invoice, included materials.</span><span class="badge badge-blue">Included</span></li>
+              <li><span><b>Provider policies</b><br>Terms, privacy, refund policy, and support contact.</span><span class="badge badge-blue">Included</span></li>
+              <li><span><b>State status</b><br>Exact program, provider status, offering status, payment path.</span><span class="badge badge-amber">By state</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= State availability ======= -->
+    <section class="esa-section" id="states">
+      <div class="container">
+        <div class="section-head">
+          <h2>ESA availability is state-specific</h2>
+          <p class="serif">A provider or course may be approved in one program and unavailable or under review in another. Each state page names the exact program, current status, purchase method, and documentation requirements.</p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn-dark" href="#">Check Your State <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-light" href="#">Talk to Our ESA Team</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a class="logo" href="/main/">
+          <img src="/main/img/logo-full.svg" alt="brights" width="148" height="53">
+        </a>
+        <div class="footer-mid">
+          <nav class="footer-links">
+            <a href="/main/courses.html">Courses</a>
+            <a href="#states">State availability</a>
+            <a href="/main/terms-of-use.html">Terms of use</a>
+            <a href="/main/privacy-policy.html">Privacy Policy</a>
+            <a href="/main/refund-policy.html">Refund policy</a>
+          </nav>
+          <p>Questions about a course — <a href="mailto:hello@brights.study">hello@brights.study</a></p>
+          <p>ESA support — <a href="mailto:esa@brights.study">esa@brights.study</a></p>
+        </div>
+        <div class="footer-right">
+          <span class="lang-pill">🌐 English</span>
+          <p>All rights reserved</p>
+        </div>
+      </div>
+
+      <p class="disclosure">We provide personalized, self-paced curriculum and educational software. We are not a school and do not issue diplomas, transcripts, or state-recognized academic credit. ESA availability varies by state, program, provider status, and exact offering. Course titles, grade bands, and unit sequences describe our own curriculum packages.</p>
+    </div>
+  </footer>
+
+  <div class="lead-modal" id="lead-modal" hidden>
+    <div class="lead-modal-backdrop" data-close></div>
+    <div class="lead-modal-card" role="dialog" aria-modal="true" aria-labelledby="lead-title">
+      <button class="lead-modal-close" type="button" aria-label="Close" data-close>×</button>
+      <div class="lead-step" data-step="form">
+        <span class="eyebrow">Parent email</span>
+        <h2 id="lead-title">Get this course</h2>
+        <p class="serif" id="lead-copy">Enter your email and we’ll send onboarding instructions and the materials to get started.</p>
+        <form id="lead-form">
+          <label class="lead-label" for="lead-email">Email</label>
+          <input class="lead-input" id="lead-email" type="email" name="email" autocomplete="email" placeholder="you@email.com" required>
+          <p class="lead-error" id="lead-error" hidden>Enter a valid email address.</p>
+          <button class="btn btn-dark" id="lead-submit" type="submit">Send instructions</button>
+        </form>
+      </div>
+      <div class="lead-step" data-step="done" hidden>
+        <span class="eyebrow">Sent</span>
+        <h2>Check your inbox</h2>
+        <p class="serif" id="lead-done">We sent the instructions and materials to your email.</p>
+        <button class="btn btn-dark" type="button" data-close>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/main/js/catalog.js"></script>
+  <script src="/main/js/quiz.js"></script>
+
+</body>
+</html>

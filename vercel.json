@@ -5,5 +5,17 @@
       "destination": "/main",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "aplusbrights.com" }],
+      "destination": "/aplus/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.aplusbrights.com" }],
+      "destination": "/aplus/:path*"
+    }
   ]
 }
