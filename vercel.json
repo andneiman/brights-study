@@ -16,6 +16,10 @@
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.aplusbrights.com" }],
       "destination": "/aplus/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/study/:path*"
     }
   ]
 }
