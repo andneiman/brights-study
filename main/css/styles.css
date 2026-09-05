@@ -157,7 +157,7 @@ h4 { font-size: 17px; font-weight: 600; line-height: 1.35; }
 
 .logo { display: inline-flex; align-items: center; text-decoration: none; }
 .logo img { height: 36px; width: auto; }
-.site-footer .logo img { height: 32px; }
+.site-footer .logo img { height: 32px; width: auto; }
 
 .nav { display: flex; align-items: center; gap: 28px; margin-left: auto; }
 
