@@ -526,7 +526,7 @@ h4 { font-size: 17px; font-weight: 600; line-height: 1.35; }
 
 .subjects {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 48px;
 }
@@ -560,6 +560,8 @@ h4 { font-size: 17px; font-weight: 600; line-height: 1.35; }
 .cover-science { background: linear-gradient(160deg, #7fe3a1, #3cba6f); }
 .cover-social { background: linear-gradient(160deg, #f6b26b, #e8833a); }
 .cover-lang { background: linear-gradient(160deg, #9f7bec, #7048c9); }
+.cover-ai { background: linear-gradient(160deg, #5ec8d6, #2a8ea3); }
+.cover-life { background: linear-gradient(160deg, #f08ab0, #d45a86); }
 
 /* ---------- Chat mockup ---------- */
 
@@ -1018,6 +1020,9 @@ h4 { font-size: 17px; font-weight: 600; line-height: 1.35; }
 }
 
 .meta-pill.is-elective { background: var(--amber-soft); color: #c06526; }
+.meta-pill.is-price { background: var(--blue-soft); color: var(--blue-deep); font-weight: 600; }
+
+.units-label-next { margin-top: 22px; }
 
 .course-toggle {
   flex: none;

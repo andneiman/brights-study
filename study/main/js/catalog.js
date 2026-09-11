@@ -1,346 +1,1958 @@
-/* Brights.ai course catalog — data + rendering, search and filters. */
+/* Brights course catalog — data + rendering, search and filters. */
 
 var CATALOG = [
   {
-    subject: 'Math',
-    color: 'linear-gradient(160deg, #8ecdf2, #4b93d1)',
-    courses: [
+    "subject": "Math",
+    "color": "linear-gradient(160deg, #8ecdf2, #4b93d1)",
+    "courses": [
       {
-        n: 'Early Math Foundations', g: 'Pre-K – K', b: 'K-2', h: '40–60 hrs',
-        d: 'A first course in numbers, shapes, and quantity for children who are not yet reading independently. Lessons are short, spoken, and built around objects the child can count.',
-        u: ['Counting to 20', 'Comparing more and fewer', 'Recognising written numerals', 'Shapes around us', 'Simple repeating patterns', 'Adding within 10', 'Taking away within 10', 'Measuring with everyday objects', 'Sorting and grouping']
+        "n": "Kindergarten Math",
+        "g": "Grade K",
+        "b": "K-2",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A first systematic course in number, quantity, shape, comparison, and measurement.",
+        "s1": [
+          "Counting and cardinality",
+          "Numbers 0–20",
+          "Comparing groups",
+          "Composing and decomposing numbers",
+          "Addition stories"
+        ],
+        "s2": [
+          "Subtraction stories",
+          "Making ten",
+          "Numbers to 100",
+          "Two- and three-dimensional shapes",
+          "Measurement, patterns and classifying data"
+        ]
       },
       {
-        n: 'Kindergarten Math', g: 'Grade K', b: 'K-2', h: '60–80 hrs',
-        d: 'Number sense to 100, the first ideas of place value, and the language of measurement and shape.',
-        u: ['Numbers to 100', 'Counting by twos, fives, and tens', 'First steps in place value', 'Addition stories', 'Subtraction stories', 'Making ten', 'Flat and solid shapes', 'Length, weight, and capacity', 'Sorting data into categories']
+        "n": "Grade 1 Math",
+        "g": "Grade 1",
+        "b": "K-2",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Builds addition and subtraction fluency within 20 and a strong understanding of tens and ones.",
+        "s1": [
+          "Addition within 10",
+          "Subtraction within 10",
+          "Addition and subtraction within 20",
+          "Fact families and unknowns",
+          "Place value to 120",
+          "Comparing two-digit numbers"
+        ],
+        "s2": [
+          "Adding and subtracting tens",
+          "One- and two-step word problems",
+          "Length and non-standard measurement",
+          "Time to the hour and half hour",
+          "Data, picture graphs and tally charts",
+          "Shapes, halves and fourths"
+        ]
       },
       {
-        n: 'Grade 1 Math', g: 'Grade 1', b: 'K-2', h: '90–110 hrs',
-        d: 'Fluency within 20, tens and ones, and the first two-step word problems.',
-        u: ['Tens and ones', 'Addition within 20', 'Subtraction within 20', 'Fact families', 'Two-step word problems', 'Comparing numbers to 120', 'Telling time to the half hour', 'Picture graphs and tally charts', 'Shapes, halves, and quarters']
+        "n": "Grade 2 Math",
+        "g": "Grade 2",
+        "b": "K-2",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops place value to 1,000, multi-digit computation, measurement, time, money, and early fraction concepts.",
+        "s1": [
+          "Place value to 1,000",
+          "Comparing and ordering numbers",
+          "Addition within 100",
+          "Subtraction within 100",
+          "Addition and subtraction to 1,000",
+          "Mental strategies and estimation"
+        ],
+        "s2": [
+          "Equal groups and arrays",
+          "Money and making change",
+          "Time to five minutes",
+          "Length in customary and metric units",
+          "Bar graphs and line plots",
+          "Shapes and equal shares"
+        ]
       },
       {
-        n: 'Grade 2 Math', g: 'Grade 2', b: 'K-2', h: '100–120 hrs',
-        d: 'Place value to 1,000, multi-digit addition and subtraction, money, time, and the first look at fractions of a shape.',
-        u: ['Place value to 1,000', 'Addition within 100', 'Subtraction within 100', 'Adding and subtracting to 1,000', 'Mental strategies and estimation', 'Money and making change', 'Time to five minutes', 'Length in inches and centimetres', 'Bar graphs and line plots', 'Equal shares and fractions of a shape', 'Arrays and repeated addition']
+        "n": "Grade 3 Math",
+        "g": "Grade 3",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Centers on multiplication and division, fractions on a number line, area, and perimeter.",
+        "s1": [
+          "Multiplication concepts",
+          "Division concepts",
+          "Multiplication and division facts",
+          "Properties and patterns",
+          "Multi-step problems",
+          "Place value, rounding and estimation",
+          "Addition and subtraction fluency"
+        ],
+        "s2": [
+          "Fractions on a number line",
+          "Equivalent and comparing fractions",
+          "Area",
+          "Perimeter",
+          "Time intervals",
+          "Mass and liquid volume",
+          "Scaled graphs",
+          "Quadrilaterals and geometric reasoning"
+        ]
       },
       {
-        n: 'Grade 3 Math', g: 'Grade 3', b: '3-5', h: '120–140 hrs',
-        d: 'Multiplication and division become the centre of the year, alongside fractions on a number line and the first work with area and perimeter.',
-        u: ['Multiplication foundations', 'Division foundations', 'Multiplication and division facts', 'Multi-step word problems', 'Rounding and estimation', 'Fractions on a number line', 'Equivalent fractions', 'Comparing fractions', 'Area of rectangles', 'Perimeter', 'Quadrilaterals and their properties', 'Time intervals', 'Mass and liquid volume', 'Scaled picture and bar graphs']
+        "n": "Grade 4 Math",
+        "g": "Grade 4",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Covers multi-digit arithmetic, fraction operations, decimals, and angle geometry.",
+        "s1": [
+          "Multi-digit place value",
+          "Addition and subtraction to one million",
+          "One-digit multiplication",
+          "Two-digit multiplication",
+          "Division with remainders",
+          "Factors, multiples and primes",
+          "Multi-step problems"
+        ],
+        "s2": [
+          "Equivalent and ordered fractions",
+          "Adding and subtracting fractions",
+          "Multiplying fractions by whole numbers",
+          "Decimal notation to hundredths",
+          "Angles and angle measure",
+          "Lines, symmetry and classification",
+          "Measurement conversion",
+          "Area, perimeter and line plots"
+        ]
       },
       {
-        n: 'Grade 4 Math', g: 'Grade 4', b: '3-5', h: '130–150 hrs',
-        d: 'Multi-digit arithmetic, fraction operations, decimal notation, and a full unit on angles and geometric figures.',
-        u: ['Multi-digit place value', 'Addition and subtraction to a million', 'Multiplying by one-digit numbers', 'Multiplying by two-digit numbers', 'Long division with remainders', 'Factors, multiples, and primes', 'Comparing and ordering fractions', 'Adding and subtracting fractions', 'Multiplying fractions by whole numbers', 'Decimal notation to hundredths', 'Angles and angle measure', 'Lines, rays, and symmetry', 'Area and perimeter problems', 'Converting units of measurement', 'Line plots with fractional units']
+        "n": "Grade 5 Math",
+        "g": "Grade 5",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Covers decimal operations, fraction multiplication and division, volume, and the coordinate plane.",
+        "s1": [
+          "Decimal place value",
+          "Decimal addition and subtraction",
+          "Decimal multiplication",
+          "Decimal division",
+          "Powers of ten",
+          "Numerical expressions",
+          "Multi-digit multiplication and division"
+        ],
+        "s2": [
+          "Fractions with unlike denominators",
+          "Multiplying fractions",
+          "Dividing unit fractions",
+          "Measurement conversion",
+          "Volume",
+          "Coordinate plane",
+          "Classifying shapes",
+          "Fractional line plots"
+        ]
       },
       {
-        n: 'Grade 5 Math', g: 'Grade 5', b: '3-5', h: '130–150 hrs',
-        d: 'Decimal operations, fraction multiplication and division, volume, and the coordinate plane.',
-        u: ['Decimal place value', 'Adding and subtracting decimals', 'Multiplying decimals', 'Dividing decimals', 'Powers of ten', 'Fractions with unlike denominators', 'Multiplying fractions', 'Dividing with unit fractions', 'Multi-digit multiplication and division', 'Volume of rectangular solids', 'The coordinate plane', 'Numerical expressions and order of operations', 'Converting measurement units', 'Classifying two-dimensional shapes', 'Interpreting line plots']
+        "n": "Grade 6 Math",
+        "g": "Grade 6",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Moves from arithmetic toward algebraic thinking through ratios, negative numbers, expressions, and equations.",
+        "s1": [
+          "Ratios and ratio reasoning",
+          "Unit rates",
+          "Percentages",
+          "Fraction division",
+          "Decimal fluency",
+          "Exponents and order of operations",
+          "Negative numbers and absolute value"
+        ],
+        "s2": [
+          "Variables and expressions",
+          "One-step equations",
+          "Inequalities",
+          "Coordinate plane and polygons",
+          "Area and surface area",
+          "Volume",
+          "Statistical distributions",
+          "Measures of center and variability"
+        ]
       },
       {
-        n: 'Grade 6 Math', g: 'Grade 6', b: '6-8', h: '140–160 hrs',
-        d: 'Ratio reasoning, negative numbers, and the transition from arithmetic to algebraic thinking.',
-        u: ['Ratios and ratio reasoning', 'Unit rates', 'Percentages', 'Dividing fractions', 'Decimal operations fluency', 'Exponents and order of operations', 'Negative numbers', 'Absolute value and the number line', 'Variables and expressions', 'One-step equations', 'Inequalities', 'Area, surface area, and volume', 'The coordinate plane and polygons', 'Statistical questions and distributions', 'Measures of centre and variability']
+        "n": "Grade 7 Math",
+        "g": "Grade 7",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Covers proportional relationships, rational numbers, equations, geometry, and probability.",
+        "s1": [
+          "Proportional relationships",
+          "Constant of proportionality",
+          "Scale drawings",
+          "Percent increase and decrease",
+          "Rational-number operations",
+          "Expressions and linear equations",
+          "Inequalities"
+        ],
+        "s2": [
+          "Circles",
+          "Angle relationships",
+          "Surface area and volume",
+          "Probability models",
+          "Compound events",
+          "Random sampling",
+          "Comparing populations and statistical inference"
+        ]
       },
       {
-        n: 'Grade 7 Math', g: 'Grade 7', b: '6-8', h: '140–160 hrs',
-        d: 'Proportional relationships and rational number operations, plus circles, angle relationships, and probability.',
-        u: ['Proportional relationships', 'Constant of proportionality', 'Scale drawings', 'Percent increase and decrease', 'Operations with rational numbers', 'Expressions and linear equations', 'Inequalities and their graphs', 'Circumference and area of circles', 'Angle relationships', 'Surface area and volume of prisms', 'Cross sections of solids', 'Probability models', 'Compound events', 'Random sampling and inference']
+        "n": "Grade 8 Math",
+        "g": "Grade 8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Uses linear functions, systems, transformations, and the Pythagorean theorem to prepare students for Algebra I.",
+        "s1": [
+          "Exponents and scientific notation",
+          "Roots and irrational numbers",
+          "Linear equations",
+          "Slope and rate of change",
+          "Graphing linear relationships",
+          "Systems of equations",
+          "Functions and function comparison"
+        ],
+        "s2": [
+          "Transformations and congruence",
+          "Dilations and similarity",
+          "Pythagorean theorem",
+          "Volume of cylinders, cones and spheres",
+          "Scatter plots",
+          "Lines of fit",
+          "Two-way tables"
+        ]
       },
       {
-        n: 'Grade 8 Math', g: 'Grade 8', b: '6-8', h: '140–160 hrs',
-        d: 'Linear functions, transformations, and the Pythagorean theorem — the year that prepares students for Algebra 1.',
-        u: ['Exponents and scientific notation', 'Roots and irrational numbers', 'Linear equations in one variable', 'Slope and rate of change', 'Graphing linear relationships', 'Systems of linear equations', 'Introduction to functions', 'Comparing functions', 'Rigid transformations and congruence', 'Dilations and similarity', 'The Pythagorean theorem', 'Volume of cylinders, cones, and spheres', 'Scatter plots and bivariate data', 'Two-way tables']
+        "n": "Pre-Algebra",
+        "g": "Recommended grades 7–9",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Rebuilds arithmetic prerequisites and prepares students for Algebra I.",
+        "s1": [
+          "Whole-number operations",
+          "Factors and multiples",
+          "Fraction and decimal fluency",
+          "Ratios, rates and proportions",
+          "Percent applications",
+          "Integers and rational numbers",
+          "Exponents and roots"
+        ],
+        "s2": [
+          "Algebraic expressions",
+          "Properties of operations",
+          "Equations",
+          "Inequalities",
+          "Coordinate plane",
+          "Linear patterns",
+          "Functions",
+          "Introductory systems",
+          "Modeling and multi-step problems"
+        ]
       },
       {
-        n: 'Pre-Algebra', g: 'Grades 6–9', b: '6-8', h: '120–140 hrs',
-        d: 'A bridge course for students who need the arithmetic behind algebra rebuilt before they take Algebra 1.',
-        u: ['Factors, multiples, and primes', 'Fraction and decimal fluency', 'Ratios, rates, and proportions', 'Percent applications', 'Integer operations', 'Order of operations', 'Expressions and the properties of operations', 'One- and two-step equations', 'Inequalities on a number line', 'Roots and scientific notation', 'The coordinate plane', 'Linear patterns and functions', 'Introduction to systems', 'Word problems and modelling']
+        "n": "Algebra I",
+        "g": "Recommended grades 8–10",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "The core high-school algebra course, developing linear, exponential, and quadratic relationships through functions and modeling.",
+        "s1": [
+          "Algebraic foundations",
+          "Linear equations",
+          "Linear inequalities",
+          "Units and modeling",
+          "Linear functions and graphs",
+          "Forms of linear equations",
+          "Systems of equations",
+          "Systems of inequalities"
+        ],
+        "s2": [
+          "Function notation and domain",
+          "Sequences",
+          "Absolute-value and piecewise functions",
+          "Exponent rules and radicals",
+          "Exponential growth and decay",
+          "Polynomial operations and factoring",
+          "Quadratic equations",
+          "Quadratic functions",
+          "Bivariate data and lines of fit"
+        ]
       },
       {
-        n: 'Algebra 1', g: 'Grades 8–10', b: '9-12', h: '150–180 hrs',
-        d: 'The core high-school algebra course: linear, exponential, and quadratic relationships, with function notation throughout.',
-        u: ['Algebraic foundations', 'Solving linear equations', 'Solving and graphing inequalities', 'Units and modelling', 'Linear functions and graphs', 'Forms of linear equations', 'Systems of equations', 'Systems of inequalities', 'Function notation and domain', 'Arithmetic and geometric sequences', 'Absolute value and piecewise functions', 'Exponent rules and radicals', 'Exponential growth and decay', 'Polynomial multiplication and factoring', 'Solving quadratic equations', 'Quadratic functions and graphs', 'Rational and irrational numbers', 'Data displays and lines of fit']
+        "n": "Geometry",
+        "g": "Recommended grades 9–11",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Transformation-based geometry with proof, trigonometry, and coordinate methods.",
+        "s1": [
+          "Definitions, postulates and proof",
+          "Transformations",
+          "Congruence",
+          "Triangle relationships",
+          "Similarity and dilation",
+          "Right-triangle trigonometry",
+          "Quadrilaterals"
+        ],
+        "s2": [
+          "Polygons",
+          "Circles, arcs and sectors",
+          "Coordinate geometry",
+          "Geometric constructions",
+          "Area",
+          "Surface area and volume",
+          "Geometric probability"
+        ]
       },
       {
-        n: 'Geometry', g: 'Grades 9–11', b: '9-12', h: '150–180 hrs',
-        d: 'A transformation-based geometry course with formal proof, right-triangle trigonometry, and coordinate methods.',
-        u: ['Definitions, postulates, and proof', 'Transformations in the plane', 'Congruent triangles', 'Triangle relationships and inequalities', 'Similarity and dilation', 'Right triangle trigonometry', 'Properties of quadrilaterals', 'Polygons and interior angles', 'Circles, arcs, and sectors', 'Coordinate geometry', 'Constructions with compass and straightedge', 'Area of composite figures', 'Surface area and volume', 'Introduction to geometric probability']
+        "n": "Algebra II",
+        "g": "Recommended grades 10–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Covers polynomial, rational, radical, exponential, and logarithmic function families.",
+        "s1": [
+          "Function transformations",
+          "Polynomial arithmetic",
+          "Factoring higher-degree polynomials",
+          "Polynomial division",
+          "Polynomial functions",
+          "Rational expressions and equations",
+          "Radical functions and rational exponents",
+          "Complex numbers"
+        ],
+        "s2": [
+          "Exponential models",
+          "Logarithms",
+          "Inverse functions",
+          "Sequences and series",
+          "Introductory trigonometry",
+          "Matrices and systems",
+          "Probability models",
+          "Modeling with functions"
+        ]
       },
       {
-        n: 'Algebra 2', g: 'Grades 10–12', b: '9-12', h: '150–180 hrs',
-        d: 'Polynomial, rational, radical, exponential, and logarithmic function families, with an introduction to trigonometry.',
-        u: ['Polynomial arithmetic', 'Factoring higher-degree polynomials', 'Polynomial division and the remainder theorem', 'Graphs of polynomial functions', 'Rational expressions and equations', 'Radical functions and rational exponents', 'Complex numbers', 'Exponential models', 'Logarithms and logarithmic functions', 'Transformations of functions', 'Inverse functions', 'Sequences and series', 'Introduction to trigonometry', 'Matrices and systems', 'Modelling with functions']
+        "n": "Precalculus with Trigonometry",
+        "g": "Recommended grades 11–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Builds the full function toolkit and trigonometry foundation needed before Calculus I.",
+        "s1": [
+          "Function composition and inverses",
+          "Polynomial functions",
+          "Rational functions",
+          "Exponential and logarithmic models",
+          "Radians and the unit circle",
+          "Trigonometric graphs",
+          "Identities and equations"
+        ],
+        "s2": [
+          "Laws of sines and cosines",
+          "Vectors",
+          "Polar and parametric equations",
+          "Matrices and systems",
+          "Conic sections",
+          "Sequences and series",
+          "Combinatorics and probability",
+          "Introduction to limits"
+        ]
       },
       {
-        n: 'Trigonometry', g: 'Grades 10–12', b: '9-12', h: '80–100 hrs',
-        d: 'A focused course on angle measure, the unit circle, identities, and triangle solving. Often taken alongside Algebra 2 or before precalculus.',
-        u: ['Angle measure and radians', 'Right triangle ratios', 'The unit circle', 'Graphs of sine, cosine, and tangent', 'Amplitude, period, and phase shift', 'Inverse trigonometric functions', 'Fundamental identities', 'Sum, difference, and double-angle formulas', 'Solving trigonometric equations', 'The laws of sines and cosines', 'Polar coordinates', 'Vectors in the plane']
+        "n": "Statistics and Probability",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Covers data displays, study design, probability, and statistical inference with interpretation in context.",
+        "e": true,
+        "s1": [
+          "Categorical data",
+          "Quantitative data",
+          "Center and spread",
+          "Normal distributions",
+          "Scatter plots and correlation",
+          "Regression",
+          "Sampling methods",
+          "Experiments and observational studies"
+        ],
+        "s2": [
+          "Probability rules",
+          "Conditional probability",
+          "Random variables",
+          "Binomial and geometric models",
+          "Sampling distributions",
+          "Confidence intervals",
+          "Significance tests",
+          "Comparing groups",
+          "Chi-square reasoning"
+        ]
       },
       {
-        n: 'Precalculus', g: 'Grades 11–12', b: '9-12', h: '150–180 hrs',
-        d: 'The full function toolkit plus vectors, matrices, and a first look at limits — designed to lead directly into calculus.',
-        u: ['Function composition and inverses', 'Polynomial and rational functions', 'Exponential and logarithmic models', 'Trigonometric functions', 'Trigonometric identities and equations', 'Polar and parametric equations', 'Vectors', 'Matrices and linear systems', 'Conic sections', 'Sequences and series', 'The binomial theorem', 'Combinatorics and probability', 'Introduction to limits and continuity']
+        "n": "Calculus I: Limits, Derivatives & Integrals",
+        "g": "Recommended grades 11–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A first single-variable calculus course covering limits, derivatives, integrals, and their central applications. It does not claim to cover the entire field of calculus.",
+        "s1": [
+          "Limits and continuity",
+          "Definition of derivative",
+          "Differentiation rules",
+          "Chain rule",
+          "Implicit and inverse differentiation",
+          "Related rates",
+          "Curve analysis",
+          "Optimization"
+        ],
+        "s2": [
+          "Riemann sums",
+          "Definite integrals",
+          "Fundamental theorem of calculus",
+          "Antiderivatives and substitution",
+          "Differential equations",
+          "Area between curves",
+          "Volumes of revolution",
+          "Cumulative applications"
+        ]
       },
       {
-        n: 'Statistics and Probability', g: 'Grades 9–12', b: '9-12', h: '140–170 hrs',
-        d: 'A full-year statistics course from data displays through inference, with an emphasis on interpreting results in context.',
-        u: ['Categorical data displays', 'Quantitative data displays', 'Measures of centre and spread', 'Normal distributions and z-scores', 'Scatter plots and correlation', 'Least-squares regression', 'Study design and sampling methods', 'Experiments and observational studies', 'Probability rules', 'Conditional probability', 'Random variables and expected value', 'Binomial and geometric distributions', 'Sampling distributions', 'Confidence intervals', 'Significance testing', 'Comparing two groups', 'Chi-square tests']
-      },
-      {
-        n: 'Calculus I', g: 'Grades 11–12', b: '9-12', h: '160–190 hrs',
-        d: 'Limits, derivatives, and integrals with applications — equivalent to a first-semester college calculus course.',
-        u: ['Limits and continuity', 'The definition of the derivative', 'Differentiation rules', 'Chain rule, implicit, and inverse functions', 'Applied rates of change', 'Related rates', 'Extrema and curve analysis', 'Optimisation', 'Riemann sums and the definite integral', 'The fundamental theorem of calculus', 'Antiderivatives and substitution', 'Separable differential equations', 'Area between curves', 'Volumes of revolution']
-      },
-      {
-        n: 'Calculus II', g: 'Grade 12', b: '9-12', h: '160–190 hrs',
-        d: 'Advanced integration, differential equations, parametric and polar calculus, and infinite series.',
-        u: ['Integration by parts', 'Trigonometric integrals and substitution', 'Partial fractions', 'Improper integrals', 'Arc length and surface area', 'Differential equations and slope fields', 'Logistic and exponential models', 'Parametric calculus', 'Polar calculus', 'Vector-valued functions', 'Sequences and convergence', 'Series convergence tests', 'Power series', 'Taylor and Maclaurin series']
-      },
-      {
-        n: 'College Algebra', g: 'Grades 11–12', b: '9-12', h: '120–140 hrs',
-        d: 'A college-level algebra review for students preparing for placement exams or a first quantitative course.',
-        u: ['Linear equations and inequalities', 'Graphs of linear models', 'Function fundamentals', 'Quadratic expressions and equations', 'Quadratic graphs and applications', 'Complex numbers', 'Exponent and radical rules', 'Rational expressions and equations', 'Polynomial arithmetic and factoring', 'Advanced function families', 'Transformations of graphs', 'Exponential and logarithmic equations', 'Systems and matrices', 'Relating algebra and geometry']
-      },
-      {
-        n: 'Financial Mathematics', g: 'Grades 9–12', b: 'Elective', h: '60–80 hrs', e: true,
-        d: 'Applied mathematics for money decisions — the arithmetic behind pay, credit, loans, insurance, and investing.',
-        u: ['Careers, education, and earning potential', 'Paychecks, withholding, and net pay', 'Banking and account management', 'Budgeting and saving', 'Simple and compound interest', 'Credit cards and credit scores', 'Loans and repayment schedules', 'Buying and financing a car', 'Renting and home ownership', 'Insurance and risk', 'Taxes and tax forms', 'Investing and retirement accounts', 'Scams, fraud, and consumer protection']
-      },
-      {
-        n: 'Linear Algebra', g: 'Advanced elective', b: 'Elective', h: '80–100 hrs', e: true,
-        d: 'A first course in vectors, matrices, and linear transformations for students who have finished calculus.',
-        u: ['Vectors and vector spaces', 'Linear combinations and span', 'Linear independence and basis', 'Matrix operations', 'Systems and row reduction', 'Determinants', 'Matrix transformations', 'Eigenvalues and eigenvectors', 'Orthogonality and projections', 'Change of basis']
-      },
-      {
-        n: 'Multivariable Calculus', g: 'Advanced elective', b: 'Elective', h: '100–120 hrs', e: true,
-        d: 'Calculus extended to functions of several variables, including vector fields and the classical integral theorems.',
-        u: ['Functions of several variables', 'Partial derivatives', 'Gradients and directional derivatives', 'Optimisation with constraints', 'Double integrals', 'Triple integrals', 'Change of coordinates', 'Line integrals and vector fields', 'Surface integrals', "Green's, Stokes', and divergence theorems"]
+        "n": "Financial Mathematics",
+        "g": "Grades 8–12",
+        "b": "6-8,9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "Applies mathematics to income, banking, debt, insurance, and investing.",
+        "e": true,
+        "u": [
+          "Income, paychecks and taxes",
+          "Banking and account management",
+          "Budgeting and emergency funds",
+          "Simple and compound interest",
+          "Credit scores and credit cards",
+          "Loans and repayment",
+          "Insurance and risk",
+          "Investing and retirement",
+          "Consumer protection and financial plan"
+        ]
       }
     ]
   },
-
   {
-    subject: 'Science',
-    color: 'linear-gradient(160deg, #7fe3a1, #3cba6f)',
-    courses: [
+    "subject": "ELA & Languages",
+    "color": "linear-gradient(160deg, #9f7bec, #7048c9)",
+    "courses": [
       {
-        n: 'Elementary Science', g: 'Grades 3–5', b: '3-5', h: '80–100 hrs',
-        d: 'An integrated survey of life, physical, and Earth science built around observation and simple hands-on investigations.',
-        u: ['Living things and their habitats', 'Life cycles and inherited traits', 'Plants and how they grow', 'Matter and its properties', 'Forces and motion', 'Energy and how it transfers', 'Light and sound', "Earth's systems and materials", 'Weather and climate patterns', 'The solar system', 'Natural resources and conservation', 'Engineering design challenges']
+        "n": "Early Literacy",
+        "g": "Grades K–2",
+        "b": "K-2",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "An integrated foundational reading, oral language, early writing, and comprehension course with distinct Kindergarten, Grade 1, and Grade 2 pathways.",
+        "s1": [
+          "Print concepts",
+          "Phonological awareness",
+          "Letter–sound relationships",
+          "Blending and segmenting",
+          "High-frequency words",
+          "Oral language and vocabulary"
+        ],
+        "s2": [
+          "Decoding increasingly complex words",
+          "Reading fluency",
+          "Story elements and retelling",
+          "Informational-text features",
+          "Sentence construction",
+          "Early opinion, narrative and informative writing"
+        ]
       },
       {
-        n: 'Middle School Life Science', g: 'Grades 6–8', b: '6-8', h: '100–120 hrs',
-        d: 'From cells to ecosystems, with heredity and evidence for evolution.',
-        u: ['Cells and cell processes', 'Body systems and their interactions', 'Growth, development, and reproduction', 'Photosynthesis and respiration', 'Food webs and energy flow', 'Cycles of matter in ecosystems', 'Populations and carrying capacity', 'Biodiversity and ecosystem stability', 'Heredity and traits', 'Genes, chromosomes, and mutation', 'Natural selection and evidence for evolution', 'Human impact on ecosystems']
+        "n": "Grade 3 English Language Arts",
+        "g": "Grade 3",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Moves students from learning to read toward reading to learn, with reading, language, and writing taught together.",
+        "s1": [
+          "Reading fluency and morphology",
+          "Story elements",
+          "Character and plot",
+          "Main idea and details",
+          "Text features",
+          "Vocabulary in context",
+          "Sentence structure and conventions"
+        ],
+        "s2": [
+          "Theme and point of view",
+          "Comparing texts",
+          "Opinion writing",
+          "Informative writing",
+          "Narrative writing",
+          "Research from short sources",
+          "Speaking, listening and presentation"
+        ]
       },
       {
-        n: 'Middle School Earth and Space Science', g: 'Grades 6–8', b: '6-8', h: '100–120 hrs',
-        d: "Earth's place in the solar system, the processes that shape its surface, and the systems that drive weather and climate.",
-        u: ["Earth's place in space", 'The Sun–Earth–Moon system', 'Seasons, tides, and eclipses', 'Rocks, minerals, and the rock cycle', "Plate tectonics and Earth's interior", 'Earthquakes and volcanoes', 'Weathering, erosion, and landforms', 'The water cycle', 'Weather systems and forecasting', 'Climate zones and climate change', 'Natural resources', 'Natural hazards and mitigation']
+        "n": "Grade 4 English Language Arts",
+        "g": "Grade 4",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops close reading, summary, text structure, multi-paragraph writing, and evidence use.",
+        "s1": [
+          "Summarizing literary text",
+          "Theme",
+          "Character and point of view",
+          "Poetry and figurative language",
+          "Informational text structures",
+          "Academic vocabulary",
+          "Grammar and sentence variety"
+        ],
+        "s2": [
+          "Integrating information from two sources",
+          "Author's reasons and evidence",
+          "Opinion essay",
+          "Informative essay",
+          "Narrative craft",
+          "Research and note-taking",
+          "Discussion and oral presentation"
+        ]
       },
       {
-        n: 'Middle School Chemistry', g: 'Grades 6–8', b: '6-8', h: '80–100 hrs',
-        d: 'The particle model of matter, chemical change, and heat — the conceptual groundwork for high-school chemistry.',
-        u: ['Classifying matter', 'States and changes of state', 'Atoms, elements, and the periodic table', 'Physical and chemical properties', 'Chemical reactions', 'Conservation of mass', 'Mixtures and solutions', 'Acids and bases in everyday life', 'Thermal energy and heat transfer']
+        "n": "Grade 5 English Language Arts",
+        "g": "Grade 5",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops text analysis, source comparison, argument, and research-based writing.",
+        "s1": [
+          "Theme and text evidence",
+          "Character development",
+          "Poetry and drama",
+          "Point of view",
+          "Main ideas across sections",
+          "Text structure and author's craft",
+          "Grammar, usage and vocabulary"
+        ],
+        "s2": [
+          "Comparing multiple texts",
+          "Claims and evidence",
+          "Argument writing",
+          "Explanatory writing",
+          "Narrative technique",
+          "Research and source evaluation",
+          "Multimedia presentation and discussion"
+        ]
       },
       {
-        n: 'Middle School Physics', g: 'Grades 6–8', b: '6-8', h: '80–100 hrs',
-        d: 'Motion, forces, energy, and waves, taught through prediction and measurement rather than formula memorisation.',
-        u: ['Describing motion', "Forces and Newton's laws", 'Gravity, magnetism, and electric forces', 'Kinetic and potential energy', 'Energy transfer and conservation', 'Wave properties', 'Sound', 'Light and optics', 'Simple circuits', 'Engineering with forces and energy']
+        "n": "Grade 6 English Language Arts",
+        "g": "Grade 6",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "The first middle-school ELA course, centered on close reading, evidence-based analysis, and structured composition.",
+        "s1": [
+          "Close reading and annotation",
+          "Plot and character change",
+          "Theme",
+          "Poetry and figurative language",
+          "Central idea",
+          "Text structure",
+          "Vocabulary and morphology"
+        ],
+        "s2": [
+          "Author's purpose and point of view",
+          "Argument and evidence",
+          "Literary analysis paragraph",
+          "Informative essay",
+          "Narrative writing",
+          "Research and citation foundations",
+          "Speaking and collaborative discussion"
+        ]
       },
       {
-        n: 'High School Biology', g: 'Grades 9–12', b: '9-12', h: '150–180 hrs',
-        d: 'A full-year biology course from biochemistry through ecology, with molecular genetics and evolution at the centre.',
-        u: ['Biochemistry and macromolecules', 'Cell structure and transport', 'Cellular energetics', 'Photosynthesis and cellular respiration', 'The cell cycle and differentiation', 'DNA, RNA, and protein synthesis', 'Gene expression and regulation', 'Mendelian inheritance', 'Non-Mendelian inheritance and pedigrees', 'Mechanisms of evolution', 'Speciation and phylogeny', 'Classification and the diversity of life', 'Ecology and population dynamics', 'Biotechnology and bioethics']
+        "n": "Grade 7 English Language Arts",
+        "g": "Grade 7",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Deepens analysis of author craft, comparison across media, and argument built from credible sources.",
+        "s1": [
+          "Evidence and inference",
+          "Theme development",
+          "Character and conflict",
+          "Poetry and sound",
+          "Drama",
+          "Nonfiction organization",
+          "Language, connotation and tone"
+        ],
+        "s2": [
+          "Comparing print and media",
+          "Evaluating claims",
+          "Argument essay",
+          "Explanatory synthesis",
+          "Narrative perspective",
+          "Research and source credibility",
+          "Debate and presentation"
+        ]
       },
       {
-        n: 'High School Chemistry', g: 'Grades 9–12', b: '9-12', h: '150–180 hrs',
-        d: 'Atomic structure through equilibrium and electrochemistry, with quantitative problem solving throughout.',
-        u: ['Atomic structure and isotopes', 'Electron configuration and periodic trends', 'Ionic and covalent bonding', 'Molecular geometry', 'Intermolecular forces', 'Chemical reactions and equations', 'The mole and stoichiometry', 'Gas laws', 'Solutions and concentration', 'Thermochemistry', 'Reaction rates', 'Chemical equilibrium', 'Acids, bases, and pH', 'Oxidation–reduction and electrochemistry', 'Nuclear chemistry']
+        "n": "Grade 8 English Language Arts",
+        "g": "Grade 8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Prepares students for high-school English through rhetorical analysis, synthesis, and sustained writing.",
+        "s1": [
+          "Complex narrative analysis",
+          "Theme and motif",
+          "Author's craft",
+          "Poetry and drama",
+          "Rhetoric in nonfiction",
+          "Conflicting sources",
+          "Vocabulary, grammar and style"
+        ],
+        "s2": [
+          "Evaluating reasoning and evidence",
+          "Literary analysis essay",
+          "Argument with counterclaim",
+          "Informative synthesis",
+          "Research project",
+          "Revision and editing",
+          "Speech and seminar discussion"
+        ]
       },
       {
-        n: 'High School Physics', g: 'Grades 9–12', b: '9-12', h: '150–180 hrs',
-        d: 'Algebra-based physics covering mechanics, waves, electricity and magnetism, and an introduction to modern physics.',
-        u: ['Kinematics in one dimension', 'Kinematics in two dimensions', "Newton's laws and free-body diagrams", 'Circular motion and gravitation', 'Work, energy, and power', 'Momentum and collisions', 'Rotational motion and torque', 'Simple harmonic motion', 'Waves and sound', 'Geometric optics', 'Electrostatics', 'Circuits', 'Magnetism and induction', 'Modern and nuclear physics']
+        "n": "Grade 9 English: Literature & Composition (English I)",
+        "g": "Typical grade 9",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Introduces high-school literary analysis and thesis-driven composition.",
+        "s1": [
+          "Close reading methods",
+          "Short fiction",
+          "The novel",
+          "Poetry",
+          "Drama",
+          "Grammar and sentence craft"
+        ],
+        "s2": [
+          "Literary analysis",
+          "Rhetorical analysis",
+          "Argument writing",
+          "Informative synthesis",
+          "Research and citation",
+          "Speech and multimedia presentation"
+        ]
       },
       {
-        n: 'Environmental Science', g: 'Grades 9–12', b: '9-12', h: '120–150 hrs',
-        d: 'How natural systems work, how human activity changes them, and how policy and technology respond.',
-        u: ['Ecosystems and biodiversity', 'Population dynamics', 'Earth systems and natural resources', 'Soil, agriculture, and land use', 'Water resources and management', 'Energy sources and consumption', 'Air pollution and air quality', 'Water and soil pollution', 'Waste management and recycling', 'Climate change and the global response', 'Sustainability and environmental policy', 'Field investigation project']
+        "n": "Grade 10 English: World Literature & Writing (English II)",
+        "g": "Typical grade 10",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Studies world literature through historical and cultural context, comparative analysis, and academic writing.",
+        "s1": [
+          "Epic and oral traditions",
+          "Classical drama",
+          "Global short fiction",
+          "Poetry across cultures",
+          "The world novel",
+          "Context, translation and perspective"
+        ],
+        "s2": [
+          "Comparative literary analysis",
+          "Rhetoric across cultures",
+          "Synthesis from multiple sources",
+          "Argument and counterargument",
+          "Research writing",
+          "Seminar and presentation"
+        ]
       },
       {
-        n: 'Anatomy and Physiology', g: 'Grades 10–12', b: 'Elective', h: '120–140 hrs', e: true,
-        d: 'A systems tour of the human body for students considering health careers.',
-        u: ['Organisation of the human body', 'The skeletal system', 'The muscular system', 'The circulatory system', 'The respiratory system', 'The digestive system', 'The nervous system and the brain', 'The endocrine system', 'The immune system and infectious disease', 'The urinary system', 'The reproductive system', 'Nutrition, health, and disease prevention']
+        "n": "Grade 11 English: American Literature & Rhetoric (English III)",
+        "g": "Typical grade 11",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Studies American literature and public rhetoric from founding texts to contemporary voices.",
+        "s1": [
+          "Indigenous and colonial voices",
+          "Founding rhetoric",
+          "Romanticism and transcendentalism",
+          "Realism and regionalism",
+          "Poetry and identity",
+          "Researching historical context"
+        ],
+        "s2": [
+          "Modernism",
+          "Harlem Renaissance",
+          "Postwar literature",
+          "Contemporary voices",
+          "Rhetorical analysis",
+          "Evidence-based argument",
+          "Research paper and oral defense"
+        ]
       },
       {
-        n: 'Astronomy and Cosmology', g: 'Grades 9–12', b: 'Elective', h: '60–80 hrs', e: true,
-        d: 'From the motion of the night sky to the expansion of the universe, with observation projects families can do at home.',
-        u: ['Scale of the universe', 'The night sky and celestial motion', 'Telescopes and observation', 'The solar system', 'Moons, comets, and asteroids', 'The Sun and stellar physics', 'Stars and stellar evolution', 'Galaxies and black holes', 'The Big Bang and cosmic expansion', 'Exoplanets and the search for life']
+        "n": "Grade 12 English: Advanced Composition & Research (English IV)",
+        "g": "Typical grade 12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops college- and career-oriented reading, rhetoric, research, and independent composition.",
+        "s1": [
+          "Advanced nonfiction",
+          "British and global texts",
+          "Rhetorical situation",
+          "Style and voice",
+          "Logic and fallacies",
+          "Academic synthesis"
+        ],
+        "s2": [
+          "Research question and proposal",
+          "Source evaluation",
+          "Annotated bibliography",
+          "Extended research paper",
+          "Revision and publication",
+          "Personal and professional writing",
+          "Capstone presentation"
+        ]
       },
       {
-        n: 'Organic Chemistry', g: 'Advanced elective', b: 'Elective', h: '120–150 hrs', e: true,
-        d: 'Reaction mechanisms and structure determination for students who have completed high-school chemistry.',
-        u: ['Structure and bonding', 'Functional groups and nomenclature', 'Alkanes and cycloalkanes', 'Stereochemistry', 'Substitution reactions', 'Elimination reactions', 'Alkenes and alkynes', 'Alcohols, ethers, and epoxides', 'Conjugation and aromaticity', 'Aromatic substitution', 'Aldehydes and ketones', 'Carboxylic acids and derivatives', 'Amines', 'Spectroscopy and structure determination']
+        "n": "English Language Development K–2",
+        "g": "Grades K–2",
+        "b": "K-2",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops classroom English and foundational literacy through age-appropriate Entering, Emerging, and Developing pathways.",
+        "s1": [
+          "Listening and responding",
+          "Classroom language",
+          "Everyday vocabulary",
+          "Sounds and pronunciation",
+          "Oral sentences",
+          "Songs, stories and picture talk"
+        ],
+        "s2": [
+          "Foundational reading",
+          "Questions and answers",
+          "Describing people, places and events",
+          "Reading short texts",
+          "Writing words and sentences",
+          "Interactive conversation and retelling"
+        ]
+      },
+      {
+        "n": "English Language Development 3–5",
+        "g": "Grades 3–5",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Moves from social English toward the language needed for ELA, Mathematics, Science, and Social Studies.",
+        "s1": [
+          "Receptive classroom language",
+          "Vocabulary and word families",
+          "Sentence patterns",
+          "Narrating",
+          "Describing",
+          "Reading for main idea"
+        ],
+        "s2": [
+          "Informing and explaining",
+          "Comparing and contrasting",
+          "Academic vocabulary",
+          "Paragraph writing",
+          "Asking and answering in discussion",
+          "Short research and presentation"
+        ]
+      },
+      {
+        "n": "English Language Development 6–8",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Builds the academic English needed to understand subject-area texts, participate in discussions, and write connected texts.",
+        "s1": [
+          "Language for classroom interaction",
+          "Complex sentences",
+          "Vocabulary strategies",
+          "Reading narrative and informational text",
+          "Note-taking",
+          "Narrating and summarizing"
+        ],
+        "s2": [
+          "Explaining processes",
+          "Supporting claims with evidence",
+          "Comparing sources",
+          "Structured paragraphs and essays",
+          "Collaborative discussion",
+          "Academic presentation"
+        ]
+      },
+      {
+        "n": "English Language Development 9–12",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Builds the language of high-school coursework: complex texts, argument, research, and formal communication.",
+        "s1": [
+          "Academic vocabulary and morphology",
+          "Complex grammar",
+          "Reading discipline-specific texts",
+          "Lecture and media note-taking",
+          "Summary and paraphrase",
+          "Citing evidence"
+        ],
+        "s2": [
+          "Explanation and argument",
+          "Source synthesis",
+          "Research conventions",
+          "Seminar discussion",
+          "Formal presentation",
+          "Academic and career communication"
+        ]
+      },
+      {
+        "n": "Spanish I",
+        "g": "Grades 6–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A first Spanish course centered on comprehensible input and communication from the beginning.",
+        "s1": [
+          "Greetings and introductions",
+          "Pronunciation",
+          "Numbers, dates and time",
+          "Classroom language",
+          "Nouns and articles",
+          "Present-tense regular verbs",
+          "Ser, estar and basic descriptions"
+        ],
+        "s2": [
+          "Common irregular verbs",
+          "Family and relationships",
+          "Daily routines",
+          "Food and ordering",
+          "School and activities",
+          "Questions and directions",
+          "Spanish-speaking cultures",
+          "Novice conversation project"
+        ]
+      },
+      {
+        "n": "Spanish II",
+        "g": "Grades 7–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops narration, practical communication, and cultural competence.",
+        "s1": [
+          "Preterite",
+          "Imperfect",
+          "Choosing past tenses",
+          "Reflexive verbs",
+          "Direct and indirect objects",
+          "Travel and directions"
+        ],
+        "s2": [
+          "Commands",
+          "Comparisons",
+          "Health and the body",
+          "Shopping and services",
+          "Weather and environment",
+          "Festivals and traditions",
+          "Extended narration project"
+        ]
+      },
+      {
+        "n": "Spanish III",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Moves students toward connected discourse, authentic texts, opinion, and discussion.",
+        "s1": [
+          "Present subjunctive",
+          "Future and conditional",
+          "Perfect tenses",
+          "Por and para",
+          "Relative pronouns",
+          "Reading authentic short texts"
+        ],
+        "s2": [
+          "Imperfect subjunctive",
+          "Hypothetical language",
+          "Formal and informal writing",
+          "Debate and opinion",
+          "Film, literature and current events",
+          "Intermediate portfolio"
+        ]
+      },
+      {
+        "n": "French I",
+        "g": "Grades 6–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Introduces French with particular attention to pronunciation and listening.",
+        "s1": [
+          "Greetings and classroom language",
+          "Pronunciation, accents and liaison",
+          "Numbers, dates and time",
+          "Articles and gender",
+          "Regular present-tense verbs",
+          "Être and avoir"
+        ],
+        "s2": [
+          "Aller, faire and common verbs",
+          "Adjective agreement",
+          "Family and home",
+          "Food and cafés",
+          "Hobbies and school",
+          "Questions and directions",
+          "Francophone cultures",
+          "Novice speaking project"
+        ]
+      },
+      {
+        "n": "French II",
+        "g": "Grades 7–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops past narration, pronouns, and practical communication in Francophone contexts.",
+        "s1": [
+          "Passé composé",
+          "Imparfait",
+          "Choosing past tenses",
+          "Reflexive verbs",
+          "Object pronouns",
+          "Travel and transport"
+        ],
+        "s2": [
+          "Future forms",
+          "Comparisons",
+          "Health and daily life",
+          "Shopping and services",
+          "Housing and city life",
+          "Francophone art, cuisine and cinema",
+          "Narrative portfolio"
+        ]
+      },
+      {
+        "n": "American Sign Language I",
+        "g": "Grades 6–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "An introductory visual-communication course in ASL and Deaf culture.",
+        "s1": [
+          "Visual communication norms",
+          "Fingerspelling and numbers",
+          "Introductions",
+          "Pronouns and indexing",
+          "Basic sentence structure",
+          "Family and descriptions"
+        ],
+        "s2": [
+          "Time and daily routine",
+          "School and activities",
+          "Food and preferences",
+          "Questions and directions",
+          "Classifiers and spatial use",
+          "Deaf culture and community",
+          "Novice signed conversation"
+        ]
+      },
+      {
+        "n": "American Sign Language II",
+        "g": "Grades 7–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Extends fluency, classifiers, spatial grammar, and storytelling.",
+        "s1": [
+          "Review and conversational repair",
+          "Advanced fingerspelling",
+          "Classifier predicates",
+          "Spatial agreement",
+          "Past and future time",
+          "Describing places and movement"
+        ],
+        "s2": [
+          "Narrating events",
+          "Role shift",
+          "Opinions and comparisons",
+          "Community interactions",
+          "Deaf history and identity",
+          "Receptive comprehension",
+          "Signed storytelling portfolio"
+        ]
+      },
+      {
+        "n": "German I",
+        "g": "Grades 7–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A first-year German course that introduces the case system as a central part of meaning.",
+        "s1": [
+          "Pronunciation and greetings",
+          "Numbers, dates and time",
+          "Nouns, gender and articles",
+          "Present-tense verbs",
+          "Nominative case",
+          "Family and descriptions"
+        ],
+        "s2": [
+          "Accusative case",
+          "Word order",
+          "Modal verbs",
+          "Separable-prefix verbs",
+          "Home and routines",
+          "Food and shopping",
+          "German-speaking cultures",
+          "Novice communication project"
+        ]
+      },
+      {
+        "n": "Mandarin Chinese I",
+        "g": "Grades 7–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Develops tones, pinyin, high-frequency characters, and everyday communication.",
+        "s1": [
+          "Pinyin and tones",
+          "Greetings and introductions",
+          "Numbers, dates and time",
+          "Basic sentence patterns",
+          "Questions and particles",
+          "Character strokes and radicals"
+        ],
+        "s2": [
+          "Measure words",
+          "Family and occupations",
+          "Food and ordering",
+          "Shopping and money",
+          "Places and directions",
+          "Daily routine",
+          "Festivals and everyday culture",
+          "Novice conversation portfolio"
+        ]
+      },
+      {
+        "n": "Latin I",
+        "g": "Grades 8–12",
+        "b": "6-8,9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A reading-focused introduction to Latin grammar, Roman culture, and Latin roots in English.",
+        "s1": [
+          "Pronunciation",
+          "First and second declensions",
+          "Present-tense conjugations",
+          "Cases and sentence roles",
+          "Adjectives and agreement",
+          "Adapted reading"
+        ],
+        "s2": [
+          "Third declension",
+          "Imperfect and perfect tenses",
+          "Prepositions and ablative uses",
+          "Pronouns",
+          "Translation strategies",
+          "Latin roots in English",
+          "Roman daily life and mythology",
+          "Final reading project"
+        ]
+      }
+    ],
+    "note": "English language arts, English language development, and world languages — from early literacy through high-school composition and novice-to-intermediate language courses."
+  },
+  {
+    "subject": "Science",
+    "color": "linear-gradient(160deg, #7fe3a1, #3cba6f)",
+    "courses": [
+      {
+        "n": "Science Explorations",
+        "g": "Grades K–2",
+        "b": "K-2",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Uses observation, simple investigations, and models to explore living things, matter, Earth, and space through Kindergarten, Grade 1, and Grade 2 pathways.",
+        "s1": [
+          "Asking questions like a scientist",
+          "Living and nonliving things",
+          "What plants and animals need",
+          "Habitats",
+          "Weather and seasons",
+          "Materials and their properties"
+        ],
+        "s2": [
+          "Pushes, pulls and motion",
+          "Light and sound",
+          "Sun, Moon and sky patterns",
+          "Land and water",
+          "How living things change environments",
+          "Solving simple engineering problems"
+        ]
+      },
+      {
+        "n": "Science Discovery",
+        "g": "Grades 3–5",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "An integrated elementary course in life, physical, Earth, and space science with grade-specific pathways.",
+        "s1": [
+          "Scientific investigation and models",
+          "Plant and animal life cycles",
+          "Traits and variation",
+          "Ecosystems and food webs",
+          "Matter and measurement",
+          "Physical and chemical changes"
+        ],
+        "s2": [
+          "Forces and motion",
+          "Energy transfer",
+          "Light and sound",
+          "Earth's systems and materials",
+          "Weather and climate",
+          "Solar system",
+          "Natural resources",
+          "Engineering design challenge"
+        ]
+      },
+      {
+        "n": "Middle School Life Science",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Moves from cells and body systems to heredity, evolution, and ecosystem dynamics.",
+        "s1": [
+          "Cells and cell processes",
+          "Levels of organization",
+          "Body systems",
+          "Growth and reproduction",
+          "Photosynthesis and respiration",
+          "Genes, chromosomes and inheritance"
+        ],
+        "s2": [
+          "Variation and mutation",
+          "Natural selection and evolution",
+          "Food webs and energy flow",
+          "Cycles of matter",
+          "Populations and carrying capacity",
+          "Biodiversity",
+          "Human impact",
+          "Investigation project"
+        ]
+      },
+      {
+        "n": "Middle School Earth & Space Science",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Covers Earth's place in space, geologic change, weather, climate, resources, and natural hazards.",
+        "s1": [
+          "Scale of the universe",
+          "Solar system",
+          "Sun–Earth–Moon system",
+          "Seasons, tides and eclipses",
+          "Earth's interior",
+          "Plate tectonics",
+          "Rocks and geologic time"
+        ],
+        "s2": [
+          "Weathering, erosion and landforms",
+          "Water cycle",
+          "Atmosphere and weather",
+          "Climate systems and change",
+          "Natural resources",
+          "Natural hazards",
+          "Evidence-based Earth systems project"
+        ]
+      },
+      {
+        "n": "Middle School Physical Science",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Combines an appropriate middle-school scope of chemistry and physics instead of splitting them into two artificially narrow courses.",
+        "s1": [
+          "Particle model of matter",
+          "Atoms, elements and the periodic table",
+          "Physical and chemical properties",
+          "Chemical reactions",
+          "Conservation of mass",
+          "Mixtures and solutions",
+          "Thermal energy"
+        ],
+        "s2": [
+          "Motion and forces",
+          "Newtonian reasoning",
+          "Gravity, electricity and magnetism",
+          "Work and energy",
+          "Waves",
+          "Sound and light",
+          "Simple circuits",
+          "Engineering design challenge"
+        ]
+      },
+      {
+        "n": "High School Biology: Cells, Genetics, Evolution & Ecology",
+        "g": "Recommended grades 9–10",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A complete introductory high-school biology course covering molecular genetics, evolution, ecology, and scientific inquiry. It does not claim to cover the entire discipline of biology.",
+        "s1": [
+          "Nature of science and experimental design",
+          "Biochemistry and macromolecules",
+          "Cell structure and transport",
+          "Photosynthesis and respiration",
+          "Cell cycle and differentiation",
+          "DNA, RNA and protein synthesis",
+          "Gene regulation"
+        ],
+        "s2": [
+          "Mendelian and non-Mendelian inheritance",
+          "Biotechnology and bioethics",
+          "Evolution and natural selection",
+          "Speciation and phylogeny",
+          "Diversity of life",
+          "Ecology",
+          "Population dynamics",
+          "Human impact and capstone investigation"
+        ]
+      },
+      {
+        "n": "High School Chemistry: Matter, Reactions & Energy",
+        "g": "Recommended grades 10–11",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Covers atomic structure, bonding, reactions, and quantitative chemistry through virtual or household-safe investigations.",
+        "s1": [
+          "Measurement and matter",
+          "Atomic structure and isotopes",
+          "Electron configuration",
+          "Periodic trends",
+          "Ionic and covalent bonding",
+          "Molecular geometry and intermolecular forces",
+          "Chemical equations"
+        ],
+        "s2": [
+          "Mole and stoichiometry",
+          "Gas behavior",
+          "Solutions and concentration",
+          "Thermochemistry",
+          "Reaction rates",
+          "Equilibrium",
+          "Acids, bases and pH",
+          "Redox and electrochemistry",
+          "Nuclear chemistry"
+        ]
+      },
+      {
+        "n": "Algebra-Based Physics: Mechanics, Waves & Electricity",
+        "g": "Recommended grades 10–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A complete introductory high-school physics course covering mechanics, waves, electricity, magnetism, and selected modern-physics concepts. It does not claim to cover the entire discipline of physics.",
+        "s1": [
+          "Measurement and vectors",
+          "One-dimensional motion",
+          "Two-dimensional motion",
+          "Forces and free-body diagrams",
+          "Circular motion and gravitation",
+          "Work, energy and power",
+          "Momentum and collisions"
+        ],
+        "s2": [
+          "Rotational motion",
+          "Simple harmonic motion",
+          "Waves and sound",
+          "Light and optics",
+          "Electrostatics",
+          "Electric circuits",
+          "Magnetism and induction",
+          "Modern and nuclear physics"
+        ]
+      },
+      {
+        "n": "Environmental Science",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Connects natural systems, human activity, evidence, policy, and possible solutions.",
+        "e": true,
+        "s1": [
+          "Earth systems",
+          "Ecosystems and biodiversity",
+          "Population ecology",
+          "Water resources",
+          "Soil and agriculture",
+          "Forests and land use",
+          "Energy resources"
+        ],
+        "s2": [
+          "Pollution and waste",
+          "Atmosphere and air quality",
+          "Climate science",
+          "Conservation",
+          "Environmental health",
+          "Economics and policy",
+          "Sustainability solutions",
+          "Local environmental investigation"
+        ]
+      },
+      {
+        "n": "Anatomy & Physiology",
+        "g": "Grades 10–12",
+        "b": "9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "Studies human body structure, system interactions, and the maintenance of homeostasis.",
+        "u": [
+          "Anatomical language and homeostasis",
+          "Cells and tissues",
+          "Skeletal and muscular systems",
+          "Nervous and endocrine systems",
+          "Cardiovascular and respiratory systems",
+          "Digestive and urinary systems",
+          "Immune and reproductive systems",
+          "Health case study"
+        ]
+      },
+      {
+        "n": "Astronomy",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "A modern astronomy course extending from sky observation to stars, galaxies, and cosmology.",
+        "e": true,
+        "u": [
+          "Observing the sky",
+          "Light and telescopes",
+          "Solar system formation",
+          "Planets and small bodies",
+          "The Sun",
+          "Stars and stellar evolution",
+          "Galaxies",
+          "Expansion and cosmology",
+          "Astrobiology and space exploration"
+        ]
       }
     ]
   },
-
   {
-    subject: 'Social Studies',
-    color: 'linear-gradient(160deg, #f6b26b, #e8833a)',
-    courses: [
+    "subject": "Social Studies",
+    "color": "linear-gradient(160deg, #f6b26b, #e8833a)",
+    "courses": [
       {
-        n: 'Elementary Social Studies', g: 'Grades 3–5', b: '3-5', h: '60–80 hrs',
-        d: 'Communities, maps, and the basics of government and economics, anchored in the student’s own state and town.',
-        u: ['Communities and how they work', 'Maps, globes, and geography skills', 'Regions of the United States', 'Native nations and early settlement', 'State and local history', 'Government at three levels', 'Citizenship and civic responsibility', 'Needs, wants, goods, and services', 'Culture, holidays, and traditions', 'Using sources like a historian']
+        "n": "People, Communities & Our World",
+        "g": "Grades K–2",
+        "b": "K-2",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Introduces citizenship, family, community, rules, maps, the past, and the wider world through Kindergarten, Grade 1, and Grade 2 pathways.",
+        "s1": [
+          "Self, family and identity",
+          "Rules, fairness and responsibility",
+          "Classroom and community",
+          "Community helpers and institutions",
+          "Needs, wants and choices",
+          "Past, present and change"
+        ],
+        "s2": [
+          "Maps and globes",
+          "Land, water and place",
+          "Cultures and traditions",
+          "Leaders and symbols",
+          "How communities solve problems",
+          "The wider world",
+          "Young citizen project"
+        ]
       },
       {
-        n: 'World Geography', g: 'Grades 6–9', b: '6-8', h: '90–110 hrs',
-        d: 'Physical and human geography region by region, with map skills and data reading built into every unit.',
-        u: ['Reading maps and spatial data', 'Physical geography and landforms', 'Climate zones and biomes', 'Population and migration', 'Cities and urbanisation', 'Culture regions and language', 'Religion and cultural landscapes', 'Economic geography and trade', 'North and South America', 'Europe and Russia', 'Africa and the Middle East', 'Asia and Oceania', 'Environment and human impact']
+        "n": "Regions, Government & Early U.S. History",
+        "g": "Grades 3–5",
+        "b": "3-5",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A banded course with distinct pathways: Grade 3 local and state studies, Grade 4 regions and cultures, and Grade 5 early U.S. studies.",
+        "s1": [
+          "Inquiry and primary sources",
+          "Maps and geographic tools",
+          "Indigenous peoples and place",
+          "State and regional history",
+          "Regions and cultures of the Americas",
+          "Exploration and exchange",
+          "Colonization and its consequences"
+        ],
+        "s2": [
+          "Colonial societies",
+          "Revolution and founding ideas",
+          "Constitution and branches of government",
+          "Rights and responsibilities",
+          "Expansion and migration",
+          "Civil War and Reconstruction overview",
+          "Economics and resources",
+          "State-specific inquiry project"
+        ]
       },
       {
-        n: 'Civics and Government', g: 'Grades 6–9', b: '6-8', h: '80–100 hrs',
-        d: 'How American government is built, what it does, and how a citizen participates in it.',
-        u: ['Why government exists', 'Founding documents and principles', 'Federalism and the levels of government', 'The legislative branch', 'The executive branch', 'The judicial branch', 'How a bill becomes law', 'Rights and civil liberties', 'Civil rights and social movements', 'Voting and elections', 'Political parties and the media', 'State and local government', 'Being an active citizen']
+        "n": "World Geography & Cultures",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Uses physical and human geography to understand world regions and contemporary connections.",
+        "s1": [
+          "Geographic thinking and maps",
+          "Physical systems",
+          "Population and migration",
+          "Culture and identity",
+          "Economic systems and development",
+          "North America",
+          "Latin America"
+        ],
+        "s2": [
+          "Europe",
+          "Africa",
+          "Southwest and Central Asia",
+          "South and East Asia",
+          "Southeast Asia and Oceania",
+          "Globalization",
+          "Human–environment interaction",
+          "Regional inquiry project"
+        ]
       },
       {
-        n: 'US History', g: 'Grades 8–11', b: '9-12', h: '140–170 hrs',
-        d: 'A survey from before contact to the present, taught with primary sources and document-based writing.',
-        u: ['Indigenous America and first contact', 'Colonial settlement and slavery', 'Revolution and independence', 'The Constitution and the early republic', 'Expansion, reform, and the frontier', 'Sectionalism and the Civil War', 'Reconstruction', 'Industrialisation and immigration', 'The Progressive Era', 'Imperialism and the First World War', 'The 1920s and the Great Depression', 'The New Deal', 'The Second World War', 'The Cold War at home and abroad', 'The civil rights movement', 'The late twentieth century', 'The United States since 2000']
+        "n": "Ancient & World Civilizations",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Examines the development of societies, belief systems, trade, government, and culture from the first civilizations to the early modern world.",
+        "s1": [
+          "Historical evidence and chronology",
+          "First humans and agriculture",
+          "Mesopotamia",
+          "Ancient Egypt and Kush",
+          "Ancient India",
+          "Ancient China",
+          "Hebrews and early belief systems"
+        ],
+        "s2": [
+          "Greece",
+          "Rome",
+          "Byzantine and Islamic worlds",
+          "African kingdoms",
+          "Civilizations of the Americas",
+          "Medieval Europe",
+          "Renaissance and global exchange",
+          "Comparative civilizations project"
+        ]
       },
       {
-        n: 'World History', g: 'Grades 9–12', b: '9-12', h: '140–170 hrs',
-        d: 'A thematic survey of connection, exchange, and conflict from the first societies to the present.',
-        u: ['Early humans and the first societies', 'River valley civilisations', 'Classical empires and belief systems', 'Trade networks across Afro-Eurasia', 'Medieval states and cultural exchange', 'Land-based empires', 'Exploration and the first global age', 'The Atlantic world and forced migration', 'Enlightenment and revolutions', 'Industrialisation', 'Imperialism and resistance', 'The world wars', 'Decolonisation and the Cold War', 'Globalisation and the contemporary world']
+        "n": "U.S. History Foundations",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Introduces U.S. history with emphasis on causation, primary sources, citizenship, and competing perspectives.",
+        "s1": [
+          "Indigenous North America",
+          "Exploration and colonization",
+          "Colonial regions",
+          "Revolution",
+          "Constitution and new republic",
+          "Expansion and reform",
+          "Slavery and sectional conflict"
+        ],
+        "s2": [
+          "Civil War",
+          "Reconstruction",
+          "Industrialization and immigration",
+          "Progressive Era",
+          "World wars and Depression",
+          "Civil Rights era",
+          "Cold War",
+          "Contemporary United States",
+          "Civic inquiry project"
+        ]
       },
       {
-        n: 'US Government and Politics (advanced)', g: 'Grades 11–12', b: '9-12', h: '120–140 hrs',
-        d: 'A college-level treatment of institutions, behaviour, and constitutional interpretation, with required case study readings.',
-        u: ['Foundations of American democracy', 'The constitutional convention and ratification debate', 'Interactions among the branches', 'Bureaucracy and policy implementation', 'Civil liberties and the Bill of Rights', 'Civil rights and the Fourteenth Amendment', 'Landmark Supreme Court cases', 'Political ideologies and beliefs', 'Public opinion and polling', 'Political participation and voting behaviour', 'Campaigns, parties, and interest groups', 'Media and political communication']
+        "n": "Civics & Government",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "A practical course in government, rights, media literacy, and civic participation.",
+        "e": true,
+        "u": [
+          "Purposes and forms of government",
+          "Constitutional principles",
+          "Three branches",
+          "Federal, state and local government",
+          "Rights and responsibilities",
+          "Elections and public opinion",
+          "Media and source evaluation",
+          "Public policy",
+          "Community action project"
+        ]
       },
       {
-        n: 'Economics', g: 'Grades 9–12', b: '9-12', h: '100–120 hrs',
-        d: 'Microeconomics and macroeconomics in one course, with real data from labour markets and national accounts.',
-        u: ['Scarcity, choice, and opportunity cost', 'Supply and demand', 'Markets, prices, and surplus', 'Elasticity', 'Firms, costs, and competition', 'Market structures', 'Labour markets and wages', 'Market failure and government intervention', 'Measuring the economy: GDP, inflation, unemployment', 'Money and banking', 'Fiscal policy', 'Monetary policy and the central bank', 'International trade and exchange rates', 'Economic growth and development']
+        "n": "World History",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "Studies global history through change, continuity, exchange, conflict, ideas, and institutions.",
+        "s1": [
+          "Historical inquiry",
+          "Early complex societies",
+          "Classical states and belief systems",
+          "Postclassical networks",
+          "Islamic worlds",
+          "African and American civilizations",
+          "Renaissance and Reformation",
+          "Maritime exchange"
+        ],
+        "s2": [
+          "Revolutions and Enlightenment",
+          "Industrialization and imperialism",
+          "World War I",
+          "Interwar period and totalitarianism",
+          "World War II and genocide",
+          "Cold War and decolonization",
+          "Globalization",
+          "Contemporary global challenges"
+        ]
       },
       {
-        n: 'Personal Finance', g: 'Grades 8–12', b: '9-12', h: '50–70 hrs',
-        d: 'A practical course on managing money, built around documents students will actually encounter.',
-        u: ['Setting financial goals', 'Income, paychecks, and benefits', 'Building a budget', 'Saving and emergency funds', 'Checking and savings accounts', 'Credit cards and credit scores', 'Student loans and debt repayment', 'Buying and insuring a car', 'Renting and home ownership', 'Types of insurance', 'Taxes and filing a return', 'Investing basics and compound growth', 'Retirement accounts', 'Recognising scams and fraud']
+        "n": "U.S. History",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Full year $199 · Semester $129",
+        "fmt": "Full year or semester",
+        "d": "A complete survey from pre-contact societies to the contemporary United States with primary-source analysis.",
+        "s1": [
+          "Indigenous societies and encounters",
+          "Colonization",
+          "Revolution",
+          "Constitution and early republic",
+          "Expansion and reform",
+          "Slavery and sectionalism",
+          "Civil War",
+          "Reconstruction"
+        ],
+        "s2": [
+          "Industrialization and immigration",
+          "Progressive Era",
+          "U.S. expansion",
+          "World War I",
+          "Great Depression and New Deal",
+          "World War II",
+          "Cold War",
+          "Civil Rights movements",
+          "Late twentieth century",
+          "United States since 2000"
+        ]
       },
       {
-        n: 'Art History', g: 'Grades 9–12', b: 'Elective', h: '90–110 hrs', e: true,
-        d: 'A global survey of visual culture, with close looking at individual works in every unit.',
-        u: ['How to look at art', 'Prehistoric and ancient art', 'Classical Greece and Rome', 'Byzantine and medieval art', 'Art of the Islamic world', 'The Italian Renaissance', 'The Northern Renaissance', 'Baroque and Rococo', 'Art of South and East Asia', 'Art of Africa and the Indigenous Americas', 'Art of the Pacific', 'Nineteenth-century movements', 'Modernism and the avant-garde', 'Contemporary and global art']
+        "n": "U.S. Government & Civics",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "Covers constitutional government, civil liberties, elections, institutions, and public policy.",
+        "u": [
+          "Foundations of American government",
+          "Constitution and federalism",
+          "Congress",
+          "Presidency and bureaucracy",
+          "Courts and civil liberties",
+          "Civil rights",
+          "Parties, elections and voting",
+          "Media and public opinion",
+          "State and local government",
+          "Policy analysis and civic participation"
+        ]
       },
       {
-        n: 'Psychology', g: 'Grades 11–12', b: 'Elective', h: '100–120 hrs', e: true,
-        d: 'An introduction to the science of behaviour and mental processes, including research methods and statistics in context.',
-        u: ['Scientific foundations of psychology', 'Research methods and ethics', 'Biological bases of behaviour', 'Sensation and perception', 'Consciousness and sleep', 'Learning and conditioning', 'Memory', 'Cognition, language, and intelligence', 'Developmental psychology', 'Motivation and emotion', 'Personality theories', 'Psychological disorders', 'Treatment and therapy', 'Social psychology']
+        "n": "Economics",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "Introduces microeconomics, macroeconomics, and international economics through real decisions.",
+        "e": true,
+        "u": [
+          "Scarcity and choice",
+          "Incentives and opportunity cost",
+          "Supply, demand and prices",
+          "Firms, competition and market structures",
+          "Labor and income",
+          "Market failures and government",
+          "GDP, growth and productivity",
+          "Inflation and unemployment",
+          "Money and monetary policy",
+          "Fiscal policy",
+          "Trade and globalization"
+        ]
+      },
+      {
+        "n": "Psychology",
+        "g": "Grades 10–12",
+        "b": "9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "A scientific introduction to behavior and mental processes that explicitly avoids self-diagnosis.",
+        "e": true,
+        "u": [
+          "Foundations, research and ethics",
+          "Biological bases of behavior",
+          "Sensation and perception",
+          "Consciousness and sleep",
+          "Learning",
+          "Memory and cognition",
+          "Human development",
+          "Motivation and emotion",
+          "Personality",
+          "Psychological disorders and treatment",
+          "Social psychology"
+        ]
+      },
+      {
+        "n": "Art History & Visual Culture",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "An analytical course—not a studio-art course—about how images, architecture, and objects express power, belief, identity, and social change.",
+        "e": true,
+        "u": [
+          "How to look at art",
+          "Methods and visual analysis",
+          "Ancient worlds",
+          "Sacred art and architecture",
+          "Asia, Africa and the Islamic world",
+          "Renaissance and early modern Europe",
+          "Art of the Americas",
+          "Revolution, industry and modernity",
+          "Modernisms",
+          "Contemporary art, museums and cultural heritage"
+        ]
+      },
+      {
+        "n": "Philosophy, Ethics & Ideas",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "Introduces philosophical inquiry and applies ethical reasoning to personal, social, and technological dilemmas.",
+        "e": true,
+        "u": [
+          "What is a philosophical question?",
+          "Arguments, logic and fallacies",
+          "Knowledge, evidence and truth",
+          "Self, mind and free will",
+          "Major ethical frameworks",
+          "Rights, justice and social contract",
+          "Applied ethics",
+          "Technology and AI ethics",
+          "Structured dialogue and final position paper"
+        ]
       }
     ]
   },
-
   {
-    subject: 'Languages',
-    color: 'linear-gradient(160deg, #9f7bec, #7048c9)',
-    note: 'Our Languages department covers two tracks: English language arts for native and fluent speakers, and world languages taught from the beginning.',
-    courses: [
+    "subject": "AI & Digital Literacy",
+    "color": "linear-gradient(160deg, #5ec8d6, #2a8ea3)",
+    "courses": [
       {
-        n: 'Reading and Vocabulary, Grades 2–3', g: 'Grades 2–3', b: 'K-2', h: '70–90 hrs', track: 'English language arts',
-        d: 'Decoding, fluency, and the first comprehension strategies, with a vocabulary bank the student builds over the year.',
-        u: ['Phonics review and word attack', 'Reading fluency and expression', 'Story elements: character, setting, plot', 'Main idea and supporting details', 'Sequence and retelling', 'Context clues', 'Prefixes, suffixes, and roots', 'Reading informational texts', 'Asking and answering questions about a text', 'Building a personal word bank']
+        "n": "Digital World & Online Safety",
+        "g": "Grades 3–5",
+        "b": "3-5",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "Builds foundational literacy for students who learn, communicate, and create in digital environments.",
+        "u": [
+          "Devices, software and files",
+          "Accounts and strong passwords",
+          "Privacy and personal information",
+          "Search and source basics",
+          "Digital communication and kindness",
+          "Scams, ads and manipulation",
+          "Copyright and giving credit",
+          "Healthy technology habits",
+          "Digital citizenship project"
+        ]
       },
       {
-        n: 'Reading and Vocabulary, Grades 4–5', g: 'Grades 4–5', b: '3-5', h: '80–100 hrs', track: 'English language arts',
-        d: 'Summary, theme, and text structure, with a first look at how authors build an argument.',
-        u: ['Summarising a text', 'Theme and central message', 'Character development and motivation', 'Point of view', 'Text structure in nonfiction', 'Comparing two texts on one topic', 'Figurative language', 'Author’s craft and word choice', 'Academic vocabulary', 'Greek and Latin roots']
+        "n": "AI Explorations",
+        "g": "Grades 3–5",
+        "b": "3-5",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "An age-appropriate introduction to AI through everyday examples, classification, patterns, and responsible choices, without unsupervised access to unsuitable tools.",
+        "e": true,
+        "u": [
+          "Where we meet AI",
+          "Humans, rules and learned patterns",
+          "Data teaches systems",
+          "Classification and prediction",
+          "Why AI makes mistakes",
+          "Fairness and privacy",
+          "Asking AI safely with an adult",
+          "Explain-an-AI project"
+        ]
       },
       {
-        n: 'Reading and Vocabulary, Grades 6–8', g: 'Grades 6–8', b: '6-8', h: '90–110 hrs', track: 'English language arts',
-        d: 'Close reading and evidence-based analysis across fiction, nonfiction, poetry, and drama.',
-        u: ['Close reading and annotation', 'Central idea and supporting evidence', 'Author’s purpose and tone', 'Argument, claim, and counterclaim', 'Evaluating evidence and reasoning', 'Analysing poetry', 'Analysing drama', 'Comparing accounts across media', 'Word relationships and connotation', 'Domain-specific vocabulary']
+        "n": "AI Literacy & Responsible Use",
+        "g": "Grades 6–8",
+        "b": "6-8",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "Teaches students to understand AI limitations, verify outputs, and preserve human agency—not merely to enter prompts.",
+        "e": true,
+        "u": [
+          "What counts as AI",
+          "Data, patterns and models",
+          "Generative AI and language models",
+          "Prompt, context and iteration",
+          "Hallucinations and verification",
+          "Bias and representation",
+          "Privacy, safety and digital footprint",
+          "Copyright and attribution",
+          "Human accountability",
+          "Responsible-use portfolio"
+        ]
       },
       {
-        n: 'Reading and Literature, Grades 9–12', g: 'Grades 9–12', b: '9-12', h: '120–150 hrs', track: 'English language arts',
-        d: 'A literature course organised by form, with historical context and comparative reading built in.',
-        u: ['Literary analysis essentials', 'The short story', 'The novel', 'Poetry and poetic form', 'Drama and Shakespeare', 'Rhetoric and persuasive texts', 'Nonfiction and the essay', 'Historical and cultural context', 'Literary criticism and lenses', 'Comparative and world literature', 'Research and source evaluation', 'Independent reading project']
+        "n": "Applied AI for Learning & Creation",
+        "g": "Grades 8–12",
+        "b": "6-8,9-12",
+        "p": "Specialty $169",
+        "fmt": "Specialty",
+        "d": "A practical course in building verifiable AI-assisted workflows for research, learning, writing, and problem-solving.",
+        "e": true,
+        "u": [
+          "Choosing the right problem",
+          "Designing effective instructions",
+          "Research with source verification",
+          "Reading and knowledge synthesis",
+          "Writing without losing authorship",
+          "Data and document analysis",
+          "Multimodal creation",
+          "Feedback and iteration",
+          "Automation without code",
+          "Capstone workflow with audit trail"
+        ]
       },
       {
-        n: 'Grammar and Usage, Grades 3–8', g: 'Grades 3–8', b: '3-5', h: '50–70 hrs', track: 'English language arts',
-        d: 'A reference-style course students can take straight through or dip into when a specific rule causes trouble.',
-        u: ['Parts of speech', 'Sentence structure and types', 'Subject–verb agreement', 'Verb tense and aspect', 'Pronouns and antecedents', 'Adjectives, adverbs, and modifiers', 'Phrases and clauses', 'Punctuation', 'Capitalisation and spelling patterns', 'Commonly confused words', 'Editing for clarity']
+        "n": "Data, Models & How AI Works",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Specialty $169",
+        "fmt": "Specialty",
+        "d": "Conceptual technical literacy explaining what happens between data, training, a model, and its output, without requiring Python.",
+        "e": true,
+        "u": [
+          "Data representation",
+          "Labels, features and patterns",
+          "Training, validation and testing",
+          "Classification and prediction",
+          "Neural-network intuition",
+          "Language models and tokens",
+          "Embeddings and similarity",
+          "Generative models",
+          "Evaluation and benchmarks",
+          "Failure modes, security and model limitations",
+          "No-code model investigation"
+        ]
       },
       {
-        n: 'Writing and Composition, Grades 4–8', g: 'Grades 4–8', b: '6-8', h: '70–90 hrs', track: 'English language arts',
-        d: 'The full writing process across four modes, with revision treated as a skill in its own right.',
-        u: ['The writing process', 'Narrative writing', 'Descriptive writing', 'Informative and explanatory writing', 'Opinion and argument writing', 'Paragraph structure', 'Organising a multi-paragraph essay', 'Transitions and cohesion', 'Revising and editing', 'Finding and citing sources', 'Publishing and presenting']
+        "n": "AI Ethics, Society & Future of Work",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "Examines the effects of AI on rights, institutions, labor, media, education, and personal decision-making.",
+        "e": true,
+        "u": [
+          "Human agency and accountability",
+          "Privacy and surveillance",
+          "Bias, fairness and inclusion",
+          "Misinformation and synthetic media",
+          "Copyright and creative ownership",
+          "AI in education and assessment",
+          "Jobs, automation and new roles",
+          "Environmental and social costs",
+          "Governance and regulation",
+          "Policy debate and future-of-work plan"
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "Life & Career Skills",
+    "color": "linear-gradient(160deg, #f08ab0, #d45a86)",
+    "courses": [
+      {
+        "n": "Personal Finance",
+        "g": "Grades 8–12",
+        "b": "6-8,9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "A complete decision-making course that is broader than Financial Mathematics because it includes behavior, products, risks, and consumer choices.",
+        "u": [
+          "Earning income",
+          "Taxes and paychecks",
+          "Spending plans",
+          "Saving and emergency funds",
+          "Banking",
+          "Credit and debt",
+          "Education and borrowing",
+          "Insurance",
+          "Investing and retirement",
+          "Fraud and consumer protection",
+          "Personal financial plan"
+        ]
       },
       {
-        n: 'Academic Writing, Grades 9–12', g: 'Grades 9–12', b: '9-12', h: '80–100 hrs', track: 'English language arts',
-        d: 'Thesis-driven writing for high school and college, including the research paper and the application essay.',
-        u: ['Thesis and argument', 'Evidence and analysis', 'Essay organisation', 'Rhetorical strategies', 'Counterargument and concession', 'The research paper', 'Citation styles and academic honesty', 'Style, voice, and sentence variety', 'Timed and on-demand writing', 'The college application essay', 'Peer review and revision']
+        "n": "Study Skills & Executive Function",
+        "g": "Grades 6–12",
+        "b": "6-8,9-12",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "The course is built around the student's real academic tasks; its shorter duration does not imply lower value.",
+        "e": true,
+        "u": [
+          "Learning profile and baseline",
+          "Goals and realistic planning",
+          "Time estimation and weekly scheduling",
+          "Starting tasks and overcoming avoidance",
+          "Attention and distraction management",
+          "Notes and active reading",
+          "Memory and retrieval practice",
+          "Breaking down long projects",
+          "Assessment preparation",
+          "Personal learning system"
+        ]
       },
       {
-        n: 'Speaking and Listening, Grades 6–12', g: 'Grades 6–12', b: 'Elective', h: '40–60 hrs', e: true, track: 'English language arts',
-        d: 'Presentation, discussion, and debate skills, practised out loud and recorded for parent review.',
-        u: ['Preparing a presentation', 'Delivery, pacing, and body language', 'Visual aids that help', 'Academic discussion norms', 'Structured debate', 'Active listening and note-taking', 'Evaluating spoken arguments', 'Interviewing and asking questions', 'Collaborative projects']
+        "n": "Public Speaking & Communication",
+        "g": "Grades 6–12",
+        "b": "6-8,9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "Develops oral communication through recorded submissions, reflection, and revision.",
+        "u": [
+          "Audience and purpose",
+          "Organizing a talk",
+          "Voice, pacing and body language",
+          "Storytelling",
+          "Informative speaking",
+          "Persuasive speaking",
+          "Evidence and visual support",
+          "Active listening",
+          "Discussion and interviewing",
+          "Debate",
+          "Final recorded presentation"
+        ]
       },
       {
-        n: 'English as an Additional Language: Foundations', g: 'Beginner', b: 'Elective', h: '80–100 hrs', e: true, track: 'English for new speakers',
-        d: 'For students whose first language is not English. Everyday communication first, academic English second.',
-        u: ['Survival vocabulary', 'Sounds, stress, and pronunciation', 'Present simple and present continuous', 'Nouns, articles, and plurals', 'Basic question forms', 'Everyday conversations', 'Numbers, time, and money', 'Reading short texts', 'Writing simple sentences', 'Listening for key information']
+        "n": "Career Exploration",
+        "g": "Grades 8–12",
+        "b": "6-8,9-12",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "An investigation of career clusters, skills, education routes, and real trade-offs—not a simplistic career-matching quiz.",
+        "e": true,
+        "u": [
+          "Interests, values and strengths",
+          "Jobs, occupations and career paths",
+          "Career clusters",
+          "Researching labor-market information",
+          "Skills and employability",
+          "Education, training and credentials",
+          "Comparing cost and opportunity",
+          "Informational interview",
+          "Personal pathway map"
+        ]
       },
       {
-        n: 'English as an Additional Language: Intermediate', g: 'Intermediate', b: 'Elective', h: '90–110 hrs', e: true, track: 'English for new speakers',
-        d: 'Bridging from conversational English to the academic English needed for other courses.',
-        u: ['Past and future tenses', 'Perfect tenses', 'Modal verbs', 'Conditionals', 'Passive voice', 'Phrasal verbs and collocations', 'Academic vocabulary', 'Reading longer texts for detail', 'Paragraph and essay writing', 'Note-taking from lectures', 'Discussion and presentation skills']
+        "n": "Entrepreneurship",
+        "g": "Grades 9–12",
+        "b": "9-12",
+        "p": "Specialty $149",
+        "fmt": "Specialty",
+        "d": "Moves from problem discovery to a testable small-venture concept with a budget and pitch.",
+        "e": true,
+        "u": [
+          "Entrepreneurial mindset and ethics",
+          "Finding real problems",
+          "Customer discovery",
+          "Value proposition",
+          "Market and competitor research",
+          "Business models",
+          "Costs, pricing and simple finance",
+          "Marketing and sales",
+          "Operations and risk",
+          "Prototype or minimum viable offer",
+          "Pitch and reflection"
+        ]
       },
       {
-        n: 'Spanish I', g: 'Grades 6–12 · Novice', b: '6-8', h: '100–120 hrs', track: 'World languages',
-        d: 'A first year of Spanish built around speaking from day one.',
-        u: ['Greetings and introductions', 'The alphabet and pronunciation', 'Numbers, dates, and time', 'Nouns, articles, and gender', 'Present tense of regular verbs', 'Ser and estar', 'Common irregular verbs', 'Adjectives and agreement', 'Family and describing people', 'Daily routine', 'Food and ordering', 'School and the classroom', 'Asking questions', 'Culture: the Spanish-speaking world']
-      },
-      {
-        n: 'Spanish II', g: 'Grades 7–12 · Novice high', b: '9-12', h: '100–120 hrs', track: 'World languages',
-        d: 'The past tenses, pronouns, and commands — the year where students start telling stories rather than listing facts.',
-        u: ['Preterite tense', 'Imperfect tense', 'Choosing between preterite and imperfect', 'Reflexive verbs', 'Direct and indirect object pronouns', 'Formal and informal commands', 'Comparisons and superlatives', 'Travel and directions', 'Health and the body', 'Shopping and money', 'Weather and seasons', 'Culture: festivals and traditions']
-      },
-      {
-        n: 'Spanish III', g: 'Grades 9–12 · Intermediate', b: '9-12', h: '110–130 hrs', track: 'World languages',
-        d: 'The subjunctive, complex tenses, and reading authentic texts. Discussion and written opinion become the main assessments.',
-        u: ['The present subjunctive', 'The imperfect subjunctive', 'Future and conditional', 'Perfect tenses', 'Por and para', 'Relative pronouns', 'Passive and impersonal constructions', 'Expressing opinion and debating', 'Reading short literary texts', 'Formal and informal writing', 'Culture: film, music, and current events']
-      },
-      {
-        n: 'French I', g: 'Grades 6–12 · Novice', b: '6-8', h: '100–120 hrs', track: 'World languages',
-        d: 'A first year of French with heavy emphasis on pronunciation and listening, since French spelling and sound diverge early.',
-        u: ['Greetings and classroom language', 'Pronunciation, accents, and liaison', 'Numbers, dates, and time', 'Nouns, articles, and gender', 'Present tense of -er, -ir, and -re verbs', 'Être, avoir, aller, and faire', 'Adjective agreement and placement', 'Family and home', 'Food and cafés', 'Hobbies and free time', 'Asking questions', 'Culture: France and la Francophonie']
-      },
-      {
-        n: 'French II', g: 'Grades 7–12 · Novice high', b: '9-12', h: '100–120 hrs', track: 'World languages',
-        d: 'Narrating in the past, using pronouns naturally, and handling practical situations abroad.',
-        u: ['Passé composé', 'Imparfait', 'Choosing between past tenses', 'Reflexive verbs', 'Object and adverbial pronouns', 'Futur proche and futur simple', 'Comparisons', 'Travel and transport', 'Health and daily life', 'Shopping and services', 'Housing and city life', 'Culture: art, cuisine, and cinema']
-      },
-      {
-        n: 'German I', g: 'Grades 7–12 · Novice', b: '9-12', h: '100–120 hrs', track: 'World languages',
-        d: 'A first year of German that treats the case system as the central skill rather than an afterthought.',
-        u: ['Pronunciation and the alphabet', 'Greetings and small talk', 'Numbers, dates, and time', 'Nouns, gender, and articles', 'Present tense verbs', 'The nominative case', 'The accusative case', 'Word order and sentence structure', 'Modal verbs', 'Separable-prefix verbs', 'Family and home', 'Food and shopping', 'Culture: German-speaking countries']
-      },
-      {
-        n: 'Mandarin Chinese I', g: 'Grades 7–12 · Novice', b: '9-12', h: '110–130 hrs', track: 'World languages',
-        d: 'Tones and characters from the start, with handwriting practice and audio drills built into every unit.',
-        u: ['Pinyin and the four tones', 'Greetings and self-introduction', 'Numbers, dates, and time', 'Basic sentence patterns', 'Measure words', 'Questions and question particles', 'Character writing fundamentals', 'Radicals and character components', 'Family and occupations', 'Food and ordering', 'Shopping and money', 'Directions and places', 'Culture: festivals and everyday life']
-      },
-      {
-        n: 'Latin I', g: 'Grades 8–12 · Novice', b: 'Elective', h: '90–110 hrs', e: true, track: 'World languages',
-        d: 'A reading-focused first year of Latin, with English vocabulary building as a deliberate side effect.',
-        u: ['Pronunciation and reading aloud', 'Nouns and the first declension', 'The second declension', 'Present tense conjugations', 'Cases and their uses', 'Adjectives and agreement', 'The third declension', 'Imperfect and perfect tenses', 'Prepositions and ablative uses', 'Reading adapted passages', 'Latin roots in English', 'Culture: Roman daily life']
+        "n": "Health & Wellness",
+        "g": "Grades 6–12",
+        "b": "6-8,9-12",
+        "p": "Semester $129",
+        "fmt": "Semester",
+        "d": "Builds evidence-based health decisions, protective behaviors, and navigation of reliable information. Sensitive topics are adapted by age and parental settings.",
+        "u": [
+          "Dimensions of health",
+          "Finding reliable health information",
+          "Nutrition and food decisions",
+          "Physical activity and sleep",
+          "Mental and emotional wellbeing",
+          "Stress and coping",
+          "Relationships, communication and boundaries",
+          "Substance-use prevention",
+          "Safety and first-response basics",
+          "Health services and advocacy",
+          "Personal wellness plan"
+        ]
       }
     ]
   }
@@ -359,33 +1971,48 @@ var CATALOG = [
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
+  function unitItems(c) {
+    if (c.s1 && c.s2) return c.s1.concat(c.s2);
+    return c.u || [];
+  }
+
+  function unitList(items) {
+    return '<ol class="units">' + items.map(function (u) { return '<li>' + esc(u) + '</li>'; }).join('') + '</ol>';
+  }
+
+  function unitsBlock(c) {
+    if (c.s1 && c.s2) {
+      return '<p class="units-label">Semester 1</p>' + unitList(c.s1) +
+        '<p class="units-label units-label-next">Semester 2</p>' + unitList(c.s2);
+    }
+    return '<p class="units-label">Units</p>' + unitList(c.u || []);
+  }
+
   var totalCourses = 0, totalUnits = 0;
 
   var html = '';
   CATALOG.forEach(function (group) {
     var courses = '';
     group.courses.forEach(function (c) {
+      var items = unitItems(c);
       totalCourses++;
-      totalUnits += c.u.length;
-      var haystack = (c.n + ' ' + c.g + ' ' + c.d + ' ' + (c.track || '') + ' ' + c.u.join(' ')).toLowerCase();
-      var units = c.u.map(function (u) { return '<li>' + esc(u) + '</li>'; }).join('');
+      totalUnits += items.length;
+      var haystack = (c.n + ' ' + c.g + ' ' + c.d + ' ' + (c.p || '') + ' ' + (c.fmt || '') + ' ' + items.join(' ')).toLowerCase();
       courses +=
-        '<details class="course-item" data-subject="' + esc(group.subject) + '" data-band="' + esc(c.b) + '" data-text="' + esc(haystack) + '">' +
+        '<details class="course-item" data-subject="' + esc(group.subject) + '" data-band="' + esc(c.b) + '" data-elective="' + (c.e ? '1' : '0') + '" data-text="' + esc(haystack) + '">' +
           '<summary>' +
             '<span class="course-name">' + esc(c.n) + '</span>' +
             '<span class="course-meta">' +
               '<span class="meta-pill">' + esc(c.g) + '</span>' +
-              '<span class="meta-pill">' + c.u.length + ' units</span>' +
-              '<span class="meta-pill">' + esc(c.h) + '</span>' +
-              (c.track ? '<span class="meta-pill">' + esc(c.track) + '</span>' : '') +
+              (c.p ? '<span class="meta-pill is-price">' + esc(c.p) + '</span>' : '') +
+              '<span class="meta-pill">' + items.length + ' units</span>' +
               (c.e ? '<span class="meta-pill is-elective">Elective</span>' : '') +
             '</span>' +
             '<span class="course-toggle" aria-hidden="true">+</span>' +
           '</summary>' +
           '<div class="course-body">' +
             '<p class="course-blurb">' + esc(c.d) + '</p>' +
-            '<p class="units-label">Scope and sequence</p>' +
-            '<ol class="units">' + units + '</ol>' +
+            unitsBlock(c) +
             '<p class="course-turnaround">Choose this course and we deliver the personalized version in <b>72 hours</b>.</p>' +
             '<div class="course-actions">' +
               '<a class="a-dark js-lead" href="#" data-intent="enroll" data-course="' + esc(c.n) + '">Choose this course →</a>' +
@@ -413,6 +2040,13 @@ var CATALOG = [
   var items = mount.querySelectorAll('.course-item');
   var blocks = mount.querySelectorAll('.subject-block');
 
+  function bandOk(item) {
+    if (state.band === 'all') return true;
+    if (state.band === 'Elective') return item.dataset.elective === '1';
+    var bands = (item.dataset.band || '').split(',');
+    return bands.indexOf(state.band) !== -1;
+  }
+
   function apply() {
     var shown = 0;
     var q = state.q.trim().toLowerCase();
@@ -420,7 +2054,7 @@ var CATALOG = [
     items.forEach(function (item) {
       var ok =
         (state.subject === 'all' || item.dataset.subject === state.subject) &&
-        (state.band === 'all' || item.dataset.band === state.band) &&
+        bandOk(item) &&
         (!q || item.dataset.text.indexOf(q) !== -1);
       item.hidden = !ok;
       if (ok) shown++;
