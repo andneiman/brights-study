@@ -57,7 +57,7 @@ Please do not provide a medical diagnosis, disability record, government identif
 
 We may collect:
 
-- lessons, modules, practice sets, and projects accessed or completed;
+- lessons, units, practice sets, and projects accessed or completed;
 - answers, assignments, project submissions, quizzes, assessment results, and completion status;
 - pacing, time and date of activity, milestones, recommended next steps, and topics to review;
 - course-support requests and whether the student requested additional explanation or practice; and

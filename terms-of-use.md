@@ -23,7 +23,7 @@ Students who are 18 or older may use the Services on their own behalf. If you us
 
 Brights provides personalized, self-paced curriculum and educational software. Courses may include a learning plan, structured lessons, worked examples, visual support, practice, review, projects, quizzes, assessments, an AI learning assistant, parent progress reporting, and a completion record or certificate.
 
-Each course is adapted from an established, standards-aligned academic framework. Personalization may change module sequence, pacing, examples, practice length, projects, review, format, and context based on information such as the student's grade or level, diagnostic results, goals, interests, learning preferences, reading needs, schedule, and available study time. Personalization does not change the stated learning objectives or guarantee a particular result.
+Each course is adapted from an established, standards-aligned academic framework. Personalization may change unit sequence, pacing, examples, practice length, projects, review, format, and context based on information such as the student's grade or level, diagnostic results, goals, interests, learning preferences, reading needs, schedule, and available study time. Personalization does not change the stated learning objectives or guarantee a particular result.
 
 Course descriptions, unit sequences, estimated completion times, standards mappings, required materials, technology requirements, price, and access period are provided on the applicable course or enrollment page and form part of these Terms.
 
@@ -83,7 +83,7 @@ We do not guarantee that an AI provider's models, systems, or outputs will be un
 
 ## 8. Parent dashboard and educational records
 
-The parent dashboard may display course progress, completed lessons and modules, recent activity, quiz and assessment results, strengths, topics to review, use of support features, recommended next steps, and upcoming milestones. Reports are informational and may contain errors or delays. Parents should review the underlying work and contact us about suspected errors.
+The parent dashboard may display course progress, completed lessons and units, recent activity, quiz and assessment results, strengths, topics to review, use of support features, recommended next steps, and upcoming milestones. Reports are informational and may contain errors or delays. Parents should review the underlying work and contact us about suspected errors.
 
 Brights records are not official school records unless an authorized school or program separately confirms otherwise in writing. Parents are responsible for retaining any records needed for homeschool, school, tax, reimbursement, or ESA purposes.
 
