@@ -1,8 +1,10 @@
 # Brights Terms of Use
 
-**Effective date:** August 26, 2026
+**Effective date:** September 11, 2026
 
-These Terms of Use (the **“Terms”**) are a binding agreement between you and **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**). They govern your access to and use of **brights.ai**, **brights.study**, **aplusbrights.com**, related parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, progress reports, course documentation, and other services we make available (collectively, the **“Services”**).
+These Terms of Use (the **“Terms”**) are a binding agreement between you and **Magent Tech Inc., a Delaware corporation** (**“Company,” “we,” “us,”** or **“our”**). They govern your access to and use of **brights.ai**, **brights.study**, **aplusbrights.com**, or other sales channels operated by the Company, including related parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, progress reports, course documentation, and other services we make available (collectively, the **“Services”**).
+
+The Company’s educational products and Services may be offered under the names Brights, Brights Study, A+ Brights, or K-12 Brights, collectively referred to in these Terms as **“Brights.”** These names identify the Company’s products and Services and do not refer to separate legal entities. All purchases are made from Magent Tech Inc.
 
 By creating an account, purchasing or accessing a course, or otherwise using the Services, you agree to these Terms and acknowledge our [Privacy Policy](./privacy-policy.md). If you do not agree, do not use the Services.
 
@@ -19,21 +21,21 @@ By creating an account for a student, you represent that:
 
 Students who are 18 or older may use the Services on their own behalf. If you use the Services for a student through an organization or Education Savings Account (**“ESA”**) program, you also represent that you are authorized to do so and will follow the applicable program rules.
 
-## 2. What Brights provides
+## 2. What the Services provide
 
-Brights provides personalized, self-paced curriculum and educational software. Courses may include a learning plan, structured lessons, worked examples, visual support, practice, review, projects, quizzes, assessments, an AI learning assistant, parent progress reporting, and a completion record or certificate.
+The Company provides personalized, self-paced curriculum and educational software. Courses may include a learning plan, structured lessons, worked examples, visual support, practice, review, projects, quizzes, assessments, an AI learning assistant, parent progress reporting, and a completion record or certificate.
 
 Each course is adapted from an established, standards-aligned academic framework. Personalization may change unit sequence, pacing, examples, practice length, projects, review, format, and context based on information such as the student's grade or level, diagnostic results, goals, interests, learning preferences, reading needs, schedule, and available study time. Personalization does not change the stated learning objectives or guarantee a particular result.
 
 Course descriptions, unit sequences, estimated completion times, standards mappings, required materials, technology requirements, price, and access period are provided on the applicable course or enrollment page and form part of these Terms.
 
-## 3. Brights is not a school or live tutoring service
+## 3. The Company is not a school or live tutoring service
 
-Brights is not an online school and does not enroll students in a school. Unless a specific written offering expressly states otherwise, Brights does not issue diplomas or transcripts, award grades or state-recognized academic credit, or make decisions about promotion, graduation, placement, special education eligibility, or compliance with homeschool requirements.
+The Company is not an online school and does not enroll students in a school. Unless a specific written offering expressly states otherwise, the Company does not issue diplomas or transcripts, award grades or state-recognized academic credit, or make decisions about promotion, graduation, placement, special education eligibility, or compliance with homeschool requirements.
 
 A Brights completion record or certificate confirms completion of our curriculum only. It is not an accredited diploma, transcript, professional credential, or state-recognized school credit.
 
-The AI learning assistant is an educational software feature, not a live human tutor, teacher, counselor, therapist, or emergency service. Brights does not replace a Parent's responsibility to supervise a child's education and determine whether the Services meet applicable education, homeschool, or ESA requirements.
+The AI learning assistant is an educational software feature, not a live human tutor, teacher, counselor, therapist, or emergency service. The Company does not replace a Parent's responsibility to supervise a child's education and determine whether the Services meet applicable education, homeschool, or ESA requirements.
 
 ## 4. Enrollment, onboarding, and course delivery
 
@@ -65,7 +67,7 @@ You and each student may use the Services only for personal, household, and lawf
 - remove copyright, trademark, attribution, or other proprietary notices; or
 - use the Services or their outputs to train, benchmark, or develop a competing model, product, or curriculum without our written permission.
 
-We may investigate suspected misuse and restrict or suspend access when reasonably necessary to protect students, other users, Brights, or the Services.
+We may investigate suspected misuse and restrict or suspend access when reasonably necessary to protect students, other users, the Company, or the Services.
 
 ## 7. AI learning assistant
 
@@ -79,13 +81,13 @@ We may change, restrict, or disable an AI feature when reasonably necessary for 
 
 We may select, replace, or use one or more AI technology providers in our reasonable discretion. When an AI provider receives personal information on our behalf to deliver the Services, we require it by contract to process that information only for specified service purposes, apply appropriate safeguards, follow applicable deletion requirements, and not use identifiable student content or children's personal information to train a general-purpose AI model or for the provider's independent purposes. Current operators that collect or maintain children's personal information are identified in the Privacy Policy. A provider change that materially affects the collection, use, or disclosure of children's personal information will be disclosed to Parents, and we will obtain new consent where required by law.
 
-We do not guarantee that an AI provider's models, systems, or outputs will be uninterrupted, error-free, or suitable for every educational purpose. This limitation does not reduce Brights' responsibilities under applicable privacy or children's-protection law.
+We do not guarantee that an AI provider's models, systems, or outputs will be uninterrupted, error-free, or suitable for every educational purpose. This limitation does not reduce the Company's responsibilities under applicable privacy or children's-protection law.
 
 ## 8. Parent dashboard and educational records
 
 The parent dashboard may display course progress, completed lessons and units, recent activity, quiz and assessment results, strengths, topics to review, use of support features, recommended next steps, and upcoming milestones. Reports are informational and may contain errors or delays. Parents should review the underlying work and contact us about suspected errors.
 
-Brights records are not official school records unless an authorized school or program separately confirms otherwise in writing. Parents are responsible for retaining any records needed for homeschool, school, tax, reimbursement, or ESA purposes.
+Records generated through the Services are not official school records unless an authorized school or program separately confirms otherwise in writing. Parents are responsible for retaining any records needed for homeschool, school, tax, reimbursement, or ESA purposes.
 
 ## 9. Fees, access periods, and payment
 
@@ -104,17 +106,23 @@ We may provide an itemized invoice, course description, syllabus, standards info
 
 ## 10. Cancellations and refunds
 
-You may cancel a course purchase for any reason and request a full refund of the course price within **30 calendar days after the original purchase date**. To request a refund, email **support@brights.study** from the Parent email address associated with the purchase and identify the order and course. The request is timely if sent before the end of the 30th calendar day.
+Except as provided in the [Refund Policy](./refund-policy.md) and this section, all course purchases are final and non-refundable once payment is completed. We do not offer a trial period, money-back guarantee, or change-of-mind refund. This applies whether or not you have completed onboarding, received or accessed the personalized course, started any lessons, or used any of the purchased Services.
 
-Approved refunds are returned to the original payment method. If an ESA marketplace, administrator, school, or other program paid for the course, the refund will be returned to that payer or handled through its required process; it will not be paid directly to the family unless the family was the original payer. Third-party processing times may apply. Access to the refunded course and its unused materials ends when the refund is approved.
+We do not provide full or partial refunds for a change of mind, an incorrect course selection, changes in personal circumstances or schedule, non-use, incomplete coursework, or unused access time. Discontinuing use, deleting an account, or requesting cancellation does not create a right to a refund or credit. Unused lessons, materials, or access time have no refundable cash value.
 
-After the 30-day period, purchases are non-refundable except where required by law, where our [Refund Policy](./refund-policy.md) provides otherwise, or where Brights fails to provide the purchased Service and does not provide a reasonable substitute or cure. The Refund Policy in effect when you purchase is incorporated into these Terms. If an ESA marketplace or program processes the payment, its mandatory cancellation and refund procedures may also apply.
+If you experience an access problem or believe the delivered course materially differs from its purchased description, contact **support@brights.study** so we can investigate and take appropriate corrective action. Reporting an issue does not automatically entitle you to a refund.
 
-Nothing in these Terms limits a refund or cancellation right that cannot lawfully be waived. If we cancel a paid course before delivery for a reason not caused by you, we will provide a refund or an equivalent remedy as required by law and the applicable refund policy.
+Nothing in these Terms excludes or limits any refund, cancellation, withdrawal, or other consumer right that cannot lawfully be waived. A refund or other remedy will be provided where required by applicable law or by mandatory terms or procedures of the ESA marketplace, administrator, school, scholarship program, or other purchasing organization governing the transaction.
+
+If we cancel a paid course for a reason not caused by the customer, or materially fail to provide the purchased Services and do not remedy that failure within a reasonable time, we will provide the refund or other remedy required by applicable law and the binding terms of the purchase. These exceptions do not create a general trial period or change-of-mind refund entitlement.
+
+Any required refund will be returned to the original payment method or original payer through the applicable payment or program workflow. If an ESA program, school, or other organization paid for the course, the refund will not be paid directly to the family unless the family was the original payer or applicable law requires otherwise. Payment-provider and program processing times may apply.
+
+If a full refund is issued for a course, access to that course and its associated digital materials will end. For a partial refund or another remedy, any adjustment to access will be explained when the remedy is confirmed. The [Refund Policy](./refund-policy.md) in effect when you purchase is incorporated into these Terms.
 
 ## 11. Intellectual property and license
 
-The Services—including course structure, lessons, assessments, graphics, software, interfaces, trademarks, and Brights-created content—are owned by Brights or its licensors and are protected by intellectual-property laws.
+The Services—including course structure, lessons, assessments, graphics, software, interfaces, trademarks, and Brights-created content—are owned by the Company or its licensors and are protected by intellectual-property laws.
 
 During the paid access period, and subject to these Terms, we grant the covered users a limited, personal, household, non-exclusive, non-transferable, non-sublicensable, and revocable license to access and use the purchased course for educational purposes. Where a course expressly provides printable materials, the Parent may print a reasonable number of copies for the covered student's use. No ownership rights are transferred.
 
@@ -122,7 +130,7 @@ During the paid access period, and subject to these Terms, we grant the covered 
 
 Parents and students may provide profile information, goals, interests, diagnostic responses, assignments, projects, questions, prompts, feedback, and other content (**“User Content”**). You retain any ownership rights you have in User Content.
 
-You grant Brights a limited, non-exclusive license to host, store, reproduce, process, adapt, and display User Content only as reasonably necessary to provide, personalize, secure, support, and improve the Services, comply with law, and enforce these Terms, subject to the Privacy Policy. This license ends when the content is deleted from our systems, except for limited backup retention and legal obligations described in the Privacy Policy.
+You grant the Company a limited, non-exclusive license to host, store, reproduce, process, adapt, and display User Content only as reasonably necessary to provide, personalize, secure, support, and improve the Services, comply with law, and enforce these Terms, subject to the Privacy Policy. This license ends when the content is deleted from our systems, except for limited backup retention and legal obligations described in the Privacy Policy.
 
 You represent that you have the rights and permissions needed to submit User Content. Do not upload third-party educational materials or personal information unless you are authorized to do so.
 
@@ -154,7 +162,7 @@ Sections that by their nature should survive termination—including payment obl
 
 ## 17. Disclaimers
 
-To the maximum extent permitted by law, the Services are provided **“as is”** and **“as available.”** Brights disclaims implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.
+To the maximum extent permitted by law, the Services are provided **“as is”** and **“as available.”** The Company disclaims implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.
 
 We do not guarantee any particular grade, score, academic outcome, mastery level, school acceptance, credit transfer, diploma, accreditation result, ESA approval, reimbursement, or compliance with a family's school, homeschool, or state requirements. Estimated completion times and recommendations are estimates, not promises.
 
@@ -162,15 +170,15 @@ Some jurisdictions do not allow certain disclaimers, so some of the above may no
 
 ## 18. Limitation of liability
 
-To the maximum extent permitted by law, Brights and its officers, employees, affiliates, licensors, and service providers will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost profits, revenues, data, goodwill, or educational opportunities, arising from or related to the Services.
+To the maximum extent permitted by law, The Company and its officers, employees, affiliates, licensors, and service providers will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost profits, revenues, data, goodwill, or educational opportunities, arising from or related to the Services.
 
-To the maximum extent permitted by law, our total aggregate liability arising from or related to the Services will not exceed the greater of: (a) the amount you paid Brights for the affected course during the 12 months before the event giving rise to the claim; or (b) **US $100**.
+To the maximum extent permitted by law, our total aggregate liability arising from or related to the Services will not exceed the greater of: (a) the amount you paid the Company for the affected course during the 12 months before the event giving rise to the claim; or (b) **US $100**.
 
 These limits do not apply to liability that cannot lawfully be limited, including liability for fraud, willful misconduct, or personal injury caused by negligence where applicable law prohibits a limitation.
 
 ## 19. Indemnity
 
-To the extent permitted by law, you agree to defend, indemnify, and hold Brights harmless from third-party claims, damages, and reasonable costs arising from your unlawful use of the Services, your material violation of these Terms, or User Content that infringes another person's rights. This section does not apply to claims caused by Brights' own misconduct and does not require a consumer to indemnify Brights where prohibited by law.
+To the extent permitted by law, you agree to defend, indemnify, and hold the Company harmless from third-party claims, damages, and reasonable costs arising from your unlawful use of the Services, your material violation of these Terms, or User Content that infringes another person's rights. This section does not apply to claims caused by the Company's own misconduct and does not require a consumer to indemnify the Company where prohibited by law.
 
 ## 20. Governing law and disputes
 
@@ -195,6 +203,6 @@ If any provision is unenforceable, it will be modified only as much as necessary
 ## 23. Contact us
 
 **Magent Tech Inc.**  
-Doing business as Brights  
 Delaware corporation, United States  
+Provider of Brights educational products and Services  
 Email: **support@brights.study**

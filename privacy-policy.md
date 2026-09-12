@@ -1,26 +1,28 @@
 # Brights Privacy Policy
 
-**Effective date:** August 26, 2026  
-**Last updated:** August 26, 2026
+**Effective date:** September 11, 2026  
+**Last updated:** September 11, 2026
 
-This Privacy Policy explains how **Magent Tech Inc., a Delaware corporation**, doing business as Brights (**“Brights,” “we,” “us,”** or **“our”**), collects, uses, discloses, retains, and protects personal information when families use **brights.ai**, **brights.study**, **aplusbrights.com**, parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, parent progress reporting, course documentation, and related services (collectively, the **“Services”**).
+This Privacy Policy explains how **Magent Tech Inc., a Delaware corporation** (**“Company,” “we,” “us,”** or **“our”**) collects, uses, discloses, retains, and protects personal information when families use **brights.ai**, **brights.study**, **aplusbrights.com**, or other sales channels operated by the Company, including parent and student accounts, personalized courses, diagnostic activities, the AI learning assistant, parent progress reporting, course documentation, and related services (collectively, the **“Services”**).
 
-Brights provides K–12 curriculum and educational software. Because children may use the Services, this Policy includes a dedicated children's privacy section and is intended to support compliance with the U.S. Children's Online Privacy Protection Act and Rule (**“COPPA”**).
+The Company’s educational products and Services may be offered under the names Brights, Brights Study, A+ Brights, or K-12 Brights, collectively referred to in this Policy as **“Brights.”** These names identify the Company’s products and Services and do not refer to separate legal entities.
+
+The Company provides K–12 curriculum and educational software. Because children may use the Services, this Policy includes a dedicated children's privacy section and is intended to support compliance with the U.S. Children's Online Privacy Protection Act and Rule (**“COPPA”**).
 
 ## 1. Contact and operator information
 
 The operator responsible for the Services is:
 
 **Magent Tech Inc.**  
-Doing business as Brights  
 Delaware corporation, United States  
+Provider of Brights educational products and Services  
 Email: **support@brights.study**
 
 The service providers that may collect or maintain children's personal information through the Services are identified in Section 8.
 
 ## 2. Scope
 
-This Policy applies to information collected through the Services and related support communications. It does not apply to a third-party website, ESA marketplace, payment provider, or other service that operates under its own privacy policy, except where that provider processes information for Brights on our instructions.
+This Policy applies to information collected through the Services and related support communications. It does not apply to a third-party website, ESA marketplace, payment provider, or other service that operates under its own privacy policy, except where that provider processes information for the Company on our instructions.
 
 The Services are designed so that a parent or legal guardian (**“Parent”**) creates and manages a minor student's account and access. A student profile is not a public social-media profile, and the Services are not designed to let children publicly post personal information.
 
@@ -109,7 +111,7 @@ We use personal information to:
 - communicate about accounts, courses, security, updates, and support;
 - maintain accessibility, quality, safety, fraud prevention, and technical performance;
 - debug, analyze, and improve the Services using aggregated or de-identified information where reasonably possible;
-- enforce our Terms of Use and protect users, Brights, and others; and
+- enforce our Terms of Use and protect users, the Company, and others; and
 - comply with legal, tax, accounting, reporting, and regulatory obligations.
 
 We will not condition a child's participation on disclosing more personal information than is reasonably necessary for the relevant activity.
@@ -132,7 +134,7 @@ At a Parent's direction, we may provide order, course, invoice, enrollment, or c
 
 ### D. Legal and safety reasons
 
-We may disclose information if we reasonably believe disclosure is necessary to comply with law or valid legal process; protect the rights, safety, or security of a child, user, Brights, or another person; investigate fraud, abuse, or security incidents; or enforce our agreements. We assess requests for children's information carefully and disclose no more than reasonably necessary.
+We may disclose information if we reasonably believe disclosure is necessary to comply with law or valid legal process; protect the rights, safety, or security of a child, user, the Company, or another person; investigate fraud, abuse, or security incidents; or enforce our agreements. We assess requests for children's information carefully and disclose no more than reasonably necessary.
 
 ### E. Business transactions
 
@@ -144,7 +146,7 @@ We may use and disclose information that has been aggregated or de-identified so
 
 ## 7. No sale, targeted advertising, or public profiles
 
-Brights does not sell personal information. Brights does not share personal information for cross-context behavioral advertising and does not use children's personal information for targeted advertising. We do not knowingly permit third-party advertising networks to collect personal information through student areas of the Services.
+The Company does not sell personal information. The Company does not share personal information for cross-context behavioral advertising and does not use children's personal information for targeted advertising. We do not knowingly permit third-party advertising networks to collect personal information through student areas of the Services.
 
 Student profiles, assignments, diagnostic answers, and AI conversations are not made public through the Services. We will not publicly identify a child in testimonials, marketing, or product examples without the Parent's separate, specific permission and any consent required by law.
 
@@ -167,7 +169,7 @@ Our primary consent methods are:
 
 If a Parent cannot or does not wish to use the primary method, we may offer verification through a video conference with trained personnel, a government-issued identification check followed by prompt deletion of the identification, or another method permitted by COPPA. We keep a record of the consent, the direct-notice version, the method, the date and time, the Parent account, and the covered student and purposes.
 
-Consent for the core educational Service does not authorize disclosure of children's information for targeted advertising or another non-integral third-party purpose. Brights does not engage in those practices. If we ever propose such a disclosure, we will request separate verifiable parental consent as required by law.
+Consent for the core educational Service does not authorize disclosure of children's information for targeted advertising or another non-integral third-party purpose. The Company does not engage in those practices. If we ever propose such a disclosure, we will request separate verifiable parental consent as required by law.
 
 ### B. Information collected from children
 
@@ -196,7 +198,7 @@ We do not require a child to provide more personal information than is reasonabl
 
 We retain personal information only for as long as reasonably necessary for the specific disclosed purpose, to provide the requested Service, and to meet legitimate legal or recordkeeping needs. Children's personal information is not retained indefinitely.
 
-The following retention schedule applies to Brights' systems:
+The following retention schedule applies to the Company's systems:
 
 | Category | Business need | Retention period and deletion timeframe |
 |---|---|---|
@@ -234,7 +236,7 @@ Depending on where you live and subject to legal exceptions, you may have the ri
 - appeal a denied request; and
 - receive equal service and pricing without unlawful discrimination for exercising privacy rights.
 
-Brights does not sell personal information or use it for targeted advertising. To submit a request, email **support@brights.study**. We may verify identity and authority before acting. An authorized agent may submit a request where permitted by law, but we may require proof of authorization and direct identity confirmation.
+The Company does not sell personal information or use it for targeted advertising. To submit a request, email **support@brights.study**. We may verify identity and authority before acting. An authorized agent may submit a request where permitted by law, but we may require proof of authorization and direct identity confirmation.
 
 If we deny a request, our response will explain the reason and any available appeal process. To appeal, email **support@brights.study** with the subject line “Privacy Appeal.”
 
@@ -261,4 +263,5 @@ Questions or requests about this Policy or children's privacy may be sent to:
 **Magent Tech Inc.**  
 Attn: Privacy / Children's Privacy  
 Delaware corporation, United States  
+Provider of Brights educational products and Services  
 Email: **support@brights.study**
