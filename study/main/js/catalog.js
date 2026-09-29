@@ -2220,7 +2220,7 @@ var CATALOG = [
       return res.json().then(function (data) {
         if (!res.ok) throw new Error((data && data.error) || 'Could not send');
         document.getElementById('lead-done').textContent =
-          'We sent the instructions to ' + email + '. If you don’t see them in a minute, check spam.';
+          'We received your request and will contact you at ' + email + '.';
         formStep.hidden = true;
         doneStep.hidden = false;
         sending = false;
