@@ -1171,15 +1171,19 @@ body.is-locked { overflow: hidden; }
 
 .lead-modal .serif { margin-top: 12px; font-size: 17px; }
 
-.lead-modal form { margin-top: 28px; display: flex; flex-direction: column; align-items: stretch; }
+.lead-modal form { margin-top: 22px; display: flex; flex-direction: column; align-items: stretch; gap: 14px; }
+
+.lead-modal-card { max-height: calc(100dvh - 48px); overflow: auto; }
 
 .lead-label {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 8px;
+  display: block;
 }
 
 .lead-input {
+  width: 100%;
   border: 1px solid var(--surface-strong);
   border-radius: 9999px;
   padding: 14px 20px;
@@ -1187,6 +1191,14 @@ body.is-locked { overflow: hidden; }
   font-size: 16px;
   color: var(--ink);
   background: #fff;
+}
+
+select.lead-input {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-40) 50%), linear-gradient(135deg, var(--ink-40) 50%, transparent 50%);
+  background-position: calc(100% - 22px) 50%, calc(100% - 16px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
 }
 
 .lead-input::placeholder { color: var(--ink-40); }

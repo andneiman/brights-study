@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  schemas  = ["course_leads"]
+}
+
+model CourseLead {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String
+  state     String
+  course    String
+  site      String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  ip        String?
+  userAgent String?  @map("user_agent") @db.Text
+  language  String?
+  country   String?
+  region    String?
+  city      String?
+  timezone  String?
+  referer   String?  @db.Text
+  source    String?
+  platform  String?
+
+  @@index([email])
+  @@index([createdAt])
+  @@map("leads")
+  @@schema("course_leads")
+}

@@ -4,9 +4,22 @@
       "source": "/",
       "destination": "/main",
       "permanent": true
+    },
+    {
+      "source": "/main/",
+      "destination": "/main",
+      "permanent": true
     }
   ],
   "rewrites": [
+    {
+      "source": "/u",
+      "destination": "/api/u"
+    },
+    {
+      "source": "/u/",
+      "destination": "/api/u"
+    },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "aplusbrights.com" }],

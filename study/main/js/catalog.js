@@ -2013,11 +2013,9 @@ var CATALOG = [
           '<div class="course-body">' +
             '<p class="course-blurb">' + esc(c.d) + '</p>' +
             unitsBlock(c) +
-            '<p class="course-turnaround">Choose this course and we deliver the personalized version in <b>72 hours</b>.</p>' +
+            '<p class="course-turnaround">Choose this course and we deliver the personalized version in <b>5 working days</b>.</p>' +
             '<div class="course-actions">' +
               '<a class="a-dark js-lead" href="#" data-intent="enroll" data-course="' + esc(c.n) + '">Choose this course →</a>' +
-              '<a class="a-light js-lead" href="#" data-intent="syllabus" data-course="' + esc(c.n) + '">Download syllabus</a>' +
-              '<a class="a-light" href="#states">Check ESA status</a>' +
             '</div>' +
           '</div>' +
         '</details>';
@@ -2101,55 +2099,54 @@ var CATALOG = [
 
   apply();
 
-  var COPY = {
-    enroll: {
-      title: 'Get this course',
-      body: 'Enter your email and we’ll send onboarding instructions and the materials to get started with {course}.',
-      submit: 'Send instructions'
-    },
-    syllabus: {
-      title: 'Get the syllabus',
-      body: 'Enter your email and we’ll send the syllabus and course materials for {course}.',
-      submit: 'Send syllabus'
-    }
-  };
-
   var modal = document.getElementById('lead-modal');
   if (!modal) return;
 
   var form = document.getElementById('lead-form');
+  var nameInput = document.getElementById('lead-name');
   var emailInput = document.getElementById('lead-email');
+  var phoneInput = document.getElementById('lead-phone');
+  var stateInput = document.getElementById('lead-state');
+  var courseInput = document.getElementById('lead-course');
   var errorEl = document.getElementById('lead-error');
   var submitBtn = document.getElementById('lead-submit');
   var formStep = modal.querySelector('[data-step="form"]');
   var doneStep = modal.querySelector('[data-step="done"]');
   var lastTrigger = null;
   var sending = false;
+  var currentCourse = '';
 
-  function setCopy(intent, course) {
-    var pack = COPY[intent] || COPY.enroll;
-    document.getElementById('lead-title').textContent = pack.title;
-    document.getElementById('lead-copy').textContent = pack.body.replace('{course}', course || 'this course');
-    submitBtn.textContent = pack.submit;
-    document.getElementById('lead-done').textContent =
-      'We sent the instructions and materials to ' + (emailInput.value.trim() || 'your email') +
-      '. If you don’t see them in a minute, check spam.';
+  function showError(message, field) {
+    errorEl.textContent = message;
+    errorEl.hidden = false;
+    [nameInput, emailInput, phoneInput, stateInput].forEach(function (el) {
+      el.removeAttribute('aria-invalid');
+    });
+    if (field) {
+      field.setAttribute('aria-invalid', 'true');
+      field.focus();
+    }
   }
 
   function openLead(intent, course, trigger) {
     lastTrigger = trigger || null;
+    currentCourse = course || '';
     sending = false;
     form.reset();
+    courseInput.value = currentCourse;
     errorEl.hidden = true;
-    emailInput.removeAttribute('aria-invalid');
+    [nameInput, emailInput, phoneInput, stateInput].forEach(function (el) {
+      el.removeAttribute('aria-invalid');
+    });
     submitBtn.disabled = false;
-    submitBtn.textContent = (COPY[intent] || COPY.enroll).submit;
+    submitBtn.textContent = 'Send instructions';
+    document.getElementById('lead-copy').textContent =
+      'Tell us how to reach you and we’ll send onboarding instructions for ' + (currentCourse || 'this course') + '.';
     formStep.hidden = false;
     doneStep.hidden = true;
-    setCopy(intent, course);
     modal.hidden = false;
     document.body.classList.add('is-locked');
-    window.setTimeout(function () { emailInput.focus(); }, 30);
+    window.setTimeout(function () { nameInput.focus(); }, 30);
   }
 
   function closeLead() {
@@ -2183,27 +2180,58 @@ var CATALOG = [
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (sending) return;
-    var value = emailInput.value.trim();
-    if (!validEmail(value)) {
-      errorEl.hidden = false;
-      emailInput.setAttribute('aria-invalid', 'true');
-      emailInput.focus();
+    var name = nameInput.value.trim();
+    var email = emailInput.value.trim();
+    var phone = phoneInput.value.trim();
+    var state = stateInput.value;
+    var digits = phone.replace(/\D/g, '');
+    if (name.length < 1) {
+      showError('Enter your name.', nameInput);
+      return;
+    }
+    if (!validEmail(email)) {
+      showError('Enter a valid email address.', emailInput);
+      return;
+    }
+    if (digits.length < 7) {
+      showError('Enter a phone number.', phoneInput);
+      return;
+    }
+    if (!state) {
+      showError('Choose a state.', stateInput);
       return;
     }
     errorEl.hidden = true;
-    emailInput.removeAttribute('aria-invalid');
     sending = true;
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending…';
-    window.setTimeout(function () {
-      document.getElementById('lead-done').textContent =
-        'We sent the instructions and materials to ' + value +
-        '. If you don’t see them in a minute, check spam.';
-      formStep.hidden = true;
-      doneStep.hidden = false;
+    fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        phone: phone,
+        state: state,
+        course: courseInput.value || currentCourse,
+        source: 'course'
+      })
+    }).then(function (res) {
+      return res.json().then(function (data) {
+        if (!res.ok) throw new Error((data && data.error) || 'Could not send');
+        document.getElementById('lead-done').textContent =
+          'We sent the instructions to ' + email + '. If you don’t see them in a minute, check spam.';
+        formStep.hidden = true;
+        doneStep.hidden = false;
+        sending = false;
+        var doneBtn = doneStep.querySelector('[data-close]');
+        if (doneBtn) doneBtn.focus();
+      });
+    }).catch(function (err) {
       sending = false;
-      var doneBtn = doneStep.querySelector('[data-close]');
-      if (doneBtn) doneBtn.focus();
-    }, 700);
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send instructions';
+      showError(err.message || 'Could not send. Try again.');
+    });
   });
 })();
