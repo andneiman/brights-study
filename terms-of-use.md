@@ -25,7 +25,7 @@ Students who are 18 or older may use the Services on their own behalf. If you us
 
 The Company provides personalized, self-paced curriculum and educational software. Courses may include a learning plan, structured lessons, worked examples, visual support, practice, review, projects, quizzes, assessments, an AI learning assistant, parent progress reporting, and a completion record or certificate.
 
-Each course is adapted from an established, standards-aligned academic framework. Personalization may change unit sequence, pacing, examples, practice length, projects, review, format, and context based on information such as the student's grade or level, diagnostic results, goals, interests, learning preferences, reading needs, schedule, and available study time. Personalization does not change the stated learning objectives or guarantee a particular result.
+Each course is adapted from an established, standards-aligned academic framework. Personalization does not change the course units or the format in which the course is taught. It may change context, examples, pacing, and the amount of practice based on the student's interests, what they already know, what they still need to learn, and their goal, such as review or starting from scratch. Other requests are considered individually. Personalization does not change the stated learning objectives or guarantee a particular result.
 
 Course descriptions, unit sequences, estimated completion times, standards mappings, required materials, technology requirements, price, and access period are provided on the applicable course or enrollment page and form part of these Terms.
 

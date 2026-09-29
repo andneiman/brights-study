@@ -30,12 +30,12 @@
         '</div>' +
         '<div class="chips">' +
           '<span class="chip"><b>Interest:</b> ice hockey</span>' +
-          '<span class="chip"><b>Learns best with:</b> charts and pictures</span>' +
+          '<span class="chip"><b>Goal:</b> review, not from scratch</span>' +
           '<span class="chip"><b>Practice:</b> short sets, 6–8 items</span>' +
           '<span class="chip"><b>Schedule:</b> 3 × 20 min per week</span>' +
-          '<span class="chip"><b>Diagnostic:</b> strong on fractions</span>' +
-          '<span class="chip"><b>Needs review:</b> ratios</span>' +
-          '<span class="chip"><b>Reading:</b> shorter prompts</span>' +
+          '<span class="chip"><b>Already knows:</b> fractions</span>' +
+          '<span class="chip"><b>Still needs:</b> ratios</span>' +
+          '<span class="chip"><b>Other wishes:</b> considered individually</span>' +
         '</div>' +
       '</div>' +
 
