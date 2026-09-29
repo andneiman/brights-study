@@ -1963,7 +1963,10 @@ var CATALOG = [
   var empty = document.getElementById('empty');
   var count = document.getElementById('count');
   var search = document.getElementById('search');
-  if (!mount) return;
+  if (!mount) {
+    initLeadModal();
+    return;
+  }
 
   var state = { subject: 'all', band: 'all', q: '' };
 
@@ -2099,6 +2102,9 @@ var CATALOG = [
 
   apply();
 
+  initLeadModal();
+
+  function initLeadModal() {
   var modal = document.getElementById('lead-modal');
   if (!modal) return;
 
@@ -2234,4 +2240,5 @@ var CATALOG = [
       showError(err.message || 'Could not send. Try again.');
     });
   });
+  }
 })();

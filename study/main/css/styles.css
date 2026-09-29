@@ -815,6 +815,12 @@ h4 { font-size: 17px; font-weight: 600; line-height: 1.35; }
 .page-hero { padding: 56px 0 40px; }
 .page-hero .serif { max-width: 720px; margin-top: 20px; }
 
+.course-facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.course-page { padding-bottom: 72px; }
+.course-page .card .units { margin-bottom: 28px; }
+.course-page .card .units:last-child { margin-bottom: 0; }
+.course-page .course-turnaround { display: inline-block; }
+
 .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
 
 .filter {
