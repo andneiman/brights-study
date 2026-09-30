@@ -1,5 +1,5 @@
 /* Math course lists by state. Any / missing states use the Common Core list in catalog.js.
-   Descriptions are the parent descriptions from the standards sheet. Units follow that state's standards sequence. */
+   Descriptions are the parent descriptions from the standards sheet. Unit names come from the Course units column. */
 var MATH_STANDARDS = {
   "Texas": [
     {
@@ -10,14 +10,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to count to 100, read and write numbers, compare groups of objects, and add and subtract with small numbers using objects and pictures. They also learn to name shapes and to compare things by length, height and weight. Short, hands-on lessons build the number sense every later grade relies on.",
       "u": [
-        "Number and operations: understand how to represent and compare whole numbers, the relative position and magnitude of whole numbers, and relationships within the numeration system. (K.2A–I)",
-        "Number and operations: develop an understanding of addition and subtraction situations in order to solve problems. (K.3A–C)",
-        "Number and operations: identify coins in order to recognize the need for monetary transactions. (K.4)",
-        "Algebraic reasoning: identify the pattern in the number word list. (K.5)",
-        "Geometry and measurement: analyze attributes of two-dimensional shapes and three-dimensional solids to develop generalizations about their properties. (K.6A–F)",
-        "Geometry and measurement: directly compare measurable attributes. (K.7A–B)",
-        "Data analysis: collect and organize data to make it useful for interpreting information. (K.8A–C)",
-        "Personal financial literacy: manage one's financial resources effectively for lifetime financial security. (K.9A–D)"
+        "Numbers to 20 and their order",
+        "Comparing and ordering numbers",
+        "Adding and subtracting with objects and pictures",
+        "Coins and what they are worth",
+        "Number word patterns",
+        "Shapes and solids",
+        "Comparing length, weight, and capacity",
+        "Sorting and organizing data",
+        "Earning, saving, and spending"
       ]
     },
     {
@@ -28,14 +29,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets confident with adding and subtracting within 20, learns how two-digit numbers are built from tens and ones, and counts up to 120. They also measure with simple units, tell time to the hour and half hour, and work with shapes and simple graphs.",
       "u": [
-        "Number and operations: represent and compare whole numbers, the relative position and magnitude of whole numbers, and relationships within the numeration system related to place value. (1.2A–G)",
-        "Number and operations: develop and use strategies for whole number addition and subtraction computations in order to solve problems. (1.3A–F)",
-        "Number and operations: identify coins, their values, and the relationships among them in order to recognize the need for monetary transactions. (1.4A–C)",
-        "Algebraic reasoning: identify and apply number patterns within properties of numbers and operations in order to describe relationships. (1.5A–G)",
-        "Geometry and measurement: analyze attributes of two-dimensional shapes and three-dimensional solids to develop generalizations about their properties. (1.6A–H)",
-        "Geometry and measurement: select and use units to describe length and time. (1.7A–E)",
-        "Data analysis: organize data to make it useful for interpreting information and solving problems. (1.8A–C)",
-        "Personal financial literacy: manage one's financial resources effectively for lifetime financial security. (1.9A–D)"
+        "Place value to 120",
+        "Comparing and ordering whole numbers",
+        "Addition and subtraction strategies",
+        "Coins and their relationships",
+        "Number patterns and properties",
+        "Shapes and solids",
+        "Measuring length and telling time",
+        "Organizing and reading data",
+        "Spending, saving, and borrowing"
       ]
     },
     {
@@ -46,16 +48,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child adds and subtracts within 100 and learns place value up to 1,000. They measure length, tell time, count money, sort data into graphs, and meet the first ideas behind multiplication through equal groups.",
       "u": [
-        "Number and operations: understand how to represent and compare whole numbers, the relative position and magnitude of whole numbers, and relationships within the numeration system related to place value. (2.2A–F)",
-        "Number and operations: recognize and represent fractional units and communicates how they are used to name parts of a whole. (2.3A–D)",
-        "Number and operations: develop and use strategies and methods for whole number computations in order to solve addition and subtraction problems with efficiency and accuracy. (2.4A–D)",
-        "Number and operations: determine the value of coins in order to solve monetary transactions. (2.5A–B)",
-        "Number and operations: connect repeated addition and subtraction to multiplication and division situations that involve equal groupings and shares. (2.6A–B)",
-        "Algebraic reasoning: identify and apply number patterns within properties of numbers and operations in order to describe relationships. (2.7A–C)",
-        "Geometry and measurement: analyze attributes of two-dimensional shapes and three-dimensional solids to develop generalizations about their properties. (2.8A–E)",
-        "Geometry and measurement: select and use units to describe length, area, and time. (2.9A–G)",
-        "Data analysis: organize data to make it useful for interpreting information and solving problems. (2.10A–D)",
-        "Personal financial literacy: manage one's financial resources effectively for lifetime financial security. (2.11A–F)"
+        "Place value to 1,200",
+        "Fractional parts of a whole",
+        "Adding and subtracting with efficiency",
+        "Coin values and money transactions",
+        "Equal groups: multiplication and division",
+        "Number patterns and properties",
+        "Shapes and solids",
+        "Length, area, and time",
+        "Data displays",
+        "Personal finance: earning, saving, and giving"
       ]
     },
     {
@@ -66,14 +68,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "This is the year of multiplication and division: your child learns their times tables, meets fractions for the first time, and works with area and perimeter. They also practice reading time, measuring, and solving word problems in several steps.",
       "u": [
-        "Number and operations: represent and compare whole numbers and understand relationships related to place value. (3.2A–D)",
-        "Number and operations: represent and explain fractional units. (3.3A–H)",
-        "Number and operations: develop and use strategies and methods for whole number computations in order to solve problems with efficiency and accuracy. (3.4A–K)",
-        "Algebraic reasoning: analyze and create patterns and relationships. (3.5A–E)",
-        "Geometry and measurement: analyze attributes of two-dimensional geometric figures to develop generalizations about their properties. (3.6A–E)",
-        "Geometry and measurement: select appropriate units, strategies, and tools to solve problems involving customary and metric measurement. (3.7A–E)",
-        "Data analysis: solve problems by collecting, organizing, displaying, and interpreting data. (3.8A–B)",
-        "Personal financial literacy: manage one's financial resources effectively for lifetime financial security. (3.9A–F)"
+        "Place value and comparing whole numbers",
+        "Understanding fractions",
+        "Addition, subtraction, and estimation",
+        "Multiplication and division strategies",
+        "Patterns and number relationships",
+        "Properties of two-dimensional figures",
+        "Area and perimeter",
+        "Customary and metric measurement",
+        "Collecting and displaying data",
+        "Personal finance: income, saving, and credit"
       ]
     },
     {
@@ -84,15 +88,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with bigger numbers, multiplies and divides multi-digit numbers, and compares, adds and subtracts fractions and decimals. They also measure angles, classify shapes, and solve multi-step word problems.",
       "u": [
-        "Number and operations: represent, compare, and order whole numbers and decimals and understand relationships related to place value. (4.2A–H)",
-        "Number and operations: represent and generate fractions to solve problems. (4.3A–G)",
-        "Number and operations: develop and use strategies and methods for whole number computations and decimal sums and differences in order to solve problems with efficiency and accuracy. (4.4A–H)",
-        "Algebraic reasoning: develop concepts of expressions and equations. (4.5A–D)",
-        "Geometry and measurement: analyze geometric attributes in order to develop generalizations about their properties. (4.6A–D)",
-        "Geometry and measurement: solve problems involving angles less than or equal to 180 degrees. (4.7A–E)",
-        "Geometry and measurement: select appropriate customary and metric units, strategies, and tools to solve problems involving measurement. (4.8A–C)",
-        "Data analysis: solve problems by collecting, organizing, displaying, and interpreting data. (4.9A–B)",
-        "Personal financial literacy: manage one's financial resources effectively for lifetime financial security. (4.10A–E)"
+        "Place value of whole numbers and decimals",
+        "Fractions: representing, comparing, and generating",
+        "Adding and subtracting whole numbers and decimals",
+        "Multiplication and division of whole numbers",
+        "Expressions and equations",
+        "Geometric attributes of figures",
+        "Angles up to 180 degrees",
+        "Measurement with customary and metric units",
+        "Data displays and interpretation",
+        "Personal finance: income, budgeting, and saving"
       ]
     },
     {
@@ -103,15 +108,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to add, subtract, multiply and divide fractions and decimals, finds volume, and plots points on a coordinate grid. They get ready for middle school math with order of operations and problem solving.",
       "u": [
-        "Number and operations: represent, compare, and order positive rational numbers and understand relationships as related to place value. (5.2A–C)",
-        "Number and operations: develop and use strategies and methods for positive rational number computations in order to solve problems with efficiency and accuracy. (5.3A–L)",
-        "Algebraic reasoning: develop concepts of expressions and equations. (5.4A–H)",
-        "Geometry and measurement: classify two-dimensional figures by attributes and properties. (5.5)",
-        "Geometry and measurement: understand, recognize, and quantify volume. (5.6A–B)",
-        "Geometry and measurement: select appropriate units, strategies, and tools to solve problems involving measurement. (5.7)",
-        "Geometry and measurement: identify locations on a coordinate plane. (5.8A–C)",
-        "Data analysis: solve problems by collecting, organizing, displaying, and interpreting data. (5.9A–C)",
-        "Personal financial literacy: manage one's financial resources effectively for lifetime financial security. (5.10A–F)"
+        "Rational numbers and place value",
+        "Operations with decimals",
+        "Operations with fractions",
+        "Expressions and equations",
+        "Classifying two-dimensional figures",
+        "Volume",
+        "Measurement and unit conversion",
+        "Graphing on the coordinate plane",
+        "Collecting and displaying data",
+        "Personal finance: income, spending, and savings"
       ]
     },
     {
@@ -122,19 +128,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child steps into middle school math with ratios and rates, dividing fractions, negative numbers, and the first algebra: expressions and one-step equations. They also find area and volume and learn to describe data with averages and graphs.",
       "u": [
-        "Number and operations: represent and use rational numbers in a variety of forms. (6.2A–E)",
-        "Number and operations: represent addition, subtraction, multiplication, and division while solving problems and justifying solutions. (6.3A–E)",
-        "Proportionality: develop an understanding of proportional relationships in problem situations. (6.4A–H)",
-        "Proportionality: solve problems involving proportional relationships. (6.5A–C)",
-        "Expressions, equations, and relationships: use multiple representations to describe algebraic relationships. (6.6A–C)",
-        "Expressions, equations, and relationships: develop concepts of expressions and equations. (6.7A–D)",
-        "Expressions, equations, and relationships: use geometry to represent relationships and solve problems. (6.8A–D)",
-        "Expressions, equations, and relationships: use equations and inequalities to represent situations. (6.9A–C)",
-        "Expressions, equations, and relationships: use equations and inequalities to solve problems. (6.10A–B)",
-        "Measurement and data: use coordinate geometry to identify locations on a plane. (6.11)",
-        "Measurement and data: use numerical or graphical representations to analyze problems. (6.12A–D)",
-        "Measurement and data: use numerical or graphical representations to solve problems. (6.13A–B)",
-        "Personal financial literacy: develop an economic way of thinking and problem solving useful in one's life as a knowledgeable consumer and investor. (6.14A–H)"
+        "Rational numbers in different forms",
+        "Operations with rational numbers",
+        "Ratios and rates",
+        "Solving problems with proportional relationships",
+        "Representing algebraic relationships",
+        "Expressions and equations",
+        "Area, volume, and geometric relationships",
+        "Equations and inequalities",
+        "Graphing on the coordinate plane",
+        "Statistics: describing and comparing data",
+        "Personal finance: being a knowledgeable consumer and investor"
       ]
     },
     {
@@ -145,18 +149,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with proportions and percent, calculations with positive and negative numbers and fractions, and solving equations. They also study scale drawings, angles, circles, and basic probability and sampling.",
       "u": [
-        "Number and operations: represent and use rational numbers in a variety of forms. (7.2)",
-        "Number and operations: add, subtract, multiply, and divide while solving problems and justifying solutions. (7.3A–B)",
-        "Proportionality: represent and solve problems involving proportional relationships. (7.4A–E)",
-        "Proportionality: use geometry to describe or solve problems involving proportional relationships. (7.5A–C)",
-        "Proportionality: use probability and statistics to describe or solve problems involving proportional relationships. (7.6A–I)",
-        "Expressions, equations, and relationships: represent linear relationships using multiple representations. (7.7)",
-        "Expressions, equations, and relationships: develop geometric relationships with volume. (7.8A–C)",
-        "Expressions, equations, and relationships: solve geometric problems. (7.9A–D)",
-        "Expressions, equations, and relationships: use one-variable equations and inequalities to represent situations. (7.10A–C)",
-        "Expressions, equations, and relationships: solve one-variable equations and inequalities. (7.11A–C)",
-        "Measurement and data: use statistical representations to analyze data. (7.12A–C)",
-        "Personal financial literacy: develop an economic way of thinking and problem solving useful in one's life as a knowledgeable consumer and investor. (7.13A–F)"
+        "Rational numbers",
+        "Operations with rational numbers",
+        "Proportional relationships",
+        "Scale, similarity, and proportional geometry",
+        "Probability and statistics with proportions",
+        "Linear relationships",
+        "Volume and surface area",
+        "Solving geometric problems",
+        "One-variable equations and inequalities",
+        "Statistics: representing and analyzing data",
+        "Personal finance: consumer and investor decisions"
       ]
     },
     {
@@ -167,17 +170,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets ready for high school algebra: linear equations and graphs, functions, systems of equations, exponents and square roots. They also learn the Pythagorean Theorem, transformations, and how to read relationships in data.",
       "u": [
-        "Number and operations: represent and use real numbers in a variety of forms. (8.2A–D)",
-        "Proportionality: use proportional relationships to describe dilations. (8.3A–C)",
-        "Proportionality: explain proportional and non-proportional relationships involving slope. (8.4A–C)",
-        "Proportionality: use proportional and non-proportional relationships to develop foundational concepts of functions. (8.5A–I)",
-        "Expressions, equations, and relationships: develop mathematical relationships and make connections to geometric formulas. (8.6A–C)",
-        "Expressions, equations, and relationships: use geometry to solve problems. (8.7A–D)",
-        "Expressions, equations, and relationships: use one-variable equations or inequalities in problem situations. (8.8A–D)",
-        "Expressions, equations, and relationships: use multiple representations to develop foundational concepts of simultaneous linear equations. (8.9)",
-        "Two-dimensional shapes: develop transformational geometry concepts. (8.10A–D)",
-        "Measurement and data: use statistical procedures to describe data. (8.11A–C)",
-        "Personal financial literacy: develop an economic way of thinking and problem solving useful in one's life as a knowledgeable consumer and investor. (8.12A–G)"
+        "Real numbers",
+        "Dilations and proportional relationships",
+        "Slope",
+        "Foundations of functions",
+        "Geometric formulas and relationships",
+        "Solving geometric problems",
+        "One-variable equations and inequalities",
+        "Simultaneous linear equations",
+        "Transformational geometry",
+        "Describing data with statistics",
+        "Personal finance: consumer and investor decisions"
       ]
     },
     {
@@ -188,17 +191,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "The first full algebra course: your child solves linear equations and inequalities, graphs lines, works with systems of equations, exponents, polynomials and factoring, and meets quadratic and exponential functions. It is the gateway to all later high school math.",
       "u": [
-        "Linear functions, equations, and inequalities: properties of linear functions to write and represent in multiple ways, with and without technology, linear equations, inequalities, and systems of equations. ((2)A–I)",
-        "Linear functions, equations, and inequalities: graphs of linear functions, key features, and related transformations to represent in multiple ways and solve, with and without technology, equations, inequalities, and systems of equations. ((3)A–H)",
-        "Linear functions, equations, and inequalities: formulate statistical relationships and evaluate their reasonableness based on real-world data. ((4)A–C)",
-        "Linear functions, equations, and inequalities: solve, with and without technology, linear equations and evaluate the reasonableness of their solutions. ((5)A–C)",
-        "Quadratic functions and equations: properties of quadratic functions to write and represent in multiple ways, with and without technology, quadratic equations. ((6)A–C)",
-        "Quadratic functions and equations: graphs of quadratic functions and their related transformations to represent in multiple ways and determine, with and without technology, the solutions to equations. ((7)A–C)",
-        "Quadratic functions and equations: solve, with and without technology, quadratic equations and evaluate the reasonableness of their solutions. ((8)A–B)",
-        "Exponential functions and equations: properties of exponential functions and their related transformations to write, graph, and represent in multiple ways exponential equations and evaluate, with and without technology, the reasonableness of their solutions. ((9)A–E)",
-        "Number and algebraic methods: rewrite in equivalent forms and perform operations on polynomial expressions. ((10)A–F)",
-        "Number and algebraic methods: rewrite algebraic expressions into equivalent forms. ((11)A–B)",
-        "Number and algebraic methods: write, solve, analyze, and evaluate equations, relations, and functions. ((12)A–E)"
+        "Linear functions and their equations",
+        "Graphs of linear functions",
+        "Systems of linear equations and inequalities",
+        "Statistical relationships and lines of fit",
+        "Solving linear equations",
+        "Quadratic functions and their equations",
+        "Graphs and transformations of quadratics",
+        "Solving quadratic equations",
+        "Exponential functions",
+        "Polynomial expressions",
+        "Equivalent forms of expressions",
+        "Equations, relations, and functions"
       ]
     },
     {
@@ -209,18 +213,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to reason and prove: angles, triangles and congruence, similarity, circles, area and volume, coordinates, and right-triangle trigonometry. The course builds logical thinking as much as geometry knowledge.",
       "u": [
-        "Coordinate and transformational geometry: understand the connections between algebra and geometry and uses the one- and two-dimensional coordinate systems to verify geometric conjectures. ((2)A–C)",
-        "Coordinate and transformational geometry: generate and describe rigid transformations (translation, reflection, and rotation) and non-rigid transformations (dilations that preserve similarity and reductions and enlargements that do not preserve similarity). ((3)A–D)",
-        "Logical argument and constructions: understand geometric relationships. ((4)A–D)",
-        "Logical argument and constructions: validate conjectures about geometric figures. ((5)A–D)",
-        "Proof and congruence: prove and apply theorems by using a variety of methods such as coordinate, transformational, and axiomatic and formats such as two-column, paragraph, and flow chart. ((6)A–E)",
-        "Similarity, proof, and trigonometry: solve problems. ((7)A–B)",
-        "Similarity, proof, and trigonometry: prove and apply theorems by using a variety of methods such as coordinate, transformational, and axiomatic and formats such as two-column, paragraph, and flow chart. ((8)A–B)",
-        "Similarity, proof, and trigonometry: understand and apply relationships in right triangles. ((9)A–B)",
-        "Two-dimensional and three-dimensional figures: recognize characteristics and dimensional changes of two- and three-dimensional figures. ((10)A–B)",
-        "Two-dimensional and three-dimensional figures: determine measures of two- and three-dimensional figures. ((11)A–D)",
-        "Circles: understand geometric relationships and apply theorems and equations about circles. ((12)A–E)",
-        "Probability: understand probability in real-world situations and how to apply independence and dependence of events. ((13)A–E)"
+        "Coordinate geometry",
+        "Rigid and non-rigid transformations",
+        "Geometric relationships and conjectures",
+        "Proof and congruence",
+        "Similarity and proof",
+        "Right triangles and trigonometry",
+        "Two- and three-dimensional figures",
+        "Measures of figures",
+        "Circles",
+        "Probability and independence"
       ]
     },
     {
@@ -231,13 +233,13 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child builds on Algebra I with polynomials, rational and radical expressions, exponential and logarithmic functions, complex numbers, and modeling with data. It prepares for precalculus, college math and science.",
       "u": [
-        "Attributes of functions and their inverses: understand that functions have distinct key attributes and understand the relationship between a function and its inverse. ((2)A–D)",
-        "Systems of equations and inequalities: formulate systems of equations and inequalities, use a variety of methods to solve, and analyze reasonableness of solutions. ((3)A–G)",
-        "Quadratic and square root functions, equations, and inequalities: understand that quadratic and square root functions, equations, and quadratic inequalities can be used to model situations, solve problems, and make predictions. ((4)A–H)",
-        "Exponential and logarithmic functions and equations: understand that exponential and logarithmic functions can be used to model situations and solve problems. ((5)A–E)",
-        "Cubic, cube root, absolute value and rational functions, equations, and inequalities: understand that cubic, cube root, absolute value and rational functions, equations, and inequalities can be used to model situations, solve problems, and make predictions. ((6)A–L)",
-        "Number and algebraic methods: simplify and perform operations on expressions and to solve equations. ((7)A–I)",
-        "Data: analyze data, select appropriate models, write corresponding functions, and make predictions. ((8)A–C)"
+        "Function attributes and inverses",
+        "Systems of equations and inequalities",
+        "Quadratic and square root functions",
+        "Exponential and logarithmic functions",
+        "Cubic, cube root, absolute value, and rational functions",
+        "Operations on expressions and solving equations",
+        "Data analysis and modeling"
       ]
     },
     {
@@ -248,10 +250,10 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Final preparation for calculus: functions in depth, trigonometry and the unit circle, polynomial and exponential models, sequences, and an introduction to vectors or matrices. For students aiming at STEM or college-level math.",
       "u": [
-        "Functions: explore, describe, and analyze the attributes of functions. ((2)A–P)",
-        "Relations and geometric reasoning: model and make connections between algebraic and geometric relations. ((3)A–I)",
-        "Number and measure: apply appropriate techniques, tools, and formulas to calculate measures in mathematical and real-world problems. ((4)A–K)",
-        "Algebraic reasoning: evaluate expressions, describe patterns, formulate models, and solve equations and inequalities using properties, procedures, or algorithms. ((5)A–N)"
+        "Exploring and analyzing functions",
+        "Algebraic and geometric relations",
+        "Measures in mathematical and real-world problems",
+        "Algebraic reasoning with equations and inequalities"
       ]
     },
     {
@@ -262,12 +264,12 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to collect, display and interpret data, understand probability, and judge claims made from data. Good for any student who will meet numbers in the news, science, business or social studies.",
       "u": [
-        "Statistical process sampling and experimentation: apply understandings about statistical studies, surveys, and experiments to design and conduct a study and use graphical, numerical, and analytical techniques to communicate the results of the study. ((2)A–G)",
-        "Variability. ((3)A–D)",
-        "Categorical and quantitative data: represent and analyze both categorical and quantitative data. ((4)A–F)",
-        "Probability and random variables: connect probability and statistics. ((5)A–D)",
-        "Inference: make inferences and justify conclusions from statistical studies. ((6)A–J)",
-        "Bivariate data: analyze relationships among bivariate quantitative data. ((7)A–F)"
+        "Designing statistical studies",
+        "Variability",
+        "Categorical and quantitative data",
+        "Probability and random variables",
+        "Inference and conclusions",
+        "Bivariate data"
       ],
       "e": true
     },
@@ -279,20 +281,20 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Texas accelerated middle-school path: Grade 6 math plus material from the next grade, so a strong student can reach Algebra I by Grade 8.",
       "u": [
-        "Numeracy—foundations of rational numbers: represent and use rational numbers in a variety of forms. ((2)A–H)",
-        "Numeracy—operations with rational numbers: represent addition, subtraction, multiplication, and division while solving problems and justifying solutions. ((3)A–I)",
-        "Numeracy—applications of percents: solve problems involving percents as proportional relationships. ((4)A–B)",
-        "Proportionality—foundations of ratios and rates: develop an understanding of proportional relationships in problem situations. ((5)A–D)",
-        "Proportionality—applications of ratios and rates: solve problems involving proportional relationships. ((6)A–C)",
-        "One-variable expressions, equations, and relationships—foundations of one-variable relationships: develop concepts of expressions and equations. ((7)A–C)",
-        "One-variable expressions, equations, and relationships—applications of one-variable relationships: use equations and inequalities to represent situations and solve problems. ((8)A–F)",
-        "Two-variable equations and relationships—foundations of linear relationships: use multiple representations to describe algebraic relationships. ((9)A–D)",
-        "Two-variable equations and relationships—applications of proportional relationships: represent and solve problems involving proportional relationships. ((10)A)",
-        "Geometric expressions, equations, and relationships—foundations of geometric concepts equations: use geometry to represent relationships. ((11)A–B)",
-        "Geometric expressions, equations, and relationships—applications of geometric concepts: use geometry to represent relationships and solve problems. ((12)A–D)",
-        "Data science—foundations of measurement and data: represent and analyze data. ((13)A–B)",
-        "Data science—applications of measurement and data: use numerical or graphical representations to analyze and solve problems. ((14)A–F)",
-        "Personal financial literacy—money management: develop an economic way of thinking and problem solving useful in one's life as a knowledgeable consumer and investor. ((15)A–G)"
+        "Foundations of rational numbers",
+        "Operations with rational numbers",
+        "Percents",
+        "Ratios and rates",
+        "Solving problems with proportions",
+        "One-variable expressions and equations",
+        "Solving equations and inequalities",
+        "Linear relationships",
+        "Proportional relationships in two variables",
+        "Geometric relationships",
+        "Applying geometry",
+        "Representing and analyzing data",
+        "Solving problems with data",
+        "Personal finance: money management"
       ]
     },
     {
@@ -303,19 +305,19 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Texas accelerated middle-school path that continues from the advanced Grade 6 course and leads to Algebra I in Grade 8.",
       "u": [
-        "Numeracy—foundations of real numbers: represent and use real numbers in a variety of forms. ((2)A–D)",
-        "Numeracy—operations with rational numbers: add, subtract, multiply, and divide while solving problems and justifying solutions. ((3)A–B)",
-        "Numeracy—applications of percents: represent and solve problems involving percents as proportional relationships. ((4)A–G)",
-        "Proportionality—geometric ratios: use geometry to describe or solve problems involving proportional relationships such as dilations. ((5)A–E)",
-        "Proportionality—probability: use probability and statistics to describe or solve problems involving proportional relationships. ((6)A–G)",
-        "One-variable expressions, equations, and relationships—applications of one-variable relationships: use one-variable equations or inequalities in problem situations. ((7)A–E)",
-        "Two-variable equations and relationships—foundations of linear relationships: use proportional and non-proportional relationships to develop foundational concepts of functions. ((8)A–C)",
-        "Two-variable equations and relationships—applications of linear relationships: represent linear relationships using multiple representations. ((9)A)",
-        "Geometric expressions, equations, and relationships—foundations of geometric concepts: develop geometric relationships and solve problems. ((10)A–H)",
-        "Geometric expressions, equations, and relationships—applications of geometric concepts: solve geometric problems. ((11)A–G)",
-        "Geometric expressions, equations, and relationships—transformations: develop transformational geometry concepts. ((12)A–D)",
-        "Data science—applications of measurement and data: use statistical representations and procedures to analyze and describe data. ((13)A–D)",
-        "Personal financial literacy—money management: develop an economic way of thinking and problem solving useful in one's life as a knowledgeable consumer and investor. ((14)A–C)"
+        "Real numbers",
+        "Operations with rational numbers",
+        "Percents and proportional relationships",
+        "Dilations and geometric ratios",
+        "Probability and statistics with proportions",
+        "One-variable equations and inequalities",
+        "Foundations of functions",
+        "Linear relationships and representations",
+        "Geometric relationships",
+        "Solving geometric problems",
+        "Transformations",
+        "Analyzing and describing data",
+        "Personal finance: money management"
       ]
     },
     {
@@ -326,17 +328,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Algebra I taken in Grade 8 through the Texas accelerated path. Same content as high school Algebra I, for a student who is ready early: linear, quadratic and exponential functions, polynomials and equations.",
       "u": [
-        "Linear functions, equations, and inequalities: properties of linear functions to write and represent in multiple ways, with and without technology, linear equations, inequalities, and systems of equations. ((2)A–I)",
-        "Linear functions, equations, and inequalities: graphs of linear functions, key features, and related transformations to represent in multiple ways and solve, with and without technology, equations, inequalities, and systems of equations. ((3)A–K)",
-        "Linear functions, equations, and inequalities: formulate statistical relationships and evaluate their reasonableness based on real-world data. ((4)A–F)",
-        "Linear functions, equations, and inequalities: solve, with and without technology, linear equations and evaluate the reasonableness of their solutions. ((5)A–C)",
-        "Quadratic functions and equations: properties of quadratic functions to write and represent in multiple ways, with and without technology, quadratic equations. ((6)A–C)",
-        "Quadratic functions and equations: graphs of quadratic functions and their related transformations to represent in multiple ways and determine, with and without technology, the solutions to equations. ((7)A–C)",
-        "Quadratic functions and equations: solve, with and without technology, quadratic equations and evaluate the reasonableness of their solutions. ((8)A–B)",
-        "Exponential functions and equations: properties of exponential functions and their related transformations to write, graph, and represent in multiple ways exponential equations and evaluate, with and without technology, the reasonableness of their solutions. ((9)A–E)",
-        "Number and algebraic methods: rewrite in equivalent forms and perform operations on polynomial expressions. ((10)A–F)",
-        "Number and algebraic methods: rewrite algebraic expressions into equivalent forms. ((11)A–B)",
-        "Number and algebraic methods: write, solve, analyze, and evaluate equations, relations, and functions. ((12)A–F)"
+        "Linear functions and their equations",
+        "Graphs of linear functions",
+        "Systems of linear equations and inequalities",
+        "Statistical relationships and lines of fit",
+        "Solving linear equations",
+        "Quadratic functions and their equations",
+        "Graphs and transformations of quadratics",
+        "Solving quadratic equations",
+        "Exponential functions",
+        "Polynomial expressions",
+        "Equivalent forms of expressions",
+        "Equations, relations, and functions"
       ]
     },
     {
@@ -347,15 +350,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Texas applied course that bridges to Algebra II: your child uses math to model real situations in personal finance, science, engineering, arts and social studies.",
       "u": [
-        "Mathematical modeling in personal finance: study patterns and analyze data related to personal finance. ((2)A–C)",
-        "Mathematical modeling in personal finance: solve problems involving credit. ((3)A–D)",
-        "Mathematical modeling in personal finance: solve problems related to financial planning. ((4)A–C)",
-        "Mathematical modeling in science and engineering: study patterns and analyze data as it applies to science. ((5)A–C)",
-        "Mathematical modeling in science and engineering: study patterns and analyze data as it applies to architecture and engineering. ((6)A–D)",
-        "Mathematical modeling in fine arts: study patterns and analyze data as it applies to fine arts. ((7)A–D)",
-        "Mathematical modeling in social sciences: determine the number of elements in a finite sample space and compute the probability of an event. ((8)A–C)",
-        "Mathematical modeling in social sciences: analyze data as it applies to social sciences. ((9)A–F)",
-        "Mathematical modeling in social sciences: design a study and use graphical, numerical, and analytical techniques to communicate the results of the study. ((10)A–B)"
+        "Patterns and data in personal finance",
+        "Credit and borrowing",
+        "Financial planning",
+        "Modeling in science",
+        "Modeling in architecture and engineering",
+        "Modeling in the fine arts",
+        "Sample spaces and probability",
+        "Analyzing data in the social sciences",
+        "Designing and communicating a study"
       ]
     },
     {
@@ -366,9 +369,11 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Texas senior-level course: numerical reasoning, statistics, probability, and mathematical models for finance and everyday decisions. Useful for students who are not heading into calculus.",
       "u": [
-        "Numeric reasoning: generate new understandings by extending existing knowledge. ((2)A–H)",
-        "Algebraic reasoning (expressions, equations, and generalized relationships): create and analyze mathematical models of everyday situations to make informed decisions related to earning, investing, spending, and borrowing money by appropriate, proficient, and efficient use of tools, including technology: make connections and predictions. ((3)A–H)",
-        "Probabilistic and statistical reasoning: generate new understandings of probability and statistics. The student analyzes statistical information and evaluates risk and return to connect mathematical ideas and make informed decisions: design and conduct a study that addresses one or more particular question(s): communicate effectively the results of student-generated statistical studies and the critical analysis of published statistical studies. ((4)A–T)"
+        "Numeric reasoning and extending knowledge",
+        "Modeling earning, investing, spending, and borrowing",
+        "Probability and statistics in decision making",
+        "Designing and critiquing statistical studies",
+        "Evaluating risk and return"
       ]
     },
     {
@@ -379,12 +384,12 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Texas course that deepens Algebra I: patterns and function families from linear to logarithmic, operations on functions, matrices, and modeling from data.",
       "u": [
-        "Patterns and structure: connect finite differences or common ratios to attributes of functions. ((2)A–D)",
-        "Patterns and structure: understand the connections among representations of functions and combinations of functions, including the constant function, f(x) = x, f(x) = x², f(x) = √x, f(x) = 1/x, f(x) = x³, f(x) = ∛x, f(x) = bˣ, f(x) = |x|, and f(x) = log_b(x) where b is 10 or e; functions and their inverses; and key attributes of these functions. ((3)A–F)",
-        "Number and algebraic methods: simplify and perform operations on functions represented in a variety of ways, including real-world situations. ((4)A–D)",
-        "Number and algebraic methods: represent, simplify, and perform operations on matrices and to solve systems of equations using matrices. ((5)A–E)",
-        "Number and algebraic methods: estimate and determine solutions to equations resulting from functions and real-world applications with fluency. ((6)A–C)",
-        "Modeling from data: analyze and model data based on real-world situations with corresponding functions. ((7)A–E)"
+        "Patterns in finite differences and common ratios",
+        "Function families and their inverses",
+        "Operations on functions",
+        "Matrices and solving systems",
+        "Estimating and solving equations from real-world functions",
+        "Modeling with data"
       ]
     },
     {
@@ -395,12 +400,12 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Texas elective on the math of organizing and decision making: graphs and networks, scheduling, voting and fair division, and basic game theory.",
       "u": [
-        "Graph theory: determine possible solutions to real-world problems. ((2)A–L)",
-        "Planning and scheduling: solve real-world problems. ((3)A–G)",
-        "Group decision making: apply decision-making schemes. ((4)A–J)",
-        "Fair division: real-world situations. ((5)A–K)",
-        "Game (or competition) theory: calculate optimal strategies. ((6)A–K)",
-        "Theory of moves. The student analyzes the theory of moves (TOM): analyze conflicts. ((7)A–G)"
+        "Graphs and network problems",
+        "Planning and scheduling",
+        "Voting and group decisions",
+        "Fair division",
+        "Game theory and optimal strategies",
+        "Theory of moves and conflict analysis"
       ]
     }
   ],
@@ -413,14 +418,14 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to count to 100, read and write numbers, compare groups of objects, and add and subtract with small numbers using objects and pictures. They also learn to name shapes and to compare things by length, height and weight. Short, hands-on lessons build the number sense every later grade relies on.",
       "u": [
-        "K.NS.1: The student will utilize flexible counting strategies to determine and describe quantities up to 100.",
-        "K.NS.2: The student will identify, represent, and compare quantities up to 30.",
-        "K.CE.1: The student will model and solve single-step contextual problems using addition and subtraction with whole numbers within 10.",
-        "K.MG.1: The student will reason mathematically by making direct comparisons between two objects or events using the attributes of length, height, weight, volume, and time.",
-        "K.MG.2: The student will identify, describe, name, compare, and construct plane figures (circles, triangles, squares, and rectangles).",
-        "K.MG.3: The student will describe the units of time represented in a calendar.",
-        "K.PS.1: The student will apply the data cycle (pose questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on object graphs and picture graphs.",
-        "K.PFA.1: The student will identify, describe, extend, and create simple repeating patterns using various representations."
+        "Counting strategies to 100",
+        "Representing and comparing quantities to 30",
+        "Addition and subtraction within 10",
+        "Comparing length, height, weight, volume, and time",
+        "Circles, triangles, squares, and rectangles",
+        "Calendar and time",
+        "Object and picture graphs",
+        "Repeating patterns"
       ]
     },
     {
@@ -431,15 +436,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets confident with adding and subtracting within 20, learns how two-digit numbers are built from tens and ones, and counts up to 120. They also measure with simple units, tell time to the hour and half hour, and work with shapes and simple graphs.",
       "u": [
-        "1.NS.1: The student will utilize flexible counting strategies to determine and describe quantities up to 120.",
-        "1.NS.2: The student will represent, compare, and order quantities up to 120.",
-        "1.NS.3: The student will use mathematical reasoning and justification to solve contextual problems that involve partitioning models into two and four equal-sized parts.",
-        "1.CE.1: The student will recall with automaticity addition and subtraction facts within 10 and represent, solve, and justify solutions to single-step problems, including those in context, using addition and subtraction with whole numbers within 20.",
-        "1.MG.1: The student will reason mathematically using nonstandard units to measure and compare objects by length, weight, and volume.",
-        "1.MG.2: The student will describe, sort, draw, and name plane figures (circles, triangles, squares, and rectangles), and compose larger plane figures by combining simple plane figures.",
-        "1.MG.3: The student will demonstrate an understanding of the concept of passage of time (to the nearest hour and half-hour) and the calendar.",
-        "1.PS.1: The student will apply the data cycle (pose questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on object graphs, picture graphs, and tables.",
-        "1.PFA.1: The student will identify, describe, extend, create, and transfer repeating patterns and increasing patterns using various representations."
+        "Counting strategies to 120",
+        "Representing, comparing, and ordering quantities to 120",
+        "Equal parts: halves and fourths",
+        "Addition and subtraction facts within 10 and problems within 20",
+        "Measuring with nonstandard units",
+        "Plane figures and composing shapes",
+        "Time to the hour and half-hour",
+        "Picture graphs and tables",
+        "Repeating and increasing patterns"
       ]
     },
     {
@@ -450,17 +455,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child adds and subtracts within 100 and learns place value up to 1,000. They measure length, tell time, count money, sort data into graphs, and meet the first ideas behind multiplication through equal groups.",
       "u": [
-        "2.NS.1: The student will utilize flexible counting strategies to determine and describe quantities up to 200.",
-        "2.NS.2: The student will demonstrate an understanding of the ten-to-one relationships of the base 10 number system to represent, compare, and order whole numbers up to 999.",
-        "2.NS.3: The student will use mathematical reasoning and justification to solve contextual problems that involve partitioning models into equal-sized parts (halves, fourths, eighths, thirds, and sixths).",
-        "2.NS.4: The student will solve problems that involve counting and representing money amounts up to $2.00.",
-        "2.CE.1: The student will recall with automaticity addition and subtraction facts within 20 and estimate, represent, solve, and justify solutions to single-step and multistep problems, including those in context, using addition and subtraction with whole numbers where addends or minuends do not exceed 100.",
-        "2.MG.1: The student will reason mathematically using standard units (U.S. Customary) with appropriate tools to estimate, measure, and compare objects by length, weight, and liquid volume to the nearest whole unit.",
-        "2.MG.2: The student will demonstrate an understanding of the concept of time to the nearest five minutes, using analog and digital clocks.",
-        "2.MG.3: The student will identify, describe, and create plane figures (including circles, triangles, squares, and rectangles) that have at least one line of symmetry and explain its relationship with congruency.",
-        "2.MG.4: The student will describe, name, compare, and contrast plane and solid figures (circles/spheres, squares/cubes, and rectangles/rectangular prisms).",
-        "2.PS.1: The student will apply the data cycle (pose questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on pictographs and bar graphs.",
-        "2.PFA.1: The student will describe, extend, create, and transfer repeating and increasing patterns (limited to addition of whole numbers) using various representations."
+        "Counting strategies to 200",
+        "Base-10 place value to 999",
+        "Equal parts: halves to sixths",
+        "Counting money to $2.00",
+        "Addition and subtraction facts and problems within 100",
+        "Measuring with U.S. Customary units",
+        "Telling time to five minutes",
+        "Symmetry and congruence",
+        "Plane and solid figures",
+        "Pictographs and bar graphs",
+        "Repeating and increasing patterns"
       ]
     },
     {
@@ -471,18 +476,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "This is the year of multiplication and division: your child learns their times tables, meets fractions for the first time, and works with area and perimeter. They also practice reading time, measuring, and solving word problems in several steps.",
       "u": [
-        "3.NS.1: The student will use place value understanding to read, write, and determine the place and value of each digit in a whole number, up to six digits, with and without models.",
-        "3.NS.2: The student will demonstrate an understanding of the base 10 system to compare and order whole numbers up to 9,999.",
-        "3.NS.3: The student will use mathematical reasoning and justification to represent and compare fractions (proper and improper) and mixed numbers with denominators of 2, 3, 4, 5, 6, 8, and 10), including those in context.",
-        "3.NS.4: The student will solve problems, including those in context, that involve counting, comparing, representing, and making change for money amounts up to $5.00.",
-        "3.CE.1: The student will estimate, represent, solve, and justify solutions to single-step and multistep problems, including those in context, using addition and subtraction with whole numbers where addends and minuends do not exceed 1,000.",
-        "3.CE.2: The student will recall with automaticity multiplication and division facts through 10 × 10; and represent, solve, and justify solutions to single-step contextual problems using multiplication and division with whole numbers.",
-        "3.MG.1: The student will reason mathematically using standard units (U.S. Customary and metric) with appropriate tools to estimate and measure objects by length, weight/mass, and liquid volume to the nearest half or whole unit.",
-        "3.MG.2: The student will use multiple representations to estimate and solve problems, including those in context, involving area and perimeter (in both U.S. Customary and metric units).",
-        "3.MG.3: The student will demonstrate an understanding of the concept of time to the nearest minute and solve single-step contextual problems involving elapsed time in one-hour increments within a 12-hour period.",
-        "3.MG.4: The student will identify, describe, classify, compare, combine, and subdivide polygons.",
-        "3.PS.1: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on pictographs and bar graphs.",
-        "3.PFA.1: The student will identify, describe, extend, and create increasing and decreasing patterns (limited to addition and subtraction of whole numbers), including those in context, using various representations."
+        "Place value to six digits",
+        "Comparing and ordering whole numbers",
+        "Fractions and mixed numbers",
+        "Money and making change",
+        "Addition and subtraction within 1,000",
+        "Multiplication and division facts and problems",
+        "Measuring with U.S. Customary and metric units",
+        "Area and perimeter",
+        "Elapsed time",
+        "Polygons",
+        "Pictographs and bar graphs",
+        "Increasing and decreasing patterns"
       ]
     },
     {
@@ -493,24 +498,24 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with bigger numbers, multiplies and divides multi-digit numbers, and compares, adds and subtracts fractions and decimals. They also measure angles, classify shapes, and solve multi-step word problems.",
       "u": [
-        "4.NS.1: The student will use place value understanding to read, write, and identify the place and value of each digit in a nine-digit whole number.",
-        "4.NS.2: The student will demonstrate an understanding of the base 10 system to compare and order whole numbers up to seven digits.",
-        "4.NS.3: The student will use mathematical reasoning and justification to represent, compare, and order fractions (proper, improper, and mixed numbers with denominators 12 or less), with and without models.",
-        "4.NS.4: The student will use mathematical reasoning and justification to represent, compare, and order decimals through thousandths, with and without models.",
-        "4.NS.5: The student will reason about the relationship between fractions and decimals (limited to halves, fourths, fifths, tenths, and hundredths) to identify and represent equivalencies.",
-        "4.CE.1: The student will estimate, represent, solve, and justify solutions to single-step and multistep problems, including those in context, using addition and subtraction with whole numbers.",
-        "4.CE.2: The student will estimate, represent, solve, and justify solutions to single-step and multistep problems, including those in context, using multiplication with whole numbers, and single-step problems, including those in context, using division with whole numbers; and recall with automaticity the multiplication facts through 12 × 12 and the corresponding division facts.",
-        "4.CE.3: The student will estimate, represent, solve, and justify solutions to single-step problems, including those in context, using addition and subtraction of fractions (proper, improper, and mixed numbers with like denominators of 2, 3, 4, 5, 6, 8, 10, and 12), with and without models; and solve single-step contextual problems involving multiplication of a whole number (12 or less) and a unit fraction, with models.",
-        "4.CE.4: The student will estimate, represent, solve, and justify solutions to single-step and multistep problems, including those in context, using addition and subtraction of decimals through the thousandths, with and without models.",
-        "4.MG.1: The student will reason mathematically to solve problems, including those in context, that involve length, weight/mass, and liquid volume using U.S. Customary and metric units.",
-        "4.MG.2: The student will solve single-step and multistep contextual problems involving elapsed time (limited to hours and minutes within a 12-hour period).",
-        "4.MG.3: The student will use multiple representations to develop and use formulas to solve problems, including those in context, involving area and perimeter limited to rectangles and squares (in both U.S. Customary and metric units).",
-        "4.MG.4: The student will identify, describe, and draw points, rays, line segments, angles, and lines, including intersecting, parallel, and perpendicular lines.",
-        "4.MG.5: The student will classify and describe quadrilaterals (parallelograms, rectangles, squares, rhombi, and/or trapezoids) using specific properties and attributes.",
-        "4.MG.6: The student will identify, describe, compare, and contrast plane and solid figures according to their characteristics (number of angles, vertices, edges, and the number and shape of faces), with and without models.",
-        "4.PS.1: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on line graphs.",
-        "4.PS.2: The student will model and determine the probability of an outcome of a simple event.",
-        "4.PFA.1: The student will identify, describe, extend, and create increasing and decreasing patterns (limited to addition, subtraction, and multiplication of whole numbers), including those in context, using various representations."
+        "Place value to nine digits",
+        "Comparing and ordering whole numbers",
+        "Fractions: representing, comparing, and ordering",
+        "Decimals to thousandths",
+        "Connecting fractions and decimals",
+        "Addition and subtraction with whole numbers",
+        "Multiplication and division with whole numbers",
+        "Adding and subtracting fractions",
+        "Adding and subtracting decimals",
+        "Length, weight, mass, and liquid volume",
+        "Elapsed time",
+        "Area and perimeter formulas",
+        "Points, lines, rays, and angles",
+        "Quadrilaterals",
+        "Plane and solid figures",
+        "Line graphs",
+        "Probability of simple events",
+        "Patterns"
       ]
     },
     {
@@ -521,20 +526,19 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to add, subtract, multiply and divide fractions and decimals, finds volume, and plots points on a coordinate grid. They get ready for middle school math with order of operations and problem solving.",
       "u": [
-        "5.NS.1: The student will use reasoning and justification to identify and represent equivalency between fractions (with denominators that are thirds, eighths, and factors of 100) and decimals; and compare and order sets of fractions (proper, improper, and/or mixed numbers having denominators of 12 or less) and decimals (through thousandths).",
-        "5.NS.2: The student will demonstrate an understanding of prime and composite numbers, and determine the prime factorization of a whole number up to 100.",
-        "5.CE.1: The student will estimate, represent, solve, and justify solutions to single-step and multistep contextual problems using addition, subtraction, multiplication, and division with whole numbers.",
-        "5.CE.2: The student will estimate, represent, solve, and justify solutions to single-step and multistep problems, including those in context, using addition and subtraction of fractions with like and unlike denominators (with and without models), and solve single-step contextual problems involving multiplication of a whole number and a proper fraction, with models.",
-        "5.CE.3: The student will estimate, represent, solve, and justify solutions to single-step and multistep problems, including those in context, using addition, subtraction, multiplication, and division with decimal numbers.",
-        "5.CE.4: The student will simplify numerical expressions with whole numbers using the order of operations.",
-        "5.MG.1: The student will reason mathematically to solve problems, including those in context, that involve length, mass, and liquid volume using metric units.",
-        "5.MG.2: The student will use multiple representations to solve problems, including those in context, involving perimeter, area, and volume.",
-        "5.MG.3: The student will classify and measure angles and triangles, and solve problems, including those in context.",
-        "5.PS.1: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on line plots (dot plots) and stem-and-leaf plots.",
-        "5.PS.2: The student will solve contextual problems using measures of center and the range.",
-        "5.PS.3: The student will determine the probability of an outcome by constructing a model of a sample space and using the Fundamental (Basic) Counting Principle.",
-        "5.PFA.1: The student will identify, describe, extend, and create increasing and decreasing patterns with whole numbers, fractions, and decimals, including those in context, using various representations.",
-        "5.PFA.2: The student will investigate and use variables in contextual problems."
+        "Fractions and decimals: equivalence and order",
+        "Prime and composite numbers",
+        "Operations with whole numbers",
+        "Adding and subtracting fractions",
+        "Operations with decimals",
+        "Order of operations",
+        "Metric measurement",
+        "Perimeter, area, and volume",
+        "Angles and triangles",
+        "Line plots and stem-and-leaf plots",
+        "Mean, median, mode, and range",
+        "Probability and the counting principle",
+        "Patterns and variables"
       ]
     },
     {
@@ -545,21 +549,20 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child steps into middle school math with ratios and rates, dividing fractions, negative numbers, and the first algebra: expressions and one-step equations. They also find area and volume and learn to describe data with averages and graphs.",
       "u": [
-        "6.NS.1: The student will reason and use multiple strategies to express equivalency, compare, and order numbers written as fractions, mixed numbers, decimals, and percents.",
-        "6.NS.2: The student will reason and use multiple strategies to represent, compare, and order integers.",
-        "6.NS.3: The student will recognize and represent patterns with whole number exponents and perfect squares.",
-        "6.CE.1: The student will estimate, demonstrate, solve, and justify solutions to problems using operations with fractions and mixed numbers, including those in context.",
-        "6.CE.2: The student will estimate, demonstrate, solve, and justify solutions to problems using operations with integers, including those in context.",
-        "6.MG.1: The student will identify the characteristics of circles and solve problems, including those in context, involving circumference and area.",
-        "6.MG.2: The student will reason mathematically to solve problems, including those in context, that involve the area and perimeter of triangles and parallelograms.",
-        "6.MG.3: The student will describe the characteristics of the coordinate plane and graph ordered pairs.",
-        "6.MG.4: The student will determine congruence of segments, angles, and polygons.",
-        "6.PS.1: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on circle graphs.",
-        "6.PS.2: The student will represent the mean as a balance point and determine the effect on statistical measures when a data point is added, removed, or changed.",
-        "6.PFA.1: The student will use ratios to represent relationships between quantities, including those in context.",
-        "6.PFA.2: The student will identify and represent proportional relationships between two quantities, including those in context (unit rates are limited to positive values).",
-        "6.PFA.3: The student will write and solve one-step linear equations in one variable, including contextual problems that require the solution of a one-step linear equation in one variable.",
-        "6.PFA.4: The student will represent a contextual situation using a linear inequality in one variable with symbols and graphs on a number line."
+        "Fractions, decimals, and percents",
+        "Comparing and ordering integers",
+        "Exponents and perfect squares",
+        "Operations with fractions and mixed numbers",
+        "Operations with integers",
+        "Circles: circumference and area",
+        "Area and perimeter of triangles and parallelograms",
+        "The coordinate plane",
+        "Congruence",
+        "Circle graphs",
+        "Mean as a balance point",
+        "Ratios and proportional relationships",
+        "One-step equations",
+        "Linear inequalities on a number line"
       ]
     },
     {
@@ -570,21 +573,21 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with proportions and percent, calculations with positive and negative numbers and fractions, and solving equations. They also study scale drawings, angles, circles, and basic probability and sampling.",
       "u": [
-        "7.NS.1: The student will investigate and describe the concept of exponents for powers of ten and compare and order numbers greater than zero written in scientific notation.",
-        "7.NS.2: The student will reason and use multiple strategies to compare and order rational numbers.",
-        "7.NS.3: The student will recognize and describe the relationship between square roots and perfect squares.",
-        "7.CE.1: The student will estimate, solve, and justify solutions to multistep contextual problems involving operations with rational numbers.",
-        "7.CE.2: The student will solve problems, including those in context, involving proportional relationships.",
-        "7.MG.1: The student will investigate and determine the volume formula for right cylinders and the surface area formulas for rectangular prisms and right cylinders and apply the formulas in context.",
-        "7.MG.2: The student will solve problems and justify relationships of similarity using proportional reasoning.",
-        "7.MG.3: The student will compare and contrast quadrilaterals based on their properties and determine unknown side lengths and angle measures of quadrilaterals.",
-        "7.MG.4: The student will apply dilations of polygons in the coordinate plane.",
-        "7.PS.1: The student will use statistical investigation to determine the probability of an event and investigate and describe the difference between the experimental and theoretical probability.",
-        "7.PS.2: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on histograms.",
-        "7.PFA.1: The student will investigate and analyze proportional relationships between two quantities using verbal descriptions, tables, equations in y = mx form, and graphs, including problems in context.",
-        "7.PFA.2: The student will simplify numerical expressions, simplify and generate equivalent algebraic expressions in one variable, and evaluate algebraic expressions for given replacement values of the variables.",
-        "7.PFA.3: The student will write and solve two-step linear equations in one variable, including problems in context, that require the solution of a two-step linear equation in one variable.",
-        "7.PFA.4: The student will write and solve one- and two-step linear inequalities in one variable, including problems in context, that require the solution of a one- and two-step linear inequality in one variable."
+        "Scientific notation",
+        "Ordering rational numbers",
+        "Square roots and perfect squares",
+        "Multistep problems with rational numbers",
+        "Proportional reasoning",
+        "Volume and surface area",
+        "Similarity",
+        "Quadrilaterals",
+        "Dilations on the coordinate plane",
+        "Experimental and theoretical probability",
+        "Histograms",
+        "Proportional relationships: tables, equations, and graphs",
+        "Algebraic expressions",
+        "Two-step equations",
+        "Linear inequalities"
       ]
     },
     {
@@ -595,22 +598,21 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets ready for high school algebra: linear equations and graphs, functions, systems of equations, exponents and square roots. They also learn the Pythagorean Theorem, transformations, and how to read relationships in data.",
       "u": [
-        "8.NS.1: The student will compare and order real numbers and determine the relationships between real numbers.",
-        "8.NS.2: The student will investigate and describe the relationship between the subsets of the real number system.",
-        "8.CE.1: The student will estimate and apply proportional reasoning and computational procedures to solve contextual problems.",
-        "8.MG.1: The student will use the relationships among pairs of angles that are vertical angles, adjacent angles, supplementary angles, and complementary angles to determine the measure of unknown angles.",
-        "8.MG.2: The student will investigate and determine the surface area of square-based pyramids and the volume of cones and square-based pyramids.",
-        "8.MG.3: The student will apply translations and reflections to polygons in the coordinate plane.",
-        "8.MG.4: The student will apply the Pythagorean Theorem to solve problems involving right triangles, including those in context.",
-        "8.MG.5: The student will solve area and perimeter problems involving composite plane figures, including those in context.",
-        "8.PS.1: The student will use statistical investigation to determine the probability of independent and dependent events, including those in context.",
-        "8.PS.2: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on boxplots.",
-        "8.PS.3: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on scatterplots.",
-        "8.PFA.1: The student will represent, simplify, and generate equivalent algebraic expressions in one variable.",
-        "8.PFA.2: The student will determine whether a given relation is a function and determine the domain and range of a function.",
-        "8.PFA.3: The student will represent and solve problems, including those in context, by using linear functions and analyzing their key characteristics (the value of the y-intercept (b) and the coordinates of the ordered pairs in graphs will be limited to integers).",
-        "8.PFA.4: The student will write and solve multistep linear equations in one variable, including problems in context that require the solution of a multistep linear equation in one variable.",
-        "8.PFA.5: The student will write and solve multistep linear inequalities in one variable, including problems in context that require the solution of a multistep linear inequality in one variable."
+        "Real numbers and their subsets",
+        "Proportional reasoning and estimation",
+        "Angle relationships",
+        "Surface area and volume of pyramids and cones",
+        "Translations and reflections",
+        "The Pythagorean theorem",
+        "Composite figures",
+        "Independent and dependent events",
+        "Boxplots",
+        "Scatterplots",
+        "Equivalent expressions",
+        "Functions: domain and range",
+        "Linear functions",
+        "Multistep linear equations",
+        "Multistep linear inequalities"
       ]
     },
     {
@@ -621,16 +623,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "The first full algebra course: your child solves linear equations and inequalities, graphs lines, works with systems of equations, exponents, polynomials and factoring, and meets quadratic and exponential functions. It is the gateway to all later high school math.",
       "u": [
-        "A.EO.1: The student will represent verbal quantitative situations algebraically and evaluate these expressions for given replacement values of the variables.",
-        "A.EO.2: The student will perform operations on and factor polynomial expressions in one variable.",
-        "A.EO.3: The student will derive and apply the laws of exponents.",
-        "A.EO.4: The student will simplify and determine equivalent radical expressions involving square roots of whole numbers and cube roots of integers.",
-        "A.EI.1: The student will represent, solve, explain, and interpret the solution to multistep linear equations and inequalities in one variable and literal equations for a specified variable.",
-        "A.EI.2: The student will represent, solve, explain, and interpret the solution to a system of two linear equations, a linear inequality in two variables, or a system of two linear inequalities in two variables.",
-        "A.EI.3: The student will represent, solve, and interpret the solution to a quadratic equation in one variable.",
-        "A.F.1: The student will investigate, analyze, and compare linear functions algebraically and graphically, and model linear relationships.",
-        "A.F.2: The student will investigate, analyze, and compare characteristics of functions, including quadratic, and exponential functions, and model quadratic and exponential relationships.",
-        "A.ST.1: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on representing bivariate data in scatterplots and determining the curve of best fit using linear and quadratic functions."
+        "Expressions and operations",
+        "Polynomials and factoring",
+        "Laws of exponents",
+        "Radical expressions",
+        "Linear equations and inequalities",
+        "Systems of equations and inequalities",
+        "Quadratic equations",
+        "Linear functions",
+        "Quadratic and exponential functions",
+        "Scatterplots and curves of best fit"
       ]
     },
     {
@@ -641,19 +643,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to reason and prove: angles, triangles and congruence, similarity, circles, area and volume, coordinates, and right-triangle trigonometry. The course builds logical thinking as much as geometry knowledge.",
       "u": [
-        "G.RLT.1: The student will translate logic statements, identify conditional statements, and use and interpret Venn diagrams.",
-        "G.RLT.2: The student will analyze, prove, and justify the relationships of parallel lines cut by a transversal.",
-        "G.RLT.3: The student will solve problems, including contextual problems, involving symmetry and transformation.",
-        "G.TR.1: The student will determine the relationships between the measures of angles and lengths of sides in triangles, including problems in context.",
-        "G.TR.2: The student will, given information in the form of a figure or statement, prove and justify two triangles are congruent using direct and indirect proofs, and solve problems involving measured attributes of congruent triangles.",
-        "G.TR.3: The student will, given information in the form of a figure or statement, prove and justify two triangles are similar using direct and indirect proofs, and solve problems, including those in context, involving measured attributes of similar triangles.",
-        "G.TR.4: The student will model and solve problems, including those in context, involving trigonometry in right triangles and applications of the Pythagorean Theorem.",
-        "G.PC.1: The student will prove and justify theorems and properties of quadrilaterals, and verify and use properties of quadrilaterals to solve problems, including the relationships between the sides, angles, and diagonals.",
-        "G.PC.2: The student will verify relationships and solve problems involving the number of sides and measures of angles of convex polygons.",
-        "G.PC.3: The student will solve problems, including those in context, by applying properties of circles.",
-        "G.PC.4: The student will solve problems in the coordinate plane involving equations of circles.",
-        "G.DF.1: The student will create models and solve problems, including those in context, involving surface area and volume of rectangular and triangular prisms, cylinders, cones, pyramids, and spheres.",
-        "G.DF.2: The student will determine the effect of changing one or more dimensions of a three-dimensional geometric figure and describe the relationship between the original and changed figure."
+        "Logic and Venn diagrams",
+        "Parallel lines and transversals",
+        "Symmetry and transformations",
+        "Triangle relationships",
+        "Congruent triangles and proof",
+        "Similar triangles and proof",
+        "Right triangle trigonometry",
+        "Quadrilaterals and polygons",
+        "Circles",
+        "Circles in the coordinate plane",
+        "Surface area and volume",
+        "Changing dimensions of solids"
       ]
     },
     {
@@ -664,13 +665,13 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Virginia course after Algebra I for students who do not need calculus: functions and their graphs, linear programming, data analysis with regression, probability and the normal curve.",
       "u": [
-        "AFDA.AF.1: The student will investigate, analyze, and compare linear, quadratic, and exponential function families, algebraically and graphically, using transformations.",
-        "AFDA.AF.2: The student will investigate and analyze characteristics of the graphs of linear, quadratic, exponential, and piecewise-defined functions.",
-        "AFDA.AF.3: The student will represent and interpret contextual situations with constraints that require optimization using linear programming techniques, including systems of linear equations or inequalities, solving graphically and when appropriate, algebraically.",
-        "AFDA.DA.1: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on representing bivariate data in scatterplots and determining the curve of best fit using linear, quadratic, and exponential functions.",
-        "AFDA.DA.2: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on the design and implementation of an experiment and/or observational study.",
-        "AFDA.DA.3: The student will calculate and interpret probabilities, including those in contextual situations.",
-        "AFDA.DA.4: The student will describe and apply the properties of normal distribution, including those in contextual situations."
+        "Function families and transformations",
+        "Characteristics of function graphs",
+        "Linear programming",
+        "Bivariate data and curves of best fit",
+        "Experiments and observational studies",
+        "Probability",
+        "Normal distribution"
       ]
     },
     {
@@ -681,21 +682,21 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child builds on Algebra I with polynomials, rational and radical expressions, exponential and logarithmic functions, complex numbers, and modeling with data. It prepares for precalculus, college math and science.",
       "u": [
-        "A2.EO.1: The student will perform operations on and simplify rational expressions.",
-        "A2.EO.2: The student will perform operations on and simplify radical expressions.",
-        "A2.EO.3: The student will perform operations on polynomial expressions and factor polynomial expressions in one and two variables.",
-        "A2.EO.4: The student will perform operations on complex numbers.",
-        "A2.EI.1: The student will represent, solve, and interpret the solution to absolute value equations and inequalities in one variable.",
-        "A2.EI.2: The student will represent, solve, and interpret the solution to quadratic equations in one variable over the set of complex numbers and solve quadratic inequalities in one variable.",
-        "A2.EI.3: The student will solve a system of equations in two variables containing a quadratic expression.",
-        "A2.EI.4: The student will represent, solve, and interpret the solution to an equation containing rational algebraic expressions.",
-        "A2.EI.5: The student will represent, solve, and interpret the solution to an equation containing a radical expression.",
-        "A2.EI.6: The student will represent, solve, and interpret the solution to a polynomial equation.",
-        "A2.F.1: The student will investigate, analyze, and compare square root, cube root, rational, exponential, and logarithmic function families, algebraically and graphically, using transformations.",
-        "A2.F.2: The student will investigate and analyze characteristics of square root, cube root, rational, polynomial, exponential, logarithmic, and piecewise-defined functions algebraically and graphically.",
-        "A2.ST.1: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on univariate quantitative data represented by a smooth curve, including a normal curve.",
-        "A2.ST.2: The student will apply the data cycle (formulate questions; collect or acquire data; organize and represent data; and analyze data and communicate results) with a focus on representing bivariate data in scatterplots and determining the curve of best fit using linear, quadratic, exponential, or a combination of these functions.",
-        "A2.ST.3: The student will compute and distinguish between permutations and combinations."
+        "Rational expressions",
+        "Radical expressions",
+        "Polynomials and factoring",
+        "Complex numbers",
+        "Absolute value equations and inequalities",
+        "Quadratic equations and inequalities",
+        "Systems with a quadratic expression",
+        "Rational equations",
+        "Radical equations",
+        "Polynomial equations",
+        "Function families and transformations",
+        "Characteristics of functions",
+        "Normal curves",
+        "Curves of best fit",
+        "Permutations and combinations"
       ]
     },
     {
@@ -706,15 +707,13 @@ var MATH_STANDARDS = {
       "fmt": "Semester",
       "d": "A half-year Virginia course on trigonometry: right and non-right triangles, the unit circle and radians, graphs of trig functions, identities and equations.",
       "u": [
-        "T.TT.1: The student will determine the sine, cosine, tangent, cotangent, secant, and cosecant of the acute angles in a right triangle and use these ratios to solve for missing sides and angle measures, including application in contextual problems.",
-        "T.TT.2: The student will find the area of any triangle and solve for the lengths of the sides and measures of the angles in a non-right triangle using the Law of Sines and the Law of Cosines.",
-        "T.CT.1: The student will determine the degree and radian measure of angles; sketch angles in standard position on a coordinate plane; and determine the sine, cosine, tangent, cosecant, secant, and cotangent of an angle, given a point on the terminal side of an angle in standard position or the value of a trigonometric function of the angle.",
-        "T.CT.2: The student will develop and apply the properties of the unit circle in degrees and radians.",
-        "T.GT.1: The student will graph and analyze trigonometric functions and apply trigonometric functions to represent periodic phenomena.",
-        "T.GT.2: The student will graph the six inverse trigonometric functions.",
-        "T.IE.1: The student will evaluate expressions involving the six trigonometric functions and the inverse sine, cosine, and tangent functions.",
-        "T.IE.2: The student will use basic trigonometric identity substitutions to simplify and verify trigonometric identities.",
-        "T.IE.3: The student will solve trigonometric equations and inequalities."
+        "Right triangle trigonometry",
+        "Law of Sines and Law of Cosines",
+        "Angles, radians, and the unit circle",
+        "Graphs of trigonometric functions",
+        "Inverse trigonometric functions",
+        "Trigonometric identities",
+        "Trigonometric equations and inequalities"
       ]
     },
     {
@@ -725,25 +724,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Virginia course where math meets programming: number systems, data types, writing and testing programs, loops, functions, and debugging.",
       "u": [
-        "CM.DRS.1: The student will represent data and convert data between different number systems.",
-        "CM.DRS.2: The student will differentiate between variable data types based upon their characteristics.",
-        "CM.DRS.3: The student will represent data using appropriate data structures.",
-        "CM.CP.1: The student will design a step-by-step plan to perform a task or solve a problem, including those arising from mathematical or interdisciplinary contexts.",
-        "CM.CP.2: The student will construct Boolean expressions and implement conditional statements.",
-        "CM.CP.3: The student will perform iteration with loops.",
-        "CM.CP.4: The student will write and implement the output phase of a computer program.",
-        "CM.CP.5: The student will write and implement the input phase of a computer program.",
-        "CM.CP.6: The student will implement library functions.",
-        "CM.CP.7: The student will write and implement user-defined functions.",
-        "CM.CP.8: The student will implement pre-defined algorithms, including search routines and sort routines.",
-        "CM.AP.1: The student will write and implement programs using sequencing, selection, and iteration to perform a specific task or solve a problem, including those arising from mathematical and interdisciplinary contexts.",
-        "CM.AP.2: The student will create documentation using written comments to annotate the intended purpose of the components of a user-created program.",
-        "CM.AP.3: The student will verify how programs access and process variables.",
-        "CM.AP.4: The student will translate a mathematical expression or statement into computer code.",
-        "CM.AP.5: The student will trace existing code to interpret the intended purpose.",
-        "CM.EP.1: The student will test a program to match a sample output, using a set of data.",
-        "CM.EP.2: The student will identify errors and debug a program using various techniques.",
-        "CM.EP.3: The student will compare and contrast the efficiency of computer programs."
+        "Number systems and data representation",
+        "Variables and data types",
+        "Data structures",
+        "Designing algorithms",
+        "Conditionals and Boolean expressions",
+        "Loops",
+        "Input and output",
+        "Functions and libraries",
+        "Searching and sorting",
+        "Turning math into code",
+        "Documenting and tracing programs",
+        "Testing, debugging, and efficiency"
       ]
     },
     {
@@ -754,20 +746,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A full statistics course: how data is collected, describing and comparing data, probability rules, distributions, and the logic of drawing conclusions from samples.",
       "u": [
-        "PS.DC.1: The student will use a statistical cycle to formulate questions, describe types of data, data sources, and constraints within the context of a problem.",
-        "PS.DC.2: The student will compare and contrast data collection methods to plan and conduct an observational study.",
-        "PS.DC.3: The student will utilize the principles of experimental design to plan and conduct a well-designed experiment.",
-        "PS.DS.1: The student will represent and analyze data visualizations of univariate quantitative data, including dot plots, stemplots, boxplots, cumulative frequency graphs, and histograms, to identify and describe patterns and departures from patterns, using central tendency, spread, clusters, gaps, and outliers, within the context of a problem.",
-        "PS.DS.2: The student will represent and analyze numerical characteristics of univariate quantitative data sets to describe patterns and departures from patterns within the context of a problem.",
-        "PS.DS.3: The student will represent, compare, and analyze distributions of two or more univariate quantitative data sets, numerically and graphically.",
-        "PS.DS.4: The student will represent and analyze categorical data, using two-way tables and other graphical displays, to describe patterns and relationships.",
-        "PS.DS.5: The student will represent and analyze quantitative bivariate data with scatterplots to identify and describe the relationship between two variables.",
-        "PS.DS.6: The student will create and interpret a linear model using the least squares regression method to assess the relationship between two quantitative variables.",
-        "PS.P.1: The student will organize information and apply probability rules to compute probabilities of events within the context of a problem.",
-        "PS.P.2: The student will represent and interpret situations using discrete random distributions, including binomial distributions.",
-        "PS.P.3: The student will represent and interpret situations using normal distributions.",
-        "PS.IS.1: The student will apply properties of sampling distributions and inference procedures to make decisions about population proportions.",
-        "PS.IS.2: The student will apply properties of sampling distributions and inference procedures to make decisions about populations."
+        "The statistical cycle",
+        "Observational studies and experiments",
+        "Displaying one-variable data",
+        "Measures of center and spread",
+        "Comparing distributions",
+        "Categorical data and two-way tables",
+        "Scatterplots and regression",
+        "Probability rules",
+        "Discrete and binomial distributions",
+        "Normal distributions",
+        "Inference for proportions",
+        "Inference for populations"
       ]
     },
     {
@@ -778,22 +768,20 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Virginia course on logic, proof and algorithms: sets and counting, graphs and networks, induction, sorting and searching, recursion and cryptography.",
       "u": [
-        "DM.LR.1: The student will use reasoning to develop and apply logical arguments.",
-        "DM.LR.2: The student will apply logic and proof techniques in the construction of a sound argument.",
-        "DM.LR.3: The student will apply Boolean algebra to represent and analyze the function of logical gates and circuits.",
-        "DM.LR.4: The student will use mathematical induction to prove formulas and mathematical statements.",
-        "DM.SNT.1: The student will identify and use the properties of sets and set operations.",
-        "DM.SNT.2: The student will apply the formulas of combinatorics.",
-        "DM.SNT.3: The student will use Pascal's Triangle to analyze numerical patterns and relationships.",
-        "DM.GT.1: The student will represent problems using vertex-edge graphs.",
-        "DM.GT.2: The student will solve problems through analysis and application of circuits, cycles, Euler paths, Euler circuits, Hamilton paths, and Hamilton circuits.",
-        "DM.GT.3: The student will apply graphs to conflict-resolution problems, such as graph coloring, scheduling, matching, and optimization.",
-        "DM.GT.4: The student will recognize and apply algorithms to solve configuration, conflict-resolution, and sorting problems.",
-        "DM.GT.5: The student will use algorithms to schedule tasks to determine a minimum project time.",
-        "DM.CM.1: The student will describe and apply sorting and searching algorithms used in processing and communicating information.",
-        "DM.CM.2: The student will use recursive processes.",
-        "DM.CM.3: The student will identify and apply cryptographic methods.",
-        "DM.CM.4: The student will analyze the limitations of algorithms and their contextual relationships in computing."
+        "Logical arguments and proof",
+        "Logic gates and Boolean algebra",
+        "Mathematical induction",
+        "Sets and set operations",
+        "Counting and combinatorics",
+        "Pascal's triangle",
+        "Vertex-edge graphs",
+        "Euler and Hamilton paths",
+        "Graph coloring, scheduling, and matching",
+        "Project scheduling algorithms",
+        "Sorting and searching algorithms",
+        "Recursion",
+        "Cryptography",
+        "Limits of algorithms"
       ]
     },
     {
@@ -804,17 +792,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Virginia precalculus-level course: polynomial, rational, exponential and logarithmic functions, limits and continuity, sequences and series, conic sections, vectors and matrices.",
       "u": [
-        "MA.CF.1: The student will identify and analyze the properties of polynomial, rational, piecewise-defined, absolute value, radical, and step functions and sketch the graphs of the functions.",
-        "MA.CF.2: The student will determine the limit of a function if it exists.",
-        "MA.CF.3: The student will analyze and describe the continuity of functions.",
-        "MA.FR.1: The student will analyze compositions of functions to determine and verify inverses of functions.",
-        "MA.FR.2: The student will analyze the characteristics of exponential and logarithmic functions, and sketch the graphs of the functions.",
-        "MA.FR.3: The student will analyze sequences and finite series, and model and solve problems in context using sequences and series.",
-        "MA.AG.1: The student will identify and analyze the properties of conic sections and sketch a graph given an equation.",
-        "MA.AG.2: The student will use parametric equations to model and solve problems in context.",
-        "MA.AG.3: The student will perform operations with vectors in the coordinate plane.",
-        "MA.AG.4: The student will investigate and identify the characteristics of the graphs of polar equations.",
-        "MA.AG.5: The student will use matrices to organize data and will add and subtract matrices, multiply matrices, multiply matrices by a scalar, and use matrices to solve systems of equations."
+        "Properties of functions",
+        "Limits",
+        "Continuity",
+        "Inverse functions",
+        "Exponential and logarithmic functions",
+        "Sequences and series",
+        "Conic sections",
+        "Parametric equations",
+        "Vectors",
+        "Polar graphs",
+        "Matrices"
       ]
     },
     {
@@ -825,19 +813,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Virginia course in data science: turning real-world questions into data plans, spotting bias, cleaning and visualizing data, building statistical models, and telling the story with data.",
       "u": [
-        "DS.1: The student will identify specific examples of real-world problems that can be effectively addressed using data science.",
-        "DS.2: The student will be able to formulate a top-down plan for data collection and analysis, with quantifiable results, based on the context of a problem.",
-        "DS.3: The student will recognize the importance of data literacy and develop an awareness of how the analysis of data can be used in problem solving to effect change and create innovative solutions.",
-        "DS.4: The student will be able to identify data biases in the data collection process and understand the implications and privacy issues surrounding data collection and processing.",
-        "DS.5: The student will use storytelling as a strategy to effectively communicate with data.",
-        "DS.6: The student will justify the design, use, and effectiveness of different forms of data visualizations.",
-        "DS.7: The student will be able to assess reliability of source data in preparation for mathematical modeling.",
-        "DS.8: The student will be able to acquire and prepare big data sets for modeling and analysis.",
-        "DS.9: The student will select and analyze data models to make predictions, while assessing accuracy and sources of uncertainty.",
-        "DS.10: The student will be able to summarize and interpret data represented in both conventional and emerging visualizations.",
-        "DS.11: The student will select statistical models and use goodness of fit testing to extract actionable knowledge directly from data.",
-        "DS.12: The student will be able to select and utilize appropriate technological tools and functions within those tools to process and prepare data for analysis.",
-        "DS.13: The student will be able to select and utilize appropriate technological tools and functions within those tools to analyze and communicate data effectively."
+        "Real-world problems for data science",
+        "Planning data collection and analysis",
+        "Data literacy and its impact",
+        "Bias and privacy in data",
+        "Telling stories with data",
+        "Designing data visualizations",
+        "Judging source reliability",
+        "Preparing big data sets",
+        "Modeling and predictions",
+        "Reading conventional and emerging visualizations",
+        "Statistical models and goodness of fit",
+        "Technology tools for data work"
       ]
     }
   ],
@@ -850,15 +837,12 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to count to 100, read and write numbers, compare groups of objects, and add and subtract with small numbers using objects and pictures. They also learn to name shapes and to compare things by length, height and weight. Short, hands-on lessons build the number sense every later grade relies on.",
       "u": [
-        "Know number names and the counting sequence (Standards K.CC.1–3)",
-        "Count to tell the number of objects (Standards K.CC.4–5)",
-        "Identify and compare quantities of objects and numerals (Standards K.CC.6–7)",
-        "Understand addition as putting together and adding to, and understand subtraction as taking apart and taking from (Standards K.OA.1–5)",
-        "Compose and decompose numbers 11-19 to gain foundations for place value (Standard K.NBT.1)",
-        "Describe and compare measurable attributes of objects (Standards K.MD.1–2)",
-        "Classify objects and count the number of objects in each category (Standard K.MD.3)",
-        "Identify and describe shapes, including squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres (Standards K.G.1–3)",
-        "Analyze, compare, create, and compose shapes (Standards K.G.4–6)"
+        "Numbers and counting to 100",
+        "Comparing numbers",
+        "Putting together and taking apart (intro to addition and subtraction)",
+        "Teen numbers and ones-and-tens",
+        "Measuring and sorting objects",
+        "Shapes around us"
       ]
     },
     {
@@ -869,17 +853,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets confident with adding and subtracting within 20, learns how two-digit numbers are built from tens and ones, and counts up to 120. They also measure with simple units, tell time to the hour and half hour, and work with shapes and simple graphs.",
       "u": [
-        "Represent and solve problems involving addition and subtraction within 20 (Standards 1.OA.1–2, 1.OA.5–6)",
-        "Understand and apply properties of operations and the relationship between addition and subtraction (Standards 1.OA.3–4)",
-        "Work with addition and subtraction equations (Standards 1.OA.7–8)",
-        "Extend the counting sequence (Standard 1.NBT.1)",
-        "Understand place value (Standards 1.NBT.2–3)",
-        "Use place value understanding and properties of operations to add and subtract (Standards 1.NBT.4–6)",
-        "Measure lengths indirectly and by iterating length units (Standards 1.MD.1–2)",
-        "Tell and write time (Standard 1.MD.3)",
-        "Represent and interpret data (Standard 1.MD.4)",
-        "Identify the value of coins (Standard 1.MD.5)",
-        "Reason with shapes and their attributes (Standards 1.G.1–3)"
+        "Addition and subtraction stories",
+        "Fact families and strategies within 20",
+        "Equations with addition and subtraction",
+        "Counting to 120 and tens and ones",
+        "Comparing and adding two-digit numbers",
+        "Measuring length",
+        "Telling time",
+        "Picture graphs and tables",
+        "Shapes, halves, and fourths"
       ]
     },
     {
@@ -890,14 +872,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child adds and subtracts within 100 and learns place value up to 1,000. They measure length, tell time, count money, sort data into graphs, and meet the first ideas behind multiplication through equal groups.",
       "u": [
-        "Represent and solve problems involving addition and subtraction (Standard 2.OA.1)",
-        "Fluently add and subtract within 20 (Standard 2.OA.2) and work with equal groups of objects to gain foundations for multiplication (Standards 2.OA.3–4)",
-        "Understand place value (Standards 2.NBT.1–4)",
-        "Use place value understanding and properties of operations to add and subtract (Standards 2.NBT.5–9)",
-        "Measure and estimate lengths in standard units (Standards 2.MD.1–4) and relate addition and subtraction to length (Standards 2.MD.5–6)",
-        "Work with time and money (Standards 2.MD.7–8)",
-        "Represent and interpret data (Standards 2.MD.9–10)",
-        "Reason with shapes and their attributes (Standards 2.G.1–3)"
+        "Addition and subtraction word problems",
+        "Fluency within 20",
+        "Even and odd numbers and equal groups",
+        "Place value to 1,000",
+        "Adding and subtracting within 100",
+        "Adding and subtracting within 1,000",
+        "Length and number lines",
+        "Time and money",
+        "Graphs and line plots",
+        "Shapes, halves, thirds, and fourths"
       ]
     },
     {
@@ -908,16 +892,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "This is the year of multiplication and division: your child learns their times tables, meets fractions for the first time, and works with area and perimeter. They also practice reading time, measuring, and solving word problems in several steps.",
       "u": [
-        "Represent and solve problems involving multiplication and division within 100 (Standards 3.OA.1–4 and Standard 3.OA.7)",
-        "Demonstrate understanding of the properties of multiplication and the relationship between multiplication and division (Standards 3.OA.5–6)",
-        "Use the four operations to identify and explain patterns in arithmetic (Standards 3.OA.8–9)",
-        "Use place value understanding and properties of operations to perform multi-digit arithmetic. A range of algorithms may be used (Standards 3.NBT.1–3)",
-        "Develop understanding of fractions as numbers. Denominators are limited to 2, 3, 4, 6, and 8 in third grade (3.NF.1–3)",
-        "Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses of objects (Standards 3.MD.1–2)",
-        "Represent and interpret data (Standards 3.MD.3–4)",
-        "Understand concepts of area and relate area to multiplication and addition (Standards 3.MD.5–7)",
-        "Recognize perimeter as an attribute of plane figures and distinguish between linear and area measures (Standard 3.MD.8)",
-        "Reason with shapes and their attributes (Standards 3.G.1–2)"
+        "Multiplication and division as equal groups",
+        "Multiplication and division facts within 100",
+        "Properties and patterns of arithmetic",
+        "Rounding and multi-digit addition and subtraction",
+        "Fractions as numbers",
+        "Equivalent fractions and comparing fractions",
+        "Time, liquid volume, and mass",
+        "Scaled graphs and line plots",
+        "Area and its link to multiplication",
+        "Perimeter",
+        "Shapes and their attributes"
       ]
     },
     {
@@ -928,19 +913,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with bigger numbers, multiplies and divides multi-digit numbers, and compares, adds and subtracts fractions and decimals. They also measure angles, classify shapes, and solve multi-step word problems.",
       "u": [
-        "Use the four operations with whole numbers (addition, subtraction, multiplication, and division) to solve problems (Standards 4.OA.1–3)",
-        "Gain familiarity with factors and multiples (Standard 4.OA.4)",
-        "Generate and analyze numeric and shape patterns (Standard 4.OA.5)",
-        "Generalize place value understanding for multi-digit whole numbers by analyzing patterns, writing whole numbers in a variety of ways, making comparisons, and rounding (Standards 4.NBT.1–3)",
-        "Use place value understanding and properties of operations to perform multi-digit addition, subtraction, multiplication, and division using a one-digit divisor (Standards 4.NBT.4–6)",
-        "Extend understanding of equivalence and ordering of fractions (Standards 4.NF.1–2)",
-        "Build fractions from unit fractions by applying and extending previous understandings of operations on whole numbers (Standards 4.NF.3–4)",
-        "Understand decimal notation to the hundredths and compare decimal fractions with denominators of 10 and 100 (Standards 4.NF.5–7)",
-        "Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit (Standards 4.MD.1–2)",
-        "Apply knowledge of area and perimeter to solve real-world and mathematical problems (Standard 4.MD.3)",
-        "Represent and interpret data through the use of a line plot (Standard 4.MD.4)",
-        "Understand various concepts of angles and angle measurement (Standards 4.MD.5–7)",
-        "Draw and identify lines and angles, as well as classify shapes by properties of their lines and angles (Standards 4.G.1–3)"
+        "Four operations and word problems",
+        "Factors, multiples, and patterns",
+        "Place value of multi-digit numbers",
+        "Multi-digit addition, subtraction, multiplication, and division",
+        "Fraction equivalence and ordering",
+        "Building fractions from unit fractions",
+        "Decimal fractions",
+        "Measurement conversions",
+        "Line plots with fractions",
+        "Angles and angle measure",
+        "Lines, angles, and shapes"
       ]
     },
     {
@@ -951,17 +934,19 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to add, subtract, multiply and divide fractions and decimals, finds volume, and plots points on a coordinate grid. They get ready for middle school math with order of operations and problem solving.",
       "u": [
-        "Write and interpret numerical expressions (Standards 5.OA.1–2)",
-        "Analyze patterns and relationships (Standard 5.OA.3)",
-        "Understand the place value system (Standards 5.NBT.1–4)",
-        "Perform operations with multi-digit whole numbers and with decimals to hundredths (Standards 5.NBT.5–7)",
-        "Use equivalent fractions as a strategy to add and subtract fractions (Standards 5.NF.1–2)",
-        "Apply and extend previous understandings of multiplication and division to multiply and divide fractions (Standards 5.NF.3–7)",
-        "Convert like measurement units within a given measurement system (Standard 5.MD.1)",
-        "Represent and interpret data (Standard 5.MD.2)",
-        "Understand concepts of geometric measurement and volume, as well as how multiplication and addition relate to volume (Standards 5.MD.3–5)",
-        "Graph points on the coordinate plane to solve real-world and mathematical problems in quadrant one (Standards 5.G.1–2)",
-        "Classify two-dimensional figures into categories based on their properties (Standards 5.G.3–4)"
+        "Numerical expressions",
+        "Patterns and relationships",
+        "Place value and powers of 10",
+        "Multi-digit whole number operations",
+        "Decimal operations to hundredths",
+        "Adding and subtracting fractions with unlike denominators",
+        "Multiplying fractions",
+        "Dividing with unit fractions",
+        "Converting measurement units",
+        "Line plots with fractions",
+        "Volume",
+        "Graphing points in the coordinate plane",
+        "Classifying two-dimensional figures"
       ]
     },
     {
@@ -972,16 +957,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child steps into middle school math with ratios and rates, dividing fractions, negative numbers, and the first algebra: expressions and one-step equations. They also find area and volume and learn to describe data with averages and graphs.",
       "u": [
-        "Understand ratio concepts and use ratio reasoning to solve problems (Standards 6.RP.1–3)",
-        "Apply and extend previous understandings of multiplication and division of whole numbers to divide fractions by fractions (Standard 6.NS.1)",
-        "Compute (add, subtract, multiply and divide) fluently with multi-digit numbers and decimals and find common factors and multiples (Standards 6.NS.2–4)",
-        "Apply and extend previous understandings of numbers to the system of rational numbers (Standards 6.NS.5–8)",
-        "Apply and extend previous understandings of arithmetic to algebraic expressions involving exponents and variables (Standards 6.EE.1–4)",
-        "Reason about and solve one-variable equations and inequalities (Standards 6.EE.5–8)",
-        "Represent and analyze quantitative relationships between dependent and independent variables in a real-world context (Standard 6.EE.9)",
-        "Solve real-world and mathematical problems involving area, surface area, and volume (Standards 6.G.1–4)",
-        "Develop understanding of statistical variability of data (Standards 6.SP.1–3)",
-        "Summarize and describe distributions (Standards 6.SP.4–5)"
+        "Ratio concepts",
+        "Unit rates and percents",
+        "Dividing fractions by fractions",
+        "Multi-digit operations, factors, and multiples",
+        "Rational numbers and the number line",
+        "Expressions with variables",
+        "One-variable equations and inequalities",
+        "Relationships between two variables",
+        "Area, surface area, and volume",
+        "Statistical questions and variability",
+        "Describing data distributions"
       ]
     },
     {
@@ -992,15 +978,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with proportions and percent, calculations with positive and negative numbers and fractions, and solving equations. They also study scale drawings, angles, circles, and basic probability and sampling.",
       "u": [
-        "Analyze proportional relationships and use them to solve real-world and mathematical problems (Standards 7.RP.1–3)",
-        "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers (Standards 7.NS.1–3)",
-        "Use properties of operations to generate equivalent expressions (Standards 7.EE.1–2)",
-        "Solve real-life and mathematical problems using numerical and algebraic expressions and equations (Standards 7.EE.3–4)",
-        "Draw, construct, and describe geometrical figures, and describe the relationships between them (Standards 7.G.1–3)",
-        "Solve real-life and mathematical problems involving angle measure, area, surface area, and volume (Standards 7.G.4–6)",
-        "Use random sampling to draw inferences about a population (Standards 7.SP.1–2)",
-        "Draw informal comparative inferences about two populations (Standards 7.SP.3–4)",
-        "Investigate chance processes and develop, use, and evaluate probability models (Standards 7.SP.5–8)"
+        "Proportional relationships",
+        "Percent problems",
+        "Adding and subtracting rational numbers",
+        "Multiplying and dividing rational numbers",
+        "Equivalent expressions",
+        "Equations and inequalities from real-life problems",
+        "Scale drawings and geometric figures",
+        "Angles, area, surface area, and volume",
+        "Random sampling and comparing populations",
+        "Chance and probability models"
       ]
     },
     {
@@ -1011,16 +998,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets ready for high school algebra: linear equations and graphs, functions, systems of equations, exponents and square roots. They also learn the Pythagorean Theorem, transformations, and how to read relationships in data.",
       "u": [
-        "Know that there are numbers that are not rational, and approximate them by rational numbers (Standards 8.NS.1–3)",
-        "Work with radical and integer exponents (Standards 8.EE.1–4)",
-        "Understand the connections between proportional relationships, lines, and linear relationships (Standards 8.EE.5–6)",
-        "Analyze and solve linear equations and inequalities and pairs of simultaneous linear equations (Standards 8.EE.7–8)",
-        "Define, evaluate, and compare functions (Standards 8.F.1–3)",
-        "Use functions to model relationships between quantities (Standards 8.F.4–5)",
-        "Understand congruence and similarity using physical models, transparencies, or geometry software (Standards 8.G.1–5)",
-        "Understand and apply the Pythagorean Theorem and its converse (Standards 8.G.6–8)",
-        "Solve real-world and mathematical problems involving volume of cylinders, cones, and spheres (Standard 8.G.9)",
-        "Investigate patterns of association in bivariate data (Standards 8.SP.1–4)"
+        "Rational and irrational numbers",
+        "Integer exponents, radicals, and scientific notation",
+        "Proportional relationships and slope",
+        "Solving linear equations",
+        "Systems of linear equations",
+        "Functions: defining, comparing, and modeling",
+        "Congruence and similarity with transformations",
+        "Pythagorean theorem",
+        "Volume of cylinders, cones, and spheres",
+        "Patterns in bivariate data"
       ]
     },
     {
@@ -1031,30 +1018,22 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "The first course of Utah's integrated high school sequence: linear and exponential functions, equations and inequalities, statistics, and the basics of geometry and proof. Algebra and geometry are taught together rather than as separate courses. Includes an honors extension on vectors and matrices.",
       "u": [
-        "Number and Quantity, Quantities: Reason quantitatively and use units to solve problems (Standards N.Q.1–3)",
-        "Algebra, Seeing Structure in Expressions: Interpret the structure of expressions (Standard A.SSE.1)",
-        "Algebra, Creating Equations: Create equations that describe numbers or relationships (Standards A.CED.1–4)",
-        "Algebra, Reasoning With Equations and Inequalities: Understand solving equations as a process of reasoning and explain the reasoning (Standard A.REI.1)",
-        "Algebra, Reasoning With Equations and Inequalities: Solve equations and inequalities in one variable (Standard A.REI.3)",
-        "Algebra, Reasoning With Equations and Inequalities: Solve systems of equations (Standards A.REI.5–6)",
-        "Algebra, Reasoning With Equations and Inequalities: Represent and solve equations and inequalities graphically (Standards A.REI.10–12)",
-        "Functions, Interpreting Linear and Exponential Functions: Understand the concept of a linear or exponential function and use function notation (Standards F.IF.1–3)",
-        "Functions, Interpreting Linear and Exponential Functions: Interpret linear or exponential functions that arise in applications in terms of a context (Standards F.IF.4–6)",
-        "Functions, Interpreting Linear and Exponential Functions: Analyze linear or exponential functions using different representations (Standards F.IF.7, 9)",
-        "Functions, Building Linear or Exponential Functions: Build a linear or exponential function that models a relationship between two quantities (Standards F.BF.1–2)",
-        "Functions, Building Linear or Exponential Functions: Build new functions from existing functions (Standard F.BF.3)",
-        "Functions, Linear and Exponential: Construct and compare linear and exponential models and solve problems (Standards F.LE.1–3)",
-        "Functions, Linear and Exponential: Interpret expressions for functions in terms of the situation they model (Standard F.LE.5)",
-        "Geometry, Congruence: Experiment with transformations in the plane (Standards G.CO.1–5)",
-        "Geometry, Congruence: Understand congruence in terms of rigid motions (Standards G.CO.6–8)",
-        "Geometry, Congruence: Make geometric constructions (Standards G.CO.12–13)",
-        "Geometry, Expressing Geometric Properties With Equations: Use coordinates to prove simple geometric theorems algebraically (Standards G.GPE.4–5, 7)",
-        "Statistics and Probability, Interpreting Categorical and Quantitative Data: Summarize, represent, and interpret data on a single count or measurement variable (Standards S.ID.1–3)",
-        "Statistics and Probability, Interpreting Categorical and Quantitative Data: Summarize, represent, and interpret data on two categorical and quantitative variables (Standard S.ID.6)",
-        "Statistics and Probability, Interpreting Categorical and Quantitative Data: Interpret linear models (Standards S.ID.7–9)",
-        "Honors standards, Vector and Matrix Quantities: Represent and model with vector quantities (Standards N.VM.1–3)",
-        "Honors standards, Vector and Matrix Quantities: Perform operations on vectors (Standards N.VM.4–5)",
-        "Honors standards, Vector and Matrix Quantities: Perform operations on matrices and use matrices in applications (Standards N.VM.6–13)"
+        "Quantities and units",
+        "Structure of expressions",
+        "Writing equations from situations",
+        "Solving one-variable equations and inequalities",
+        "Systems of equations",
+        "Solving graphically",
+        "Function concepts and notation",
+        "Interpreting linear and exponential functions in context",
+        "Building linear and exponential functions",
+        "Linear vs. exponential models",
+        "Transformations and rigid motions",
+        "Geometric constructions",
+        "Coordinate geometry proofs",
+        "Describing one-variable data",
+        "Two-variable data and linear models",
+        "Honors unit: Vectors and matrices"
       ]
     },
     {
@@ -1065,41 +1044,22 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "The second integrated course: quadratics and complex numbers, geometric proof, similarity, circles and right-triangle trigonometry, and probability. Includes an honors extension.",
       "u": [
-        "Number and Quantity, The Real Number System: Extend the properties of exponents to rational exponents (Standards N.RN.1–2)",
-        "Number and Quantity, The Real Number System: Use properties of rational and irrational numbers (Standard N.RN.3)",
-        "Number and Quantity, The Complex Number System: Perform arithmetic operations with complex numbers (Standards N.CN.1–2)",
-        "Number and Quantity, The Complex Number System: Use complex numbers in polynomial identities and equations (Standards N.CN.7–9)",
-        "Algebra, Seeing Structure in Expression: Interpret the structure of expressions (Standards A.SSE.1–2)",
-        "Algebra, Seeing Structure in Expression: Write expressions in equivalent forms to solve problems (Standard A.SSE.3)",
-        "Algebra, Arithmetic With Polynomials and Rational Expressions: Perform arithmetic operations on polynomials (Standard A.APR.1)",
-        "Algebra, Creating Equations: Create equations that describe numbers or relationships (Standards A.CED.1–2, 4)",
-        "Algebra, Reasoning With Equations and Inequalities: Solve equations and inequalities in one variable (Standard A.REI.4)",
-        "Algebra, Reasoning With Equations and Inequalities: Solve systems of equations (Standard A.REI.7)",
-        "Functions, Interpret Functions: Interpret quadratic functions that arise in applications in terms of a context (Standards F.IF.4–6)",
-        "Functions, Interpret Functions: Analyze functions using different representations (Standards F.IF.7–9)",
-        "Functions, Building Functions: Build a function that models a relationship between two quantities (Standard F.BF.1)",
-        "Functions, Building Functions: Build new functions from existing functions (Standard F.BF.3)",
-        "Functions, Linear, Quadratic, and Exponential Models: Construct and compare linear, quadratic, and exponential models and solve problems (Standard F.LE.3)",
-        "Functions, Trigonometric Functions: Prove and apply trigonometric identities (Standard F.TF.8)",
-        "Geometry, Congruence: Prove geometric theorems (Standards G.CO.9–11)",
-        "Geometry, Similarity, Right Triangles, and Trigonometry: Understand similarity in terms of similarity transformations (Standards G.SRT.1–3)",
-        "Geometry, Similarity, Right Triangles, and Trigonometry: Prove theorems involving similarity (Standards G.SRT.4–5)",
-        "Geometry, Similarity, Right Triangles, and Trigonometry: Define trigonometric ratios and solve problems involving right triangles (Standards G.SRT.6–8)",
-        "Geometry, Circles: Understand and apply theorems about circles (Standards G.C.1–4)",
-        "Geometry, Circles: Find arc lengths and areas of sectors of circles (Standard G.C.5)",
-        "Geometry, Expressing Geometric Properties With Equations: Translate between the geometric description and the equation for a conic section (Standard G.GPE.1)",
-        "Geometry, Expressing Geometric Properties With Equations: Use coordinates to prove simple geometric theorems algebraically (Standards G.GPE.4, 6)",
-        "Geometry, Geometric Measurement and Dimension: Explain volume formulas and use them to solve problems (Standards G.GMD.1, 3)",
-        "Statistics, Interpreting Categorical and Quantitative Data: Summarize, represent, and interpret data on two categorical or quantitative variables (Standard S.ID.5)",
-        "Statistics, Conditional Probability and the Rules of Probability: Understand independence and conditional probability and use them to interpret data (Standards S.CP.1, 4–5)",
-        "Statistics, Conditional Probability and the Rules of Probability: Use the rules of probability to compute probabilities of compound events in a uniform probability model (Standard S.CP.6)",
-        "Honors standards, Complex Number System: Perform arithmetic operations with complex numbers (Standard N.CN.3)",
-        "Honors standards, Complex Number System: Represent complex numbers and their operations on the complex plane (Standards N.CN.4–5)",
-        "Honors standards, Reasoning With Equations and Inequalities: Solve systems of equations (Standards A.REI.8–9)",
-        "Honors standards, Interpreting Functions: Analyze functions using different representations (Standards F.IF.10–11)",
-        "Honors standards, Expressing Geometric Properties With Equations: Translate between the geometric description and the equation for a conic section (Standards G.GPE.2–3)",
-        "Honors standards, Conditional Probability and the Rules of Probability: Understand independence and conditional probability and use them to interpret data (Standards S.CP.2–3)",
-        "Honors standards, Conditional Probability and the Rules of Probability: Use the rules of probability to compute probabilities of compound events in a uniform probability model (Standards S.CP.7–8)"
+        "Rational exponents and radicals",
+        "Rational and irrational numbers",
+        "Complex numbers",
+        "Structure of expressions and polynomial arithmetic",
+        "Solving quadratic equations",
+        "Systems with quadratics",
+        "Quadratic functions in context",
+        "Analyzing and transforming functions",
+        "Modeling with linear, quadratic, and exponential functions",
+        "Proving geometric theorems",
+        "Similarity and right triangle trigonometry",
+        "Circles, arcs, and sectors",
+        "Conic sections and coordinate proofs",
+        "Volume formulas",
+        "Conditional probability and compound events",
+        "Honors unit: Complex plane, conics, and probability extensions"
       ]
     },
     {
@@ -1110,41 +1070,23 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "The third integrated course: polynomial, rational, exponential and logarithmic functions, trigonometry, modeling, and statistical inference. Includes an honors extension.",
       "u": [
-        "Number and Quantity, The Complex Number System: Use complex numbers in polynomial identities and equations (Standards N.CN.8–9)",
-        "Algebra, Seeing Structures in Expressions: Interpret the structure of expressions (Standards A.SSE.1–2)",
-        "Algebra, Seeing Structures in Expressions: Write expressions in equivalent forms to solve problems (Standard A.SSE.4)",
-        "Algebra, Arithmetic With Polynomials and Rational Expressions: Perform arithmetic operations on polynomials (Standard A.APR.1)",
-        "Algebra, Arithmetic With Polynomials and Rational Expressions: Understand the relationship between zeros and factors of polynomials (Standards A.APR.2–3)",
-        "Algebra, Arithmetic With Polynomials and Rational Expressions: Use polynomial identities to solve problems (Standards A.APR.4–5)",
-        "Algebra, Arithmetic With Polynomials and Rational Expressions: Rewrite rational expressions (Standards A.APR.6–7)",
-        "Algebra, Creating Equations: Create equations that describe numbers or relationships (Standards A.CED.1–4)",
-        "Algebra, Reasoning With Equations and Inequalities: Understand solving equations as a process of reasoning and explain the reasoning (Standard A.REI.2)",
-        "Algebra, Reasoning With Equations and Inequalities: Represent and solve equations and inequalities graphically (Standard A.REI.11)",
-        "Functions, Interpreting Functions: Interpret functions that arise in applications in terms of a context (Standards F.IF.4–6)",
-        "Functions, Interpreting Functions: Analyze functions using different representations (Standards F.IF.7–9)",
-        "Functions, Building Functions: Build a function that models a relationship between two quantities (Standard F.BF.1)",
-        "Functions, Building Functions: Build new functions from existing functions (Standards F.BF.3–4)",
-        "Functions, Linear, Quadratic, and Exponential Models: Construct and compare linear, quadratic, and exponential models and solve problems (Standards F.LE.3–4)",
-        "Functions, Linear, Quadratic, and Exponential Models: Interpret expressions for functions in terms of the situation it models (Standard F.LE.5)",
-        "Functions, Trigonometric Functions: Extend the domain of trigonometric functions using the unit circle (Standards F.TF.1–3)",
-        "Functions, Trigonometric Functions: Model periodic phenomena with trigonometric functions (Standards F.TF.5–7)",
-        "Geometry, Similarity, Right Triangles, and Trigonometry: Apply trigonometry to general triangles (Standards G.SRT.9–11)",
-        "Geometry, Geometric Measurement and Dimension: Visualize relationships between two-dimensional and three-dimensional objects (Standard G.GMD.4)",
-        "Geometry, Modeling With Geometry: Apply geometric concepts in modeling situations (Standards G.MG.1–3)",
-        "Statistics, Interpreting Categorical and Quantitative Data: Summarize, represent, and interpret data on a single count or measurement variable (Standard S.ID.4)",
-        "Statistics, Making Inferences and Justifying Conclusions: Understand and evaluate random processes underlying statistical experiments (Standard S.IC.1)",
-        "Statistics, Making Inferences and Justifying Conclusions: Draw and justify conclusions from sample surveys, experiments, and observational studies (Standards S.IC.3–4, 6)",
-        "Honors standards, Complex Number System: Perform arithmetic operations with complex numbers (Standard N.CN.3)",
-        "Honors standards, Complex Number System: Represent complex numbers and their operations on the complex plane (Standards N.CN.4–6)",
-        "Honors standards, Complex Number System: Use complex numbers in polynomial identities and equations (Standard N.CN.10)",
-        "Honors standards, Interpreting Functions: Analyze functions using different representations (Standard F.IF.7, d and f)",
-        "Honors standards, Building Functions: Build a function that models a relationship between two quantities (Standard F.BF.1.c)",
-        "Honors standards, Building Functions: Build new functions from existing functions (Standards F.BF.4.b,c,d–5)",
-        "Honors standards, Trigonometric Functions: Extend the domain of trigonometric functions using the unit circle (Standard F.TF.4)",
-        "Honors standards, Trigonometric Functions: Model periodic phenomena with trigonometric functions (Standards F.TF.6–7)",
-        "Honors standards, Trigonometric Functions: Prove and apply trigonometric identities (Standard F.TF.9)",
-        "Honors standards, Geometric Measurement and Dimension: Explain volume formulas and use them to solve problems (Standard G.GMD.2)",
-        "Honors standards, Conditional Probability and the Rules of Probability: Use the rules of probability to compute probabilities of compound events in a uniform probability model (Standard S.CP.9)"
+        "Complex numbers in polynomial equations",
+        "Structure of expressions",
+        "Polynomial arithmetic, zeros, and factors",
+        "Polynomial identities",
+        "Rational expressions",
+        "Writing and solving equations",
+        "Functions in context",
+        "Analyzing and building functions",
+        "Inverse functions",
+        "Models: linear, quadratic, exponential",
+        "The unit circle and trigonometric functions",
+        "Modeling periodic phenomena",
+        "Laws of sines and cosines",
+        "Modeling with geometry",
+        "Random processes and inference",
+        "Conclusions from surveys, experiments, and observational studies",
+        "Honors unit: Complex plane, function extensions, and trigonometric proofs"
       ]
     },
     {
@@ -1155,23 +1097,18 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Utah's precalculus: vectors and matrices, complex numbers, advanced functions, trigonometry and conic sections, and probability distributions.",
       "u": [
-        "Number and Quantity, Vector and Matrix Quantities: Represent and model with vector quantities (Standards N.VM.1–3)",
-        "Number and Quantity, Vector and Matrix Quantities: Perform operations on vectors (Standards N.VM.4–5)",
-        "Number and Quantity, Vector and Matrix Quantities: Perform operations on matrices and use matrices in applications (Standards N.VM.6–13)",
-        "Number and Quantity, Complex Number Systems: Perform arithmetic operations with complex numbers (Standard N.CN.3)",
-        "Number and Quantity, Complex Number Systems: Represent complex numbers and their operations on the complex plane (Standards N.CN.4–6)",
-        "Number and Quantity, Complex Number Systems: Use complex numbers in polynomial identities and equations (Standard N.CN.10)",
-        "Algebra, Reasoning With Equations and Inequalities: Solve systems of equations (Standards A.REI.8–9)",
-        "Functions, Interpreting Functions: Analyze functions using different representations (Standard F.IF.7, 10–11)",
-        "Functions, Building Functions: Build a function that models a relationship between two quantities (Standard F.BF.1)",
-        "Functions, Building Functions: Build new functions from existing functions (Standards F.BF.4–5)",
-        "Functions, Trigonometric Functions: Extend the domain of trigonometric functions using the unit circle (Standard F.TF.4)",
-        "Functions, Trigonometric Functions: Model periodic phenomena with trigonometric functions (Standards F.TF.6–7)",
-        "Functions, Trigonometric Functions: Prove and apply trigonometric identities (Standard F.TF.9)",
-        "Geometry, Geometric Measurement and Dimension: Explain volume formulas and use them to solve problems (Standard G.GMD.2)",
-        "Geometry, Expressing Geometric Properties With Equations: Translate between the geometric description and the equation for a conic section (Standards G.GPE.2–3)",
-        "Statistics, Conditional Probability and the Rules of Probability: Understand independence and conditional probability and use them to interpret data (Standards S.CP.2–3)",
-        "Statistics, Conditional Probability and the Rules of Probability: Use the rules of probability to compute probabilities of compound events in a uniform probability model (Standards S.CP.7–9)"
+        "Vectors",
+        "Matrices and their applications",
+        "Complex numbers and the complex plane",
+        "Systems of equations with matrices",
+        "Analyzing functions: polar and advanced graphs",
+        "Building and inverting functions",
+        "Trigonometric functions on the unit circle",
+        "Periodic models and inverse trigonometry",
+        "Trigonometric identities",
+        "Volume formulas",
+        "Conic sections",
+        "Conditional probability and compound events"
       ]
     },
     {
@@ -1182,20 +1119,19 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Utah course that prepares a student for College Algebra: equations, functions, exponential and logarithmic models, conic sections and statistics.",
       "u": [
-        "Standard I, Objective 1: Perform operations and simplify expressions with rational, irrational, and complex numbers",
-        "Standard I, Objective 2: Solve systems of equations and inequalities",
-        "Standard I, Objective 3: Solve and graph quadratic equations",
-        "Standard I, Objective 4: Simplify rational and radical expressions and solve and graph rational and radical equations",
-        "Standard II, Objective 1: Understand the concept of a function and use function notation",
-        "Standard II, Objective 2: Analyze functions using different representations",
-        "Standard II, Objective 3: Build new functions from existing functions",
-        "Standard II, Objective 4: Construct exponential models and use them to solve problems",
-        "Standard II, Objective 5: Understand the inverse relationship between exponents and logarithms and use this relationship to solve problems",
-        "Standard III, Objective 1: Use coordinate algebra to represent and analyze geometric situations",
-        "Standard III, Objective 2: Translate between the geometric descriptions and the equations for conic sections",
-        "Standard IV, Objective 1: Formulate questions and answer these questions by organizing, summarizing, and analyzing data",
-        "Standard IV, Objective 2: Make inferences and justify conclusions using data",
-        "Standard IV, Objective 3: Use the rules of probability to compute probabilities, and use probabilities to interpret data"
+        "Number systems: rational, irrational, and complex",
+        "Systems of equations and inequalities",
+        "Quadratic equations and graphs",
+        "Rational and radical expressions and equations",
+        "Functions and function notation",
+        "Analyzing and transforming functions",
+        "Exponential models",
+        "Exponents and logarithms",
+        "Coordinate algebra and geometry",
+        "Conic sections",
+        "Asking questions with data",
+        "Inference from data",
+        "Probability"
       ]
     },
     {
@@ -1206,15 +1142,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "An introduction to calculus (Utah, not AP): limits, derivatives and integrals, with applications to business, science and physics.",
       "u": [
-        "Standard I, Objective 1: Analyze and perform applications using characteristics of functions, including polynomial, radical, rational, piece-wise, power, exponential, and logarithmic functions",
-        "Standard I, Objective 2: Demonstrate an understanding of the nature of limits",
-        "Standard I, Objective 3: Understand the concept of continuity as a property of functions",
-        "Standard II, Objective 1: Develop an understanding of derivatives graphically, numerically, and analytically",
-        "Standard II, Objective 2: Manipulate and simplify derivatives using properties",
-        "Standard II, Objective 3: Solve application problems involving polynomial, exponential, and logarithmic models, including applications in business, economics, and physics",
-        "Standard III, Objective 1: Use various numerical methods to approximate definite integrals of functions represented as equations, graphs, and tables",
-        "Standard III, Objective 2: Use the Fundamental Theorem of Calculus to find definite integrals and to solve differential equations",
-        "Standard III, Objective 3: Model, solve, and interpret applications of antiderivatives"
+        "Families of functions: polynomial, radical, rational, power, exponential, logarithmic",
+        "Limits",
+        "Continuity",
+        "The derivative: graphs, tables, and formulas",
+        "Derivative rules and simplification",
+        "Applications of derivatives: business, economics, physics",
+        "Approximating definite integrals",
+        "Fundamental Theorem of Calculus and differential equations",
+        "Applications of antiderivatives"
       ]
     },
     {
@@ -1225,19 +1161,19 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Utah's introductory statistics: surveys and experiments, describing data, the normal distribution, regression, inference and probability.",
       "u": [
-        "Standard I, Objective 1: Use sample survey data collected through random samples to draw conclusions about populations",
-        "Standard I, Objective 2: Describe and use the features of good experimental design, such as random assignment of treatments, controls, placebos, blinding, and blocking",
-        "Standard I, Objective 3: Discuss and interpret surveys, experiments, and observations using information from government data, current events, medical experiments, polls, and news media",
-        "Standard II, Objective 1: Interpret and display data by selecting appropriate graphical methods",
-        "Standard II, Objective 2: Summarize data and be able to use technology such as calculators or computer software to assist in calculations",
-        "Standard II, Objective 3: Use data summaries to interpret and compare data",
-        "Standard II, Objective 4: Describe the characteristics of the normal distribution, and create an understanding of the standard deviation as a measure of spread",
-        "Standard III, Objective 1: Summarize, represent, and interpret bivariate data",
-        "Standard III, Objective 2: Display and compare data to make predictions and formulate conclusions",
-        "Standard III, Objective 3: Make inferences and justify conclusions from sample surveys, experiments, and observational studies",
-        "Standard IV, Objective 1: Use the rules of probability to calculate independent and conditional probabilities in real contexts",
-        "Standard IV, Objective 2: Adapt probability models to solve real-world problems",
-        "Standard IV, Objective 3: Use probability to make decisions and analyze outcomes"
+        "Random samples and surveys",
+        "Experimental design",
+        "Reading statistics in the news",
+        "Displaying data",
+        "Summarizing data with technology",
+        "Comparing data sets",
+        "The normal distribution and standard deviation",
+        "Bivariate data",
+        "Predictions from data",
+        "Inference from samples and experiments",
+        "Independent and conditional probability",
+        "Probability models for real problems",
+        "Decisions and outcomes"
       ]
     },
     {
@@ -1248,22 +1184,22 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Utah senior course in four independent parts: finance, modeling, probability and statistics, and using models to make choices such as voting and scheduling.",
       "u": [
-        "Quarter A, Mathematical Decision Making: Finance. Standard I, Objective 1: Determine, represent and analyze mathematical models for various types of income calculations",
-        "Quarter A, Mathematical Decision Making: Finance. Standard I, Objective 2: Create, represent, and justify personal budgets",
-        "Quarter A, Mathematical Decision Making: Finance. Standard I, Objective 3: Analyze mathematical models related to investing and borrowing money",
-        "Quarter A, Mathematical Decision Making: Finance. Standard I, Objective 4: Analyze numerical data to make quantitative and qualitative decisions",
-        "Quarter B, Mathematical Decision Making: Modeling. Standard II, Objective 1: Use matrices to represent and analyze mathematical situations",
-        "Quarter B, Mathematical Decision Making: Modeling. Standard II, Objective 2: Model mathematical problems with geometric tools",
-        "Quarter B, Mathematical Decision Making: Modeling. Standard II, Objective 3: Use mathematics to model and solve problems involving change",
-        "Quarter C, Mathematical Decision Making: Probability and Statistics. Standard III, Objective 1: Understand and communicate statistical information",
-        "Quarter C, Mathematical Decision Making: Probability and Statistics. Standard III, Objective 2: Develop and evaluate inferences and predictions that are based on data",
-        "Quarter C, Mathematical Decision Making: Probability and Statistics. Standard III, Objective 3: Apply statistical methods to design and conduct a survey or an experiment",
-        "Quarter C, Mathematical Decision Making: Probability and Statistics. Standard III, Objective 4: Use the rules of probability to calculate independent and conditional probabilities in real contexts",
-        "Quarter C, Mathematical Decision Making: Probability and Statistics. Standard III, Objective 5: Analyze risk and return in the context of everyday situations",
-        "Quarter D, Mathematical Decision Making: Using Models to Make Choices. Standard IV, Objective 1: Construct viable arguments and critique the reasoning of others",
-        "Quarter D, Mathematical Decision Making: Using Models to Make Choices. Standard IV, Objective 2: Analyze and evaluate the mathematics behind various ranking and selection methods",
-        "Quarter D, Mathematical Decision Making: Using Models to Make Choices. Standard IV, Objective 3: Construct, analyze, and interpret flow charts",
-        "Quarter D, Mathematical Decision Making: Using Models to Make Choices. Standard IV, Objective 4: Use a variety of graphical models to represent network and scheduling problems"
+        "Income and paychecks",
+        "Personal budgets",
+        "Investing and borrowing",
+        "Decisions from numerical data",
+        "Matrices as models",
+        "Geometric tools for modeling",
+        "Modeling change",
+        "Understanding statistics",
+        "Inferences and predictions",
+        "Surveys and experiments",
+        "Probability in real contexts",
+        "Risk and return",
+        "Arguments and reasoning",
+        "Voting, ranking, and selection",
+        "Flow charts",
+        "Networks and scheduling"
       ]
     },
     {
@@ -1274,25 +1210,25 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Utah's personal-finance math course: budgeting, credit, loans, taxes, investing, insurance, careers and income. Practical, real-life calculations.",
       "u": [
-        "Standard I, Objective 1: Determine, represent and analyze mathematical models and formulas for various types of financial calculations",
-        "Standard I, Objective 2: Analyze financial plans and calculated costs of personal finance",
-        "Standard I, Objective 3: Complete calculations associated with personal finance and financial planning using technology",
-        "Standard II, Objective 1: Summarize and interpret information from graphs, tables and charts",
-        "Standard II, Objective 2: Solve problems using graphical representations",
-        "Standard III, Objective 1: Analyze monthly, annual, and life-long financial plans",
-        "Standard III, Objective 2: Work with functions associated with finance and financial planning",
-        "Standard III, Objective 3: Determine, represent and analyze relationships for various types of growth and decay models",
-        "Standard IV, Objective 1: Create, represent and justify personal monthly and yearly budgets",
-        "Standard IV, Objective 2: Relate financial decisions to personal and societal consequences",
-        "Standard IV, Objective 3: Research annual earnings for various employment opportunities in the job market to make mathematical decisions for personal income",
-        "Standard V, Objective 1: Identify various forms of income and analyze factors that affect income",
-        "Standard V, Objective 2: Identify and understand required income withholdings",
-        "Standard V, Objective 3: Analyze criteria for selecting a career and the impact of career choices on income and financial stability",
-        "Standard VI, Objective 1: Describe the role of planning and maintaining a balanced budget",
-        "Standard VI, Objective 2: Understand credit uses and costs",
-        "Standard VI, Objective 3: Describe the impact of credit on money management",
-        "Standard VI, Objective 4: Describe the rights and responsibilities of buyers and sellers under consumer protection laws",
-        "Standard VI, Objective 5: Discuss the purposes for insurance and risk management"
+        "Financial formulas and models",
+        "Costs in financial plans",
+        "Finance calculations with technology",
+        "Reading financial graphs, tables, and charts",
+        "Solving financial problems graphically",
+        "Monthly, annual, and lifetime plans",
+        "Functions in finance",
+        "Growth and decay models",
+        "Personal budgets",
+        "Financial decisions and their consequences",
+        "Careers and earnings",
+        "Forms of income",
+        "Withholdings and taxes",
+        "Choosing a career",
+        "Balanced budgets",
+        "Credit: uses and costs",
+        "Credit and money management",
+        "Consumer rights and responsibilities",
+        "Insurance and risk management"
       ]
     },
     {
@@ -1303,21 +1239,21 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "A Utah applied course on codes and number systems, matrices, sequences, chaos and fractals, graph theory, statistics and logic, for students who want to see math in the modern world.",
       "u": [
-        "Standard 1, Objective 1: Use concepts of number theory and information systems to effectively manage large amounts of data",
-        "Standard 1, Objective 2: Use matrices to model, organize, and solve problems involving multiple variables",
-        "Standard 1, Objective 3: Recognize sequences as mathematical patterns and use them to model authentic situations",
-        "Standard II, Objective 1: Use linear systems of equations and inequalities to model and solve problems",
-        "Standard II, Objective 2: Use exponential functions to model and solve problems",
-        "Standard III, Objective 1: Use concepts of Chaos Theory to describe the behavior of dynamic systems that are highly sensitive to initial conditions",
-        "Standard III, Objective 2: Use concepts from Graph Theory to model and solve problems",
-        "Standard III, Objective 3: Extend geometry ideas to analyze art, architecture, music, and nature",
-        "Standard IV, Objective 1: Use the rules of probability to calculate independent and conditional probabilities in real contexts",
-        "Standard IV, Objective 2: Use graphs and numerical summaries to describe univariate data",
-        "Standard IV, Objective 3: Use graphs and numerical summaries to describe and analyze bivariate data",
-        "Standard IV, Objective 4: Use appropriate sampling techniques to describe a population",
-        "Standard V, Objective 1: Solve standard and non-standard problems",
-        "Standard V, Objective 2: Use logical reasoning to create convincing arguments and develop patterns of successful decision making",
-        "Standard V, Objective 3: Represent and compare finite and infinite groups using sets"
+        "Number theory and data systems",
+        "Matrices",
+        "Sequences in real situations",
+        "Linear systems",
+        "Exponential models",
+        "Chaos theory",
+        "Graph theory",
+        "Geometry in art, architecture, music, and nature",
+        "Probability in real contexts",
+        "Univariate data",
+        "Bivariate data",
+        "Sampling",
+        "Problem solving",
+        "Logical reasoning and decision patterns",
+        "Sets and groups"
       ]
     },
     {
@@ -1328,24 +1264,20 @@ var MATH_STANDARDS = {
       "fmt": "Semester",
       "d": "A Utah course on the math used in healthcare: medication doses, ratios and conversions, reading medical instruments, interpreting health data and medical billing. Half credit.",
       "u": [
-        "Strand 1, Standard 1: Analyze the use of medical mathematics in the healthcare system",
-        "Strand 2, Standard 1: Compute fluently and make reasonable estimates",
-        "Strand 2, Standard 2: Represent rational numbers in a variety of ways",
-        "Strand 2, Standard 3: Identify relationships among rational numbers and operations involving these numbers",
-        "Strand 2, Standard 4: Calculate percentages",
-        "Strand 3, Standard 1: Evaluate, solve, and analyze mathematical situations using algebraic properties and symbols",
-        "Strand 3, Standard 2: Use ratios to compare data",
-        "Strand 4, Standard 1: Use patterns, relations, and functions to represent mathematical situations",
-        "Strand 4, Standard 2: Represent quantitative relationships using mathematical models and symbols",
-        "Strand 5, Standard 1: Formulate and answer questions by collecting, organizing, and analyzing statistical data",
-        "Strand 5, Standard 2: Apply basic concepts of probability",
-        "Strand 6, Standard 1: Compute fluently and make reasonable estimates",
-        "Strand 6, Standard 2: Evaluate, solve, and analyze mathematical situations using algebraic properties and symbols",
-        "Strand 6, Standard 3: Represent quantitative relationships using mathematical models and symbols",
-        "Strand 7, Standard 1: Apply systems of order",
-        "Strand 7, Standard 2: Evaluate, solve, and analyze mathematical situations using algebraic properties and symbols",
-        "Strand 8, Standard 1: Use properties of exponentials to solve equations",
-        "Strand 8, Standard 2: Use properties of logarithms to solve equations"
+        "Medical mathematics in healthcare",
+        "Fluency and estimation",
+        "Rational numbers in many forms",
+        "Relationships among numbers and operations",
+        "Percentages",
+        "Algebraic properties and symbols",
+        "Ratios to compare data",
+        "Patterns, relations, and functions",
+        "Quantitative relationships and models",
+        "Collecting and analyzing statistical data",
+        "Basic probability",
+        "Systems of order and measurement",
+        "Exponents in equations",
+        "Logarithms in equations"
       ]
     }
   ],
@@ -1358,12 +1290,12 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to count, compare numbers, add and subtract with small numbers, sort objects and recognize basic shapes through hands-on, picture-based lessons.",
       "u": [
-        "Know number names and the count sequence (K.CC.1, K.CC.3)",
-        "Count to tell the number of objects (K.CC.4)",
-        "Understand addition as putting together and adding to, and understand subtraction as taking apart and taking from (K.OA.2–5)",
-        "Classify objects and count the number of objects in each category (K.MD.3)",
-        "Identify and describe shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders, and spheres) (K.G.2)",
-        "Analyze, compare, create, and compose shapes (K.G.4, K.G.6)"
+        "Numbers and counting to 100",
+        "Comparing numbers",
+        "Putting together and taking apart (intro to addition and subtraction)",
+        "Teen numbers and ones-and-tens",
+        "Measuring and sorting objects",
+        "Shapes around us"
       ]
     },
     {
@@ -1374,14 +1306,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets confident with adding and subtracting within 20, place value, time and money, and describing shapes.",
       "u": [
-        "Represent and solve problems involving addition and subtraction (1.OA.1)",
-        "Add and subtract within 20 (1.OA.6)",
-        "Work with addition and subtraction equations (1.OA.7)",
-        "Extend the counting sequence (1.NBT.1)",
-        "Understand place value (1.NBT.2)",
-        "Use place value understanding and properties of operations to add and subtract (1.NBT.4)",
-        "Work with time and money (1.MD.3a–b)",
-        "Reason with shapes and their attributes (1.G.1, 1.G.3)"
+        "Addition and subtraction stories",
+        "Fact families and strategies within 20",
+        "Equations with addition and subtraction",
+        "Counting to 120 and tens and ones",
+        "Comparing and adding two-digit numbers",
+        "Measuring length",
+        "Telling time",
+        "Picture graphs and tables",
+        "Shapes, halves, and fourths"
       ]
     },
     {
@@ -1392,13 +1325,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works on place value, adding and subtracting, measuring length, telling time and money, and describing shapes.",
       "u": [
-        "Represent and solve problems involving addition and subtraction (2.OA.1)",
-        "Add and subtract within 20 (2.OA.2)",
-        "Understand place value (2.NBT.1, 2.NBT.4)",
-        "Use place value understanding and properties of operations to add and subtract (2.NBT.5, 2.NBT.7)",
-        "Measure and estimate lengths in standard units (2.MD.1)",
-        "Work with time and money (2.MD.7–8)",
-        "Reason with shapes and their attributes (2.G.2–3)"
+        "Addition and subtraction word problems",
+        "Fluency within 20",
+        "Even and odd numbers and equal groups",
+        "Place value to 1,000",
+        "Adding and subtracting within 100",
+        "Adding and subtracting within 1,000",
+        "Length and number lines",
+        "Time and money",
+        "Graphs and line plots",
+        "Shapes, halves, thirds, and fourths"
       ]
     },
     {
@@ -1409,13 +1345,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "The year of multiplication and division, with fractions as numbers, area, and word problems.",
       "u": [
-        "Multiply and divide within 100 (3.OA.7)",
-        "Solve problems involving the four operations, and identify and explain patterns in arithmetic (3.OA.8)",
-        "Use place value understanding and properties of operations to perform multi-digit arithmetic (a range of algorithms may be used) (3.NBT.2)",
-        "Develop understanding of fractions as numbers (limited to denominators 2, 3, 4, 6, and 8) (use horizontal fractions) (3.NF.1–3)",
-        "Represent and interpret data (3.MD.4)",
-        "Geometric measurement: understand concepts of area and relate area to multiplication and to addition (3.MD.7)",
-        "Reason with shapes and their attributes (3.G.1)"
+        "Multiplication and division as equal groups",
+        "Multiplication and division facts within 100",
+        "Properties and patterns of arithmetic",
+        "Rounding and multi-digit addition and subtraction",
+        "Fractions as numbers",
+        "Equivalent fractions and comparing fractions",
+        "Time, liquid volume, and mass",
+        "Scaled graphs and line plots",
+        "Area and its link to multiplication",
+        "Perimeter",
+        "Shapes and their attributes"
       ]
     },
     {
@@ -1426,15 +1366,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with bigger numbers, multi-digit calculations, fraction equivalence and operations, decimals, and angles.",
       "u": [
-        "Use the four operations with whole numbers to solve problems (4.OA.3)",
-        "Generalize place value understanding for multi-digit whole numbers (limited to numbers less than or equal to 1,000,000) (4.NBT.2–3)",
-        "Use place value understanding and properties of operations to perform multi-digit arithmetic (limited to whole numbers less than or equal to 1,000,000) (4.NBT.5–6)",
-        "Extend understanding of fraction equivalence and ordering (limited to denominators 2, 3, 4, 5, 6, 8, 10, 12, and 100) (4.NF.1–2)",
-        "Build fractions from unit fractions by applying and extending previous understandings of operations on whole numbers (limited to denominators 2, 3, 4, 5, 6, 8, 10, 12, and 100) (4.NF.3)",
-        "Understand decimal notation for fractions, and compare decimal fractions (4.NF.7)",
-        "Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit (4.MD.3)",
-        "Geometric measurement: understand concepts of angle and measure angles (4.MD.7)",
-        "Draw and identify lines and angles, and classify shapes by properties of their lines and angles (4.G.2)"
+        "Four operations and word problems",
+        "Factors, multiples, and patterns",
+        "Place value of multi-digit numbers",
+        "Multi-digit addition, subtraction, multiplication, and division",
+        "Fraction equivalence and ordering",
+        "Building fractions from unit fractions",
+        "Decimal fractions",
+        "Measurement conversions",
+        "Line plots with fractions",
+        "Angles and angle measure",
+        "Lines, angles, and shapes"
       ]
     },
     {
@@ -1445,13 +1387,19 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with decimals and fractions, numerical expressions, volume and the coordinate plane.",
       "u": [
-        "Write, interpret, and/or evaluate numerical expressions (5.OA.1–2)",
-        "Understand the place value system (5.NBT.1–2)",
-        "Perform operations with multi-digit whole numbers and with decimals to hundredths (5.NBT.7)",
-        "Use equivalent fractions as a strategy to add and subtract fractions (5.NF.2)",
-        "Apply and extend previous understandings of multiplication and division to multiply and divide fractions (5.NF.3, 5.NF.6–7)",
-        "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition (5.MD.5)",
-        "Graph points on the coordinate plane to solve real-world and mathematical problems (5.G.2)"
+        "Numerical expressions",
+        "Patterns and relationships",
+        "Place value and powers of 10",
+        "Multi-digit whole number operations",
+        "Decimal operations to hundredths",
+        "Adding and subtracting fractions with unlike denominators",
+        "Multiplying fractions",
+        "Dividing with unit fractions",
+        "Converting measurement units",
+        "Line plots with fractions",
+        "Volume",
+        "Graphing points in the coordinate plane",
+        "Classifying two-dimensional figures"
       ]
     },
     {
@@ -1462,14 +1410,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child steps into middle school math with ratios, dividing fractions, rational numbers, expressions and equations, and describing data.",
       "u": [
-        "Understand ratio concepts and use ratio reasoning to solve problems (6.RP.3)",
-        "Apply and extend previous understandings of multiplication and division to divide fractions by fractions (6.NS.1)",
-        "Compute fluently with multi-digit numbers and find common factors and multiples (6.NS.3)",
-        "Apply and extend previous understandings of numbers to the system of rational numbers (6.NS.7–8)",
-        "Apply and extend previous understandings of arithmetic to algebraic expressions (6.EE.2–3)",
-        "Reason about and solve one-variable equations and inequalities (6.EE.6–8)",
-        "Solve real-world and mathematical problems involving area, surface area, and volume (6.G.1, 6.G.4)",
-        "Summarize and describe distributions (6.SP.4–5)"
+        "Ratio concepts",
+        "Unit rates and percents",
+        "Dividing fractions by fractions",
+        "Multi-digit operations, factors, and multiples",
+        "Rational numbers and the number line",
+        "Expressions with variables",
+        "One-variable equations and inequalities",
+        "Relationships between two variables",
+        "Area, surface area, and volume",
+        "Statistical questions and variability",
+        "Describing data distributions"
       ]
     },
     {
@@ -1480,14 +1431,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with proportions, rational-number operations, equivalent expressions, geometry and probability.",
       "u": [
-        "Analyze proportional relationships and use them to solve real-world and mathematical problems (7.RP.2–3)",
-        "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers (7.NS.3)",
-        "Use properties of operations to generate equivalent expressions (7.EE.1)",
-        "Solve real-life and mathematical problems using numerical and algebraic expressions and equations (7.EE.4)",
-        "Solve real-life and mathematical problems involving angle measure, area, surface area, and volume (7.G.4–6)",
-        "Use random sampling to draw inferences about a population (7.SP.1)",
-        "Draw informal comparative inferences about two populations (7.SP.4)",
-        "Investigate chance processes and develop, use, and evaluate probability models (7.SP.5–6)"
+        "Proportional relationships",
+        "Percent problems",
+        "Adding and subtracting rational numbers",
+        "Multiplying and dividing rational numbers",
+        "Equivalent expressions",
+        "Equations and inequalities from real-life problems",
+        "Scale drawings and geometric figures",
+        "Angles, area, surface area, and volume",
+        "Random sampling and comparing populations",
+        "Chance and probability models"
       ]
     },
     {
@@ -1498,14 +1451,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets ready for high school: linear equations, functions, congruence and similarity, the Pythagorean Theorem, and patterns in data.",
       "u": [
-        "Know that there are numbers that are not rational, and approximate them by rational numbers (8.NS.1)",
-        "Understand the connections between proportional relationships, lines, and linear equations (8.EE.5)",
-        "Analyze and solve linear equations and pairs of simultaneous linear equations (8.EE.7–8)",
-        "Define, evaluate, and compare functions (8.F.2)",
-        "Use functions to model relationships between quantities (8.F.4)",
-        "Understand congruence and similarity using physical models, transparencies, or geometry software (8.G.2, 8.G.5)",
-        "Understand and apply the Pythagorean Theorem (8.G.7–8)",
-        "Investigate patterns of association in bivariate data (8.SP.3–4)"
+        "Rational and irrational numbers",
+        "Integer exponents, radicals, and scientific notation",
+        "Proportional relationships and slope",
+        "Solving linear equations",
+        "Systems of linear equations",
+        "Functions: defining, comparing, and modeling",
+        "Congruence and similarity with transformations",
+        "Pythagorean theorem",
+        "Volume of cylinders, cones, and spheres",
+        "Patterns in bivariate data"
       ]
     },
     {
@@ -1516,23 +1471,23 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Wyoming sets one combined high school set rather than named courses, so this row covers the algebra, functions, geometry and statistics skills a student needs in grades 9–12: exponents and polynomials, equations and systems, functions, congruence and similarity, circles, and data analysis.",
       "u": [
-        "The Real Number System: Extend the properties of exponents to rational exponents (N.RN.1–2)",
-        "Quantities: Reason quantitatively and use units to solve problems (N.Q.1)",
-        "The Complex Number System: Use complex numbers in polynomial identities and equations (N.CN.7)",
-        "Seeing Structure in Expressions: Write expressions in equivalent forms to solve problems (A.SSE.3)",
-        "Arithmetic with Polynomials and Rational Expressions: Perform arithmetic operations on polynomials; Understand the relationship between zeros and factors of polynomials (A.APR.1, A.APR.3)",
-        "Creating Equations: Create equations that describe numbers or relationships (A.CED.1–3)",
-        "Reasoning with Equations and Inequalities: Understand solving equations as a process of reasoning and explain the reasoning; Solve equations and inequalities in one variable; Solve systems of equations (A.REI.2–4, A.REI.6–7)",
-        "Interpreting Functions: Understand the concept of a function and use function notation; Interpret functions that arise in applications in terms of the context; Analyze functions using different representations (F.IF.1–2, F.IF.4, F.IF.7, F.IF.9)",
-        "Building Functions: Build a function that models a relationship between two quantities; Build new functions from existing functions (F.BF.1, F.BF.3–4)",
-        "Linear, Quadratic, and Exponential Models: Construct and compare linear, quadratic, and exponential models and solve problems (F.LE.1–2)",
-        "Congruence: Experiment with transformations in the plane; Understand congruence in terms of rigid motions; Prove geometric theorems (G.CO.3, G.CO.8–10)",
-        "Similarity, Right Triangles, and Trigonometry: Prove theorems involving similarity; Define trigonometric ratios and solve problems involving right triangles (G.SRT.5, G.SRT.8)",
-        "Circles: Find arc lengths and areas of sectors of circles (G.C.5)",
-        "Expressing Geometric Properties with Equations: Use coordinates to prove simple geometric theorems algebraically (G.GPE.5)",
-        "Geometric Measurement and Dimension: Explain volume formulas and use them to solve problems (G.GMD.3)",
-        "Interpreting Categorical and Quantitative Data: Summarize, represent, and interpret data on a single count or measurement variable; Summarize, represent, and interpret data on two categorical and quantitative variables; Interpret linear models (S.ID.2, S.ID.6–7, S.ID.9)",
-        "Conditional Probability and the Rules of Probability: Understand independence and conditional probability and use them to interpret data (S.CP.1)"
+        "Rational exponents",
+        "Quantities and units",
+        "Complex numbers in equations",
+        "Equivalent forms of expressions",
+        "Polynomials: operations, zeros, and factors",
+        "Writing equations",
+        "Solving equations, inequalities, and systems",
+        "Functions: notation, context, and representations",
+        "Building and transforming functions",
+        "Linear, quadratic, and exponential models",
+        "Transformations, congruence, and proofs",
+        "Similarity and right triangle trigonometry",
+        "Arcs and sectors",
+        "Coordinate proofs",
+        "Volume formulas",
+        "Data and linear models",
+        "Independence and conditional probability"
       ]
     }
   ],
@@ -1545,15 +1500,12 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child learns to count, compare numbers, add and subtract with small numbers, sort objects and recognize basic shapes through hands-on, picture-based lessons.",
       "u": [
-        "Know the number names and the count sequence (K.NS.A.1–4)",
-        "Understand the relationship between numbers and quantities; connect counting to cardinality (K.NS.B.5–9)",
-        "Compare numbers (K.NS.C.10–11)",
-        "Work with numbers 11-19 to gain foundations for place value (K.NBT.A.1)",
-        "Understand addition as putting together or adding to, and understand subtraction as taking apart or taking from (K.RA.A.1–4)",
-        "Reason with shapes and their attributes (K.GM.A.1–2)",
-        "Work with time and money (K.GM.B.3–5)",
-        "Analyze squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders and spheres (K.GM.C.6–10)",
-        "Classify objects and count the number of objects in each category (K.DS.A.1–2)"
+        "Numbers and counting to 100",
+        "Comparing numbers",
+        "Putting together and taking apart (intro to addition and subtraction)",
+        "Teen numbers and ones-and-tens",
+        "Measuring and sorting objects",
+        "Shapes around us"
       ]
     },
     {
@@ -1564,16 +1516,15 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets confident with adding and subtracting within 20, place value, time and money, and describing shapes.",
       "u": [
-        "Understand and use numbers up to 120 (1.NS.A.1–4)",
-        "Understand place value of two-digit numbers (1.NBT.A.1–4)",
-        "Use place value understanding to add and subtract (1.NBT.B.5–7)",
-        "Represent and solve problems involving addition and subtraction (1.RA.A.1–4)",
-        "Understand and apply properties of operations and the relationship between addition and subtraction (1.RA.B.5–6)",
-        "Add and subtract within 20 (1.RA.C.7–8)",
-        "Reason with shapes and their attributes (1.GM.A.1–4)",
-        "Measure lengths in non-standard units (1.GM.B.5–7)",
-        "Work with time and money (1.GM.C.8–9)",
-        "Represent and interpret data (1.DS.A.1–2)"
+        "Addition and subtraction stories",
+        "Fact families and strategies within 20",
+        "Equations with addition and subtraction",
+        "Counting to 120 and tens and ones",
+        "Comparing and adding two-digit numbers",
+        "Measuring length",
+        "Telling time",
+        "Picture graphs and tables",
+        "Shapes, halves, and fourths"
       ]
     },
     {
@@ -1584,16 +1535,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works on place value, adding and subtracting, measuring length, telling time and money, and describing shapes.",
       "u": [
-        "Understand place value of three digit numbers (2.NBT.A.1–5)",
-        "Use place value understanding and properties of operations to add and subtract (2.NBT.B.6–10)",
-        "Represent and solve problems involving addition and subtraction (2.NBT.C.11)",
-        "Add and subtract within 20 (2.RA.A.1)",
-        "Develop foundations for multiplication and division (2.RA.B.2–3)",
-        "Reason with shapes and their attributes (2.GM.A.1–3)",
-        "Measure and estimate lengths in standard units (2.GM.B.4–7)",
-        "Relate addition and subtraction to length (2.GM.C.8–9)",
-        "Work with time and money (2.GM.D.10–13)",
-        "Represent and interpret data (2.DS.A.1–5)"
+        "Addition and subtraction word problems",
+        "Fluency within 20",
+        "Even and odd numbers and equal groups",
+        "Place value to 1,000",
+        "Adding and subtracting within 100",
+        "Adding and subtracting within 1,000",
+        "Length and number lines",
+        "Time and money",
+        "Graphs and line plots",
+        "Shapes, halves, thirds, and fourths"
       ]
     },
     {
@@ -1604,18 +1555,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "The year of multiplication and division, with fractions as numbers, area and perimeter, and word problems.",
       "u": [
-        "Use place value understanding and properties of operations to perform multi-digit arithmetic (3.NBT.A.1–4)",
-        "Develop understanding of fractions as numbers (3.NF.A.1–7)",
-        "Represent and solve problems involving multiplication and division (3.RA.A.1–5)",
-        "Understand properties of multiplication and the relationship between multiplication and division (3.RA.B.6)",
-        "Multiply and divide within 100 (3.RA.C.7–8)",
-        "Use the four operations to solve word problems (3.RA.D.9–10)",
-        "Identify and explain arithmetic patterns (3.RA.E.11)",
-        "Reason with shapes and their attributes (3.GM.A.1–3)",
-        "Solve problems involving the measurement of time, liquid volumes and weights of objects (3.GM.B.4–8)",
-        "Understand concepts of area (3.GM.C.9–14)",
-        "Understand concepts of perimeter (3.GM.D.15–16)",
-        "Represent and analyze data (3.DS.A.1–4)"
+        "Multiplication and division as equal groups",
+        "Multiplication and division facts within 100",
+        "Properties and patterns of arithmetic",
+        "Rounding and multi-digit addition and subtraction",
+        "Fractions as numbers",
+        "Equivalent fractions and comparing fractions",
+        "Time, liquid volume, and mass",
+        "Scaled graphs and line plots",
+        "Area and its link to multiplication",
+        "Perimeter",
+        "Shapes and their attributes"
       ]
     },
     {
@@ -1626,17 +1576,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with bigger numbers, multi-digit calculations, fraction equivalence and operations, decimals, and angles.",
       "u": [
-        "Use place value understanding and properties of operations to perform multi-digit arithmetic with numbers up to one million (4.NBT.A.1–7)",
-        "Extend understanding of fraction equivalence and ordering (Limit denominators to 2, 3, 4, 5, 6, 8, 10, 12 and 100) (4.NF.A.1–3)",
-        "Extend understanding of operations on whole numbers to fraction operations (4.NF.B.4–8)",
-        "Understand decimal notation for fractions, and compare decimal fractions (Denominators of 10 or 100) (4.NF.C.9–12)",
-        "Use the four operations with whole numbers to solve problems (4.RA.A.1–3)",
-        "Work with factors and multiples (4.RA.B.4–5)",
-        "Generate and analyze patterns (4.RA.C.6–7)",
-        "Classify 2-dimensional shapes by properties of their lines and angles (4.GM.A.1–3)",
-        "Understand the concepts of angle and measure angles (4.GM.B.4–5)",
-        "Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit (4.GM.C.6–8)",
-        "Represent and analyze data (4.DS.A.1–3)"
+        "Four operations and word problems",
+        "Factors, multiples, and patterns",
+        "Place value of multi-digit numbers",
+        "Multi-digit addition, subtraction, multiplication, and division",
+        "Fraction equivalence and ordering",
+        "Building fractions from unit fractions",
+        "Decimal fractions",
+        "Measurement conversions",
+        "Line plots with fractions",
+        "Angles and angle measure",
+        "Lines, angles, and shapes"
       ]
     },
     {
@@ -1647,17 +1597,19 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with decimals and fractions, numerical expressions, volume and the coordinate plane.",
       "u": [
-        "Use place value system understanding to perform operations with multi-digit whole numbers to billions and decimals to thousandths (5.NBT.A.1–8)",
-        "Understand the relationship between fractions and decimals (denominators that are factors of 100) (5.NF.A.1–3)",
-        "Perform operations and solve problems with fractions and decimals (5.NF.B.4–8)",
-        "Represent and analyze patterns and relationships (5.RA.A.1–2)",
-        "Write and interpret numerical expressions (5.RA.B.3–4)",
-        "Use the four operations to represent and solve problems (5.RA.C.5)",
-        "Classify two- and three-dimensional geometric shapes (5.GM.A.1–3)",
-        "Understand and compute volume (5.GM.B.4–5)",
-        "Graph points on the Cartesian coordinate plane within the first quadrant to solve problems (5.GM.C.6–7)",
-        "Solve problems involving measurement and conversions within a measurement system (5.GM.D.8–9)",
-        "Represent and analyze data (5.DS.A.1–2)"
+        "Numerical expressions",
+        "Patterns and relationships",
+        "Place value and powers of 10",
+        "Multi-digit whole number operations",
+        "Decimal operations to hundredths",
+        "Adding and subtracting fractions with unlike denominators",
+        "Multiplying fractions",
+        "Dividing with unit fractions",
+        "Converting measurement units",
+        "Line plots with fractions",
+        "Volume",
+        "Graphing points in the coordinate plane",
+        "Classifying two-dimensional figures"
       ]
     },
     {
@@ -1668,16 +1620,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child steps into middle school math with ratios, dividing fractions, rational numbers, expressions and equations, and describing data.",
       "u": [
-        "Understand and use ratios to solve problems (6.RP.A.1–3)",
-        "Apply and extend previous understandings of multiplication and division to divide fractions by fractions (6.NS.A.1)",
-        "Compute with non-negative multi-digit numbers, and find common factors and multiples (6.NS.B.2–4)",
-        "Apply and extend previous understandings of numbers to the system of rational numbers (6.NS.C.5–8)",
-        "Apply and extend previous understandings of arithmetic to algebraic expressions (6.EEI.A.1–3)",
-        "Reason about and solve one-variable equations and inequalities (6.EEI.B.4–8)",
-        "Represent and analyze quantitative relationships between dependent and independent variables (6.EEI.C.9)",
-        "Solve problems involving area, surface area and volume (6.GM.A.1–4)",
-        "Develop understanding of statistical variability (6.DSP.A.1–3)",
-        "Summarize and describe distributions (6.DSP.B.4–5)"
+        "Ratio concepts",
+        "Unit rates and percents",
+        "Dividing fractions by fractions",
+        "Multi-digit operations, factors, and multiples",
+        "Rational numbers and the number line",
+        "Expressions with variables",
+        "One-variable equations and inequalities",
+        "Relationships between two variables",
+        "Area, surface area, and volume",
+        "Statistical questions and variability",
+        "Describing data distributions"
       ]
     },
     {
@@ -1688,15 +1641,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child works with proportions, rational-number operations, equivalent expressions, geometry and probability models.",
       "u": [
-        "Analyze proportional relationships and use them to solve problems (7.RP.A.1–3)",
-        "Apply and extend previous understandings of operations to add, subtract, multiply and divide rational numbers (7.NS.A.1–3)",
-        "Use properties of operations to generate equivalent expressions (7.EEI.A.1–2)",
-        "Solve problems using numerical and algebraic expressions and equations (7.EEI.B.3–4)",
-        "Draw and describe geometrical figures and describe the relationships between them (7.GM.A.1–4)",
-        "Apply and extend previous understanding of angle measure, area and volume (7.GM.B.5–6)",
-        "Use random sampling to draw inferences about a population (7.DSP.A.1–2)",
-        "Draw informal comparative inferences about two populations (7.DSP.B.3–4)",
-        "Develop, use and evaluate probability models (7.DSP.C.5–8)"
+        "Proportional relationships",
+        "Percent problems",
+        "Adding and subtracting rational numbers",
+        "Multiplying and dividing rational numbers",
+        "Equivalent expressions",
+        "Equations and inequalities from real-life problems",
+        "Scale drawings and geometric figures",
+        "Angles, area, surface area, and volume",
+        "Random sampling and comparing populations",
+        "Chance and probability models"
       ]
     },
     {
@@ -1707,16 +1661,16 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Your child gets ready for high school: radicals and exponents, linear equations, functions, congruence and similarity, the Pythagorean Theorem, and patterns in data.",
       "u": [
-        "Know that there are numbers that are not rational, and approximate them by rational numbers (8.NS.A.1–2)",
-        "Work with radicals and integer exponents (8.EEI.A.1–4)",
-        "Understand the connections between proportional relationships, lines and linear equations (8.EEI.B.5–6)",
-        "Analyze and solve linear equations and inequalities and pairs of simultaneous linear equations (8.EEI.C.7–8)",
-        "Understand congruence and similarity using physical models, transparencies or geometry software (8.GM.A.1–5)",
-        "Understand and apply the Pythagorean Theorem (8.GM.B.6–8)",
-        "Solve problems involving volume of cones, pyramids and spheres (8.GM.C.9)",
-        "Investigate patterns of association in bivariate data (8.DSP.A.1–4)",
-        "Define, evaluate and compare functions (8.F.A.1–3)",
-        "Use functions to model relationships between quantities (8.F.B.4–5)"
+        "Rational and irrational numbers",
+        "Integer exponents, radicals, and scientific notation",
+        "Proportional relationships and slope",
+        "Solving linear equations",
+        "Systems of linear equations",
+        "Functions: defining, comparing, and modeling",
+        "Congruence and similarity with transformations",
+        "Pythagorean theorem",
+        "Volume of cylinders, cones, and spheres",
+        "Patterns in bivariate data"
       ]
     },
     {
@@ -1727,21 +1681,21 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Missouri's end-of-course Algebra 1: exponents and units, expressions, equations, systems, polynomials, linear, quadratic and exponential functions, sequences and data analysis.",
       "u": [
-        "Extend and use properties of rational exponents (A1.NQ.A.1–2)",
-        "Use units to solve problems (A1.NQ.B.3–5)",
-        "Interpret and use structure (A1.SSE.A.1–3)",
-        "Create equations that describe linear, quadratic and exponential relationships (A1.CED.A.1–4)",
-        "Understand solving equations as a process, and solve equations and inequalities in one variable (A1.REI.A.1–2)",
-        "Solve systems of equations (A1.REI.B.3–5)",
-        "Represent and solve linear and exponential equations and inequalities graphically (A1.REI.C.6–8)",
-        "Perform operations on polynomials (A1.APR.A.1–2)",
-        "Understand the concept of a function and use function notation (A1.IF.A.1–2)",
-        "Interpret linear, quadratic and exponential functions in terms of the context (A1.IF.B.3–6)",
-        "Analyze linear, quadratic and exponential functions using different representations (A1.IF.C.7–9)",
-        "Build new functions from existing functions (limited to linear, quadratic and exponential) (A1.BF.A.1)",
-        "Construct and compare linear, quadratic and exponential models and solve problems (A1.LQE.A.1–3)",
-        "Use arithmetic and geometric sequences (A1.LQE.B.4–6)",
-        "Summarize, represent and interpret data (A1.DS.A.1–8)"
+        "Rational exponents",
+        "Units in problem solving",
+        "Structure of expressions",
+        "Writing equations: linear, quadratic, exponential",
+        "Solving equations and inequalities",
+        "Systems of equations",
+        "Solving graphically",
+        "Polynomial operations",
+        "Function concepts and notation",
+        "Interpreting functions in context",
+        "Analyzing functions in multiple representations",
+        "Building new functions",
+        "Comparing linear, quadratic, and exponential models",
+        "Arithmetic and geometric sequences",
+        "Summarizing and interpreting data"
       ]
     },
     {
@@ -1752,21 +1706,21 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Missouri's end-of-course Geometry: transformations and congruence, proof, similarity and trigonometry, circles, coordinate geometry, volume and probability.",
       "u": [
-        "Experiment with transformations in the plane (G.CO.A.1–5)",
-        "Understand congruence in terms of rigid motions (G.CO.B.6–7)",
-        "Prove geometric theorems (G.CO.C.8–10)",
-        "Make geometric constructions (G.CO.D.11)",
-        "Understand similarity in terms of similarity transformations (G.SRT.A.1–3)",
-        "Prove theorems involving similarity (G.SRT.B.4)",
-        "Define trigonometric ratios, and solve problems involving right triangles (G.SRT.C.5–8)",
-        "Understand and apply theorems about circles (G.C.A.1–3)",
-        "Find arc lengths and areas of sectors of circles (G.C.B.4–5)",
-        "Translate between the geometric description and the equation for a conic section (G.GPE.A.1–2)",
-        "Use coordinates to prove geometric theorems algebraically (G.GPE.B.3–6)",
-        "Explain volume formulas and use them to solve problems (G.GMD.A.1–2)",
-        "Visualize relationships between two-dimensional and three-dimensional objects (G.GMD.B.3–4)",
-        "Apply geometric concepts in modeling situations (G.MG.A.1–3)",
-        "Understand independence and conditional probability and use them to interpret data (G.CP.A.1–8)"
+        "Transformations in the plane",
+        "Congruence and rigid motions",
+        "Proving geometric theorems",
+        "Geometric constructions",
+        "Similarity transformations",
+        "Proving similarity",
+        "Right triangle trigonometry",
+        "Circle theorems",
+        "Arc length and sectors",
+        "Conic sections",
+        "Coordinate proofs",
+        "Volume formulas",
+        "2D and 3D relationships",
+        "Modeling with geometry",
+        "Independence and conditional probability"
       ]
     },
     {
@@ -1777,17 +1731,17 @@ var MATH_STANDARDS = {
       "fmt": "Full year or semester",
       "d": "Missouri's end-of-course Algebra 2: rational exponents and radicals, complex numbers, logarithms, polynomial and rational expressions, function families, and inferences from data.",
       "u": [
-        "Extend and use the relationship between rational exponents and radicals (A2.NQ.A.1–4)",
-        "Use complex numbers (A2.NQ.B.5–7)",
-        "Define and use logarithms (A2.SSE.A.1–4)",
-        "Solve equations and inequalities (A2.REI.A.1–2)",
-        "Solve general systems of equations and inequalities (A2.REI.B.3)",
-        "Perform operations on polynomials and rational expressions (A2.APR.A.1–5)",
-        "Use and interpret functions (A2.IF.A.1–2)",
-        "Create new functions from existing functions (A2.BF.A.1–3)",
-        "Use functions to model real-world problems (A2.FM.A.1)",
-        "Make inferences and justify conclusions (A2.DS.A.1–7)",
-        "Fit a data set to a normal distribution (A2.DS.B.8–9)"
+        "Rational exponents and radicals",
+        "Complex numbers",
+        "Logarithms",
+        "Solving equations and inequalities",
+        "Systems of equations and inequalities",
+        "Polynomial and rational expressions",
+        "Functions and their interpretation",
+        "Creating new functions",
+        "Modeling real-world problems with functions",
+        "Inference and justifying conclusions",
+        "Fitting data to a normal distribution"
       ]
     }
   ]
