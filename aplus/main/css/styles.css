@@ -214,6 +214,28 @@ h4 { font-size: 17px; font-weight: 600; line-height: 1.35; }
 
 .hero-head .btn-row { justify-content: center; }
 
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 12px;
+  list-style: none;
+  margin: 36px auto 0;
+  padding: 0;
+  max-width: 980px;
+}
+
+.hero-badges li {
+  padding: 8px 16px;
+  border: 1px solid var(--surface-strong);
+  border-radius: 9999px;
+  background: var(--surface);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
 /* ---------- Generic card ---------- */
 
 .card {
