@@ -52,6 +52,10 @@
           <input class="search" id="search" type="search" placeholder="Search a course or a unit — “fractions”, “photosynthesis”, “subjunctive”" aria-label="Search courses and units">
           <span class="count" id="count"></span>
         </div>
+        <div class="toolbar-row">
+          <label class="filter-label" for="state-standard">State standard</label>
+          <select class="standard-select" id="state-standard" aria-label="State standard"></select>
+        </div>
         <div class="toolbar-row" role="group" aria-label="Filter by subject">
           <span class="filter-label">Subject</span>
           <button class="filter is-active" type="button" data-kind="subject" data-value="all">All</button>
@@ -316,6 +320,23 @@
     </div>
   </div>
 
+  <div class="lead-modal" id="state-modal" hidden>
+    <div class="lead-modal-backdrop" data-state-close></div>
+    <div class="lead-modal-card" role="dialog" aria-modal="true" aria-labelledby="state-title">
+      <span class="eyebrow">State standard</span>
+      <h2 id="state-title">Which state are you in?</h2>
+      <p class="serif">Math courses follow that state’s standards. Any uses Common Core. Other subjects stay the same.</p>
+      <form id="state-form">
+        <div>
+          <label class="lead-label" for="state-modal-select">State</label>
+          <select class="lead-input" id="state-modal-select"></select>
+        </div>
+        <button class="btn btn-dark" id="state-modal-go" type="button">Show courses</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/main/js/math-standards.js"></script>
   <script src="/main/js/catalog.js"></script>
   <script src="/main/js/quiz.js"></script>
 

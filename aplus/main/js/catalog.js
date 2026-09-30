@@ -1939,15 +1939,56 @@ var CATALOG = [
   }
 
   var totalCourses = 0, totalUnits = 0;
+  var items = [];
+  var blocks = [];
+  var STATES = [
+    'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
+    'District of Columbia', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa',
+    'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+    'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico',
+    'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+    'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
+    'West Virginia', 'Wisconsin', 'Wyoming'
+  ];
+  var STATE_KEY = 'brights-state-standard';
+  var standardSelect = document.getElementById('state-standard');
+  var stateModal = document.getElementById('state-modal');
+  var stateModalSelect = document.getElementById('state-modal-select');
 
-  var html = '';
-  CATALOG.forEach(function (group) {
-    var courses = '';
-    group.courses.forEach(function (c) {
-      var items = unitItems(c);
+  function savedStandard() {
+    try { return localStorage.getItem(STATE_KEY); } catch (e) { return null; }
+  }
+
+  function fillStateSelect(select, selected) {
+    if (!select) return;
+    var html = '<option value="">Any (Common Core)</option>';
+    STATES.forEach(function (name) {
+      html += '<option value="' + esc(name) + '">' + esc(name) + '</option>';
+    });
+    select.innerHTML = html;
+    select.value = STATES.indexOf(selected) !== -1 ? selected : '';
+  }
+
+  function coursesFor(group) {
+    var chosen = standardSelect ? standardSelect.value : '';
+    if (group.subject === 'Math' && chosen && window.MATH_STANDARDS && MATH_STANDARDS[chosen]) {
+      return MATH_STANDARDS[chosen];
+    }
+    return group.courses;
+  }
+
+  function render() {
+    totalCourses = 0;
+    totalUnits = 0;
+    var html = '';
+    CATALOG.forEach(function (group) {
+      var list = coursesFor(group);
+      var courses = '';
+      list.forEach(function (c) {
+      var unitNames = unitItems(c);
       totalCourses++;
-      totalUnits += items.length;
-      var haystack = (c.n + ' ' + c.g + ' ' + c.d + ' ' + (c.p || '') + ' ' + (c.fmt || '') + ' ' + items.join(' ')).toLowerCase();
+      totalUnits += unitNames.length;
+      var haystack = (c.n + ' ' + c.g + ' ' + c.d + ' ' + (c.p || '') + ' ' + (c.fmt || '') + ' ' + unitNames.join(' ')).toLowerCase();
       courses +=
         '<details class="course-item" data-subject="' + esc(group.subject) + '" data-band="' + esc(c.b) + '" data-elective="' + (c.e ? '1' : '0') + '" data-text="' + esc(haystack) + '">' +
           '<summary>' +
@@ -1955,7 +1996,7 @@ var CATALOG = [
             '<span class="course-meta">' +
               '<span class="meta-pill">' + esc(c.g) + '</span>' +
               (c.p ? '<span class="meta-pill is-price">' + esc(c.p) + '</span>' : '') +
-              '<span class="meta-pill">' + items.length + ' units</span>' +
+              '<span class="meta-pill">' + unitNames.length + ' units</span>' +
               (c.e ? '<span class="meta-pill is-elective">Elective</span>' : '') +
             '</span>' +
             '<span class="course-toggle" aria-hidden="true">+</span>' +
@@ -1976,17 +2017,18 @@ var CATALOG = [
         '<div class="subject-head">' +
           '<span class="subject-swatch" style="background:' + group.color + '" aria-hidden="true"></span>' +
           '<h2>' + esc(group.subject) + '</h2>' +
-          '<span class="subject-count">' + group.courses.length + ' courses</span>' +
+          '<span class="subject-count">' + list.length + ' courses</span>' +
         '</div>' +
         (group.note ? '<p class="course-blurb" style="margin-top:18px;border:none;padding:0;">' + esc(group.note) + '</p>' : '') +
         '<div class="course-list">' + courses + '</div>' +
       '</section>';
   });
 
-  mount.innerHTML = html;
-
-  var items = mount.querySelectorAll('.course-item');
-  var blocks = mount.querySelectorAll('.subject-block');
+    mount.innerHTML = html;
+    items = mount.querySelectorAll('.course-item');
+    blocks = mount.querySelectorAll('.subject-block');
+    apply();
+  }
 
   function bandOk(item) {
     if (state.band === 'all') return true;
@@ -2042,12 +2084,64 @@ var CATALOG = [
     });
   });
 
-  search.addEventListener('input', function () {
-    state.q = search.value;
-    apply();
-  });
+  if (search) {
+    search.addEventListener('input', function () {
+      state.q = search.value;
+      apply();
+    });
+  }
 
-  apply();
+  function rememberStandard(value) {
+    var next = value || '';
+    try { localStorage.setItem(STATE_KEY, next); } catch (e) {}
+    if (standardSelect) standardSelect.value = next;
+    if (stateModalSelect) stateModalSelect.value = next;
+    render();
+  }
+
+  function closeStateModal() {
+    if (!stateModal) return;
+    stateModal.hidden = true;
+    document.body.classList.remove('is-locked');
+  }
+
+  var saved = savedStandard();
+  fillStateSelect(standardSelect, saved || '');
+  fillStateSelect(stateModalSelect, saved || '');
+  if (standardSelect) {
+    standardSelect.addEventListener('change', function () {
+      rememberStandard(standardSelect.value);
+    });
+  }
+  function confirmState() {
+    rememberStandard(stateModalSelect ? stateModalSelect.value : '');
+    closeStateModal();
+  }
+
+  var stateGo = document.getElementById('state-modal-go');
+  if (stateGo) stateGo.addEventListener('click', confirmState);
+  var stateForm = document.getElementById('state-form');
+  if (stateForm) {
+    stateForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      confirmState();
+    });
+  }
+  if (stateModal) {
+    stateModal.addEventListener('click', function (e) {
+      if (!e.target.closest('[data-state-close]')) return;
+      confirmState();
+    });
+    stateModal.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') confirmState();
+    });
+  }
+  render();
+  if (saved === null && stateModal) {
+    stateModal.hidden = false;
+    document.body.classList.add('is-locked');
+    if (stateModalSelect) stateModalSelect.focus();
+  }
 
   initLeadModal();
 
