@@ -11,20 +11,17 @@ var CATALOG = [
         "b": "K-2",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "A first systematic course in number, quantity, shape, comparison, and measurement.",
-        "s1": [
-          "Counting and cardinality",
-          "Numbers 0–20",
-          "Comparing groups",
-          "Composing and decomposing numbers",
-          "Addition stories"
-        ],
-        "s2": [
-          "Subtraction stories",
-          "Making ten",
-          "Numbers to 100",
-          "Two- and three-dimensional shapes",
-          "Measurement, patterns and classifying data"
+        "d": "A first systematic course in number, quantity, shape, comparison and measurement. It follows the Kindergarten Common Core State Standards for Mathematics (CCSS-M, 2010): counting and cardinality to 100, addition and subtraction within 10, teen numbers as ten ones and some ones, comparing measurable attributes and sorting data, and naming, building and composing shapes.",
+        "u": [
+          "Know number names and the count sequence (K.CC.A)",
+          "Count to tell the number of objects (K.CC.B)",
+          "Compare numbers (K.CC.C)",
+          "Understand addition as putting together and adding to, and subtraction as taking apart and taking from (K.OA.A)",
+          "Work with numbers 11–19 to gain foundations for place value (K.NBT.A)",
+          "Describe and compare measurable attributes (K.MD.A)",
+          "Classify objects and count the number of objects in each category (K.MD.B)",
+          "Identify and describe shapes (K.G.A)",
+          "Analyze, compare, create, and compose shapes (K.G.B)"
         ]
       },
       {
@@ -33,22 +30,19 @@ var CATALOG = [
         "b": "K-2",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Builds addition and subtraction fluency within 20 and a strong understanding of tens and ones.",
-        "s1": [
-          "Addition within 10",
-          "Subtraction within 10",
-          "Addition and subtraction within 20",
-          "Fact families and unknowns",
-          "Place value to 120",
-          "Comparing two-digit numbers"
-        ],
-        "s2": [
-          "Adding and subtracting tens",
-          "One- and two-step word problems",
-          "Length and non-standard measurement",
-          "Time to the hour and half hour",
-          "Data, picture graphs and tally charts",
-          "Shapes, halves and fourths"
+        "d": "Builds addition and subtraction fluency within 20 and a firm understanding of tens and ones. It follows the Grade 1 CCSS-M: word problems within 20, properties of operations and the meaning of the equal sign, place value to 120, adding and subtracting within 100 using tens, measuring length, telling time to the hour and half hour, organizing data, and partitioning shapes into halves and fourths.",
+        "u": [
+          "Represent and solve problems involving addition and subtraction (1.OA.A)",
+          "Understand and apply properties of operations and the relationship between addition and subtraction (1.OA.B)",
+          "Add and subtract within 20 (1.OA.C)",
+          "Work with addition and subtraction equations (1.OA.D)",
+          "Extend the counting sequence (1.NBT.A)",
+          "Understand place value (1.NBT.B)",
+          "Use place value understanding and properties of operations to add and subtract (1.NBT.C)",
+          "Measure lengths indirectly and by iterating length units (1.MD.A)",
+          "Tell and write time (1.MD.B)",
+          "Represent and interpret data (1.MD.C)",
+          "Reason with shapes and their attributes (1.G.A)"
         ]
       },
       {
@@ -57,22 +51,18 @@ var CATALOG = [
         "b": "K-2",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Develops place value to 1,000, multi-digit computation, measurement, time, money, and early fraction concepts.",
-        "s1": [
-          "Place value to 1,000",
-          "Comparing and ordering numbers",
-          "Addition within 100",
-          "Subtraction within 100",
-          "Addition and subtraction to 1,000",
-          "Mental strategies and estimation"
-        ],
-        "s2": [
-          "Equal groups and arrays",
-          "Money and making change",
-          "Time to five minutes",
-          "Length in customary and metric units",
-          "Bar graphs and line plots",
-          "Shapes and equal shares"
+        "d": "Develops place value to 1,000, multi-digit addition and subtraction, measurement, time and money, with arrays as early groundwork for multiplication. It follows the Grade 2 CCSS-M: fluency within 20 and within 100, computation within 1,000, standard units of length, time to five minutes, money, bar graphs and line plots, and partitioning shapes into equal shares.",
+        "u": [
+          "Represent and solve problems involving addition and subtraction (2.OA.A)",
+          "Add and subtract within 20 (2.OA.B)",
+          "Work with equal groups of objects to gain foundations for multiplication (2.OA.C)",
+          "Understand place value (2.NBT.A)",
+          "Use place value understanding and properties of operations to add and subtract (2.NBT.B)",
+          "Measure and estimate lengths in standard units (2.MD.A)",
+          "Relate addition and subtraction to length (2.MD.B)",
+          "Work with time and money (2.MD.C)",
+          "Represent and interpret data (2.MD.D)",
+          "Reason with shapes and their attributes (2.G.A)"
         ]
       },
       {
@@ -81,25 +71,19 @@ var CATALOG = [
         "b": "3-5",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Centers on multiplication and division, fractions on a number line, area, and perimeter.",
-        "s1": [
-          "Multiplication concepts",
-          "Division concepts",
-          "Multiplication and division facts",
-          "Properties and patterns",
-          "Multi-step problems",
-          "Place value, rounding and estimation",
-          "Addition and subtraction fluency"
-        ],
-        "s2": [
-          "Fractions on a number line",
-          "Equivalent and comparing fractions",
-          "Area",
-          "Perimeter",
-          "Time intervals",
-          "Mass and liquid volume",
-          "Scaled graphs",
-          "Quadrilaterals and geometric reasoning"
+        "d": "Centers on multiplication and division, fractions as numbers, area and perimeter. It follows the Grade 3 CCSS-M: the meaning and properties of multiplication and division within 100, fluency with facts, unit fractions on the number line and equivalence, area as tiling, perimeter, time intervals, mass and liquid volume, scaled graphs, and reasoning about quadrilaterals.",
+        "u": [
+          "Represent and solve problems involving multiplication and division (3.OA.A)",
+          "Understand properties of multiplication and the relationship between multiplication and division (3.OA.B)",
+          "Multiply and divide within 100 (3.OA.C)",
+          "Solve problems involving the four operations, and identify and explain patterns in arithmetic (3.OA.D)",
+          "Use place value understanding and properties of operations to perform multi-digit arithmetic (3.NBT.A)",
+          "Develop understanding of fractions as numbers (3.NF.A)",
+          "Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses of objects (3.MD.A)",
+          "Represent and interpret data (3.MD.B)",
+          "Geometric measurement: understand concepts of area and relate area to multiplication and to addition (3.MD.C)",
+          "Geometric measurement: recognize perimeter as an attribute of plane figures and distinguish between linear and area measures (3.MD.D)",
+          "Reason with shapes and their attributes (3.G.A)"
         ]
       },
       {
@@ -108,25 +92,20 @@ var CATALOG = [
         "b": "3-5",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Covers multi-digit arithmetic, fraction operations, decimals, and angle geometry.",
-        "s1": [
-          "Multi-digit place value",
-          "Addition and subtraction to one million",
-          "One-digit multiplication",
-          "Two-digit multiplication",
-          "Division with remainders",
-          "Factors, multiples and primes",
-          "Multi-step problems"
-        ],
-        "s2": [
-          "Equivalent and ordered fractions",
-          "Adding and subtracting fractions",
-          "Multiplying fractions by whole numbers",
-          "Decimal notation to hundredths",
-          "Angles and angle measure",
-          "Lines, symmetry and classification",
-          "Measurement conversion",
-          "Area, perimeter and line plots"
+        "d": "Covers multi-digit arithmetic, fraction operations, decimal notation and angle geometry. It follows the Grade 4 CCSS-M: place value to 1,000,000, multiplication and division with remainders, factors and multiples, fraction equivalence and operations, decimals to hundredths, unit conversion, area and perimeter, angle measure, lines and symmetry.",
+        "u": [
+          "Use the four operations with whole numbers to solve problems (4.OA.A)",
+          "Gain familiarity with factors and multiples (4.OA.B)",
+          "Generate and analyze patterns (4.OA.C)",
+          "Generalize place value understanding for multi-digit whole numbers (4.NBT.A)",
+          "Use place value understanding and properties of operations to perform multi-digit arithmetic (4.NBT.B)",
+          "Extend understanding of fraction equivalence and ordering (4.NF.A)",
+          "Build fractions from unit fractions by applying and extending previous understandings of operations on whole numbers (4.NF.B)",
+          "Understand decimal notation for fractions, and compare decimal fractions (4.NF.C)",
+          "Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit (4.MD.A)",
+          "Represent and interpret data (4.MD.B)",
+          "Geometric measurement: understand concepts of angle and measure angles (4.MD.C)",
+          "Draw and identify lines and angles, and classify shapes by properties of their lines and angles (4.G.A)"
         ]
       },
       {
@@ -135,25 +114,19 @@ var CATALOG = [
         "b": "3-5",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Covers decimal operations, fraction multiplication and division, volume, and the coordinate plane.",
-        "s1": [
-          "Decimal place value",
-          "Decimal addition and subtraction",
-          "Decimal multiplication",
-          "Decimal division",
-          "Powers of ten",
-          "Numerical expressions",
-          "Multi-digit multiplication and division"
-        ],
-        "s2": [
-          "Fractions with unlike denominators",
-          "Multiplying fractions",
-          "Dividing unit fractions",
-          "Measurement conversion",
-          "Volume",
-          "Coordinate plane",
-          "Classifying shapes",
-          "Fractional line plots"
+        "d": "Covers decimal operations, fraction multiplication and division, volume and the coordinate plane. It follows the Grade 5 CCSS-M: place value and powers of ten, all four operations with decimals to hundredths, adding and subtracting fractions with unlike denominators, multiplying and dividing fractions, volume, graphing points in the first quadrant, and classifying two-dimensional figures.",
+        "u": [
+          "Write and interpret numerical expressions (5.OA.A)",
+          "Analyze patterns and relationships (5.OA.B)",
+          "Understand the place value system (5.NBT.A)",
+          "Perform operations with multi-digit whole numbers and with decimals to hundredths (5.NBT.B)",
+          "Use equivalent fractions as a strategy to add and subtract fractions (5.NF.A)",
+          "Apply and extend previous understandings of multiplication and division to multiply and divide fractions (5.NF.B)",
+          "Convert like measurement units within a given measurement system (5.MD.A)",
+          "Represent and interpret data (5.MD.B)",
+          "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition (5.MD.C)",
+          "Graph points on the coordinate plane to solve real-world and mathematical problems (5.G.A)",
+          "Classify two-dimensional figures into categories based on their properties (5.G.B)"
         ]
       },
       {
@@ -162,25 +135,18 @@ var CATALOG = [
         "b": "6-8",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Moves from arithmetic toward algebraic thinking through ratios, negative numbers, expressions, and equations.",
-        "s1": [
-          "Ratios and ratio reasoning",
-          "Unit rates",
-          "Percentages",
-          "Fraction division",
-          "Decimal fluency",
-          "Exponents and order of operations",
-          "Negative numbers and absolute value"
-        ],
-        "s2": [
-          "Variables and expressions",
-          "One-step equations",
-          "Inequalities",
-          "Coordinate plane and polygons",
-          "Area and surface area",
-          "Volume",
-          "Statistical distributions",
-          "Measures of center and variability"
+        "d": "Moves from arithmetic toward algebraic thinking through ratios, negative numbers, expressions and equations. It follows the Grade 6 CCSS-M: ratio and rate reasoning, dividing fractions, fluency with multi-digit and decimal operations, rational numbers on the number line and coordinate plane, expressions, one-variable equations and inequalities, area, surface area and volume, and statistical variability.",
+        "u": [
+          "Understand ratio concepts and use ratio reasoning to solve problems (6.RP.A)",
+          "Apply and extend previous understandings of multiplication and division to divide fractions by fractions (6.NS.A)",
+          "Multiply and divide multi-digit numbers and find common factors and multiples (6.NS.B)",
+          "Apply and extend previous understandings of numbers to the system of rational numbers (6.NS.C)",
+          "Apply and extend previous understandings of arithmetic to algebraic expressions (6.EE.A)",
+          "Reason about and solve one-variable equations and inequalities (6.EE.B)",
+          "Represent and analyze quantitative relationships between dependent and independent variables (6.EE.C)",
+          "Solve real-world and mathematical problems involving area, surface area, and volume (6.G.A)",
+          "Develop understanding of statistical variability (6.SP.A)",
+          "Summarize and describe distributions (6.SP.B)"
         ]
       },
       {
@@ -189,24 +155,17 @@ var CATALOG = [
         "b": "6-8",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Covers proportional relationships, rational numbers, equations, geometry, and probability.",
-        "s1": [
-          "Proportional relationships",
-          "Constant of proportionality",
-          "Scale drawings",
-          "Percent increase and decrease",
-          "Rational-number operations",
-          "Expressions and linear equations",
-          "Inequalities"
-        ],
-        "s2": [
-          "Circles",
-          "Angle relationships",
-          "Surface area and volume",
-          "Probability models",
-          "Compound events",
-          "Random sampling",
-          "Comparing populations and statistical inference"
+        "d": "Covers proportional relationships, rational-number operations, expressions and equations, geometry and probability. It follows the Grade 7 CCSS-M: ratio and percent problems, operations with positive and negative rational numbers, solving two-step equations and inequalities, scale drawings, circles, angle relationships, surface area and volume, random sampling, comparing populations and probability models.",
+        "u": [
+          "Analyze proportional relationships and use them to solve real-world and mathematical problems (7.RP.A)",
+          "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers (7.NS.A)",
+          "Use properties of operations to generate equivalent expressions (7.EE.A)",
+          "Solve real-life and mathematical problems using numerical and algebraic expressions and equations (7.EE.B)",
+          "Draw, construct, and describe geometrical figures and describe the relationships between them (7.G.A)",
+          "Solve real-life and mathematical problems involving angle measure, area, surface area, and volume (7.G.B)",
+          "Use random sampling to draw inferences about a population (7.SP.A)",
+          "Draw informal comparative inferences about two populations (7.SP.B)",
+          "Investigate chance processes and develop, use, and evaluate probability models (7.SP.C)"
         ]
       },
       {
@@ -215,24 +174,18 @@ var CATALOG = [
         "b": "6-8",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Uses linear functions, systems, transformations, and the Pythagorean theorem to prepare students for Algebra I.",
-        "s1": [
-          "Exponents and scientific notation",
-          "Roots and irrational numbers",
-          "Linear equations",
-          "Slope and rate of change",
-          "Graphing linear relationships",
-          "Systems of equations",
-          "Functions and function comparison"
-        ],
-        "s2": [
-          "Transformations and congruence",
-          "Dilations and similarity",
-          "Pythagorean theorem",
-          "Volume of cylinders, cones and spheres",
-          "Scatter plots",
-          "Lines of fit",
-          "Two-way tables"
+        "d": "Uses linear functions, systems of equations, transformations and the Pythagorean theorem to prepare students for Algebra I. It follows the Grade 8 CCSS-M: integer exponents and scientific notation, irrational numbers, linear equations and slope, systems, functions, congruence and similarity through transformations, the Pythagorean theorem, volume of cylinders, cones and spheres, and bivariate data.",
+        "u": [
+          "Know that there are numbers that are not rational, and approximate them by rational numbers (8.NS.A)",
+          "Work with radicals and integer exponents (8.EE.A)",
+          "Understand the connections between proportional relationships, lines, and linear equations (8.EE.B)",
+          "Analyze and solve linear equations and pairs of simultaneous linear equations (8.EE.C)",
+          "Define, evaluate, and compare functions (8.F.A)",
+          "Use functions to model relationships between quantities (8.F.B)",
+          "Understand congruence and similarity using physical models, transparencies, or geometry software (8.G.A)",
+          "Understand and apply the Pythagorean Theorem (8.G.B)",
+          "Solve real-world and mathematical problems involving volume of cylinders, cones and spheres (8.G.C)",
+          "Investigate patterns of association in bivariate data (8.SP.A)"
         ]
       },
       {
@@ -241,26 +194,17 @@ var CATALOG = [
         "b": "6-8,9-12",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Rebuilds arithmetic prerequisites and prepares students for Algebra I.",
-        "s1": [
-          "Whole-number operations",
-          "Factors and multiples",
-          "Fraction and decimal fluency",
-          "Ratios, rates and proportions",
-          "Percent applications",
-          "Integers and rational numbers",
-          "Exponents and roots"
-        ],
-        "s2": [
-          "Algebraic expressions",
-          "Properties of operations",
-          "Equations",
-          "Inequalities",
-          "Coordinate plane",
-          "Linear patterns",
-          "Functions",
-          "Introductory systems",
-          "Modeling and multi-step problems"
+        "d": "Rebuilds arithmetic prerequisites and prepares students for Algebra I. Common Core has no separate Pre-Algebra course, so the content is drawn from the Grades 6 to 8 CCSS-M: ratios and proportional relationships, rational numbers, expressions, equations and inequalities, exponents and roots, and an introduction to linear functions and systems.",
+        "u": [
+          "Ratios and proportional relationships (6.RP.A, 7.RP.A)",
+          "Dividing fractions and rational numbers, and operations with them (6.NS.A–C, 7.NS.A)",
+          "Irrational numbers and their rational approximations (8.NS.A)",
+          "Algebraic expressions and equivalent expressions (6.EE.A, 7.EE.A)",
+          "One-variable equations and inequalities (6.EE.B, 7.EE.B)",
+          "Radicals and integer exponents (8.EE.A)",
+          "Proportional relationships, lines and linear equations (8.EE.B)",
+          "Linear equations and systems of linear equations (8.EE.C)",
+          "Defining, evaluating and comparing functions; modeling with functions (8.F.A–B)"
         ]
       },
       {
@@ -269,27 +213,29 @@ var CATALOG = [
         "b": "6-8,9-12",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "The core high-school algebra course, developing linear, exponential, and quadratic relationships through functions and modeling.",
-        "s1": [
-          "Algebraic foundations",
-          "Linear equations",
-          "Linear inequalities",
-          "Units and modeling",
-          "Linear functions and graphs",
-          "Forms of linear equations",
-          "Systems of equations",
-          "Systems of inequalities"
-        ],
-        "s2": [
-          "Function notation and domain",
-          "Sequences",
-          "Absolute-value and piecewise functions",
-          "Exponent rules and radicals",
-          "Exponential growth and decay",
-          "Polynomial operations and factoring",
-          "Quadratic equations",
-          "Quadratic functions",
-          "Bivariate data and lines of fit"
+        "d": "The core high-school algebra course, developing linear, exponential and quadratic relationships through functions and modeling. It follows the CCSS-M high-school Algebra I content (Traditional Pathway, Appendix A): quantities and units, expressions, equations and inequalities, systems, function notation and interpretation, linear, exponential and quadratic models, and bivariate data.",
+        "u": [
+          "Extend the properties of exponents to rational exponents (N-RN.A)",
+          "Use properties of rational and irrational numbers (N-RN.B)",
+          "Reason quantitatively and use units to solve problems (N-Q.A)",
+          "Interpret the structure of expressions (A-SSE.A)",
+          "Write expressions in equivalent forms to solve problems (A-SSE.B)",
+          "Perform arithmetic operations on polynomials (A-APR.A)",
+          "Create equations that describe numbers or relationships (A-CED.A)",
+          "Understand solving equations as a process of reasoning and explain the reasoning (A-REI.A)",
+          "Solve equations and inequalities in one variable (A-REI.B)",
+          "Solve systems of equations (A-REI.C)",
+          "Represent and solve equations and inequalities graphically (A-REI.D)",
+          "Understand the concept of a function and use function notation (F-IF.A)",
+          "Interpret functions that arise in applications in terms of the context (F-IF.B)",
+          "Analyze functions using different representations (F-IF.C)",
+          "Build a function that models a relationship between two quantities (F-BF.A)",
+          "Build new functions from existing functions (F-BF.B)",
+          "Construct and compare linear, quadratic, and exponential models and solve problems (F-LE.A)",
+          "Interpret expressions for functions in terms of the situation they model (F-LE.B)",
+          "Summarize, represent, and interpret data on a single count or measurement variable (S-ID.A)",
+          "Summarize, represent, and interpret data on two categorical and quantitative variables (S-ID.B)",
+          "Interpret linear models (S-ID.C)"
         ]
       },
       {
@@ -298,24 +244,26 @@ var CATALOG = [
         "b": "9-12",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Transformation-based geometry with proof, trigonometry, and coordinate methods.",
-        "s1": [
-          "Definitions, postulates and proof",
-          "Transformations",
-          "Congruence",
-          "Triangle relationships",
-          "Similarity and dilation",
-          "Right-triangle trigonometry",
-          "Quadrilaterals"
-        ],
-        "s2": [
-          "Polygons",
-          "Circles, arcs and sectors",
-          "Coordinate geometry",
-          "Geometric constructions",
-          "Area",
-          "Surface area and volume",
-          "Geometric probability"
+        "d": "Transformation-based geometry with proof, trigonometry and coordinate methods. It follows the CCSS-M high-school Geometry content (Traditional Pathway): congruence, similarity and right-triangle trigonometry built on rigid motions and dilations, circles, coordinate geometry, geometric measurement and modeling, and probability in geometric settings.",
+        "u": [
+          "Experiment with transformations in the plane (G-CO.A)",
+          "Understand congruence in terms of rigid motions (G-CO.B)",
+          "Prove geometric theorems (G-CO.C)",
+          "Make geometric constructions (G-CO.D)",
+          "Understand similarity in terms of similarity transformations (G-SRT.A)",
+          "Prove theorems involving similarity (G-SRT.B)",
+          "Define trigonometric ratios and solve problems involving right triangles (G-SRT.C)",
+          "Apply trigonometry to general triangles: laws of sines and cosines (G-SRT.D, plus-marked)",
+          "Understand and apply theorems about circles (G-C.A)",
+          "Find arc lengths and areas of sectors of circles (G-C.B)",
+          "Translate between the geometric description and the equation for a conic section (G-GPE.A)",
+          "Use coordinates to prove simple geometric theorems algebraically (G-GPE.B)",
+          "Explain volume formulas and use them to solve problems (G-GMD.A)",
+          "Visualize relationships between two-dimensional and three-dimensional objects (G-GMD.B)",
+          "Apply geometric concepts in modeling situations (G-MG.A)",
+          "Understand independence and conditional probability and use them to interpret data (S-CP.A)",
+          "Use the rules of probability to compute probabilities of compound events in a uniform probability model (S-CP.B)",
+          "Use probability to evaluate outcomes of decisions (S-MD.B, plus-marked)"
         ]
       },
       {
@@ -324,26 +272,31 @@ var CATALOG = [
         "b": "9-12",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Covers polynomial, rational, radical, exponential, and logarithmic function families.",
-        "s1": [
-          "Function transformations",
-          "Polynomial arithmetic",
-          "Factoring higher-degree polynomials",
-          "Polynomial division",
-          "Polynomial functions",
-          "Rational expressions and equations",
-          "Radical functions and rational exponents",
-          "Complex numbers"
-        ],
-        "s2": [
-          "Exponential models",
-          "Logarithms",
-          "Inverse functions",
-          "Sequences and series",
-          "Introductory trigonometry",
-          "Matrices and systems",
-          "Probability models",
-          "Modeling with functions"
+        "d": "Covers polynomial, rational, radical, exponential and logarithmic function families. It follows the CCSS-M high-school Algebra II content (Traditional Pathway): complex numbers, polynomial and rational expressions, radicals and rational exponents, modeling with function families, trigonometric functions of real numbers, and statistical inference. Matrices go beyond the Traditional Pathway Algebra II.",
+        "u": [
+          "Perform arithmetic operations with complex numbers (N-CN.A)",
+          "Use complex numbers in polynomial identities and equations (N-CN.C)",
+          "Interpret the structure of expressions (A-SSE.A)",
+          "Write expressions in equivalent forms to solve problems (A-SSE.B)",
+          "Perform arithmetic operations on polynomials (A-APR.A)",
+          "Understand the relationship between zeros and factors of polynomials (A-APR.B)",
+          "Use polynomial identities to solve problems (A-APR.C)",
+          "Rewrite rational functions (A-APR.D)",
+          "Create equations that describe numbers or relationships (A-CED.A)",
+          "Understand solving equations as a process of reasoning and explain the reasoning (A-REI.A)",
+          "Represent and solve equations and inequalities graphically (A-REI.D)",
+          "Interpret functions that arise in applications in terms of the context (F-IF.B)",
+          "Analyze functions using different representations (F-IF.C)",
+          "Build a function that models a relationship between two quantities (F-BF.A)",
+          "Build new functions from existing functions (F-BF.B)",
+          "Construct and compare linear, quadratic, and exponential models and solve problems (F-LE.A)",
+          "Extend the domain of trigonometric functions using the unit circle (F-TF.A)",
+          "Model periodic phenomena with trigonometric functions (F-TF.B)",
+          "Prove and apply trigonometric identities (F-TF.C)",
+          "Summarize, represent, and interpret data on a single count or measurement variable (S-ID.A)",
+          "Understand and evaluate random processes underlying statistical experiments (S-IC.A)",
+          "Make inferences and justify conclusions from sample surveys, experiments, and observational studies (S-IC.B)",
+          "Use probability to evaluate outcomes of decisions (S-MD.B, plus-marked)"
         ]
       },
       {
@@ -352,25 +305,27 @@ var CATALOG = [
         "b": "9-12",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Builds the full function toolkit and trigonometry foundation needed before Calculus I.",
-        "s1": [
-          "Function composition and inverses",
-          "Polynomial functions",
-          "Rational functions",
-          "Exponential and logarithmic models",
-          "Radians and the unit circle",
-          "Trigonometric graphs",
-          "Identities and equations"
-        ],
-        "s2": [
-          "Laws of sines and cosines",
-          "Vectors",
-          "Polar and parametric equations",
-          "Matrices and systems",
-          "Conic sections",
-          "Sequences and series",
-          "Combinatorics and probability",
-          "Introduction to limits"
+        "d": "Builds the function toolkit and trigonometry needed before calculus. It draws on the plus-marked CCSS-M high-school standards: complex numbers and the complex plane, vectors and matrices, polynomial identities and rational functions, function composition and inverses, trigonometric functions, identities and modeling of periodic phenomena, laws of sines and cosines, conic sections and compound probability.",
+        "u": [
+          "Perform arithmetic operations with complex numbers (N-CN.A)",
+          "Represent complex numbers and their operations on the complex plane (N-CN.B)",
+          "Use complex numbers in polynomial identities and equations (N-CN.C)",
+          "Represent and model with vector quantities (N-VM.A)",
+          "Perform operations on vectors (N-VM.B)",
+          "Perform operations on matrices and use matrices in applications (N-VM.C)",
+          "Use polynomial identities to solve problems (A-APR.C)",
+          "Rewrite rational functions (A-APR.D)",
+          "Solve systems of equations, including matrix methods (A-REI.C, plus-marked)",
+          "Represent and solve equations and inequalities graphically (A-REI.D)",
+          "Analyze functions using different representations (F-IF.C)",
+          "Build a function that models a relationship between two quantities (F-BF.A)",
+          "Build new functions from existing functions (F-BF.B)",
+          "Extend the domain of trigonometric functions using the unit circle (F-TF.A)",
+          "Model periodic phenomena with trigonometric functions (F-TF.B)",
+          "Prove and apply trigonometric identities (F-TF.C)",
+          "Apply trigonometry to general triangles: laws of sines and cosines (G-SRT.D)",
+          "Translate between the geometric description and the equation for a conic section (G-GPE.A)",
+          "Use the rules of probability to compute probabilities of compound events in a uniform probability model (S-CP.B)"
         ]
       },
       {
@@ -379,29 +334,19 @@ var CATALOG = [
         "b": "9-12",
         "p": "Full year $199 · Semester $129",
         "fmt": "Full year or semester",
-        "d": "Covers data displays, study design, probability, and statistical inference with interpretation in context.",
-        "e": true,
-        "s1": [
-          "Categorical data",
-          "Quantitative data",
-          "Center and spread",
-          "Normal distributions",
-          "Scatter plots and correlation",
-          "Regression",
-          "Sampling methods",
-          "Experiments and observational studies"
+        "d": "Covers data displays, study design, probability and statistical inference with interpretation in context. It follows the CCSS-M high-school Statistics and Probability standards (S-ID, S-IC, S-CP, S-MD), including the plus-marked standards on expected values and probability-based decisions.",
+        "u": [
+          "Summarize, represent, and interpret data on a single count or measurement variable (S-ID.A)",
+          "Summarize, represent, and interpret data on two categorical and quantitative variables (S-ID.B)",
+          "Interpret linear models (S-ID.C)",
+          "Understand and evaluate random processes underlying statistical experiments (S-IC.A)",
+          "Make inferences and justify conclusions from sample surveys, experiments, and observational studies (S-IC.B)",
+          "Understand independence and conditional probability and use them to interpret data (S-CP.A)",
+          "Use the rules of probability to compute probabilities of compound events in a uniform probability model (S-CP.B)",
+          "Calculate expected values and use them to solve problems (S-MD.A)",
+          "Use probability to evaluate outcomes of decisions (S-MD.B)"
         ],
-        "s2": [
-          "Probability rules",
-          "Conditional probability",
-          "Random variables",
-          "Binomial and geometric models",
-          "Sampling distributions",
-          "Confidence intervals",
-          "Significance tests",
-          "Comparing groups",
-          "Chi-square reasoning"
-        ]
+        "e": true
       },
       {
         "n": "Calculus I: Limits, Derivatives & Integrals",
@@ -437,19 +382,21 @@ var CATALOG = [
         "b": "6-8,9-12",
         "p": "Semester $129",
         "fmt": "Semester",
-        "d": "Applies mathematics to income, banking, debt, insurance, and investing.",
-        "e": true,
+        "d": "Applies mathematics to income, banking, debt, insurance and investing. It uses the CCSS-M modeling standards (quantities, exponential and geometric-series models, equations) together with the National Standards for Personal Financial Education (Council for Economic Education and Jump$tart, 2021) as the content framework.",
         "u": [
-          "Income, paychecks and taxes",
-          "Banking and account management",
-          "Budgeting and emergency funds",
-          "Simple and compound interest",
-          "Credit scores and credit cards",
-          "Loans and repayment",
-          "Insurance and risk",
-          "Investing and retirement",
-          "Consumer protection and financial plan"
-        ]
+          "Reason quantitatively and use units to solve problems (N-Q.A)",
+          "Use the formula for the sum of a finite geometric series to solve problems such as mortgages and savings (A-SSE.B.4)",
+          "Create equations that describe numbers or relationships (A-CED.A)",
+          "Construct and compare linear, quadratic, and exponential models and solve problems (F-LE.A)",
+          "Interpret expressions for functions in terms of the situation they model (F-LE.B)",
+          "Earning income (NSPFEE)",
+          "Spending (NSPFEE)",
+          "Saving (NSPFEE)",
+          "Investing (NSPFEE)",
+          "Managing credit (NSPFEE)",
+          "Managing risk (NSPFEE)"
+        ],
+        "e": true
       }
     ]
   },
