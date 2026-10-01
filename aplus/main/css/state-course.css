@@ -1,0 +1,123 @@
+/* State course pages: long landing for one course in one state.
+   Builds on styles.css tokens and components (card, quiz-card, dash-card, dark-band, split, units). */
+
+.state-page { padding-bottom: 0; }
+
+/* ---------- Hero ---------- */
+.sc-hero { padding: 56px 0 24px; }
+.sc-hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+.sc-hero h1 { font-weight: 800; letter-spacing: -0.03em; }
+.sc-hero .serif { margin-top: 22px; max-width: 640px; color: var(--ink-60); font-size: 20px; line-height: 1.5; }
+.sc-hero .hero-badges { justify-content: flex-start; margin: 26px 0 0; }
+.sc-hero .course-facts { margin-top: 22px; }
+.sc-hero .btn-row { margin-top: 26px; }
+.sc-hero-visual { position: relative; min-height: 360px; display: flex; align-items: flex-end; justify-content: center; }
+.sc-hero-visual img.sc-student { width: 100%; max-width: 520px; height: auto; position: relative; z-index: 1; }
+.sc-sticker {
+  position: absolute; z-index: 2; top: -6px; right: 0;
+  width: 190px; height: 190px; border-radius: 50%; background: #2a679c;
+  display: flex; align-items: center; justify-content: center; transform: rotate(-9deg);
+}
+.sc-sticker .ring {
+  width: 168px; height: 168px; border-radius: 50%; border: 2px dashed #8ecdf2;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 6px; text-align: center; padding: 0 16px;
+}
+.sc-sticker .top { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8ecdf2; }
+.sc-sticker .title { font-size: 18px; font-weight: 800; line-height: 1.1; color: #fff; letter-spacing: -0.01em; max-width: 140px; }
+.sc-sticker svg { display: block; }
+
+/* ---------- Units ---------- */
+.sc-units { padding: 24px 0 8px; }
+
+/* ---------- Section heads ---------- */
+.sc-section { padding: 88px 0; }
+.sc-section .section-head h2 { font-weight: 800; letter-spacing: -0.03em; }
+
+/* ---------- Personalization (dark) ---------- */
+.sc-dark { padding: 72px 0; }
+.sc-dark .esa-steps { grid-template-columns: repeat(4, 1fr); margin-top: 40px; }
+.sc-dark .esa-step span { font-size: 22px; line-height: 1; color: var(--amber); }
+.sc-dark h2 { font-weight: 800; letter-spacing: -0.03em; }
+
+/* ---------- Practice ---------- */
+.sc-qcard { max-width: 560px; margin: 0 auto; padding: 28px; }
+.sc-crumb { font-size: 13px; color: var(--ink-40); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.sc-crumb i { font-style: normal; opacity: 0.6; }
+.sc-qcard .quiz-progress { margin-top: 18px; flex-wrap: wrap; }
+.sc-work { margin-top: 18px; display: flex; flex-direction: column; gap: 8px; }
+.sc-step { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: var(--radius-sm); background: var(--surface); font-size: 17px; font-weight: 500; }
+.sc-step .n { width: 24px; height: 24px; border-radius: 50%; background: #fff; color: var(--ink-60); font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex: none; }
+.sc-step .ex { flex: 1; }
+.sc-step.is-ok { background: var(--green-soft); }
+.sc-step.is-ok .st { color: var(--green); }
+.sc-step.is-error { background: var(--red-soft); }
+.sc-step.is-error .st { color: var(--red); }
+.sc-step svg { width: 20px; height: 20px; display: block; }
+.sc-caret { display: inline-block; width: 2px; height: 1.1em; background: var(--ink); vertical-align: -0.15em; margin-left: 2px; animation: sc-blink 1.1s steps(1) infinite; }
+@keyframes sc-blink { 50% { opacity: 0; } }
+.sc-qcard .quiz-feedback { display: block; }
+.sc-qcard .quiz-nav { margin-top: 18px; }
+
+/* ---------- Made personal ---------- */
+.sc-personal { background: var(--page-alt); }
+.sc-personal .quiz-objective { max-width: 760px; margin: 32px auto 0; }
+.sc-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; align-items: stretch; }
+.sc-pcard { padding: 26px; display: flex; flex-direction: column; gap: 14px; }
+.sc-pcard .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-40); }
+.sc-pcard .fig { background: var(--surface); border-radius: var(--radius-md); display: flex; justify-content: center; padding: 8px; }
+.sc-pcard .fig svg { max-width: 100%; height: auto; }
+.sc-pcard .q { font-size: 17px; line-height: 1.5; font-weight: 500; }
+.sc-pcard mark { background: var(--amber-soft); color: inherit; padding: 0 3px; border-radius: 4px; }
+.sc-pcard .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; list-style: none; }
+.sc-pcard .opts li { padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--surface-strong); font-size: 15px; font-weight: 500; }
+.sc-pcard .why { margin-top: auto; font-size: 13px; color: var(--blue-deep); font-weight: 600; background: var(--blue-soft); padding: 10px 14px; border-radius: var(--radius-sm); min-height: 40px; }
+.sc-pcard.me { box-shadow: 0 24px 64px rgba(91, 155, 213, 0.28); }
+.sc-pcard .why.ghost { visibility: hidden; }
+.sc-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin-top: 28px; color: var(--ink-60); font-size: 15px; }
+
+/* ---------- Parent report ---------- */
+.sc-report .dash-card { max-width: 520px; }
+.sc-report .dash-head { align-items: center; }
+.sc-report .who { display: flex; align-items: center; gap: 10px; }
+.sc-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--blue-soft); color: var(--blue-deep); font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.sc-next { margin-top: 16px; display: flex; gap: 12px; align-items: baseline; padding: 14px 16px; border-radius: var(--radius-sm); background: var(--blue-soft); font-size: 14px; color: var(--ink-70); }
+.sc-next b { color: var(--blue-deep); font-weight: 600; white-space: nowrap; }
+
+/* ---------- Reviews ---------- */
+.sc-reviews-list { max-width: 900px; margin: 40px auto 0; display: flex; flex-direction: column; gap: 20px; }
+.sc-review { display: grid; grid-template-columns: 120px 1fr; gap: 24px; align-items: start; padding: 26px; }
+.sc-who { text-align: left; }
+.sc-who img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-bottom: 8px; }
+.sc-who b { display: block; font-size: 16px; font-weight: 700; }
+.sc-who span { font-size: 14px; color: var(--ink-60); }
+.sc-stars { display: flex; gap: 3px; margin-bottom: 8px; }
+.sc-stars svg { width: 20px; height: 20px; }
+.sc-review p { font-family: var(--font-serif); font-size: 19px; line-height: 1.5; }
+.sc-disclaim { max-width: 900px; margin: 14px auto 0; font-size: 12.5px; color: var(--ink-40); text-align: center; }
+
+/* ---------- Final CTA ---------- */
+.sc-cta { text-align: center; }
+.sc-cta .section-head { margin: 0 auto; }
+.sc-cta .btn-row { justify-content: center; margin-top: 28px; }
+.sc-cta .sc-mail { margin-top: 18px; color: rgba(255,255,255,0.7); font-size: 15px; }
+.sc-cta .sc-mail a { color: #fff; text-decoration: underline; }
+
+@media (max-width: 900px) {
+  .sc-hero-inner { grid-template-columns: 1fr; }
+  .sc-hero-visual { min-height: 0; order: -1; margin-bottom: 8px; }
+  .sc-hero-visual img.sc-student { max-width: 380px; }
+  .sc-sticker { width: 150px; height: 150px; top: 0; right: 4px; }
+  .sc-sticker .ring { width: 132px; height: 132px; padding: 0 10px; }
+  .sc-sticker .title { font-size: 15px; max-width: 110px; }
+  .sc-dark .esa-steps { grid-template-columns: 1fr 1fr; }
+  .sc-pair { grid-template-columns: 1fr; }
+  .sc-section { padding: 64px 0; }
+}
+@media (max-width: 560px) {
+  .sc-dark .esa-steps { grid-template-columns: 1fr; }
+  .sc-review { grid-template-columns: 1fr; gap: 12px; }
+  .sc-who { display: flex; align-items: center; gap: 12px; }
+  .sc-who img { margin: 0; }
+  .sc-pcard .opts { grid-template-columns: 1fr; }
+}
