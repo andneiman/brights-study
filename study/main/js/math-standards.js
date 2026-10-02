@@ -1744,5 +1744,327 @@ var MATH_STANDARDS = {
         "Fitting data to a normal distribution"
       ]
     }
+  ],
+  "Louisiana": [
+    {
+      "n": "Kindergarten Math",
+      "g": "Grade K",
+      "b": "K-2",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns to count to 100, read and write numbers to 20, compare groups, and add and subtract with small numbers using objects and pictures. They also learn to recognize coins, name shapes and compare things by length and weight. Short, hands-on lessons build the number sense every later grade relies on.",
+      "u": [
+        "Numbers and counting to 100",
+        "Comparing numbers",
+        "Putting together and taking apart (intro to addition and subtraction)",
+        "Teen numbers and ones-and-tens",
+        "Measuring and sorting objects",
+        "Coins and their values",
+        "Shapes around us"
+      ]
+    },
+    {
+      "n": "Grade 1 Math",
+      "g": "Grade 1",
+      "b": "K-2",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns to add and subtract within 20, understand tens and ones, count to 120 and compare two-digit numbers. They also practice telling time to the half-hour, reading simple graphs, finding the value of coins and splitting shapes into halves and fourths.",
+      "u": [
+        "Addition and subtraction stories",
+        "Fact families and strategies within 20",
+        "Equations with addition and subtraction",
+        "Counting to 120 and tens and ones",
+        "Comparing and adding two-digit numbers",
+        "Measuring length",
+        "Telling time",
+        "Picture graphs and tables",
+        "Coins up to 50 cents",
+        "Shapes, halves, and fourths"
+      ]
+    },
+    {
+      "n": "Grade 2 Math",
+      "g": "Grade 2",
+      "b": "K-2",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child adds and subtracts within 100 and learns place value up to 1,000. They measure length, tell time, count money, sort data into graphs, and meet the first ideas behind multiplication through equal groups.",
+      "u": [
+        "Addition and subtraction word problems",
+        "Fluency within 20",
+        "Even and odd numbers and equal groups",
+        "Place value to 1,000",
+        "Adding and subtracting within 100",
+        "Adding and subtracting within 1,000",
+        "Length and number lines",
+        "Time and money",
+        "Graphs and line plots",
+        "Shapes, halves, thirds, and fourths"
+      ]
+    },
+    {
+      "n": "Grade 3 Math",
+      "g": "Grade 3",
+      "b": "3-5",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns multiplication and division, how fractions work on the number line, and how to add and subtract bigger numbers confidently. They also measure time, volume and mass, work with area, perimeter and graphs, and solve money problems.",
+      "u": [
+        "Multiplication and division as equal groups",
+        "Multiplication and division facts within 100",
+        "Properties and patterns of arithmetic",
+        "Rounding and multi-digit addition and subtraction",
+        "Fractions as numbers",
+        "Equivalent fractions and comparing fractions",
+        "Time, liquid volume, and mass",
+        "Scaled graphs and line plots",
+        "Area and its link to multiplication",
+        "Perimeter",
+        "Money",
+        "Shapes and their attributes"
+      ]
+    },
+    {
+      "n": "Grade 4 Math",
+      "g": "Grade 4",
+      "b": "3-5",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child works with bigger numbers, multiplies and divides multi-digit numbers, and compares, adds and subtracts fractions and decimals. They also measure angles, classify shapes, and solve multi-step word problems.",
+      "u": [
+        "Four operations and word problems",
+        "Factors, multiples, and patterns",
+        "Place value of multi-digit numbers",
+        "Multi-digit addition, subtraction, multiplication, and division",
+        "Fraction equivalence and ordering",
+        "Building fractions from unit fractions",
+        "Decimal fractions",
+        "Measurement conversions",
+        "Line plots with fractions",
+        "Angles and angle measure",
+        "Lines, angles, and shapes"
+      ]
+    },
+    {
+      "n": "Grade 5 Math",
+      "g": "Grade 5",
+      "b": "3-5",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns to add, subtract, multiply and divide fractions and decimals, finds volume, and plots points on a coordinate grid. They get ready for middle school math with order of operations and problem solving.",
+      "u": [
+        "Numerical expressions",
+        "Patterns and relationships",
+        "Place value and powers of 10",
+        "Multi-digit whole number operations",
+        "Decimal operations to hundredths",
+        "Adding and subtracting fractions with unlike denominators",
+        "Multiplying fractions",
+        "Dividing with unit fractions",
+        "Converting measurement units",
+        "Line plots with fractions",
+        "Volume",
+        "Graphing points in the coordinate plane",
+        "Classifying two-dimensional figures"
+      ]
+    },
+    {
+      "n": "Grade 6 Math",
+      "g": "Grade 6",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child steps into middle school math with ratios and rates, dividing fractions, negative numbers, and the first algebra: expressions and one-step equations. They also find area and volume and learn to describe data with averages and graphs.",
+      "u": [
+        "Ratio concepts",
+        "Unit rates and percents",
+        "Dividing fractions by fractions",
+        "Multi-digit operations, factors, and multiples",
+        "Rational numbers and the number line",
+        "Expressions with variables",
+        "One-variable equations and inequalities",
+        "Relationships between two variables",
+        "Area, surface area, and volume",
+        "Statistical questions and variability",
+        "Describing data distributions"
+      ]
+    },
+    {
+      "n": "Grade 7 Math",
+      "g": "Grade 7",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child works with proportions and percent, calculations with positive and negative numbers and fractions, and solving equations. They also study scale drawings, angles, circles, and basic probability and sampling.",
+      "u": [
+        "Proportional relationships",
+        "Percent problems",
+        "Adding and subtracting rational numbers",
+        "Multiplying and dividing rational numbers",
+        "Equivalent expressions",
+        "Equations and inequalities from real-life problems",
+        "Scale drawings and geometric figures",
+        "Angles, area, surface area, and volume",
+        "Random sampling and comparing populations",
+        "Chance and probability models"
+      ]
+    },
+    {
+      "n": "Grade 8 Math",
+      "g": "Grade 8",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child gets ready for high school algebra: linear equations and graphs, functions, systems of equations, exponents and square roots. They also learn the Pythagorean Theorem, transformations, and how to read relationships in data.",
+      "u": [
+        "Rational and irrational numbers",
+        "Integer exponents, radicals, and scientific notation",
+        "Proportional relationships and slope",
+        "Solving linear equations",
+        "Systems of linear equations",
+        "Functions: defining, comparing, and modeling",
+        "Congruence and similarity with transformations",
+        "Pythagorean theorem",
+        "Volume of cylinders, cones, and spheres",
+        "Patterns in bivariate data"
+      ]
+    },
+    {
+      "n": "Algebra I",
+      "g": "Recommended grades 8–10",
+      "b": "6-8,9-12",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "A full first algebra course: working with expressions, equations, inequalities and systems, then graphing and comparing linear, quadratic and exponential functions and using them to model real situations. Your child also learns to read and summarize data, and builds the reasoning skills needed for geometry and beyond.",
+      "u": [
+        "Quantities and units in problem solving",
+        "Rational and irrational numbers",
+        "Structure of expressions and equivalent forms",
+        "Polynomial operations, zeros, and factors",
+        "Writing equations from situations",
+        "Solving one-variable equations and inequalities",
+        "Systems of equations",
+        "Solving equations and inequalities graphically",
+        "Function concepts and notation",
+        "Interpreting functions in context",
+        "Analyzing functions in multiple representations",
+        "Building functions",
+        "Linear, quadratic, and exponential models",
+        "Describing one-variable data",
+        "Two-variable data and linear models"
+      ]
+    },
+    {
+      "n": "Geometry",
+      "g": "Recommended grades 9–11",
+      "b": "9-12",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns to prove and reason about shapes: transformations, congruent and similar triangles, right-triangle trigonometry, circles, volume and coordinate geometry, along with probability. Lessons build careful, step-by-step thinking.",
+      "u": [
+        "Transformations in the plane",
+        "Congruence and rigid motions",
+        "Proving and applying geometric theorems",
+        "Geometric constructions",
+        "Similarity transformations",
+        "Similarity theorems and proofs",
+        "Right-triangle trigonometry",
+        "Circle theorems",
+        "Arc length and sector area",
+        "Conic sections and coordinate proofs",
+        "Volume formulas",
+        "Two- and three-dimensional relationships",
+        "Modeling with geometry",
+        "Independence and conditional probability",
+        "Compound events and probability rules"
+      ]
+    },
+    {
+      "n": "Algebra II",
+      "g": "Recommended grades 10–12",
+      "b": "9-12",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "A deeper algebra course: polynomial and rational expressions, complex numbers, advanced equations and functions, trigonometry on the unit circle, and statistics with real data. It prepares your child for precalculus, college math and science courses.",
+      "u": [
+        "Rational exponents",
+        "Quantities and units",
+        "Complex numbers",
+        "Structure and equivalent forms of expressions",
+        "Zeros, factors, and polynomial identities",
+        "Rational expressions",
+        "Writing equations",
+        "Solving equations, inequalities, and systems",
+        "Solving graphically",
+        "Interpreting and analyzing functions",
+        "Building new functions",
+        "Linear, quadratic, and exponential models",
+        "The unit circle and trigonometric functions",
+        "Modeling periodic phenomena",
+        "Trigonometric identities",
+        "Data analysis with one and two variables",
+        "Random processes and inference",
+        "Conclusions from surveys, experiments, and observational studies"
+      ]
+    },
+    {
+      "n": "Precalculus with Trigonometry",
+      "g": "Recommended grades 11–12",
+      "b": "9-12",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Final preparation for calculus: functions in depth, trigonometry and the unit circle, polynomial and exponential models, sequences, and an introduction to vectors or matrices. For students aiming at STEM or college-level math.",
+      "u": [
+        "Complex numbers and the complex plane",
+        "Polynomial identities and rational functions",
+        "Vectors",
+        "Matrices and matrix methods for systems",
+        "Function analysis and transformations",
+        "Trigonometric functions and identities",
+        "Laws of sines and cosines",
+        "Conic sections",
+        "Compound probability"
+      ]
+    },
+    {
+      "n": "Statistics and Probability",
+      "g": "Grades 9–12",
+      "b": "9-12",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns to collect, display and interpret data, understand probability, and judge claims made from data. Good for any student who will meet numbers in the news, science, business or social studies.",
+      "u": [
+        "Describing one-variable data",
+        "Two-variable data and scatterplots",
+        "Interpreting linear models",
+        "Random processes and sampling",
+        "Inference from surveys, experiments, and observational studies",
+        "Independence and conditional probability",
+        "Compound events and probability rules",
+        "Expected value",
+        "Using probability to make decisions"
+      ],
+      "e": true
+    },
+    {
+      "n": "Financial Mathematics",
+      "g": "Grades 8–12",
+      "b": "6-8,9-12",
+      "p": "Semester $129",
+      "fmt": "Semester",
+      "d": "A practical course in money math: budgeting, interest, saving and investing, loans and credit, taxes and insurance. Your child practices the calculations behind everyday financial decisions.",
+      "u": [
+        "Reasoning with quantities and units",
+        "Earning income",
+        "Spending and budgeting",
+        "Saving and compound growth",
+        "Investing",
+        "Credit and borrowing",
+        "Loans, mortgages, and geometric series",
+        "Managing risk and insurance"
+      ],
+      "e": true
+    }
   ]
 };
