@@ -1789,7 +1789,7 @@ var MATH_STANDARDS = {
       "b": "K-2",
       "p": "Full year $199 · Semester $129",
       "fmt": "Full year or semester",
-      "d": "Your child adds and subtracts within 100 and learns place value up to 1,000. They measure length, tell time, count money, sort data into graphs, and meet the first ideas behind multiplication through equal groups.",
+      "d": "Following Louisiana's Grade 2 standards, your child becomes fluent with adding and subtracting within 100, learns place value up to 1,000, and solves one- and two-step word problems. They also measure with rulers, tell time to five minutes, work with dollars and coins, read bar graphs and line plots, and meet the first ideas behind multiplication through arrays and equal groups.",
       "u": [
         "Addition and subtraction word problems",
         "Fluency within 20",
@@ -1831,7 +1831,7 @@ var MATH_STANDARDS = {
       "b": "3-5",
       "p": "Full year $199 · Semester $129",
       "fmt": "Full year or semester",
-      "d": "Your child works with bigger numbers, multiplies and divides multi-digit numbers, and compares, adds and subtracts fractions and decimals. They also measure angles, classify shapes, and solve multi-step word problems.",
+      "d": "Following Louisiana's Grade 4 standards, your child multiplies and divides multi-digit numbers, finds factors and multiples, and compares and orders fractions and decimals. They also add and subtract fractions with like denominators, measure and classify angles, connect area to multiplication, and solve multi-step word problems.",
       "u": [
         "Four operations and word problems",
         "Factors, multiples, and patterns",
@@ -1852,7 +1852,7 @@ var MATH_STANDARDS = {
       "b": "3-5",
       "p": "Full year $199 · Semester $129",
       "fmt": "Full year or semester",
-      "d": "Your child learns to add, subtract, multiply and divide fractions and decimals, finds volume, and plots points on a coordinate grid. They get ready for middle school math with order of operations and problem solving.",
+      "d": "Following Louisiana's Grade 5 standards, your child works fluently with decimals to hundredths and learns to add, subtract, multiply and divide fractions. They also find volume, convert units, graph points on the coordinate plane, and classify shapes by their properties.",
       "u": [
         "Numerical expressions",
         "Patterns and relationships",
@@ -1875,7 +1875,7 @@ var MATH_STANDARDS = {
       "b": "6-8",
       "p": "Full year $199 · Semester $129",
       "fmt": "Full year or semester",
-      "d": "Your child steps into middle school math with ratios and rates, dividing fractions, negative numbers, and the first algebra: expressions and one-step equations. They also find area and volume and learn to describe data with averages and graphs.",
+      "d": "Following Louisiana's Grade 6 standards, your child learns ratios, rates and percent, divides fractions by fractions, and extends numbers to negatives. They start algebra with expressions and one-variable equations and inequalities, find area, surface area and volume, and learn to describe data.",
       "u": [
         "Ratio concepts",
         "Unit rates and percents",
@@ -1896,7 +1896,7 @@ var MATH_STANDARDS = {
       "b": "6-8",
       "p": "Full year $199 · Semester $129",
       "fmt": "Full year or semester",
-      "d": "Your child works with proportions and percent, calculations with positive and negative numbers and fractions, and solving equations. They also study scale drawings, angles, circles, and basic probability and sampling.",
+      "d": "Following Louisiana's Grade 7 standards, your child works with proportional relationships and percent, calculates with positive and negative rational numbers, and writes and solves equations and inequalities. They also study scale drawings, angles, area and volume, random sampling and probability.",
       "u": [
         "Proportional relationships",
         "Percent problems",
@@ -1916,7 +1916,7 @@ var MATH_STANDARDS = {
       "b": "6-8",
       "p": "Full year $199 · Semester $129",
       "fmt": "Full year or semester",
-      "d": "Your child gets ready for high school algebra: linear equations and graphs, functions, systems of equations, exponents and square roots. They also learn the Pythagorean Theorem, transformations, and how to read relationships in data.",
+      "d": "Following Louisiana's Grade 8 standards, your child prepares for Algebra I with linear equations, systems of equations, functions, and exponents and radicals. They also learn the Pythagorean theorem, congruence and similarity with transformations, and how to spot patterns in data.",
       "u": [
         "Rational and irrational numbers",
         "Integer exponents, radicals, and scientific notation",
