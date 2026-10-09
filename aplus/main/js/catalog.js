@@ -1647,6 +1647,29 @@ var CATALOG = [
     "color": "linear-gradient(160deg, #5ec8d6, #2a8ea3)",
     "courses": [
       {
+        "n": "AI Literacy and Safety for Families",
+        "g": "Grades 3–5 + Parent Mode",
+        "b": "3-5",
+        "p": "2 weeks $49",
+        "fmt": "Short course",
+        "d": "A 2-week course on what AI is, how it works and how to stay safe with it, for ages 8 to 12, with a Parent Mode. Personalized to each student's interests and current experience with AI, and built on the UNESCO AI Competency Framework for Students.",
+        "e": true,
+        "u": [
+          "Why AI Matters",
+          "People and AI",
+          "When to Use AI (and When Not)",
+          "What Is AI, Really?",
+          "What Resources Does AI Need?",
+          "Chatbots and Image Generators",
+          "AI Can Be Wrong",
+          "Bias and Fairness",
+          "AI Risks and Staying Safe",
+          "How to Talk to AI",
+          "Learning with AI: Basics",
+          "Creativity with AI: Basics"
+        ]
+      },
+      {
         "n": "Digital World & Online Safety",
         "g": "Grades 3–5",
         "b": "3-5",
@@ -1663,25 +1686,6 @@ var CATALOG = [
           "Copyright and giving credit",
           "Healthy technology habits",
           "Digital citizenship project"
-        ]
-      },
-      {
-        "n": "AI Explorations",
-        "g": "Grades 3–5",
-        "b": "3-5",
-        "p": "Specialty $149",
-        "fmt": "Specialty",
-        "d": "An age-appropriate introduction to AI through everyday examples, classification, patterns, and responsible choices, without unsupervised access to unsuitable tools.",
-        "e": true,
-        "u": [
-          "Where we meet AI",
-          "Humans, rules and learned patterns",
-          "Data teaches systems",
-          "Classification and prediction",
-          "Why AI makes mistakes",
-          "Fairness and privacy",
-          "Asking AI safely with an adult",
-          "Explain-an-AI project"
         ]
       },
       {
