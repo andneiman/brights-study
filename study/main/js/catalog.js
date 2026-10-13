@@ -1670,46 +1670,6 @@ var CATALOG = [
         ]
       },
       {
-        "n": "Digital World & Online Safety",
-        "g": "Grades 3–5",
-        "b": "3-5",
-        "p": "Semester $129",
-        "fmt": "Semester",
-        "d": "Builds foundational literacy for students who learn, communicate, and create in digital environments.",
-        "u": [
-          "Devices, software and files",
-          "Accounts and strong passwords",
-          "Privacy and personal information",
-          "Search and source basics",
-          "Digital communication and kindness",
-          "Scams, ads and manipulation",
-          "Copyright and giving credit",
-          "Healthy technology habits",
-          "Digital citizenship project"
-        ]
-      },
-      {
-        "n": "AI Literacy & Responsible Use",
-        "g": "Grades 6–8",
-        "b": "6-8",
-        "p": "Specialty $149",
-        "fmt": "Specialty",
-        "d": "Teaches students to understand AI limitations, verify outputs, and preserve human agency—not merely to enter prompts.",
-        "e": true,
-        "u": [
-          "What counts as AI",
-          "Data, patterns and models",
-          "Generative AI and language models",
-          "Prompt, context and iteration",
-          "Hallucinations and verification",
-          "Bias and representation",
-          "Privacy, safety and digital footprint",
-          "Copyright and attribution",
-          "Human accountability",
-          "Responsible-use portfolio"
-        ]
-      },
-      {
         "n": "Applied AI for Learning & Creation",
         "g": "Grades 8–12",
         "b": "6-8,9-12",
@@ -1728,49 +1688,6 @@ var CATALOG = [
           "Feedback and iteration",
           "Automation without code",
           "Capstone workflow with audit trail"
-        ]
-      },
-      {
-        "n": "Data, Models & How AI Works",
-        "g": "Grades 9–12",
-        "b": "9-12",
-        "p": "Specialty $169",
-        "fmt": "Specialty",
-        "d": "Conceptual technical literacy explaining what happens between data, training, a model, and its output, without requiring Python.",
-        "e": true,
-        "u": [
-          "Data representation",
-          "Labels, features and patterns",
-          "Training, validation and testing",
-          "Classification and prediction",
-          "Neural-network intuition",
-          "Language models and tokens",
-          "Embeddings and similarity",
-          "Generative models",
-          "Evaluation and benchmarks",
-          "Failure modes, security and model limitations",
-          "No-code model investigation"
-        ]
-      },
-      {
-        "n": "AI Ethics, Society & Future of Work",
-        "g": "Grades 9–12",
-        "b": "9-12",
-        "p": "Specialty $149",
-        "fmt": "Specialty",
-        "d": "Examines the effects of AI on rights, institutions, labor, media, education, and personal decision-making.",
-        "e": true,
-        "u": [
-          "Human agency and accountability",
-          "Privacy and surveillance",
-          "Bias, fairness and inclusion",
-          "Misinformation and synthetic media",
-          "Copyright and creative ownership",
-          "AI in education and assessment",
-          "Jobs, automation and new roles",
-          "Environmental and social costs",
-          "Governance and regulation",
-          "Policy debate and future-of-work plan"
         ]
       }
     ]
