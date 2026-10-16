@@ -1469,7 +1469,7 @@ var MATH_STANDARDS = {
       "b": "9-12",
       "p": "Full year $199 · Semester $129",
       "fmt": "Full year or semester",
-      "d": "Wyoming sets one combined high school set rather than named courses, so this row covers the algebra, functions, geometry and statistics skills a student needs in grades 9–12: exponents and polynomials, equations and systems, functions, congruence and similarity, circles, and data analysis.",
+      "d": "Wyoming sets one combined high school set rather than named courses, so this row covers the algebra, functions, geometry and statistics skills a student needs in grades 9–12: exponents and polynomials, equations and systems, functions, congruence and similarity, circles, and data analysis. The full course is designed for 3–4 years of study, so a semester or full-year package includes only part of it.",
       "u": [
         "Rational exponents",
         "Quantities and units",
