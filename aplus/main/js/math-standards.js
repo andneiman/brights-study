@@ -1452,14 +1452,13 @@ var MATH_STANDARDS = {
       "d": "Your child gets ready for high school: linear equations, functions, congruence and similarity, the Pythagorean Theorem, and patterns in data.",
       "u": [
         "Rational and irrational numbers",
-        "Integer exponents, radicals, and scientific notation",
         "Proportional relationships and slope",
-        "Solving linear equations",
+        "Solving linear equations and inequalities",
         "Systems of linear equations",
-        "Functions: defining, comparing, and modeling",
-        "Congruence and similarity with transformations",
-        "Pythagorean theorem",
-        "Volume of cylinders, cones, and spheres",
+        "Comparing functions",
+        "Linear functions as models",
+        "Congruence and angles in triangles",
+        "Pythagorean theorem and distance",
         "Patterns in bivariate data"
       ]
     },
@@ -1669,7 +1668,7 @@ var MATH_STANDARDS = {
         "Functions: defining, comparing, and modeling",
         "Congruence and similarity with transformations",
         "Pythagorean theorem",
-        "Volume of cylinders, cones, and spheres",
+        "Volume of cones, pyramids, and spheres",
         "Patterns in bivariate data"
       ]
     },
