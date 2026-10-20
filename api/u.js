@@ -22,6 +22,9 @@ function cell(value) {
 
 function fromLabel(source) {
   if (source === "assessment") return "Assessment";
+  if (typeof source === "string" && source.startsWith("assessment:")) {
+    return "Assessment · " + source.slice("assessment:".length);
+  }
   if (source === "course") return "Course page";
   return typeof source === "string" ? source.trim() : "";
 }

@@ -132,7 +132,7 @@
         phone: phone,
         state: state,
         course: course,
-        source: 'assessment'
+        source: leadSource()
       })
     }).then(function (res) {
       return res.json().then(function (data) {
@@ -148,6 +148,15 @@
       showError(err.message || 'Could not send. Try again.');
     });
   });
+
+  function leadSource() {
+    var from = '';
+    try {
+      from = new URLSearchParams(window.location.search).get('from') || '';
+    } catch (e) {}
+    from = from.toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 40);
+    return from ? 'assessment:' + from : 'assessment';
+  }
 
   fillCourses();
 })();
