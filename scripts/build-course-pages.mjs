@@ -83,6 +83,30 @@ function page(site, subject, course, modal) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/main/css/styles.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R22XN1JHD9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    window.BRIGHTS_PAGE = (function () {
+      var path = location.pathname;
+      var title = document.title.replace(/\\s+[—–-]\\s+Brights.*$/i, '').trim();
+      if (/\\/main\\/?$/.test(path) || /\\/index\\.html$/.test(path)) return 'Home';
+      if (/\\/courses\\.html$/.test(path)) return 'Courses';
+      if (/\\/assessment\\.html$/.test(path)) return 'Assessment';
+      if (/privacy-policy/.test(path)) return 'Privacy';
+      if (/terms-of-use/.test(path)) return 'Terms';
+      if (/refund-policy/.test(path)) return 'Refund';
+      return title || 'Page';
+    })();
+    gtag('config', 'G-R22XN1JHD9', {
+      page_title: document.title,
+      page_path: location.pathname,
+      content_group: window.BRIGHTS_PAGE
+    });
+  </script>
+  <script src="/main/js/analytics.js" defer></script>
 </head>
 <body>
 
