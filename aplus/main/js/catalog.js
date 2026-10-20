@@ -1670,12 +1670,12 @@ var CATALOG = [
         ]
       },
       {
-        "n": "How to Learn Smart (with AI)",
-        "g": "Grades 6–12",
+        "n": "Learn How to Learn Smart (with AI)",
+        "g": "Grades 6–12 + Parent Mode",
         "b": "6-8,9-12",
         "p": "2 weeks $69",
         "fmt": "Short course",
-        "d": "A 2-week intensive course for grades 6–12: how memory and attention really work, study methods that are proven to help, how AI works and how to stay safe with it, and how to use AI as a tutor on your own school subjects. Ends with a personal study plan and the student's own rules for learning with AI. Personalized to each student's interests, subjects and goals.",
+        "d": "A 2-week intensive course for grades 6–12: how memory and attention really work, study methods that are proven to help, how AI works and how to stay safe with it, and how to use AI as a tutor on your own school subjects. Ends with a personal study plan and the student's own rules for learning with AI. Personalized to each student's interests, subjects and goals, with a Parent Mode.",
         "e": true,
         "u": [
           "Focused vs. Diffuse Thinking",
