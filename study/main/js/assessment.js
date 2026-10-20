@@ -49,15 +49,11 @@
     courseSelect.innerHTML = '';
     var placeholder = document.createElement('option');
     placeholder.value = '';
-    if (!state) {
-      placeholder.textContent = 'Select a state first';
-      courseSelect.appendChild(placeholder);
-      courseSelect.disabled = true;
-      return;
-    }
-    placeholder.textContent = 'Select a course';
+    placeholder.disabled = true;
+    placeholder.selected = true;
+    placeholder.textContent = state ? 'Select a course' : 'Select a state first';
     courseSelect.appendChild(placeholder);
-    courseSelect.disabled = false;
+    if (!state) return;
     var current = '';
     var group = null;
     coursesFor(state).forEach(function (item) {
