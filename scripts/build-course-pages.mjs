@@ -122,7 +122,7 @@ function page(site, subject, course, modal) {
         <a href="/main#faq">FAQ</a>
       </nav>
       <div class="header-actions">
-        <a class="btn btn-light" href="#">Login</a>
+        <a class="btn btn-light" href="/main/assessment.html">Free assessment</a>
       </div>
     </div>
   </header>
