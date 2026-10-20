@@ -20,6 +20,12 @@ function cell(value) {
   return text ? esc(text) : "—";
 }
 
+function fromLabel(source) {
+  if (source === "assessment") return "Assessment";
+  if (source === "course") return "Course page";
+  return typeof source === "string" ? source.trim() : "";
+}
+
 function fmtDate(d) {
   return new Date(d).toLocaleString("ru-RU", {
     timeZone: "Europe/Moscow",
@@ -159,7 +165,7 @@ async function handler(req, res) {
               <td>${esc(lead.state)}</td>
               <td>${esc(lead.course)}</td>
               <td>${esc(lead.site)}</td>
-              <td>${cell(lead.source)}</td>
+              <td>${cell(fromLabel(lead.source))}</td>
               <td>${cell(lead.country)}</td>
               <td>${cell(lead.city)}</td>
               <td class="mono">${cell(lead.ip)}</td>
@@ -183,7 +189,7 @@ async function handler(req, res) {
                 <th>State</th>
                 <th>Course</th>
                 <th>Site</th>
-                <th>Source</th>
+                <th>From</th>
                 <th>Country</th>
                 <th>City</th>
                 <th>IP</th>
