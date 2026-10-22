@@ -1,5 +1,5 @@
 // Visible Brights logo that also counts listing views (Odyssey etc.).
-// Usage: <img src="https://www.brights.study/api/logo?state=UT&course=math7&v=1" width="148" height="53" alt="Brights">
+// Usage: <img src="https://www.brights.study/api/logo?state=UT&course=math7" width="148" height="53" alt="Brights">
 // Each request is forwarded to the Google Apps Script tracker, then the logo SVG is returned.
 
 const TRACKER_URL = "https://script.google.com/macros/s/AKfycbznrIYwZcPabMj3PbJi4WjITA0lnlu6lNM03mMtT7wyGxKSKE3Ed5m6gOonXdkjvq1tqw/exec";
@@ -11,13 +11,17 @@ function clean(value) {
   return typeof raw === "string" ? raw.trim().slice(0, 100) : "";
 }
 
+// Accept "course" and the HTML-escaped "amp;course" (when &amp; is pasted into an address bar).
+function param(query, name) {
+  return clean(query[name]) || clean(query["amp;" + name]);
+}
+
 async function track(query) {
   if (!TRACKER_URL.startsWith("https://")) return;
   const params = new URLSearchParams({
-    e: clean(query.e) || "view",
-    state: clean(query.state),
-    course: clean(query.course),
-    v: clean(query.v),
+    e: param(query, "e") || "view",
+    state: param(query, "state"),
+    course: param(query, "course"),
   });
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 3000);
