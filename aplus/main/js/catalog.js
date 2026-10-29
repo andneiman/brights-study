@@ -1970,7 +1970,6 @@ var CATALOG = [
           '<div class="course-body">' +
             '<p class="course-blurb">' + esc(c.d) + '</p>' +
             unitsBlock(c) +
-            '<p class="course-turnaround">Choose this course and we deliver the personalized version in <b>5 working days</b>.</p>' +
             '<div class="course-actions">' +
               '<a class="a-dark js-lead" href="#" data-intent="enroll" data-course="' + esc(c.n) + '">Choose this course →</a>' +
             '</div>' +
