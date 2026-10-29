@@ -21,13 +21,31 @@
       "destination": "/api/u"
     },
     {
+      "source": "/m",
+      "destination": "/api/m"
+    },
+    {
+      "source": "/m/",
+      "destination": "/api/m"
+    },
+    {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "aplusbrights.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "aplusbrights.com"
+        }
+      ],
       "destination": "/aplus/:path*"
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.aplusbrights.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aplusbrights.com"
+        }
+      ],
       "destination": "/aplus/:path*"
     },
     {
