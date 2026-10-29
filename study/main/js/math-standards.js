@@ -3368,6 +3368,189 @@ var STATE_COURSES = {
      "Gravity, electricity and magnetism"
     ]
    }
+  ],
+  "Texas": [
+   {
+    "n": "Grade 1 Science",
+    "g": "Grade 1",
+    "b": "K-2",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child sorts objects by their properties, tests which changes from heating and cooling can be undone, and investigates pushes and pulls. They track seasonal patterns, explore soil, rocks and water, record the weather, build a terrarium to watch living and nonliving things interact, and compare the life cycles of a bird, a mammal and a fish. Home experiments include: melt ice and chocolate, then try to undo the change; push and pull a toy car on different surfaces; compare sand, clay and garden soil in jars of water.",
+    "u": [
+     "Sorting objects by their properties",
+     "Heating and cooling: changes we can and cannot undo",
+     "Objects made of parts",
+     "Pushes and pulls",
+     "Heat in everyday life",
+     "Seasons and patterns in the sky",
+     "Soil, rocks and water",
+     "Weather and our daily choices",
+     "Using and saving Earth's materials",
+     "Living and nonliving things",
+     "Food chains",
+     "Animal parts and life cycles"
+    ]
+   },
+   {
+    "n": "Grade 2 Science",
+    "g": "Grade 2",
+    "b": "K-2",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child classifies matter as solid or liquid, tests how cutting, folding and heating change materials, and builds new objects from small pieces. They study pushes and pulls, make sound from vibrations and design a device to send a message, observe the sun and moon, measure temperature and rain, and follow food chains, pollination and the life cycles of butterflies and frogs. Home experiments include: build a cup-and-string telephone; make sound visible with rice on a plastic-wrap drum; build sand hills and test how wind and water move them.",
+    "u": [
+     "Solids, liquids and their properties",
+     "Cutting, folding and heating materials",
+     "Building new things from small pieces",
+     "Pushes, pulls and motion",
+     "Sound and vibration",
+     "Sending messages with sound",
+     "The sun, the moon and the sky",
+     "Wind, water and the land",
+     "Temperature, rain and severe weather",
+     "Natural and manmade resources",
+     "Food chains, pollination and seeds",
+     "Plant parts, animal structures and life cycles"
+    ]
+   },
+   {
+    "n": "Grade 3 Science",
+    "g": "Grade 3",
+    "b": "3-5",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child measures mass, temperature and magnetism, sorts solids, liquids and gases, and watches heating and cooling change states. They explore forces such as magnetism and gravity, connect speed to energy, model the orbits of the Earth and moon, learn how soil forms, and use food chains and fossils, including Texas fossils, to see how living things depend on their environment. Home experiments include: freeze, melt and warm water and record the temperatures; test which objects a magnet attracts; roll balls down ramps of different heights.",
+    "u": [
+     "Measuring matter: mass, temperature and magnetism",
+     "Solids, liquids and gases",
+     "Heating and cooling change states",
+     "Contact and non-contact forces",
+     "Light, sound, heat and motion energy",
+     "Speed and mechanical energy",
+     "The sun, Earth, moon and planets",
+     "Weather in different places",
+     "How soil forms and fast changes to land",
+     "Using and conserving natural resources",
+     "Food chains, floods and droughts",
+     "Fossils and animal life cycles"
+    ]
+   },
+   {
+    "n": "Grade 4 Science",
+    "g": "Grade 4",
+    "b": "3-5",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child classifies matter by density and magnetism, makes mixtures and solutions, and shows that matter is conserved. They test gravity, friction and magnetism, build circuits, predict seasons and moon phases, model the water cycle and erosion, and trace how food webs move energy and matter. Home experiments include: mix soil and water, then weigh before and after; test which household objects conduct electricity with a battery and bulb; slide objects down a ramp covered with different materials to compare friction.",
+    "u": [
+     "Properties of matter: mass, density and magnetism",
+     "Mixtures and solutions",
+     "Matter is conserved",
+     "Forces: gravity, friction and magnetism",
+     "Energy on the move: waves, sound and motion",
+     "Conductors, insulators and circuits",
+     "Seasons and moon phases",
+     "The water cycle",
+     "Weathering, erosion and deposition",
+     "Weather and climate",
+     "Renewable and nonrenewable resources",
+     "Producers, food webs and Texas fossils",
+     "Plant structures and inherited traits"
+    ]
+   },
+   {
+    "n": "Grade 5 Science",
+    "g": "Grade 5",
+    "b": "3-5",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child compares density, solubility and conductivity, shows that matter is conserved in solutions, and models particles too small to see. They test forces, trace energy in circuits, explore how light reflects and refracts, track shadows as Earth rotates, model how fossil fuels form, and study ecosystems and animal behavior. Home experiments include: dissolve salt in water and weigh before and after; inflate a balloon to show that air is matter; bend light with a glass of water and a pencil.",
+    "u": [
+     "Comparing properties of matter",
+     "Solutions and the conservation of matter",
+     "Particles too small to see",
+     "Balanced and unbalanced forces",
+     "Energy transformations and circuits",
+     "Light: reflection, refraction and absorption",
+     "Earth's rotation: day, night and shadows",
+     "The sun, the ocean and the water cycle",
+     "Sedimentary rock and fossil fuels",
+     "Landforms made by wind, water and ice",
+     "Reducing our impact on the environment",
+     "Healthy ecosystems and food webs",
+     "Structures and behaviors that help survival"
+    ]
+   },
+   {
+    "n": "Grade 6 Science",
+    "g": "Grade 6",
+    "b": "6-8",
+    "p": "Full year $199 · Semester $129",
+    "fmt": "Full year or semester",
+    "d": "Your student compares solids, liquids and gases, classifies substances, elements and mixtures, measures density and spots evidence of chemical change. They calculate net force, apply Newton's third law, compare kinetic and potential energy, model seasons and tides, study Earth's layers and the rock cycle, and explore ecosystems, cells and how variation helps populations survive. Home experiments include: find the density of objects with a scale and water displacement; build a density tower with honey, dish soap, water and oil; weigh a fizzing reaction in a sealed bag.",
+    "u": [
+     "Solids, liquids and gases",
+     "Pure substances and mixtures",
+     "Elements: metals, nonmetals and metalloids",
+     "Density",
+     "Evidence of chemical change",
+     "Net force and Newton's third law",
+     "Potential and kinetic energy",
+     "Waves and energy transfer",
+     "Seasons and tides",
+     "Earth's spheres, layers and the rock cycle",
+     "Managing Earth's resources",
+     "Relationships in ecosystems",
+     "Cells and the diversity of life"
+    ]
+   },
+   {
+    "n": "Grade 7 Science",
+    "g": "Grade 7",
+    "b": "6-8",
+    "p": "Full year $199 · Semester $129",
+    "fmt": "Full year or semester",
+    "d": "Your student tells elements from compounds, separates physical from chemical changes and tests what speeds up dissolving. They graph motion, apply Newton's first law, study how heat moves, explore the solar system and plate tectonics, see how people affect watersheds and oceans, and learn how body systems work and how living things are classified. Home experiments include: time how fast sugar dissolves in hot and cold water, stirred and unstirred; time a toy car and graph distance against time; build an insulated cup and test it with a thermometer.",
+    "u": [
+     "Elements, compounds and the periodic table",
+     "Physical and chemical changes",
+     "Solutions and dissolving",
+     "Speed, velocity and motion graphs",
+     "Newton's first law",
+     "Heat: conduction, convection and radiation",
+     "The solar system and gravity",
+     "What makes Earth habitable",
+     "Plate tectonics and a changing Earth",
+     "Watersheds and oceans",
+     "Energy in ecosystems",
+     "Human body systems",
+     "Reproduction and selection",
+     "Classifying living things"
+    ]
+   },
+   {
+    "n": "Grade 8 Science",
+    "g": "Grade 8",
+    "b": "6-8",
+    "p": "Full year $199 · Semester $129",
+    "fmt": "Full year or semester",
+    "d": "Your student classifies matter, explores water's surface tension, tests acids and bases and balances chemical equations. They apply Newton's second law, compare waves across the electromagnetic spectrum, study stars and galaxies, connect the ocean and atmosphere to climate, trace the carbon cycle, and learn how genes and variation shape survival. Home experiments include: make a red-cabbage pH indicator and test household liquids; count how many drops of water fit on a coin; weigh a fizzing reaction in a sealed bag to show mass is conserved.",
+    "u": [
+     "Elements, compounds and mixtures",
+     "Properties of water",
+     "Acids, bases and pH",
+     "Conservation of mass in chemical reactions",
+     "Newton's laws and acceleration",
+     "Waves and the electromagnetic spectrum",
+     "Stars, galaxies and the universe",
+     "Weather, climate and the oceans",
+     "The carbon cycle and climate",
+     "Food webs, succession and biodiversity",
+     "Cells and genes",
+     "Adaptation and variation"
+    ]
+   }
   ]
  },
  "Social Studies": {
@@ -4222,6 +4405,199 @@ var STATE_COURSES = {
      "The courts and criminal justice",
      "Elections and participation",
      "State and local government"
+    ]
+   }
+  ],
+  "Texas": [
+   {
+    "n": "Grade 1 Social Studies",
+    "g": "Grade 1",
+    "b": "K-2",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child learns the stories behind holidays such as Independence Day and Veterans Day, meets Sam Houston, George Washington, Abraham Lincoln and Martin Luther King Jr., and draws maps of home, school and community. They see how families meet their needs, why we make choices, how rules keep us safe, what symbols like the Alamo mean, and how inventions changed family life.",
+    "u": [
+     "Holidays and where they come from",
+     "People who shaped Texas and the nation",
+     "Maps of home, school and community",
+     "Land, water and weather where we live",
+     "How families meet their needs",
+     "Goods, services and choices",
+     "Jobs and the value of work",
+     "Rules, laws and community helpers",
+     "Good citizens and American and Texas symbols",
+     "Family traditions, folktales and inventors"
+    ]
+   },
+   {
+    "n": "Grade 2 Social Studies",
+    "g": "Grade 2",
+    "b": "K-2",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child explores landmarks and holidays, meets people such as Thurgood Marshall, Irma Rangel and Theodore Roosevelt, and maps their own community, Texas, the U.S., Canada and Mexico. They see how people change the land, how work, saving and spending fit together, how a product goes from resource to store, what the mayor, governor and president do, and how communities celebrate.",
+    "u": [
+     "Landmarks, monuments and holidays",
+     "People who shaped our community, state and nation",
+     "Reading and making maps",
+     "Our community, Texas, the U.S. and the world",
+     "How people change the land",
+     "Work, earning, spending and saving",
+     "Producers, consumers and how products are made",
+     "What government does for our community",
+     "The mayor, the governor and the president",
+     "Good citizens in history and patriotic symbols",
+     "Celebrations, inventors and new technology"
+    ]
+   },
+   {
+    "n": "Grade 3 Social Studies",
+    "g": "Grade 3",
+    "b": "3-5",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child studies how people such as Benjamin Franklin and Benjamin Banneker changed communities, why people form them, and how communities adapt to deserts, mountains and plains. They use map scales and grids, make a simple budget, learn about supply, demand and entrepreneurs, compare local, state and national government, and meet heroes, artists and inventors.",
+    "u": [
+     "How people and ideas change communities",
+     "Why people form communities",
+     "Climate, landforms and adapting to the environment",
+     "Maps: directions, scale and grids",
+     "Earning, spending, saving and a first budget",
+     "Supply, demand, profit and entrepreneurs",
+     "Local, state and national government",
+     "The Declaration of Independence and the Constitution",
+     "Good citizens, heroes and civic groups",
+     "Writers, artists, inventors and celebrations"
+    ]
+   },
+   {
+    "n": "Grade 4 Texas History",
+    "g": "Grade 4",
+    "b": "3-5",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child travels through Texas history, from the Caddo, Karankawa and other American Indian peoples to Spanish missions, Stephen F. Austin, the Alamo, San Jacinto and the Republic of Texas. They follow cattle drives, railroads and Spindletop, explore the four regions of Texas, learn how the Texas economy and constitution work, and meet leaders from Sam Houston to Barbara Jordan.",
+    "u": [
+     "American Indians of Texas",
+     "Exploration and Spanish missions",
+     "Mexican independence and the empresarios",
+     "The Texas Revolution",
+     "The Republic of Texas and annexation",
+     "Civil War, Reconstruction, cattle and railroads",
+     "Oil, the Great Depression and World War II",
+     "The regions of Texas",
+     "Where Texans live and how they use the land",
+     "The Texas economy and free enterprise",
+     "Texas government and the Texas Constitution",
+     "Texas symbols, leaders and citizens"
+    ]
+   },
+   {
+    "n": "Grade 5 U.S. History",
+    "g": "Grade 5",
+    "b": "3-5",
+    "p": "Full year $99 · Semester $69",
+    "fmt": "Full year or semester",
+    "d": "Your child surveys U.S. history from the first colonies and the Revolution to the Constitution, westward expansion, the Civil War, the world wars, the civil rights movement and the present. They locate the 50 states and major landforms, learn how free enterprise and the three branches of government work, study the Bill of Rights and meet innovators from Benjamin Franklin to Neil Armstrong.",
+    "u": [
+     "Colonial America",
+     "The road to independence",
+     "The Constitution and the Bill of Rights",
+     "A growing nation and westward expansion",
+     "Slavery, the Civil War and Reconstruction",
+     "Industry, immigration and the 20th century",
+     "Civil rights and the 21st century",
+     "Regions, states and cities of the U.S.",
+     "The free enterprise system",
+     "Three branches, checks and balances and federalism",
+     "Symbols, citizenship and leaders",
+     "American arts, culture and innovators"
+    ]
+   },
+   {
+    "n": "Grade 6 Contemporary World Cultures",
+    "g": "Grade 6",
+    "b": "6-8",
+    "p": "Full year $149 · Semester $99",
+    "fmt": "Full year or semester",
+    "d": "Your student studies the people, places and societies of today's world: how colonization, migration and trade shaped them, where world regions and countries are, and how geography affects economies. They compare economic systems, limited and unlimited governments such as those of China, Germany, India and Russia, citizenship in different countries, and world religions, cultures and arts.",
+    "u": [
+     "How history shapes today's world",
+     "World regions and countries",
+     "Population, migration and settlement",
+     "Geography, resources and development",
+     "People and the environment",
+     "Factors of production and trade",
+     "Economic systems",
+     "Limited and unlimited governments",
+     "Citizenship around the world",
+     "Culture, religion and the arts",
+     "Science, technology and world cultures"
+    ]
+   },
+   {
+    "n": "Grade 7 Texas History",
+    "g": "Grade 7",
+    "b": "6-8",
+    "p": "Full year $149 · Semester $99",
+    "fmt": "Full year or semester",
+    "d": "Your student studies Texas history era by era, from its first peoples and Spanish missions through Mexican Texas, the Revolution, the Republic and statehood, the Civil War, cattle, cotton and railroads, the age of oil, the world wars and the civil rights movement. They analyze Texas regions, population and economy, and compare the Texas and U.S. constitutions.",
+    "u": [
+     "Natural Texas and its first peoples",
+     "Exploration and the Spanish colonial era",
+     "Mexican Texas and the empresarios",
+     "The Texas Revolution",
+     "The Republic of Texas and early statehood",
+     "Texas in the Civil War and Reconstruction",
+     "Cotton, cattle and railroads",
+     "The age of oil",
+     "The Great Depression and World War II",
+     "Civil rights and modern Texas",
+     "Texas geography, population and economy",
+     "The Texas Constitution and government"
+    ]
+   },
+   {
+    "n": "Grade 8 U.S. History",
+    "g": "Grade 8",
+    "b": "6-8",
+    "p": "Full year $149 · Semester $99",
+    "fmt": "Full year or semester",
+    "d": "Your student studies American history from the founding of Jamestown and the colonies through the Revolution, the Constitution, the early republic, the Age of Jackson, westward expansion, sectionalism, the Civil War and Reconstruction. They read founding documents, learn how the Constitution and Bill of Rights work, and connect geography, economics and culture to each era.",
+    "u": [
+     "Colonial America",
+     "Causes of the American Revolution",
+     "The Revolution and the Declaration of Independence",
+     "From the Articles of Confederation to the Constitution",
+     "The Bill of Rights and how government works",
+     "The early republic",
+     "The Age of Jackson and reform movements",
+     "Westward expansion and Manifest Destiny",
+     "Sectionalism and slavery",
+     "The Civil War",
+     "Reconstruction",
+     "Geography, economy and culture of a growing nation"
+    ]
+   },
+   {
+    "n": "U.S. Government",
+    "g": "Grades 11–11",
+    "b": "9-12",
+    "p": "Full year $149 · Semester $99",
+    "fmt": "Full year or semester",
+    "d": "Your student studies the ideas behind the Constitution, from natural rights to Federalist Nos. 10 and 51, and learns how Congress, the presidency, federal agencies and the courts work. They examine federalism, elections and the Electoral College, the Bill of Rights and landmark cases such as Miranda v. Arizona, government and the economy, and how citizens take part at every level.",
+    "u": [
+     "Ideas that shaped the Constitution",
+     "Constitutional principles and the Federalist Papers",
+     "Congress and lawmaking",
+     "The president and executive agencies",
+     "The federal courts and judicial review",
+     "Federalism: national and state powers",
+     "Elections, parties and the Electoral College",
+     "Rights, liberties and landmark Supreme Court cases",
+     "Government and the economy",
+     "Citizenship and participation",
+     "Comparing systems of government"
     ]
    }
   ]
