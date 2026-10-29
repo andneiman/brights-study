@@ -1044,7 +1044,7 @@ var CATALOG = [
         "n": "Science Explorations",
         "g": "Grades K–2",
         "b": "K-2",
-        "p": "Full year $199 · Semester $129",
+        "p": "Full year $99 · Semester $69",
         "fmt": "Full year or semester",
         "d": "Uses observation, simple investigations, and models to explore living things, matter, Earth, and space through Kindergarten, Grade 1, and Grade 2 pathways.",
         "s1": [
@@ -1068,7 +1068,7 @@ var CATALOG = [
         "n": "Science Discovery",
         "g": "Grades 3–5",
         "b": "3-5",
-        "p": "Full year $199 · Semester $129",
+        "p": "Full year $99 · Semester $69",
         "fmt": "Full year or semester",
         "d": "An integrated elementary course in life, physical, Earth, and space science with grade-specific pathways.",
         "s1": [
@@ -1327,7 +1327,7 @@ var CATALOG = [
         "n": "People, Communities & Our World",
         "g": "Grades K–2",
         "b": "K-2",
-        "p": "Full year $199 · Semester $129",
+        "p": "Full year $99 · Semester $69",
         "fmt": "Full year or semester",
         "d": "Introduces citizenship, family, community, rules, maps, the past, and the wider world through Kindergarten, Grade 1, and Grade 2 pathways.",
         "s1": [
@@ -1352,7 +1352,7 @@ var CATALOG = [
         "n": "Regions, Government & Early U.S. History",
         "g": "Grades 3–5",
         "b": "3-5",
-        "p": "Full year $199 · Semester $129",
+        "p": "Full year $99 · Semester $69",
         "fmt": "Full year or semester",
         "d": "A banded course with distinct pathways: Grade 3 local and state studies, Grade 4 regions and cultures, and Grade 5 early U.S. studies.",
         "s1": [
@@ -1379,7 +1379,7 @@ var CATALOG = [
         "n": "World Geography & Cultures",
         "g": "Grades 6–8",
         "b": "6-8",
-        "p": "Full year $199 · Semester $129",
+        "p": "Full year $149 · Semester $99",
         "fmt": "Full year or semester",
         "d": "Uses physical and human geography to understand world regions and contemporary connections.",
         "s1": [
@@ -1406,7 +1406,7 @@ var CATALOG = [
         "n": "Ancient & World Civilizations",
         "g": "Grades 6–8",
         "b": "6-8",
-        "p": "Full year $199 · Semester $129",
+        "p": "Full year $149 · Semester $99",
         "fmt": "Full year or semester",
         "d": "Examines the development of societies, belief systems, trade, government, and culture from the first civilizations to the early modern world.",
         "s1": [
@@ -1433,7 +1433,7 @@ var CATALOG = [
         "n": "U.S. History Foundations",
         "g": "Grades 6–8",
         "b": "6-8",
-        "p": "Full year $199 · Semester $129",
+        "p": "Full year $149 · Semester $99",
         "fmt": "Full year or semester",
         "d": "Introduces U.S. history with emphasis on causation, primary sources, citizenship, and competing perspectives.",
         "s1": [
@@ -1461,7 +1461,7 @@ var CATALOG = [
         "n": "Civics & Government",
         "g": "Grades 6–8",
         "b": "6-8",
-        "p": "Semester $129",
+        "p": "Semester $99",
         "fmt": "Semester",
         "d": "A practical course in government, rights, media literacy, and civic participation.",
         "e": true,
@@ -1539,7 +1539,7 @@ var CATALOG = [
         "n": "U.S. Government & Civics",
         "g": "Grades 9–12",
         "b": "9-12",
-        "p": "Semester $129",
+        "p": "Semester $99",
         "fmt": "Semester",
         "d": "Covers constitutional government, civil liberties, elections, institutions, and public policy.",
         "u": [
@@ -1926,7 +1926,7 @@ var CATALOG = [
 
   function fillStateSelect(select, selected) {
     if (!select) return;
-    var html = '<option value="">Any (Common Core)</option>';
+    var html = '<option value="">Any (national standards)</option>';
     STATES.forEach(function (name) {
       html += '<option value="' + esc(name) + '">' + esc(name) + '</option>';
     });
@@ -1936,8 +1936,9 @@ var CATALOG = [
 
   function coursesFor(group) {
     var chosen = standardSelect ? standardSelect.value : '';
-    if (group.subject === 'Math' && chosen && window.MATH_STANDARDS && MATH_STANDARDS[chosen]) {
-      return MATH_STANDARDS[chosen];
+    var bySubject = window.STATE_COURSES && STATE_COURSES[group.subject];
+    if (chosen && bySubject && bySubject[chosen]) {
+      return bySubject[chosen];
     }
     return group.courses;
   }

@@ -33,8 +33,9 @@
     var list = [];
     CATALOG.forEach(function (group) {
       var courses = group.courses;
-      if (group.subject === 'Math' && state && window.MATH_STANDARDS && MATH_STANDARDS[state]) {
-        courses = MATH_STANDARDS[state];
+      var bySubject = window.STATE_COURSES && STATE_COURSES[group.subject];
+      if (state && bySubject && bySubject[state]) {
+        courses = bySubject[state];
       }
       courses.forEach(function (course) {
         list.push({ subject: group.subject, name: course.n });
