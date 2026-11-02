@@ -4583,8 +4583,8 @@ var STATE_COURSES = {
     "n": "U.S. Government",
     "g": "Grades 11–11",
     "b": "9-12",
-    "p": "Full year $149 · Semester $99",
-    "fmt": "Full year or semester",
+    "p": "Semester $99",
+    "fmt": "Semester",
     "d": "Your student studies the ideas behind the Constitution, from natural rights to Federalist Nos. 10 and 51, and learns how Congress, the presidency, federal agencies and the courts work. They examine federalism, elections and the Electoral College, the Bill of Rights and landmark cases such as Miranda v. Arizona, government and the economy, and how citizens take part at every level.",
     "u": [
      "Ideas that shaped the Constitution",
