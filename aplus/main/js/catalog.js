@@ -784,7 +784,7 @@ var CATALOG = [
         "b": "3-5,6-8,9-12",
         "p": "$199 · whole course",
         "fmt": "One package, any pace",
-        "d": "Your child starts with the alphabet and pronunciation and learns to talk about themselves, family, school, food, home and town. Grammar is built into each topic: ser and estar, gustar, present-tense verbs and ir a for plans. Starts with a placement check that adapts the course. Works like an interactive textbook (reading, listening, vocabulary, grammar, writing), without live conversation. Any pace, faster or slower than a school year.",
+        "d": "Your child starts with the alphabet and pronunciation and learns to talk about themselves, family, school, food, home and town. Grammar is built into each topic: ser and estar, gustar, present-tense verbs and ir a for plans. Starts with a placement check that adapts the course. Engaging interactive materials for reading, listening, vocabulary, grammar and writing, without live conversation. Any pace, faster or slower than a school year.",
         "u": [
           "Alphabet, sounds and greetings: the Spanish alphabet, pronunciation and accents, tú and usted, introducing yourself",
           "Numbers, dates and time: numbers 0-100, days, months, telling time",
@@ -804,7 +804,7 @@ var CATALOG = [
         "b": "3-5,6-8,9-12",
         "p": "$199 · whole course",
         "fmt": "One package, any pace",
-        "d": "Your child moves from the present to the past: daily routines, last weekend, trips, childhood memories and short stories. Grammar is built into each topic: reflexive verbs, the preterite and the imperfect, comparisons, object pronouns and commands. Starts with a placement check that adapts the course. Works like an interactive textbook (reading, listening, vocabulary, grammar, writing), without live conversation. Any pace, faster or slower than a school year.",
+        "d": "Your child moves from the present to the past: daily routines, last weekend, trips, childhood memories and short stories. Grammar is built into each topic: reflexive verbs, the preterite and the imperfect, comparisons, object pronouns and commands. Starts with a placement check that adapts the course. Engaging interactive materials for reading, listening, vocabulary, grammar and writing, without live conversation. Any pace, faster or slower than a school year.",
         "u": [
           "My daily routine: reflexive verbs, sequence words",
           "Last weekend: the preterite of regular -ar, -er and -ir verbs",
@@ -824,7 +824,7 @@ var CATALOG = [
         "b": "6-8,9-12",
         "p": "$199 · whole course",
         "fmt": "One package, any pace",
-        "d": "Your student moves to connected Spanish: life experiences, future plans, what they would do, advice and wishes. Grammar is built into each topic: the present perfect, the future, the conditional and the present subjunctive. Starts with a placement check that adapts the course. Works like an interactive textbook (reading, listening, vocabulary, grammar, writing), without live conversation. Any pace, faster or slower than a school year.",
+        "d": "Your student moves to connected Spanish: life experiences, future plans, what they would do, advice and wishes. Grammar is built into each topic: the present perfect, the future, the conditional and the present subjunctive. Starts with a placement check that adapts the course. Engaging interactive materials for reading, listening, vocabulary, grammar and writing, without live conversation. Any pace, faster or slower than a school year.",
         "u": [
           "Identity and relationships: review of present and past tenses, ser vs. estar in depth",
           "Life experiences: the present perfect",
