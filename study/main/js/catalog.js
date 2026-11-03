@@ -779,79 +779,63 @@ var CATALOG = [
         ]
       },
       {
-        "n": "Spanish I",
+        "n": "Spanish 1",
+        "g": "Grades 3–12",
+        "b": "3-5,6-8,9-12",
+        "p": "$199 · whole course",
+        "fmt": "One package, any pace",
+        "d": "Your child learns to greet people, introduce themselves, count, tell the date and time, and talk about family, school, food, free time, home and town. Grammar is built into each topic: ser and estar, gustar, regular present-tense verbs and ir a for plans. Works like an interactive textbook: reading, listening, vocabulary, grammar and writing, without live conversation. Take it in one year or two.",
+        "u": [
+          "Sounds, greetings and introductions",
+          "Numbers, dates and time",
+          "Me and my family",
+          "School and classes",
+          "Free time and things I like",
+          "Food and meals",
+          "Home and daily life",
+          "Around town",
+          "Weather and seasons",
+          "Celebrations and making plans"
+        ]
+      },
+      {
+        "n": "Spanish 2",
+        "g": "Grades 4–12",
+        "b": "3-5,6-8,9-12",
+        "p": "$199 · whole course",
+        "fmt": "One package, any pace",
+        "d": "Your child moves from the present to the past: daily routines, childhood memories, trips and stories. They talk about health, shopping, travel, food and technology, give and follow directions, and explore the countries of Latin America and Spain. Works like an interactive textbook: reading, listening, vocabulary, grammar and writing, without live conversation. Take it in one year or two.",
+        "u": [
+          "My daily routine",
+          "Childhood memories",
+          "Last weekend and trips",
+          "Telling a story in the past",
+          "Health and the body",
+          "Shopping, clothes and comparisons",
+          "Travel and directions",
+          "Food and recipes",
+          "Technology and media",
+          "Countries of Latin America and Spain"
+        ]
+      },
+      {
+        "n": "Spanish 3",
         "g": "Grades 6–12",
         "b": "6-8,9-12",
-        "p": "Full year $199 · Semester $129",
-        "fmt": "Full year or semester",
-        "d": "A first Spanish course centered on comprehensible input and communication from the beginning.",
-        "s1": [
-          "Greetings and introductions",
-          "Pronunciation",
-          "Numbers, dates and time",
-          "Classroom language",
-          "Nouns and articles",
-          "Present-tense regular verbs",
-          "Ser, estar and basic descriptions"
-        ],
-        "s2": [
-          "Common irregular verbs",
-          "Family and relationships",
-          "Daily routines",
-          "Food and ordering",
-          "School and activities",
-          "Questions and directions",
-          "Spanish-speaking cultures",
-          "Novice conversation project"
-        ]
-      },
-      {
-        "n": "Spanish II",
-        "g": "Grades 7–12",
-        "b": "6-8,9-12",
-        "p": "Full year $199 · Semester $129",
-        "fmt": "Full year or semester",
-        "d": "Develops narration, practical communication, and cultural competence.",
-        "s1": [
-          "Preterite",
-          "Imperfect",
-          "Choosing past tenses",
-          "Reflexive verbs",
-          "Direct and indirect objects",
-          "Travel and directions"
-        ],
-        "s2": [
-          "Commands",
-          "Comparisons",
-          "Health and the body",
-          "Shopping and services",
-          "Weather and environment",
-          "Festivals and traditions",
-          "Extended narration project"
-        ]
-      },
-      {
-        "n": "Spanish III",
-        "g": "Grades 9–12",
-        "b": "9-12",
-        "p": "Full year $199 · Semester $129",
-        "fmt": "Full year or semester",
-        "d": "Moves students toward connected discourse, authentic texts, opinion, and discussion.",
-        "s1": [
-          "Present subjunctive",
-          "Future and conditional",
-          "Perfect tenses",
-          "Por and para",
-          "Relative pronouns",
-          "Reading authentic short texts"
-        ],
-        "s2": [
-          "Imperfect subjunctive",
-          "Hypothetical language",
-          "Formal and informal writing",
-          "Debate and opinion",
-          "Film, literature and current events",
-          "Intermediate portfolio"
+        "p": "$199 · whole course",
+        "fmt": "One package, any pace",
+        "d": "Your student uses Spanish to talk about identity, future plans and careers, give advice, and discuss the environment, the arts, health, traditions and the news. They read short stories and legends and write connected paragraphs with their own opinions. Works like an interactive textbook: reading, listening, vocabulary, grammar and writing, without live conversation. Take it in one year or two.",
+        "u": [
+          "Identity and relationships",
+          "Future plans and careers",
+          "Advice and wishes",
+          "The environment",
+          "Art, music and film",
+          "Health and well-being",
+          "Communities and traditions",
+          "History and heroes",
+          "News and opinions",
+          "Short stories and legends"
         ]
       },
       {
