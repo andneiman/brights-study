@@ -784,18 +784,18 @@ var CATALOG = [
         "b": "3-5,6-8,9-12",
         "p": "$199 · whole course",
         "fmt": "One package, any pace",
-        "d": "Your child learns to greet people, introduce themselves, count, tell the date and time, and talk about family, school, food, free time, home and town. Grammar is built into each topic: ser and estar, gustar, regular present-tense verbs and ir a for plans. Works like an interactive textbook: reading, listening, vocabulary, grammar and writing, without live conversation. Take it in one year or two.",
+        "d": "Your child starts with the alphabet and pronunciation and learns to talk about themselves, family, school, food, home and town. Grammar is built into each topic: ser and estar, gustar, present-tense verbs and ir a for plans. Starts with a placement check that adapts the course. Works like an interactive textbook (reading, listening, vocabulary, grammar, writing), without live conversation. Any pace, faster or slower than a school year.",
         "u": [
-          "Sounds, greetings and introductions",
-          "Numbers, dates and time",
-          "Me and my family",
-          "School and classes",
-          "Free time and things I like",
-          "Food and meals",
-          "Home and daily life",
-          "Around town",
-          "Weather and seasons",
-          "Celebrations and making plans"
+          "Alphabet, sounds and greetings: the Spanish alphabet, pronunciation and accents, tú and usted, introducing yourself",
+          "Numbers, dates and time: numbers 0-100, days, months, telling time",
+          "Me and my family: ser, gender and number of nouns, articles, adjective agreement, possessives",
+          "School and classes: present tense of -ar verbs, question words, hay",
+          "Free time and likes: gustar, present tense of -er and -ir verbs",
+          "Food and meals: stem-changing verbs querer, preferir and poder",
+          "Home and daily life: estar, ser vs. estar, tener and tener que",
+          "Around town: ir, places in town, irregular yo forms (hago, salgo, pongo)",
+          "Weather and seasons: weather with hacer, the present progressive",
+          "Celebrations and plans: ir a + infinitive for the near future, course review"
         ]
       },
       {
@@ -804,18 +804,18 @@ var CATALOG = [
         "b": "3-5,6-8,9-12",
         "p": "$199 · whole course",
         "fmt": "One package, any pace",
-        "d": "Your child moves from the present to the past: daily routines, childhood memories, trips and stories. They talk about health, shopping, travel, food and technology, give and follow directions, and explore the countries of Latin America and Spain. Works like an interactive textbook: reading, listening, vocabulary, grammar and writing, without live conversation. Take it in one year or two.",
+        "d": "Your child moves from the present to the past: daily routines, last weekend, trips, childhood memories and short stories. Grammar is built into each topic: reflexive verbs, the preterite and the imperfect, comparisons, object pronouns and commands. Starts with a placement check that adapts the course. Works like an interactive textbook (reading, listening, vocabulary, grammar, writing), without live conversation. Any pace, faster or slower than a school year.",
         "u": [
-          "My daily routine",
-          "Childhood memories",
-          "Last weekend and trips",
-          "Telling a story in the past",
-          "Health and the body",
-          "Shopping, clothes and comparisons",
-          "Travel and directions",
-          "Food and recipes",
-          "Technology and media",
-          "Countries of Latin America and Spain"
+          "My daily routine: reflexive verbs, sequence words",
+          "Last weekend: the preterite of regular -ar, -er and -ir verbs",
+          "Trips and travel: irregular preterites (ir, ser, hacer, tener, estar)",
+          "Childhood memories: the imperfect",
+          "Telling a story: preterite vs. imperfect",
+          "Health and the body: doler, stem-changing verbs in the preterite",
+          "Shopping and clothes: comparisons, superlatives, demonstratives",
+          "Food and recipes: direct and indirect object pronouns, affirmative tú commands",
+          "Directions and travel plans: negative and formal commands",
+          "Latin America and Spain: review of the past tenses, longer readings"
         ]
       },
       {
@@ -824,18 +824,18 @@ var CATALOG = [
         "b": "6-8,9-12",
         "p": "$199 · whole course",
         "fmt": "One package, any pace",
-        "d": "Your student uses Spanish to talk about identity, future plans and careers, give advice, and discuss the environment, the arts, health, traditions and the news. They read short stories and legends and write connected paragraphs with their own opinions. Works like an interactive textbook: reading, listening, vocabulary, grammar and writing, without live conversation. Take it in one year or two.",
+        "d": "Your student moves to connected Spanish: life experiences, future plans, what they would do, advice and wishes. Grammar is built into each topic: the present perfect, the future, the conditional and the present subjunctive. Starts with a placement check that adapts the course. Works like an interactive textbook (reading, listening, vocabulary, grammar, writing), without live conversation. Any pace, faster or slower than a school year.",
         "u": [
-          "Identity and relationships",
-          "Future plans and careers",
-          "Advice and wishes",
-          "The environment",
-          "Art, music and film",
-          "Health and well-being",
-          "Communities and traditions",
-          "History and heroes",
-          "News and opinions",
-          "Short stories and legends"
+          "Identity and relationships: review of present and past tenses, ser vs. estar in depth",
+          "Life experiences: the present perfect",
+          "Future plans and careers: the future tense",
+          "What I would do: the conditional",
+          "Advice and wishes: the present subjunctive with wishes and recommendations",
+          "The environment: the subjunctive with emotions and impersonal expressions",
+          "Art, music and film: the subjunctive with doubt and denial",
+          "Communities and traditions: por and para, relative pronouns",
+          "History and heroes: narrating in the past, the past perfect",
+          "News, opinions and stories: giving and supporting opinions, short stories and legends, course review"
         ]
       },
       {
