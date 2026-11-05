@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Learn How to Learn (with AI) · Brights</title>
+  <meta name="description" content="A 2-week course that shows your child how to learn, and how to use AI the smart way.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/main/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/quiz/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <button class="back" id="back" type="button" aria-label="Back" hidden>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <img class="logo" src="/main/img/logo-full.svg" alt="Brights">
+      <span class="step" id="step"></span>
+    </header>
+    <div class="progress" id="progress" hidden><span id="bar"></span></div>
+    <main id="screen" class="screen" aria-live="polite"></main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/quiz/app.js"></script>
+</body>
+</html>
