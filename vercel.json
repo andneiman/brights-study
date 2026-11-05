@@ -9,6 +9,11 @@
       "source": "/main/",
       "destination": "/main",
       "permanent": true
+    },
+    {
+      "source": "/quiz/",
+      "destination": "/quiz",
+      "permanent": true
     }
   ],
   "rewrites": [
