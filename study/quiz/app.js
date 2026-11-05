@@ -50,8 +50,8 @@
       title: "Are you an ==ESA family== in Arizona?",
       sub: "A few quick questions to fit the course to your family.",
       options: [
-        { value: "yes", label: "Yes", img: "/quiz/img/esa-yes.jpg", alt: "A mother and her son in the Arizona desert" },
-        { value: "notyet", label: "Not yet", img: "/quiz/img/esa-notyet.jpg", alt: "A father and daughter looking at a laptop" },
+        { value: "yes", label: "Yes", img: "/quiz/img/yes-family.jpg", alt: "A father and daughter looking at a laptop" },
+        { value: "notyet", label: "Not yet", img: "/quiz/img/notyet-school.jpg", alt: "A mother and her son walking to school" },
       ],
     },
     school: {
@@ -167,10 +167,7 @@
             ],
     },
     help: {
-      kind: "info",
-      img: "/quiz/img/course.jpg",
-      title: "We hear you. ==We’ll help.==",
-      body: "We’ve built an engaging course, Learn How to Learn (with AI). It takes just 2 weeks, and your child learns:",
+      kind: "help",
       bullets: [
         "How the brain actually learns",
         "Study methods that stick",
@@ -286,7 +283,22 @@
     void $screen.offsetWidth;
     $screen.style.animation = "";
     updateChrome();
-    ({ cards: renderCards, single: renderSingle, multi: renderMulti, info: renderInfo, aiChart: renderAiChart, finalYes: renderFinalYes, whatsapp: renderWhatsapp, email: renderEmail, paywall: renderPaywall, success: renderSuccess })[s.kind](s);
+    ({ cards: renderCards, single: renderSingle, multi: renderMulti, info: renderInfo, help: renderHelp, aiChart: renderAiChart, finalYes: renderFinalYes, whatsapp: renderWhatsapp, email: renderEmail, paywall: renderPaywall, success: renderSuccess })[s.kind](s);
+    noOrphans($screen);
+  }
+
+  // Browsers without text-wrap: pretty/balance still must not leave a single word alone on a line.
+  function noOrphans(root) {
+    root.querySelectorAll("h1, h2, h3, p, li, .option .label, .metric b").forEach((el) => {
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      let last = null;
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        node.textContent = node.textContent.replace(/([.!?]) (\S{1,5}) /g, "$1 $2\u00A0");
+        if (node.textContent.trim()) last = node;
+      }
+      if (last) last.textContent = last.textContent.replace(/ (\S+\s*)$/, "\u00A0$1");
+    });
   }
 
   function head(s) {
@@ -376,6 +388,22 @@
     bottomBar(`<button class="btn" type="button">${esc(s.cta)}</button>`).querySelector(".btn").addEventListener("click", next);
   }
 
+  function renderHelp(s) {
+    $screen.innerHTML = `<span class="tag">We hear you. We’ll help.</span>
+      <h1>We’ve built a course <mark>for exactly this</mark></h1>
+      <div class="course-plate">
+        <small>The course</small>
+        <b>Learn How to Learn (with AI)</b>
+        <span class="unesco">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          Based on the UNESCO AI framework
+        </span>
+      </div>
+      <p class="body">It takes just 2 weeks, and your child learns:</p>
+      <ul class="bullets">${s.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>`;
+    bottomBar(`<button class="btn" type="button">Continue</button>`).querySelector(".btn").addEventListener("click", next);
+  }
+
   function renderAiChart() {
     $screen.innerHTML = `<h1>Why “just using ChatGPT” <mark>backfires</mark></h1>
       <p class="sub">And what works instead.</p>
@@ -410,36 +438,24 @@
         <div class="now"><h3>Today</h3>
           <div class="metric"><small>Memory</small><b>Forgets before the test</b><div class="meter"><i></i></div></div>
           <div class="metric"><small>AI use</small><b>Copies answers</b><div class="meter"><i></i></div></div>
-          <div class="metric"><small>At home</small><b>Daily reminders</b><div class="meter"><i></i></div></div>
+          <div class="metric"><small>Motivation</small><b>Low, needs a push</b><div class="meter"><i></i></div></div>
         </div>
         <div class="then"><h3>In 2 weeks</h3>
-          <div class="metric"><small>Memory</small><b>Remembers long-term</b><div class="meter"><i></i></div></div>
+          <div class="metric"><small>Memory</small><b>Remembers <span class="nowrap">long-term</span></b><div class="meter"><i></i></div></div>
           <div class="metric"><small>AI use</small><b>Uses AI to think</b><div class="meter"><i></i></div></div>
-          <div class="metric"><small>At home</small><b>Starts on their own</b><div class="meter"><i></i></div></div>
+          <div class="metric"><small>Motivation</small><b>Enjoys learning</b><div class="meter"><i></i></div></div>
         </div>
       </div>`;
 
-  const courseBlocks = [
-    ["How Your Brain Learns", ["Focused vs. Diffuse Thinking", "Fast and Slow Thinking", "Practice Builds Skill", "Working vs. Long-Term Memory", "Chunking and Expertise", "Sleep, Movement, Focus", "Growth Mindset and Potential"]],
-    ["Study Strategies That Work", ["The Forgetting Curve", "Active Recall", "Spacing and Interleaving", "The Feynman Technique", "The Power of Why", "Focus Sprints (Pomodoro)", "Learning Myths Busted"]],
-    ["AI Literacy and Safety", ["AI in Your Daily Life", "AI and Your Future", "Learning from Data", "How Chatbots Write", "Why AI Gets Things Wrong", "Privacy and Personal Data", "Bias and Fairness", "Deepfakes and Scams", "AI Companions and Wellbeing"]],
-    ["Learning Smart with AI", ["Tutor, Not Answer Machine", "Prompts That Teach You", "Math with AI, Step by Step", "AI Flashcards and Quizzes", "Spaced Review with AI", "Teach It to the AI", "Keep Asking Why", "Checking AI’s Answers", "Your AI Study Plan", "Your AI Rules"]],
-  ];
-
-  const unitsBlock = () => {
-    let n = 0;
-    return `<h2>What’s inside: <mark>33 units</mark></h2>
-      <div class="units">${courseBlocks
-        .map(([name, units], i) => {
-          const from = n + 1;
-          n += units.length;
-          return `<div class="unit-block">
-            <div class="unit-head"><span>Block ${i + 1}</span><b>${esc(name)}</b><small>Units ${from}–${n}</small></div>
-            <ol start="${from}">${units.map((u) => `<li>${esc(u)}</li>`).join("")}</ol>
-          </div>`;
-        })
-        .join("")}</div>`;
-  };
+  const familyGets = `<h2>What your family gets</h2>
+      <ul class="bullets">
+        <li>33 short interactive units</li>
+        <li>Practice built around your child’s real subjects</li>
+        <li>Memory tools: active recall, spacing, focus sprints</li>
+        <li>Smart AI habits: prompts that teach, checking AI’s answers</li>
+        <li>A personal study plan and their own AI rules</li>
+        <li>Parent Mode: the same units, written for you</li>
+      </ul>`;
 
   const ageNote = () =>
     (A.ages || []).includes("under-11")
@@ -478,12 +494,12 @@
 
   function renderFinalYes() {
     $screen.innerHTML = `${compareBlock}
-      ${unitsBlock()}
+      ${familyGets}
       <div class="esa-card">
         <b>Available on ClassWallet</b>
         <p>Pay for the course with your Arizona ESA funds.</p>
       </div>
-      <h2>Get the step-by-step instructions</h2>
+      <h2>Get the <span class="nowrap">step-by-step</span> instructions</h2>
       <p class="sub" style="margin-bottom:16px">We’ll email you the exact steps to get the course with your ESA.</p>
       ${ageNote()}
       <div id="form"></div>`;
@@ -549,15 +565,7 @@
         <p class="esa-note">Applying for Arizona ESA soon? You can also pay with ClassWallet once approved.</p>
       </div>
 
-      <h2>What your family gets</h2>
-      <ul class="bullets">
-        <li>33 short interactive units, about 3 a day</li>
-        <li>Practice built around your child’s real subjects</li>
-        <li>Memory tools: active recall, spacing, focus sprints</li>
-        <li>Smart AI habits: prompts that teach, checking AI’s answers</li>
-        <li>A personal study plan and their own AI rules</li>
-        <li>Parent Mode: the same units, written for you</li>
-      </ul>
+      ${familyGets}
 
       <h2>Why families choose this</h2>
       <div class="table">
