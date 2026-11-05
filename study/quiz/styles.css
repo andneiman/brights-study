@@ -333,8 +333,8 @@ h2 {
 }
 .chart h3 { margin: 0 0 2px; font-size: 15px; }
 .chart p { margin: 0 0 14px; font-size: 12px; color: var(--ink-60); }
-.bars { display: flex; align-items: flex-end; justify-content: center; gap: 14px; height: 150px; }
-.bars .col { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 44px; }
+.bars { display: flex; align-items: flex-end; justify-content: center; gap: 10px; height: 150px; }
+.bars .col { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 60px; }
 .bars .val { font-size: 13px; font-weight: 700; }
 .bars .fill {
   width: 100%;
@@ -345,7 +345,7 @@ h2 {
 }
 .bars .fill.ai-up { background: var(--brand); }
 .bars .fill.ai-down { background: var(--red); }
-.bars .name { font-size: 11px; color: var(--ink-60); text-align: center; line-height: 1.2; }
+.bars .name { font-size: 11px; color: var(--ink-60); text-align: center; line-height: 1.2; white-space: nowrap; }
 .val.up { color: var(--brand-dark); }
 .val.down { color: var(--red); }
 .legend { display: flex; justify-content: center; gap: 16px; margin-bottom: 20px; font-size: 13px; color: var(--ink-70); }
@@ -387,6 +387,25 @@ h2 {
 .ba-row div { padding: 12px 16px; font-size: 15px; border-top: 1px solid var(--line); }
 .ba-row div:first-child { color: var(--ink-60); }
 .ba-row div:last-child { font-weight: 600; }
+
+/* Course units */
+.units { display: flex; flex-direction: column; gap: 10px; }
+.unit-block { padding: 16px; border-radius: var(--radius); background: var(--surface); }
+.unit-head { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; margin-bottom: 10px; }
+.unit-head span { grid-column: 1 / -1; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-dark); }
+.unit-head b { font-size: 16px; }
+.unit-head small { align-self: center; font-size: 12px; color: var(--ink-60); white-space: nowrap; }
+.unit-block ol { margin: 0; padding-left: 26px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: var(--ink-70); }
+.unit-block li::marker { color: var(--ink-40); font-variant-numeric: tabular-nums; }
+
+.esa-card {
+  margin-top: 24px;
+  padding: 18px 20px 18px 64px;
+  border-radius: var(--radius);
+  background: var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%232f9e44'/%3E%3Cpath d='M10 16.5l4 4 8-9' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 20px center / 32px no-repeat;
+}
+.esa-card b { display: block; font-size: 17px; color: var(--green); }
+.esa-card p { margin: 2px 0 0; font-size: 14px; color: var(--ink-70); }
 
 /* Email */
 .field { display: flex; flex-direction: column; gap: 8px; margin: 8px 0 12px; }

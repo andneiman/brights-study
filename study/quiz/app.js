@@ -170,8 +170,8 @@
       kind: "info",
       img: "/quiz/img/course.jpg",
       title: "We hear you. ==We’ll help.==",
+      body: "We’ve built an engaging course, Learn How to Learn (with AI). It takes just 2 weeks, and your child learns:",
       bullets: [
-        "Short units, two weeks",
         "How the brain actually learns",
         "Study methods that stick",
         "How AI works, and where it goes wrong",
@@ -200,13 +200,14 @@
       progress: true,
       title: "Would you like to understand how learning and AI work too?",
       options: [
-        { value: "myself", label: "Yes, for myself too" },
-        { value: "same-page", label: "To stay on the same page" },
-        { value: "child-only", label: "Just for my child" },
+        { value: "myself", label: "Yes, just for myself" },
+        { value: "same-page", label: "I want to be on the same page as my child" },
+        { value: "child-only", label: "No, it’s just for my child" },
       ],
     },
     parentMode: {
       kind: "info",
+      when: () => A.parent !== "child-only",
       img: "/quiz/img/parent-mode.jpg",
       title: "You’re included. That’s ==Parent Mode.==",
       bullets: [
@@ -378,21 +379,19 @@
   function renderAiChart() {
     $screen.innerHTML = `<h1>Why “just using ChatGPT” <mark>backfires</mark></h1>
       <p class="sub">And what works instead.</p>
-      <div class="legend"><span><i style="background:#d6d3cd"></i>Without AI</span><span><i style="background:var(--brand)"></i>ChatGPT for homework</span></div>
       <div class="charts">
         <div class="chart">
-          <h3>Homework</h3><p>Looks better and faster</p>
+          <h3>Homework Score</h3><p>Goes up with ChatGPT</p>
           <div class="bars">
-            <div class="col"><span class="val">100</span><span class="fill" data-h="62"></span><span class="name">Score</span></div>
-            <div class="col"><span class="val up">+18%</span><span class="fill ai-up" data-h="73"></span><span class="name">Score</span></div>
-            <div class="col"><span class="val up">−30%</span><span class="fill ai-up" data-h="43"></span><span class="name">Time</span></div>
+            <div class="col"><span class="val">100</span><span class="fill" data-h="85"></span><span class="name">Before AI</span></div>
+            <div class="col"><span class="val up">+18%</span><span class="fill ai-up" data-h="100"></span><span class="name">After AI</span></div>
           </div>
         </div>
         <div class="chart">
-          <h3>The exam after</h3><p>Within six months</p>
+          <h3>Exam Score</h3><p>Drops within 6 months</p>
           <div class="bars">
-            <div class="col"><span class="val">100</span><span class="fill" data-h="100"></span><span class="name">Without AI</span></div>
-            <div class="col"><span class="val down">−20%</span><span class="fill ai-down" data-h="80"></span><span class="name">ChatGPT</span></div>
+            <div class="col"><span class="val">100</span><span class="fill" data-h="100"></span><span class="name">Before AI</span></div>
+            <div class="col"><span class="val down">−20%</span><span class="fill ai-down" data-h="80"></span><span class="name">After AI</span></div>
           </div>
         </div>
       </div>
@@ -405,15 +404,42 @@
     bottomBar(`<button class="btn" type="button">Continue</button>`).querySelector(".btn").addEventListener("click", next);
   }
 
-  const beforeAfter = `<div class="ba">
-      <div class="ba-head"><div>Before</div><div>After</div></div>
-      ${[
-        ["Hard to get started", "Starts on their own"],
-        ["Forgets by test day", "Remembers what they learned"],
-        ["Copies from ChatGPT", "Uses AI the smart way"],
-        ["You push every day", "You support from the side"],
-      ].map(([b, a]) => `<div class="ba-row"><div>${b}</div><div>${a}</div></div>`).join("")}
-    </div>`;
+  const compareBlock = `<h1>Your child’s next <mark>2 weeks</mark></h1>
+      <p class="sub">Here’s what changes with the course.</p>
+      <div class="compare">
+        <div class="now"><h3>Today</h3>
+          <div class="metric"><small>Memory</small><b>Forgets before the test</b><div class="meter"><i></i></div></div>
+          <div class="metric"><small>AI use</small><b>Copies answers</b><div class="meter"><i></i></div></div>
+          <div class="metric"><small>At home</small><b>Daily reminders</b><div class="meter"><i></i></div></div>
+        </div>
+        <div class="then"><h3>In 2 weeks</h3>
+          <div class="metric"><small>Memory</small><b>Remembers long-term</b><div class="meter"><i></i></div></div>
+          <div class="metric"><small>AI use</small><b>Uses AI to think</b><div class="meter"><i></i></div></div>
+          <div class="metric"><small>At home</small><b>Starts on their own</b><div class="meter"><i></i></div></div>
+        </div>
+      </div>`;
+
+  const courseBlocks = [
+    ["How Your Brain Learns", ["Focused vs. Diffuse Thinking", "Fast and Slow Thinking", "Practice Builds Skill", "Working vs. Long-Term Memory", "Chunking and Expertise", "Sleep, Movement, Focus", "Growth Mindset and Potential"]],
+    ["Study Strategies That Work", ["The Forgetting Curve", "Active Recall", "Spacing and Interleaving", "The Feynman Technique", "The Power of Why", "Focus Sprints (Pomodoro)", "Learning Myths Busted"]],
+    ["AI Literacy and Safety", ["AI in Your Daily Life", "AI and Your Future", "Learning from Data", "How Chatbots Write", "Why AI Gets Things Wrong", "Privacy and Personal Data", "Bias and Fairness", "Deepfakes and Scams", "AI Companions and Wellbeing"]],
+    ["Learning Smart with AI", ["Tutor, Not Answer Machine", "Prompts That Teach You", "Math with AI, Step by Step", "AI Flashcards and Quizzes", "Spaced Review with AI", "Teach It to the AI", "Keep Asking Why", "Checking AI’s Answers", "Your AI Study Plan", "Your AI Rules"]],
+  ];
+
+  const unitsBlock = () => {
+    let n = 0;
+    return `<h2>What’s inside: <mark>33 units</mark></h2>
+      <div class="units">${courseBlocks
+        .map(([name, units], i) => {
+          const from = n + 1;
+          n += units.length;
+          return `<div class="unit-block">
+            <div class="unit-head"><span>Block ${i + 1}</span><b>${esc(name)}</b><small>Units ${from}–${n}</small></div>
+            <ol start="${from}">${units.map((u) => `<li>${esc(u)}</li>`).join("")}</ol>
+          </div>`;
+        })
+        .join("")}</div>`;
+  };
 
   const ageNote = () =>
     (A.ages || []).includes("under-11")
@@ -451,12 +477,14 @@
   }
 
   function renderFinalYes() {
-    $screen.innerHTML = `<img class="hero" src="/quiz/img/after.jpg" alt="A teenage girl studying on her own">
-      <h1>Your child, <mark>two weeks from now</mark></h1>
-      ${beforeAfter}
+    $screen.innerHTML = `${compareBlock}
+      ${unitsBlock()}
+      <div class="esa-card">
+        <b>Available on ClassWallet</b>
+        <p>Pay for the course with your Arizona ESA funds.</p>
+      </div>
       <h2>Get the step-by-step instructions</h2>
-      <p class="sub" style="margin-bottom:16px">We’ll send the exact steps to get the course with your Arizona ESA.</p>
-      <div class="badge">✓ Works with Arizona ESA (ClassWallet)</div>
+      <p class="sub" style="margin-bottom:16px">We’ll email you the exact steps to get the course with your ESA.</p>
       ${ageNote()}
       <div id="form"></div>`;
     $screen.querySelector("#form").appendChild(emailForm({ cta: "Send me the steps", onDone: next }));
@@ -502,20 +530,7 @@
 
   function renderPaywall() {
     const end = deadline();
-    $screen.innerHTML = `<h1>Your child’s next <mark>2 weeks</mark></h1>
-      <p class="sub">Here’s what changes with the course.</p>
-      <div class="compare">
-        <div class="now"><h3>Today</h3>
-          <div class="metric"><small>Memory</small><b>Forgets before the test</b><div class="meter"><i></i></div></div>
-          <div class="metric"><small>AI use</small><b>Copies answers</b><div class="meter"><i></i></div></div>
-          <div class="metric"><small>At home</small><b>Daily reminders</b><div class="meter"><i></i></div></div>
-        </div>
-        <div class="then"><h3>In 2 weeks</h3>
-          <div class="metric"><small>Memory</small><b>Remembers long-term</b><div class="meter"><i></i></div></div>
-          <div class="metric"><small>AI use</small><b>Uses AI to think</b><div class="meter"><i></i></div></div>
-          <div class="metric"><small>At home</small><b>Starts on their own</b><div class="meter"><i></i></div></div>
-        </div>
-      </div>
+    $screen.innerHTML = `${compareBlock}
 
       <div class="timer">Special offer ends in <b class="t">05:00</b></div>
 
