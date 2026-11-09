@@ -4362,7 +4362,7 @@ var STATE_COURSES = {
      "Southwest Asia: history and conflict",
      "Southern and Eastern Asia: land and environment",
      "Southern and Eastern Asia: history and change",
-     "Governments, economies and trade"
+     "Governments, economies, trade and personal finance"
     ]
    },
    {
