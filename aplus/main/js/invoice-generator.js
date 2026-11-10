@@ -368,7 +368,7 @@
     done.appendChild(el('p', '', 'It’s downloading now. If the download didn’t start, use the button below. Have another child on ESA? Create a separate invoice for them.'));
     var files = el('div', 'ig-files');
     done.appendChild(files);
-    var again = el('button', 'ig-add', 'Create an invoice for another child');
+    var again = el('button', 'ig-add', 'Create a new invoice');
     again.type = 'button';
     done.appendChild(again);
     root.appendChild(done);
