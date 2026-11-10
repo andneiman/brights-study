@@ -1655,11 +1655,12 @@ var CATALOG = [
       },
       {
         "n": "Learn How to Learn Smart (with AI)",
-        "g": "Grades 6–12 + Parent Mode",
-        "b": "6-8,9-12",
+        "g": "Grades 4–12 + Parent Mode",
+        "b": "3-5,6-8,9-12",
         "p": "2 weeks $69",
         "fmt": "Short course",
-        "d": "A 2-week intensive course for grades 6–12: how memory and attention really work, study methods that are proven to help, how AI works and how to stay safe with it, and how to use AI as a tutor on your own school subjects. Ends with a personal study plan and the student's own rules for learning with AI. Personalized to each student's interests, subjects and goals, with a Parent Mode.",
+        "ub": [["How Your Brain Learns", 7], ["Study Strategies That Work", 7], ["AI Literacy and Safety", 9], ["Learning Smart with AI", 10]],
+        "d": "A 2-week intensive course for grades 4–12: how memory and attention really work, study methods that are proven to help, how AI works and how to stay safe with it, and how to use AI as a tutor on your own school subjects. Ends with a personal study plan and the student's own rules for learning with AI. Personalized to each student's interests, subjects and goals, with a Parent Mode.",
         "e": true,
         "u": [
           "Focused vs. Diffuse Thinking",
@@ -1883,6 +1884,17 @@ var CATALOG = [
     if (c.s1 && c.s2) {
       return '<p class="units-label">Semester 1</p>' + unitList(c.s1) +
         '<p class="units-label units-label-next">Semester 2</p>' + unitList(c.s2);
+    }
+    if (c.ub && c.u) {
+      // Units grouped into named blocks: [["Block name", unitCount], ...]
+      var html = '', i = 0;
+      c.ub.forEach(function (b, k) {
+        var items = c.u.slice(i, i + b[1]);
+        html += '<p class="units-label' + (k ? ' units-label-next' : '') + '">' + esc(b[0]) + '</p>' +
+          '<ol class="units" start="' + (i + 1) + '" style="counter-reset: unit ' + i + '">' + items.map(function (u) { return '<li>' + esc(u) + '</li>'; }).join('') + '</ol>';
+        i += b[1];
+      });
+      return html;
     }
     return '<p class="units-label">Units</p>' + unitList(c.u || []);
   }
