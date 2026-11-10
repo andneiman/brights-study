@@ -17,12 +17,14 @@
   'use strict';
 
   // ---- Vendor --------------------------------------------------------------
+  // Each site shows its own domain: brights.study or aplusbrights.com.
+  var DOMAIN = /brights\.study$/i.test(location.hostname) ? 'brights.study' : 'aplusbrights.com';
   var VENDOR = {
     displayName: 'A+ Brights',          // vendor name in ClassWallet / ESA marketplaces
     legalName: 'Magent Tech Inc',
     address: ['251 Little Falls Dr', 'Wilmington, DE 19808'],
-    website: 'www.aplusbrights.com',
-    email: 'team@aplusbrights.com',
+    website: 'www.' + DOMAIN,
+    email: 'team@' + DOMAIN,
     logo: '/main/img/invoice/logo.png'  // 475 x 144 px
   };
 
@@ -35,7 +37,7 @@
       program: 'Arizona Empowerment Scholarship Account (ESA)',
       platform: 'ClassWallet Direct Pay',
       category: 'Curriculum',
-      guide: 'www.aplusbrights.com/main/arizona-esa-classwallet.html',
+      guide: 'www.' + DOMAIN + '/main/arizona-esa-classwallet.html',
       payLines: function (inv) {
         return [
           'Sign in to ClassWallet through the Arizona ESA portal. In Direct Pay, click PAY.',
