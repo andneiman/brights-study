@@ -116,13 +116,20 @@ module.exports = async function handler(req, res) {
 
     // One row per student: course column carries course, package, price, student and invoice number.
     const prisma = getPrisma();
-    const day = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+    // Invoice number: BR-AZ-<MMDDYY in Arizona time>-<running invoice count>.
+    const az = new Intl.DateTimeFormat("en-US", { timeZone: "America/Phoenix", month: "2-digit", day: "2-digit", year: "2-digit" })
+      .formatToParts(new Date())
+      .reduce((acc, p) => ({ ...acc, [p.type]: p.value }), {});
+    const day = `${az.month}${az.day}${az.year}`;
     const invoices = [];
     for (const s of clean) {
       const row = await prisma.courseLead.create({
         data: { ...base, course: `${s.course} · Student: ${s.firstName} ${s.lastName}`.slice(0, 200) },
       });
-      const number = `BR-${day}-${row.id.slice(-6).toUpperCase()}`;
+      const seq = await prisma.courseLead.count({
+        where: { source: "classwallet-az", createdAt: { lte: row.createdAt } },
+      });
+      const number = `BR-AZ-${day}-${seq}`;
       const parts = [s.course + (s.pkg ? ` (${s.pkg}${s.amount ? ` $${s.amount}` : ""})` : ""), `Student: ${s.firstName} ${s.lastName}`, `Invoice ${number}`];
       await prisma.courseLead.update({ where: { id: row.id }, data: { course: parts.join(" · ").slice(0, 200) } });
       invoices.push({ number, firstName: s.firstName, lastName: s.lastName });

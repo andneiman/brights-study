@@ -5,11 +5,14 @@
   if (!form || !window.CATALOG) return;
 
   // ---- Invoice settings -------------------------------------------------
-  var DOMAIN = /aplusbrights\.com$/i.test(location.hostname) ? 'aplusbrights.com' : 'brights.study';
+  var DOMAIN = 'aplusbrights.com';
+  var EMAIL = 'team@aplusbrights.com';
   var VENDOR = {
-    name: 'Brights',
-    lines: ['www.' + DOMAIN, 'esa@' + DOMAIN]
+    name: 'A+ Brights',            // display name in ClassWallet
+    lines: ['Magent Tech Inc', '251 Little Falls Dr', 'Wilmington, DE 19808', 'www.' + DOMAIN, EMAIL]
   };
+  var DEFAULT_COURSE = 'Learn How to Learn Smart (with AI)';
+  var CATALOG_URL = '/main/courses.html';
   var PROGRAM = 'Arizona Empowerment Scholarship Account (ESA)';
   var CATEGORY = 'Curriculum';
   var STATE = 'Arizona';
@@ -136,7 +139,13 @@
     card.appendChild(two);
 
     var course = courseSelect('cw-s' + seq + '-course');
-    card.appendChild(field('Course', course));
+    var courseWrap = field('Course', course);
+    var link = el('a', 'cw-catalog-link', 'See all courses in the catalog');
+    link.href = CATALOG_URL;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    courseWrap.appendChild(link);
+    card.appendChild(courseWrap);
 
     var pkg = el('select', 'lead-input');
     pkg.id = 'cw-s' + seq + '-pkg';
@@ -158,6 +167,10 @@
     });
 
     list.appendChild(card);
+    if (BY_NAME[DEFAULT_COURSE]) {
+      course.value = DEFAULT_COURSE;
+      course.dispatchEvent(new Event('change'));
+    }
     renumber();
   }
 
@@ -230,7 +243,12 @@
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(10);
     doc.setTextColor.apply(doc, muted);
-    VENDOR.lines.forEach(function (l, i) { doc.text(l, M, y + i * 14); });
+    VENDOR.lines.forEach(function (l, i) {
+      if (i === 0) doc.setTextColor.apply(doc, ink);
+      doc.text(l, M, y + i * 14);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor.apply(doc, muted);
+    });
 
     var meta = [
       ['Invoice number', inv.number],
@@ -244,7 +262,7 @@
       doc.text(row[1], W - M, y + i * 14, { align: 'right' });
     });
 
-    y += 64;
+    y += 14 * VENDOR.lines.length + 8;
     doc.setDrawColor.apply(doc, line);
     doc.line(M, y, W - M, y);
     y += 26;
@@ -285,7 +303,8 @@
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(11);
     doc.setTextColor.apply(doc, ink);
-    doc.text(inv.course + ' (' + inv.pkg + ')', M + 12, y + 22, { maxWidth: descW });
+    var titleLines = doc.splitTextToSize(inv.course + ' (' + inv.pkg + ')', descW);
+    doc.text(titleLines, M + 12, y + 22);
     doc.setFont('helvetica', 'normal');
     doc.text('1', cQty, y + 22, { align: 'right' });
     doc.text(money(inv.price), cPrice, y + 22, { align: 'right' });
@@ -299,7 +318,7 @@
       'Service period: ' + servicePeriod(inv.pkg, inv.date),
       'Expense category: ' + CATEGORY
     ];
-    var dy = y + 40;
+    var dy = y + 26 + titleLines.length * 14;
     details.forEach(function (t) {
       var wrapped = doc.splitTextToSize(t, descW);
       doc.text(wrapped, M + 12, dy);
@@ -339,21 +358,26 @@
       '6. Comments: "' + VENDOR.name + ' ' + inv.course + ' for ' + inv.student + '". Invoice number: ' + inv.number + '.',
       '7. Review and submit.'
     ];
-    var boxH = 30 + payLines.length * 15 + 8;
+    doc.setFontSize(9.5);
+    var wrappedPay = payLines.map(function (t) { return doc.splitTextToSize(t, W - 2 * M - 32); });
+    var nLines = wrappedPay.reduce(function (n, w) { return n + w.length; }, 0);
+    var boxH = 30 + nLines * 13 + payLines.length * 2 + 12;
     doc.roundedRect(M, y, W - 2 * M, boxH, 8, 8, 'F');
     doc.setFontSize(10.5);
     doc.text('How to pay with your Arizona ESA', M + 16, y + 22);
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(9.5);
-    payLines.forEach(function (t, i) {
-      doc.text(t, M + 16, y + 42 + i * 15, { maxWidth: W - 2 * M - 32 });
+    var py = y + 42;
+    wrappedPay.forEach(function (w) {
+      doc.text(w, M + 16, py);
+      py += w.length * 13 + 2;
     });
 
     // Footer
     var H = doc.internal.pageSize.getHeight();
     doc.setFontSize(9);
     doc.setTextColor.apply(doc, muted);
-    doc.text('Questions about this invoice: esa@' + DOMAIN, M, H - 46);
+    doc.text('Questions about this invoice: ' + EMAIL, M, H - 46);
     doc.text('Full guide: www.' + DOMAIN + '/main/arizona-esa-classwallet.html', M, H - 32);
 
     return doc;
@@ -437,7 +461,7 @@
           filesEl.innerHTML = '';
           students.forEach(function (s, idx) {
             var inv = {
-              number: (data.invoices && data.invoices[idx] && data.invoices[idx].number) || ('BR-' + Date.now()),
+              number: (data.invoices && data.invoices[idx] && data.invoices[idx].number) || ('BR-AZ-' + Date.now()),
               date: now,
               parent: parent,
               email: email.value.trim(),

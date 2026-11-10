@@ -81,7 +81,7 @@
 }
 .cw-add:hover { background: var(--surface); }
 .cw-note { font-size: 13px; color: var(--ink-60); line-height: 1.5; }
-.cw-form .btn { align-self: flex-start; margin-top: 6px; }
+.cw-form .btn { align-self: flex-start; margin-top: 6px; border: 0; }
 .cw-done { padding: 28px; border-radius: var(--radius-md); background: var(--green-soft); }
 .cw-done h3 { font-size: 22px; font-weight: 700; margin: 6px 0 8px; }
 
@@ -95,3 +95,5 @@
   .cw-two { grid-template-columns: 1fr; }
 }
 .cw-form[hidden], .cw-done[hidden] { display: none; }
+.cw-catalog-link { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--ink-60); text-decoration: underline; text-decoration-color: var(--surface-strong); text-underline-offset: 3px; }
+.cw-catalog-link:hover { color: var(--ink); }
