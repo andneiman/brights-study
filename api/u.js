@@ -26,6 +26,7 @@ function fromLabel(source) {
     return "Assessment · " + source.slice("assessment:".length);
   }
   if (source === "course") return "Course page";
+  if (source === "classwallet-az") return "ClassWallet invoice · AZ";
   return typeof source === "string" ? source.trim() : "";
 }
 

@@ -1,0 +1,123 @@
+/* Arizona ESA · ClassWallet guide page */
+
+.cw-facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+.cw-fact {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 9999px;
+  background: var(--surface); font-size: 14px; font-weight: 500;
+}
+.cw-fact b { font-weight: 700; }
+
+.cw-section { padding: 48px 0; }
+.cw-section + .cw-section { border-top: 1px solid var(--surface-strong); }
+.cw-section h2 { margin-bottom: 8px; }
+.cw-section > .container > .serif { max-width: 720px; color: var(--ink-70); }
+
+.cw-steps { list-style: none; margin-top: 36px; display: grid; gap: 20px; counter-reset: step; }
+.cw-step {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: center;
+  padding: 28px; border-radius: var(--radius-md); background: #fff;
+  box-shadow: 0 0 0 1px var(--surface-strong);
+}
+.cw-step-text h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; margin: 10px 0 8px; }
+.cw-step-text p { color: var(--ink-70); line-height: 1.55; }
+.cw-step-text p + p { margin-top: 8px; }
+.cw-step-text ul { margin: 10px 0 0 18px; color: var(--ink-70); line-height: 1.55; }
+.cw-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--ink); color: #fff; font-size: 14px; font-weight: 700;
+}
+.cw-tip {
+  margin-top: 12px; padding: 10px 14px; border-radius: 12px;
+  background: var(--amber-soft); color: #8a4a12; font-size: 14px; line-height: 1.45;
+}
+.cw-step code, .cw-tip code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px;
+  background: var(--surface); padding: 2px 6px; border-radius: 6px; color: var(--ink);
+}
+
+/* Simplified screen illustration (not a real ClassWallet screenshot) */
+.cw-mock {
+  position: relative; border-radius: 18px; background: var(--page-alt);
+  padding: 18px 18px 30px; min-height: 190px; font-size: 13px;
+  box-shadow: inset 0 0 0 1px var(--surface-strong);
+}
+.cw-mock::before {
+  content: ""; display: block; height: 8px; width: 46px; margin-bottom: 14px;
+  background: radial-gradient(circle, #d4d4d4 3px, transparent 3.5px) 0 0 / 15px 8px repeat-x;
+}
+.cw-mock-cap {
+  position: absolute; right: 14px; bottom: 10px;
+  font-size: 11px; color: var(--ink-40);
+}
+.cw-row { display: flex; align-items: center; gap: 10px; }
+.cw-row + .cw-row { margin-top: 10px; }
+.cw-box {
+  flex: 1; background: #fff; border-radius: 10px; padding: 10px 12px;
+  box-shadow: 0 0 0 1px var(--surface-strong); color: var(--ink-70);
+}
+.cw-box.strong { color: var(--ink); font-weight: 600; }
+.cw-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 9px 16px; border-radius: 9999px; background: var(--blue-deep); color: #fff;
+  font-weight: 600; font-size: 13px; white-space: nowrap;
+}
+.cw-btn.ghost { background: #fff; color: var(--ink); box-shadow: 0 0 0 1px var(--surface-strong); }
+.cw-ring { box-shadow: 0 0 0 2px var(--amber), 0 0 0 6px var(--amber-soft); }
+.cw-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-40); margin-bottom: 6px; }
+.cw-drop {
+  border: 2px dashed var(--surface-strong); border-radius: 12px; background: #fff;
+  padding: 22px 12px; text-align: center; color: var(--ink-60);
+}
+.cw-file { display: inline-flex; gap: 8px; align-items: center; margin-top: 10px; padding: 8px 12px; border-radius: 10px; background: #fff; box-shadow: 0 0 0 1px var(--surface-strong); font-weight: 500; }
+.cw-pdf { width: 22px; height: 26px; border-radius: 4px; background: var(--red); color: #fff; font-size: 8px; font-weight: 700; display: inline-flex; align-items: flex-end; justify-content: center; padding-bottom: 3px; }
+.cw-tile { flex: 1; background: #fff; border-radius: 12px; padding: 14px; box-shadow: 0 0 0 1px var(--surface-strong); }
+.cw-tile b { display: block; font-size: 14px; color: var(--ink); margin-bottom: 4px; }
+.cw-tile span { color: var(--ink-60); }
+.cw-check { color: var(--green); font-weight: 700; }
+
+/* Invoice checklist */
+.cw-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 32px; }
+.cw-card { padding: 26px; border-radius: var(--radius-md); background: var(--page-alt); }
+.cw-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+.cw-card ul { list-style: none; display: grid; gap: 8px; }
+.cw-card li { position: relative; padding-left: 26px; line-height: 1.45; color: var(--ink-70); }
+.cw-card li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+.cw-card.warn li::before { content: "!"; color: var(--amber); }
+
+/* Form */
+.cw-form-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 48px; align-items: start; }
+.cw-form { display: flex; flex-direction: column; gap: 14px; }
+.cw-two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cw-opt { font-weight: 400; color: var(--ink-40); }
+.cw-students { display: grid; gap: 14px; }
+.cw-student { padding: 18px; border-radius: 20px; background: var(--page-alt); display: grid; gap: 12px; }
+.cw-student-head { display: flex; justify-content: space-between; align-items: center; }
+.cw-student-head b { font-size: 14px; }
+.cw-remove {
+  border: 0; background: none; color: var(--ink-60); font: inherit; font-size: 13px; cursor: pointer;
+  padding: 4px 8px; border-radius: 8px;
+}
+.cw-remove:hover { background: var(--surface-strong); color: var(--ink); }
+.cw-add {
+  align-self: flex-start; border: 1px dashed var(--ink-40); background: #fff; color: var(--ink);
+  border-radius: 9999px; padding: 11px 18px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.cw-add:hover { background: var(--surface); }
+.cw-note { font-size: 13px; color: var(--ink-60); line-height: 1.5; }
+.cw-form .btn { align-self: flex-start; margin-top: 6px; }
+.cw-done { padding: 28px; border-radius: var(--radius-md); background: var(--green-soft); }
+.cw-done h3 { font-size: 22px; font-weight: 700; margin: 6px 0 8px; }
+
+.cw-links { margin-top: 20px; display: grid; gap: 8px; }
+.cw-links a { color: var(--link); }
+
+@media (max-width: 860px) {
+  .cw-step { grid-template-columns: 1fr; padding: 22px; }
+  .cw-grid, .cw-form-wrap { grid-template-columns: 1fr; }
+  .cw-form-wrap { gap: 28px; }
+}
+@media (max-width: 480px) {
+  .cw-two { grid-template-columns: 1fr; }
+}
