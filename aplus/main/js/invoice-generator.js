@@ -51,6 +51,15 @@
   };
 
   var DEFAULT_COURSE = 'Learn How to Learn Smart (with AI)';
+  // Courses offered in the generator (others in the catalog are hidden here).
+  var COURSES = [
+    'Grade 1 Math', 'Grade 2 Math', 'Grade 3 Math', 'Grade 4 Math',
+    'Grade 5 Math', 'Grade 6 Math', 'Grade 7 Math', 'Grade 8 Math',
+    'Science Explorations', 'Science Discovery', 'Middle School Life Science',
+    'Middle School Earth & Space Science', 'Middle School Physical Science',
+    'AI Literacy and Safety for Families', 'Learn How to Learn Smart (with AI)',
+    'Spanish 1', 'Spanish 2', 'Spanish 3'
+  ];
   var CATALOG_URL = '/main/courses.html';
   var MAX_STUDENTS = 1;   // one student per invoice request; fill the form again for another child
   var JSPDF_URL = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
@@ -107,8 +116,9 @@
       var items = group.courses;
       var bySubject = window.STATE_COURSES && STATE_COURSES[group.subject];
       if (bySubject && stateName && bySubject[stateName]) items = bySubject[stateName];
-      var g = { subject: group.subject, items: [] };
+      var g = { subject: group.subject === 'ELA & Languages' ? 'Spanish' : group.subject, items: [] };
       items.forEach(function (c) {
+        if (COURSES.indexOf(c.n) === -1) return;
         var pk = packages(c.p);
         if (!pk.length) return;
         g.items.push(c.n);
