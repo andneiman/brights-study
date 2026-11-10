@@ -1,11 +1,14 @@
-// Arizona ESA (ClassWallet) invoice requests.
-// Saves one row per student into the same leads table as /api/leads,
-// so every request shows up in the /u dashboard.
+// ESA invoice generator backend (used by /main/js/invoice-generator.js).
+// Saves one row per student into the same leads table as /api/leads (visible in /u)
+// and issues invoice numbers: BR-<STATE>-<MMDDYY in the state's time zone>-<running number>.
 const { getPrisma } = require("../lib/prisma");
 const { getRequestMeta } = require("../lib/requestMeta");
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const STATES = new Set(["Arizona"]);
+// To add a state: add it here and in STATES of invoice-generator.js.
+const STATES = {
+  AZ: { name: "Arizona", tz: "America/Phoenix", source: "classwallet-az" },
+};
 const MAX_STUDENTS = 8;
 
 async function readJson(req) {
@@ -54,7 +57,8 @@ module.exports = async function handler(req, res) {
     const lastName = str(body.lastName, 60);
     const email = str(body.email, 254).toLowerCase();
     const phone = str(body.phone, 40);
-    const state = str(body.state, 40) || "Arizona";
+    const code = str(body.state, 10).toUpperCase();
+    const state = STATES[code];
     const students = Array.isArray(body.students) ? body.students.slice(0, MAX_STUDENTS) : [];
 
     if (!firstName || !lastName) {
@@ -69,8 +73,8 @@ module.exports = async function handler(req, res) {
       json(res, 400, { error: "Check the phone number or leave it empty." });
       return;
     }
-    if (!STATES.has(state)) {
-      json(res, 400, { error: "This form is for Arizona ESA families." });
+    if (!state) {
+      json(res, 400, { error: "Choose an ESA program." });
       return;
     }
 
@@ -101,7 +105,7 @@ module.exports = async function handler(req, res) {
       name: `${firstName} ${lastName}`,
       email,
       phone,
-      state,
+      state: state.name,
       site: siteFrom(req),
       ip: meta.ip,
       userAgent: meta.userAgent,
@@ -110,14 +114,14 @@ module.exports = async function handler(req, res) {
       region: meta.region,
       city: meta.city ? decodeURIComponent(meta.city) : null,
       referer: meta.referer,
-      source: "classwallet-az",
+      source: state.source,
       platform: platformFrom(meta.userAgent || ""),
     };
 
     // One row per student: course column carries course, package, price, student and invoice number.
     const prisma = getPrisma();
     // Invoice number: BR-AZ-<MMDDYY in Arizona time>-<running invoice count>.
-    const az = new Intl.DateTimeFormat("en-US", { timeZone: "America/Phoenix", month: "2-digit", day: "2-digit", year: "2-digit" })
+    const az = new Intl.DateTimeFormat("en-US", { timeZone: state.tz, month: "2-digit", day: "2-digit", year: "2-digit" })
       .formatToParts(new Date())
       .reduce((acc, p) => ({ ...acc, [p.type]: p.value }), {});
     const day = `${az.month}${az.day}${az.year}`;
@@ -127,9 +131,9 @@ module.exports = async function handler(req, res) {
         data: { ...base, course: `${s.course} · Student: ${s.firstName} ${s.lastName}`.slice(0, 200) },
       });
       const seq = await prisma.courseLead.count({
-        where: { source: "classwallet-az", createdAt: { lte: row.createdAt } },
+        where: { source: state.source, createdAt: { lte: row.createdAt } },
       });
-      const number = `BR-AZ-${day}-${seq}`;
+      const number = `BR-${code}-${day}-${seq}`;
       const parts = [s.course + (s.pkg ? ` (${s.pkg}${s.amount ? ` $${s.amount}` : ""})` : ""), `Student: ${s.firstName} ${s.lastName}`, `Invoice ${number}`];
       await prisma.courseLead.update({ where: { id: row.id }, data: { course: parts.join(" · ").slice(0, 200) } });
       invoices.push({ number, firstName: s.firstName, lastName: s.lastName });

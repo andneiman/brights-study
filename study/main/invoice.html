@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESA Invoice Generator — A+ Brights</title>
+  <meta name="description" content="Create an ESA-ready invoice for an A+ Brights course in a minute. One PDF per student, ready to upload to your ESA payment platform.">
+  <link rel="icon" href="/main/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/main/css/styles.css">
+  <link rel="stylesheet" href="/main/css/invoice-generator.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R22XN1JHD9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    window.BRIGHTS_PAGE = (function () {
+      var path = location.pathname;
+      var title = document.title.replace(/\s+[—–-]\s+Brights.*$/i, '').trim();
+      if (/\/main\/?$/.test(path) || /\/index\.html$/.test(path)) return 'Home';
+      if (/\/courses\.html$/.test(path)) return 'Courses';
+      if (/\/assessment\.html$/.test(path)) return 'Assessment';
+      if (/classwallet/.test(path)) return 'ClassWallet AZ';
+      if (/\/invoice\.html$/.test(path)) return 'Invoice generator';
+      if (/privacy-policy/.test(path)) return 'Privacy';
+      if (/terms-of-use/.test(path)) return 'Terms';
+      if (/refund-policy/.test(path)) return 'Refund';
+      return title || 'Page';
+    })();
+    gtag('config', 'G-R22XN1JHD9', {
+      page_title: document.title,
+      page_path: location.pathname,
+      content_group: window.BRIGHTS_PAGE
+    });
+  </script>
+  <script src="/main/js/analytics.js" defer></script>
+
+  <style>
+    .ig-page { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 48px; align-items: start; }
+    .ig-page-list { margin: 24px 0 0 18px; display: grid; gap: 8px; color: var(--ink-70); line-height: 1.5; }
+    .ig-page-list a, .ig-page-help a { color: var(--link); }
+    .ig-page-help { margin-top: 18px; font-size: 14px; color: var(--ink-60); }
+    @media (max-width: 860px) { .ig-page { grid-template-columns: 1fr; gap: 28px; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/main">
+        <img src="/main/img/logo-full.svg" alt="brights" width="148" height="53">
+      </a>
+      <nav class="nav">
+        <a href="/main/courses.html">Courses</a>
+        <a href="/main#how">How it works</a>
+        <a href="/main#esa">ESA families</a>
+        <a href="/main#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-light" href="/main/assessment.html">Free assessment</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container ig-page">
+        <div class="section-head">
+          <span class="assessment-badge">Invoice generator</span>
+          <h1>Create your ESA invoice</h1>
+          <p class="serif">Pay for A+ Brights courses with your ESA. Fill this in and you get a PDF invoice for each student right away, ready to upload to your ESA payment platform.</p>
+          <ul class="ig-page-list">
+            <li>One invoice per student, with the vendor, student, course, service period and total due</li>
+            <li>The invoice explains how to pay it, step by step</li>
+            <li>Arizona (ClassWallet): <a href="/main/arizona-esa-classwallet.html">full guide with screenshots</a></li>
+          </ul>
+          <p class="ig-page-help">Questions? <a href="mailto:team@aplusbrights.com">team@aplusbrights.com</a></p>
+        </div>
+        <div data-invoice-app data-state=""></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a class="logo" href="/main">
+          <img src="/main/img/logo-full.svg" alt="brights" width="148" height="53">
+        </a>
+        <div class="footer-mid">
+          <nav class="footer-links">
+            <a href="/main/courses.html">Courses</a>
+            <a href="/main/assessment.html">Free assessment</a>
+            <a href="/main/courses.html#states">State availability</a>
+            <a href="/main/terms-of-use.html">Terms of use</a>
+            <a href="/main/privacy-policy.html">Privacy Policy</a>
+            <a href="/main/refund-policy.html">Refund policy</a>
+          </nav>
+          <p>Questions about a course — <a href="mailto:hello@brights.study">hello@brights.study</a></p>
+          <p>ESA support — <a href="mailto:team@aplusbrights.com">team@aplusbrights.com</a></p>
+        </div>
+        <div class="footer-right">
+          <span class="lang-pill">🌐 English</span>
+          <p>All rights reserved</p>
+        </div>
+      </div>
+      <p class="disclosure">We provide personalized, self-paced curriculum and educational software. We are not a school and do not issue diplomas, transcripts, or state-recognized academic credit. ESA availability varies by state, program, provider status, and exact offering. Course titles, grade bands, and unit sequences describe our own curriculum packages.</p>
+    </div>
+  </footer>
+
+  <script src="/main/js/math-standards.js"></script>
+  <script src="/main/js/catalog.js"></script>
+  <script src="/main/js/invoice-generator.js"></script>
+</body>
+</html>

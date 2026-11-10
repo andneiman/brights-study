@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/main/css/styles.css">
   <link rel="stylesheet" href="/main/css/classwallet.css">
+  <link rel="stylesheet" href="/main/css/invoice-generator.css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R22XN1JHD9"></script>
@@ -148,7 +149,7 @@
             <div class="cw-step-text">
               <span class="cw-num">6</span>
               <h3>Add a comment and the invoice number</h3>
-              <p>In <b>Comments</b>, write what you’re paying for, for example: <code>A+ Brights Learn How to Learn Smart for Maya Johnson</code>.</p>
+              <p>In <b>Comments</b>, write what you’re paying for, for example: <code>A+ Brights Learn How to Learn Smart (with AI)</code>.</p>
               <p>In <b>Invoice or Quote Number</b>, enter the number from your invoice (it looks like <code>BR-AZ-111026-1</code>). Click <b>NEXT</b>.</p>
             </div>
             <div class="cw-shots">
@@ -183,53 +184,17 @@
           <div class="cw-card" style="margin-top:24px">
             <h3>Every invoice includes</h3>
             <ul>
-              <li>Student’s full name</li>
-              <li>A+ Brights (Magent Tech Inc) as the provider, with address and contacts</li>
-              <li>The course, package and what it includes</li>
-              <li>Invoice number and date</li>
-              <li>Itemized price and the total</li>
+              <li>Vendor A+ Brights (Magent Tech Inc), address and contacts</li>
+              <li>Unique invoice number and invoice date</li>
+              <li>Parent (ESA account holder) and the student’s full name</li>
+              <li>The course, price and the total amount due</li>
+              <li>Service period dates</li>
               <li>One invoice per student</li>
             </ul>
           </div>
         </div>
 
-        <div>
-          <form class="cw-form" id="cw-form" novalidate>
-            <div class="cw-two">
-              <div>
-                <label class="lead-label" for="cw-first">Parent first name</label>
-                <input class="lead-input" id="cw-first" type="text" autocomplete="given-name" placeholder="First name" required>
-              </div>
-              <div>
-                <label class="lead-label" for="cw-last">Parent last name</label>
-                <input class="lead-input" id="cw-last" type="text" autocomplete="family-name" placeholder="Last name" required>
-              </div>
-            </div>
-            <div>
-              <label class="lead-label" for="cw-email">Email</label>
-              <input class="lead-input" id="cw-email" type="email" autocomplete="email" placeholder="you@email.com" required>
-            </div>
-            <div>
-              <label class="lead-label" for="cw-phone">Phone <span class="cw-opt">(optional)</span></label>
-              <input class="lead-input" id="cw-phone" type="tel" autocomplete="tel" placeholder="(555) 000-0000">
-            </div>
-
-            <div class="cw-students" id="cw-students"></div>
-            <button class="cw-add" id="cw-add" type="button">+ Add another student</button>
-
-            <p class="lead-error" id="cw-error" hidden></p>
-            <button class="btn btn-dark" id="cw-submit" type="submit">Create my invoices</button>
-            <p class="cw-note">Type each student’s name exactly as it appears on your ESA account. A different spelling can delay the payment.</p>
-          </form>
-
-          <div class="cw-done" id="cw-done" hidden>
-            <span class="eyebrow">Invoices ready</span>
-            <h3>Your invoices are ready</h3>
-            <p class="serif">They’re downloading now. If a download didn’t start, use the buttons below. Then follow the steps above, starting from step 1.</p>
-            <div class="cw-files" id="cw-files"></div>
-            <button class="cw-add" id="cw-again" type="button" style="margin-top:16px">Create another invoice</button>
-          </div>
-        </div>
+        <div data-invoice-app data-state="AZ"></div>
       </div>
     </section>
 
@@ -288,6 +253,6 @@
 
   <script src="/main/js/math-standards.js"></script>
   <script src="/main/js/catalog.js"></script>
-  <script src="/main/js/classwallet.js"></script>
+  <script src="/main/js/invoice-generator.js"></script>
 </body>
 </html>

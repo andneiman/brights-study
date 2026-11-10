@@ -1,0 +1,52 @@
+/* Brights ESA invoice generator (mini app). Uses site variables with fallbacks. */
+.ig { --ig-ink: var(--ink, #262626); --ig-muted: var(--ink-60, #737373); --ig-soft: var(--page-alt, #f7f7f7);
+      --ig-line: var(--surface-strong, #e5e5e5); --ig-radius: 9999px; font-family: var(--font-sans, Inter, system-ui, sans-serif); color: var(--ig-ink); }
+.ig [hidden] { display: none !important; }
+.ig-form { display: flex; flex-direction: column; gap: 14px; }
+.ig-two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ig-label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.ig-opt { font-weight: 400; color: var(--ink-40, #a3a3a3); }
+.ig-input {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: var(--ig-ink);
+  padding: 13px 18px; border-radius: var(--ig-radius); border: 1px solid var(--ig-line); background: #fff;
+  appearance: none; -webkit-appearance: none;
+}
+select.ig-input {
+  padding-right: 40px; cursor: pointer;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23737373' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 18px center;
+}
+select.ig-input:disabled { color: var(--ig-muted); background-color: var(--surface, #f4f4f5); cursor: default; }
+.ig-input:focus { outline: none; border-color: var(--ig-ink); }
+.ig-input[aria-invalid="true"] { border-color: var(--red, #dc2626); }
+.ig-students { display: grid; gap: 14px; }
+.ig-student { padding: 18px; border-radius: 20px; background: var(--ig-soft); display: grid; gap: 12px; }
+.ig-student-head { display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+.ig-remove { border: 0; background: none; color: var(--ig-muted); font: inherit; font-size: 13px; cursor: pointer; padding: 4px 8px; border-radius: 8px; }
+.ig-remove:hover { background: var(--ig-line); color: var(--ig-ink); }
+.ig-catalog { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--ig-muted); text-decoration: underline; text-decoration-color: var(--ig-line); text-underline-offset: 3px; }
+.ig-catalog:hover { color: var(--ig-ink); }
+.ig-add {
+  align-self: flex-start; border: 1px dashed var(--ink-40, #a3a3a3); background: #fff; color: var(--ig-ink);
+  border-radius: var(--ig-radius); padding: 11px 18px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.ig-add:hover { background: var(--surface, #f4f4f5); }
+.ig-submit, .ig-download {
+  align-self: flex-start; display: inline-flex; align-items: center; border: 0; border-radius: var(--ig-radius);
+  background: var(--ig-ink); color: #fff; font: inherit; font-size: 16px; font-weight: 600; padding: 14px 26px;
+  cursor: pointer; text-decoration: none; margin-top: 6px;
+}
+.ig-submit:hover, .ig-download:hover { background: #000; }
+.ig-submit:disabled { opacity: .7; cursor: wait; }
+.ig-error { color: var(--red, #dc2626); font-size: 14px; margin: 0; }
+.ig-note { font-size: 13px; color: var(--ig-muted); line-height: 1.5; margin: 0; }
+.ig-done { padding: 28px; border-radius: 24px; background: var(--green-soft, #e7f6e7); display: grid; gap: 10px; justify-items: start; }
+.ig-done .ig-files { justify-self: stretch; }
+.ig-done h3 { font-size: 22px; font-weight: 700; margin: 0; }
+.ig-done p { margin: 0; color: var(--ink-70, #525252); line-height: 1.5; }
+.ig-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--green, #16a34a); }
+.ig-files { display: grid; gap: 10px; margin: 8px 0; }
+.ig-file { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px; border-radius: 14px; background: #fff; }
+.ig-file span { font-size: 14px; line-height: 1.4; }
+.ig-file small { display: block; color: var(--ig-muted); }
+.ig-download { margin: 0; padding: 10px 16px; font-size: 14px; white-space: nowrap; }
+@media (max-width: 480px) { .ig-two { grid-template-columns: 1fr; } }
