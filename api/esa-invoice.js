@@ -78,6 +78,8 @@ module.exports = async function handler(req, res) {
       firstName: str(s && s.firstName, 60),
       lastName: str(s && s.lastName, 60),
       course: str(s && s.course, 140),
+      pkg: str(s && s.package, 60),
+      amount: Number(s && s.amount) > 0 && Number(s && s.amount) < 10000 ? Number(s.amount) : 0,
     }));
     if (!clean.length) {
       json(res, 400, { error: "Add at least one student." });
@@ -112,15 +114,21 @@ module.exports = async function handler(req, res) {
       platform: platformFrom(meta.userAgent || ""),
     };
 
-    // One row per student: course column carries "Course · Student: First Last".
-    await getPrisma().courseLead.createMany({
-      data: clean.map((s) => ({
-        ...base,
-        course: `${s.course} · Student: ${s.firstName} ${s.lastName}`.slice(0, 200),
-      })),
-    });
+    // One row per student: course column carries course, package, price, student and invoice number.
+    const prisma = getPrisma();
+    const day = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+    const invoices = [];
+    for (const s of clean) {
+      const row = await prisma.courseLead.create({
+        data: { ...base, course: `${s.course} · Student: ${s.firstName} ${s.lastName}`.slice(0, 200) },
+      });
+      const number = `BR-${day}-${row.id.slice(-6).toUpperCase()}`;
+      const parts = [s.course + (s.pkg ? ` (${s.pkg}${s.amount ? ` $${s.amount}` : ""})` : ""), `Student: ${s.firstName} ${s.lastName}`, `Invoice ${number}`];
+      await prisma.courseLead.update({ where: { id: row.id }, data: { course: parts.join(" · ").slice(0, 200) } });
+      invoices.push({ number, firstName: s.firstName, lastName: s.lastName });
+    }
 
-    json(res, 200, { success: true, students: clean.length });
+    json(res, 200, { success: true, invoices });
   } catch (err) {
     console.error(err);
     json(res, 500, { error: "Could not send. Try again." });
