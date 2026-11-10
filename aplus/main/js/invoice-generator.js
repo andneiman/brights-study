@@ -190,7 +190,7 @@
     var meta = [
       ['Invoice number', inv.number],
       ['Invoice date', longDate(inv.date)],
-      ['Service period', inv.period],
+      ['Access', 'From order approval, no end date'],
       ['Amount due', money(inv.total)],
       ['Pay with', state.platform]
     ];
@@ -515,7 +515,6 @@
               var inv = {
                 number: (data.invoices && data.invoices[idx] && data.invoices[idx].number) || ('BR-' + state.code + '-' + Date.now()),
                 date: now,
-                period: servicePeriod(s.pkgObj, now),
                 parent: first.value.trim() + ' ' + last.value.trim(),
                 email: email.value.trim(),
                 phone: phone.value.trim(),
