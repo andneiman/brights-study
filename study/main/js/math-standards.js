@@ -2,6 +2,228 @@
    Generated from the course sheet (math) and the state course builds (science, social studies). */
 var STATE_COURSES = {
  "Math": {
+  "Arizona": [
+    {
+      "n": "Grade 1 Math",
+      "g": "Grade 1",
+      "b": "K-2",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child adds and subtracts within 20, becomes fluent within 10, and learns tens and ones with numbers up to 120. They also measure length, tell time to the hour and half hour, learn the names and values of pennies, nickels, dimes and quarters, read simple graphs, and split shapes into halves and fourths.",
+      "u": [
+        "Adding and subtracting word problems",
+        "Addition and subtraction facts within 10",
+        "Properties of operations and missing numbers",
+        "The equal sign and true equations",
+        "Counting to 120",
+        "Tens and ones",
+        "Comparing two-digit numbers",
+        "Adding and subtracting within 100",
+        "Measuring length",
+        "Time to the hour and half hour",
+        "Coins and their values",
+        "Data and graphs",
+        "Shapes, halves and fourths"
+      ]
+    },
+    {
+      "n": "Grade 2 Math",
+      "g": "Grade 2",
+      "b": "K-2",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns place value to 1,000, becomes fluent with adding and subtracting within 20 and 100, and solves problems within 1,000. They also meet the first ideas behind multiplication, measure length in inches, feet, centimeters and meters, tell time to five minutes, solve money problems with dollars and coins, read graphs, and split shapes into halves, thirds and fourths.",
+      "u": [
+        "Addition and subtraction word problems",
+        "Fluency within 20",
+        "Odd and even numbers and arrays",
+        "Place value to 1,000",
+        "Counting, comparing and skip-counting to 1,000",
+        "Adding and subtracting within 100",
+        "Adding and subtracting within 1,000",
+        "Measuring and estimating length",
+        "Length on the number line",
+        "Time to five minutes",
+        "Money: dollars and coins",
+        "Picture graphs, bar graphs and line plots",
+        "Shapes and equal shares"
+      ]
+    },
+    {
+      "n": "Grade 3 Math",
+      "g": "Grade 3",
+      "b": "3-5",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child learns multiplication and division facts within 100, solves two-step word problems, rounds and adds and subtracts within 1,000, and starts working with fractions on the number line. They also tell time to the minute, measure liquid volume and mass, solve money problems, read graphs, and find the area and perimeter of shapes.",
+      "u": [
+        "Understanding multiplication",
+        "Understanding division",
+        "Properties of multiplication",
+        "Multiplication and division facts within 100",
+        "Two-step word problems and patterns",
+        "Rounding and estimation",
+        "Adding and subtracting within 1,000",
+        "Fractions as numbers",
+        "Equivalent and comparing fractions",
+        "Time, liquid volume and mass",
+        "Money word problems",
+        "Scaled graphs and line plots",
+        "Area",
+        "Perimeter",
+        "Shapes and their attributes"
+      ]
+    },
+    {
+      "n": "Grade 4 Math",
+      "g": "Grade 4",
+      "b": "3-5",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child works with numbers up to a million, multiplies multi-digit numbers and divides with remainders, and finds factors and multiples. They compare, add and subtract fractions, connect fractions and decimals, convert units, measure angles with a protractor, and sort shapes by their lines and angles.",
+      "u": [
+        "Multiplicative comparison and multi-step problems",
+        "Factors, multiples and prime numbers",
+        "Number and shape patterns",
+        "Place value to 1,000,000 and rounding",
+        "Multi-digit addition and subtraction",
+        "Multi-digit multiplication",
+        "Division with remainders",
+        "Equivalent fractions and comparing fractions",
+        "Adding and subtracting fractions and mixed numbers",
+        "Multiplying fractions by whole numbers",
+        "Decimals to hundredths",
+        "Measurement and unit conversions",
+        "Line plots",
+        "Angles and angle measure",
+        "Lines, angles, symmetry and classifying shapes"
+      ]
+    },
+    {
+      "n": "Grade 5 Math",
+      "g": "Grade 5",
+      "b": "3-5",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child writes and evaluates expressions, breaks numbers into prime factors, and works with decimals to the thousandths. They add and subtract fractions with unlike denominators, multiply and divide fractions, find the volume of boxes, graph points on a coordinate plane, and sort shapes into a hierarchy.",
+      "u": [
+        "Numerical expressions",
+        "Patterns and relationships",
+        "Prime numbers and prime factorization",
+        "Place value and powers of ten",
+        "Multi-digit multiplication and division",
+        "Adding and subtracting decimals",
+        "Multiplying and dividing decimals",
+        "Adding and subtracting fractions with unlike denominators",
+        "Multiplying fractions",
+        "Dividing fractions",
+        "Converting units and line plots",
+        "Volume",
+        "The coordinate plane",
+        "Classifying two-dimensional figures"
+      ]
+    },
+    {
+      "n": "Grade 6 Math",
+      "g": "Grade 6",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child moves from arithmetic toward algebra: ratios, rates and percents, dividing fractions, and working with negative numbers on the number line and the coordinate plane. They write and solve equations and inequalities, find area, surface area and volume, and describe data sets with mean, median and range.",
+      "u": [
+        "Ratios and rates",
+        "Percents and unit conversions",
+        "Dividing fractions",
+        "Multi-digit and decimal operations",
+        "Factors and multiples",
+        "Negative numbers and absolute value",
+        "The coordinate plane",
+        "Expressions and exponents",
+        "Equivalent expressions",
+        "Equations and inequalities",
+        "Dependent and independent variables",
+        "Area of polygons",
+        "Surface area and volume",
+        "Statistical questions and variability",
+        "Data displays and measures of center and spread"
+      ]
+    },
+    {
+      "n": "Grade 7 Math",
+      "g": "Grade 7",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child works with proportional relationships and percents, adds, subtracts, multiplies and divides positive and negative numbers, and solves multi-step equations and inequalities. They also make scale drawings, find the area and circumference of circles, work with angles, surface area and volume, draw conclusions from samples, and find probabilities.",
+      "u": [
+        "Proportional relationships",
+        "Percent problems",
+        "Adding and subtracting rational numbers",
+        "Multiplying and dividing rational numbers",
+        "Equivalent expressions",
+        "Multi-step equations",
+        "Inequalities",
+        "Scale drawings and constructions",
+        "Circles: area and circumference",
+        "Angle relationships",
+        "Area, surface area and volume",
+        "Random sampling and inference",
+        "Comparing two populations",
+        "Probability of simple and compound events"
+      ]
+    },
+    {
+      "n": "Grade 8 Math",
+      "g": "Grade 8",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your child gets ready for Algebra 1: solving linear equations and inequalities, graphing lines and finding slope, understanding functions and solving systems of two equations. They also work with irrational numbers, exponents and scientific notation, transformations, the Pythagorean Theorem, the volume of cones, cylinders and spheres, scatter plots, and probability.",
+      "u": [
+        "Rational and irrational numbers",
+        "Exponents and scientific notation",
+        "Square roots and cube roots",
+        "Proportional relationships and slope",
+        "Linear equations in one variable",
+        "Linear inequalities",
+        "Systems of linear equations",
+        "Functions",
+        "Linear models and rate of change",
+        "Transformations, congruence and similarity",
+        "Angles and triangles",
+        "The Pythagorean Theorem",
+        "Volume of cylinders, cones and spheres",
+        "Scatter plots and lines of fit",
+        "Probability models"
+      ]
+    },
+    {
+      "n": "Algebra 1",
+      "g": "Recommended grade 9",
+      "b": "9-12",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "The core high school algebra course: your child writes and solves equations and inequalities, solves systems, and studies linear, quadratic and exponential functions through graphs, tables and real situations. They also factor polynomials, work with data and lines of fit, and learn the basics of conditional probability.",
+      "u": [
+        "Rational and irrational numbers",
+        "Quantities and units",
+        "Expressions and their structure",
+        "Linear equations and inequalities",
+        "Writing equations and literal equations",
+        "Systems of equations and inequalities",
+        "Functions and function notation",
+        "Linear functions and their graphs",
+        "Transforming functions",
+        "Exponential functions and growth",
+        "Polynomials and factoring",
+        "Quadratic functions and their graphs",
+        "Solving quadratic equations",
+        "Data with one and two variables",
+        "Linear models and correlation",
+        "Conditional probability and independence"
+      ]
+    }
+  ],
   "Texas": [
    {
     "n": "Kindergarten Math",
@@ -2581,6 +2803,202 @@ var STATE_COURSES = {
   ]
  },
  "Science": {
+  "Arizona": [
+    {
+      "n": "Grade 1 Science",
+      "g": "Grade 1",
+      "b": "K-2",
+      "p": "Full year $99 · Semester $69",
+      "fmt": "Full year or semester",
+      "d": "Your child explores light and shadows, sound and vibrations, pushes and pulls, and how friction makes heat. They sort Earth materials and see how people use them, follow the life cycles of plants and animals, learn what living things need in their habitats, compare parents and offspring, sort living things into groups, and find out why some species go extinct. Home experiments include: shine a flashlight through paper, plastic wrap and cardboard; make a rubber-band guitar and feel the vibrations; rub your hands and different surfaces to feel friction warm them.",
+      "u": [
+        "Light: passing through and blocked",
+        "Sound and vibrations",
+        "Pushes, pulls and balanced forces",
+        "Friction and heat",
+        "Earth materials and natural resources",
+        "Life cycles of plants and animals",
+        "Habitats and what living things need",
+        "How plants and animals get and reuse resources",
+        "Parents and offspring",
+        "Sorting living things into groups",
+        "Why some living things go extinct"
+      ]
+    },
+    {
+      "n": "Grade 2 Science",
+      "g": "Grade 2",
+      "b": "K-2",
+      "p": "Full year $99 · Semester $69",
+      "fmt": "Full year or semester",
+      "d": "Your child describes and sorts materials by their properties, sees how heating and cooling change matter, and watches wind and water reshape the land. They learn where water is found on Earth, track weather and prepare for severe weather, observe patterns of the Sun and Moon, and discover how living things depend on the Sun, water, air and each other. Home experiments include: sort household objects by color, texture, hardness and whether they float; melt an ice cube and freeze water again; build a sand hill and pour water on it to see erosion.",
+      "u": [
+        "Properties of matter",
+        "Heating, cooling and changes of state",
+        "How heat causes change",
+        "Wind and water change the land",
+        "Where water is found and its states",
+        "Weather patterns and severe weather",
+        "Changes to land and water",
+        "Patterns of the Sun and Moon",
+        "What plants and animals need to live",
+        "Living things depend on the Sun and each other"
+      ]
+    },
+    {
+      "n": "Grade 3 Science",
+      "g": "Grade 3",
+      "b": "3-5",
+      "p": "Full year $99 · Semester $69",
+      "fmt": "Full year or semester",
+      "d": "Your child finds out how we see objects and how sound travels, and that light and sound carry energy. They learn that the Sun is Earth's main source of energy, explore the structures plants and animals use to survive and how they react to their surroundings, follow energy from the Sun through food chains, and see how living things depend on each other. Home experiments include: use a mirror and flashlight to see how light reflects into the eye; test how far away you can hear a ticking timer; leave dark and light cups of water in the sun and measure the temperature.",
+      "u": [
+        "How we see: light, objects and the eye",
+        "Sound waves and distance",
+        "Light and sound carry energy",
+        "The Sun: Earth's main energy source",
+        "Structures of plants and animals and what they do",
+        "How plants and animals react to their surroundings",
+        "Energy from the Sun through food chains",
+        "Living things depend on each other"
+      ]
+    },
+    {
+      "n": "Grade 4 Science",
+      "g": "Grade 4",
+      "b": "3-5",
+      "p": "Full year $99 · Semester $69",
+      "fmt": "Full year or semester",
+      "d": "Your child explores how energy moves, builds electric circuits and tests magnets, and compares renewable and nonrenewable resources. They study earthquakes and seismic waves, how Earth's systems interact and how the surface has changed over time, weather and climate patterns, water in dry places like Arizona, ways to reduce damage from natural hazards, and why some species adapt and others go extinct. Home experiments include: build a simple circuit with a battery, wire and bulb; test which household objects a magnet attracts; make a shake table and test block towers in an earthquake.",
+      "u": [
+        "Energy moving without contact",
+        "Electric circuits and currents",
+        "Magnets and magnetic force",
+        "Renewable and nonrenewable energy",
+        "Earthquakes and seismic waves",
+        "Earth's systems working together",
+        "Evidence that Earth's surface has changed",
+        "Weather and climate patterns",
+        "Water in Arizona and the world",
+        "Designing to reduce natural hazards",
+        "Adapt, survive or go extinct"
+      ]
+    },
+    {
+      "n": "Grade 5 Science",
+      "g": "Grade 5",
+      "b": "3-5",
+      "p": "Full year $99 · Semester $69",
+      "fmt": "Full year or semester",
+      "d": "Your child learns that matter is made of particles and is conserved, and compares mixtures with reactions that make new substances. They investigate balanced and unbalanced forces, forces that act at a distance and energy in moving objects, model the motions of the Earth and Moon and the pull of gravity, and explore inherited traits and how the environment and changing habitats affect living things. Home experiments include: weigh salt and water before and after mixing to show mass is conserved; mix baking soda and vinegar to make a new substance; roll toy cars down ramps of different heights.",
+      "u": [
+        "Matter is made of tiny particles and is conserved",
+        "Mixtures and new substances",
+        "Forces that act at a distance",
+        "Balanced and unbalanced forces",
+        "Designing solutions for force and motion",
+        "Energy when objects move and collide",
+        "How the Earth and Moon move",
+        "Gravity pulls toward Earth's center",
+        "Inherited traits",
+        "How the environment affects traits",
+        "Changes in habitats and populations"
+      ]
+    },
+    {
+      "n": "Grade 6 Science",
+      "g": "Grade 6",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your student uses particle models to explain states of matter and changes of state, learns that matter is made of atoms, and explores forces at a distance and how people store energy. They study how the Sun warms Earth, the scale of the solar system, night-sky patterns, eclipses, Moon phases, tides and seasons, and how matter and energy move through ecosystems and how people affect them. Home experiments include: heat and cool a balloon on a bottle to see gas particles expand and contract; build a scale model of the solar system with ratios; track Moon phases for a month.",
+      "u": [
+        "States of matter and particle motion",
+        "Temperature, pressure and changes of state",
+        "Atoms: matter made of particles",
+        "Forces that act at a distance",
+        "How people store and use energy",
+        "Solar radiation warms Earth",
+        "Scale of the solar system",
+        "Why the night sky moves",
+        "Eclipses, Moon phases and tides",
+        "Earth's tilt and the seasons",
+        "Competition and change in ecosystems",
+        "Human impact on species",
+        "Interdependence in ecosystems",
+        "Matter cycling and energy flow"
+      ]
+    },
+    {
+      "n": "Grade 7 Science",
+      "g": "Grade 7",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your student investigates electric and magnetic forces, gravity and Newton's laws of motion. They model how matter and energy cycle through the atmosphere, oceans and rocks, use fossils and seafloor evidence to explain plate tectonics, see how technology improves weather forecasts, and study cells, organ systems, how the body stays in balance, and how plants turn light into food. Home experiments include: make an electromagnet with a nail, wire and battery; drop objects of different mass and time the fall; push toy cars of different mass to test Newton's second law.",
+      "u": [
+        "Electric and magnetic forces",
+        "Forces that act at a distance",
+        "Gravity on Earth",
+        "Newton's laws of motion",
+        "Matter and energy in Earth's systems",
+        "Plate tectonics: evidence from rocks, fossils and the seafloor",
+        "Technology and weather prediction",
+        "Cells: the building blocks of life",
+        "Plant and animal cell structures",
+        "Cells, tissues and organ systems",
+        "Keeping the body in balance",
+        "Photosynthesis: light to food"
+      ]
+    },
+    {
+      "n": "Grade 8 Science",
+      "g": "Grade 8",
+      "b": "6-8",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "Your student models chemical reactions and identifies substances by their properties, tracks how energy moves between stores, studies waves and designs ways to use energy more efficiently. They read rock layers and fossils to date events, use data to predict natural hazards, weigh how people use limited resources, and explore inheritance, mutation, genetic technology and natural selection. Home experiments include: weigh a fizzing reaction in a sealed bag to show atoms are conserved; identify mystery powders by their properties; make waves on a slinky or rope and measure wavelength.",
+      "u": [
+        "Atoms and chemical reactions",
+        "Identifying substances by their properties",
+        "Energy stores and transfers",
+        "Waves and their properties",
+        "Designing for energy efficiency",
+        "Rock layers, fossils and relative age",
+        "Predicting natural hazards",
+        "Human use of limited resources",
+        "Genes, inheritance and mutation",
+        "Genetic technology",
+        "Natural selection",
+        "How new species form"
+      ]
+    },
+    {
+      "n": "Biology",
+      "g": "Recommended grade 9",
+      "b": "9-12",
+      "p": "Full year $199 · Semester $129",
+      "fmt": "Full year or semester",
+      "d": "A high school biology course for grade 9: your student studies ecosystems, biodiversity and how matter and energy move through living systems. They explore cells, homeostasis, photosynthesis and respiration, mitosis and meiosis, DNA, proteins and mutations, weigh the pros and cons of genetic technology, and examine the evidence for evolution by natural selection. Home experiments include: extract DNA from strawberries with dish soap and salt; watch osmosis with an egg in vinegar and then in corn syrup; measure how yeast respiration changes with sugar and temperature.",
+      "u": [
+        "Biodiversity and human impact",
+        "Carrying capacity and limiting factors",
+        "Matter and energy in ecosystems",
+        "Cells and homeostasis",
+        "Organelles and cell transport",
+        "Proteins and cell function",
+        "Photosynthesis and cellular respiration",
+        "Mitosis and growth",
+        "Abnormal cell function and disease",
+        "Meiosis and genetic variation",
+        "DNA, RNA and proteins",
+        "Mutations",
+        "Genetic technology",
+        "Natural selection and adaptation",
+        "Evidence for evolution"
+      ]
+    }
+  ],
   "Utah": [
    {
     "n": "Grade 1 Science",

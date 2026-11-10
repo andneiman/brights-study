@@ -54,7 +54,9 @@
   // Courses offered in the generator (others in the catalog are hidden here).
   var COURSES = [
     'Grade 1 Math', 'Grade 2 Math', 'Grade 3 Math', 'Grade 4 Math',
-    'Grade 5 Math', 'Grade 6 Math', 'Grade 7 Math', 'Grade 8 Math',
+    'Grade 5 Math', 'Grade 6 Math', 'Grade 7 Math', 'Grade 8 Math', 'Algebra 1',
+    'Grade 1 Science', 'Grade 2 Science', 'Grade 3 Science', 'Grade 4 Science',
+    'Grade 5 Science', 'Grade 6 Science', 'Grade 7 Science', 'Grade 8 Science', 'Biology',
     'Science Explorations', 'Science Discovery', 'Middle School Life Science',
     'Middle School Earth & Space Science', 'Middle School Physical Science',
     'AI Literacy and Safety for Families', 'Learn How to Learn Smart (with AI)',
