@@ -42,7 +42,7 @@
           'Search for "' + VENDOR.displayName + '" and click PAY.',
           'Enter the payment amount: ' + money(inv.total) + '.',
           'Upload this invoice (PDF).',
-          'Choose the Arizona ESA purse. If asked for an expense category, choose ' + this.category + '.',
+          'Choose the Arizona ESA purse and the expense category that fits your order.',
           'Comments: "' + inv.description + '". Invoice number: ' + inv.number + '.',
           'Review and submit.'
         ];
@@ -190,7 +190,6 @@
     var meta = [
       ['Invoice number', inv.number],
       ['Invoice date', longDate(inv.date)],
-      ['Access', 'From order approval, no end date'],
       ['Amount due', money(inv.total)],
       ['Pay with', state.platform]
     ];
