@@ -20,7 +20,7 @@ select.ig-input:disabled { color: var(--ig-muted); background-color: var(--surfa
 .ig-input[aria-invalid="true"] { border-color: var(--red, #dc2626); }
 .ig-students { display: grid; gap: 14px; }
 .ig-student { padding: 18px; border-radius: 20px; background: var(--ig-soft); display: grid; gap: 12px; }
-.ig-student-head { display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+.ig-student-head { font-size: 14px; font-weight: 700; }
 .ig-remove { border: 0; background: none; color: var(--ig-muted); font: inherit; font-size: 13px; cursor: pointer; padding: 4px 8px; border-radius: 8px; }
 .ig-remove:hover { background: var(--ig-line); color: var(--ig-ink); }
 .ig-catalog { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--ig-muted); text-decoration: underline; text-decoration-color: var(--ig-line); text-underline-offset: 3px; }

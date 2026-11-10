@@ -52,7 +52,7 @@
 
   var DEFAULT_COURSE = 'Learn How to Learn Smart (with AI)';
   var CATALOG_URL = '/main/courses.html';
-  var MAX_STUDENTS = 8;
+  var MAX_STUDENTS = 1;   // one student per invoice request; fill the form again for another child
   var JSPDF_URL = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
 
   // ---- Helpers --------------------------------------------------------------
@@ -342,13 +342,10 @@
 
     var list = el('div', 'ig-students');
     form.appendChild(list);
-    var addBtn = el('button', 'ig-add', '+ Add another student');
-    addBtn.type = 'button';
-    form.appendChild(addBtn);
     var errorEl = el('p', 'ig-error');
     errorEl.hidden = true;
     form.appendChild(errorEl);
-    var submit = el('button', 'ig-submit', 'Create my invoices');
+    var submit = el('button', 'ig-submit', 'Create my invoice');
     submit.type = 'submit';
     form.appendChild(submit);
     form.appendChild(el('p', 'ig-note', 'Type each student’s name exactly as it appears on your ESA account. A different spelling can delay the payment.'));
@@ -356,12 +353,12 @@
 
     var done = el('div', 'ig-done');
     done.hidden = true;
-    done.appendChild(el('span', 'ig-eyebrow', 'Invoices ready'));
-    done.appendChild(el('h3', '', 'Your invoices are ready'));
-    done.appendChild(el('p', '', 'They’re downloading now. If a download didn’t start, use the buttons below.'));
+    done.appendChild(el('span', 'ig-eyebrow', 'Invoice ready'));
+    done.appendChild(el('h3', '', 'Your invoice is ready'));
+    done.appendChild(el('p', '', 'It’s downloading now. If the download didn’t start, use the button below. Have another child on ESA? Create a separate invoice for them.'));
     var files = el('div', 'ig-files');
     done.appendChild(files);
-    var again = el('button', 'ig-add', 'Create another invoice');
+    var again = el('button', 'ig-add', 'Create an invoice for another child');
     again.type = 'button';
     done.appendChild(again);
     root.appendChild(done);
@@ -386,13 +383,7 @@
       seq += 1;
       var id = uid + '-s' + seq;
       var card = el('div', 'ig-student');
-      var head = el('div', 'ig-student-head');
-      head.appendChild(el('b'));
-      var rm = el('button', 'ig-remove', 'Remove');
-      rm.type = 'button';
-      rm.addEventListener('click', function () { card.remove(); renumber(); });
-      head.appendChild(rm);
-      card.appendChild(head);
+      card.appendChild(el('div', 'ig-student-head', 'Student'));
 
       var names = el('div', 'ig-two');
       names.appendChild(field('First name', input(id + '-first', 'text', 'Student first name')));
@@ -428,16 +419,6 @@
         course.value = defaultCourse;
         course.dispatchEvent(new Event('change'));
       }
-      renumber();
-    }
-
-    function renumber() {
-      var cards = list.querySelectorAll('.ig-student');
-      cards.forEach(function (c, i) {
-        c.querySelector('.ig-student-head b').textContent = 'Student ' + (i + 1);
-        c.querySelector('.ig-remove').hidden = cards.length === 1;
-      });
-      addBtn.hidden = cards.length >= MAX_STUDENTS;
     }
 
     function fail(message, f) {
@@ -448,7 +429,6 @@
       return false;
     }
 
-    addBtn.addEventListener('click', addStudent);
     form.addEventListener('input', function (e) {
       if (e.target && e.target.removeAttribute) e.target.removeAttribute('aria-invalid');
     });
@@ -457,8 +437,13 @@
       form.hidden = false;
       sending = false;
       submit.disabled = false;
-      submit.textContent = 'Create my invoices';
+      submit.textContent = 'Create my invoice';
+      // keep the parent's details, clear the student
+      list.innerHTML = '';
+      addStudent();
       form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var f = list.querySelector('input');
+      if (f) f.focus({ preventScroll: true });
     });
 
     form.addEventListener('submit', function (e) {
@@ -477,7 +462,7 @@
         var sels = cards[i].querySelectorAll('select');
         if (!ins[0].value.trim()) return fail('Enter the student’s first name.', ins[0]);
         if (!ins[1].value.trim()) return fail('Enter the student’s last name.', ins[1]);
-        if (!sels[0].value) return fail('Choose a course for each student.', sels[0]);
+        if (!sels[0].value) return fail('Choose a course.', sels[0]);
         var c = index.byName[sels[0].value];
         var p = c.packages[Number(sels[1].value) || 0];
         students.push({
@@ -494,7 +479,7 @@
       errorEl.hidden = true;
       sending = true;
       submit.disabled = true;
-      submit.textContent = 'Creating invoices…';
+      submit.textContent = 'Creating invoice…';
       var ready = Promise.all([loadJsPDF(), loadLogo()]);
 
       fetch('/api/invoice', {
@@ -550,8 +535,8 @@
       }).catch(function (err) {
         sending = false;
         submit.disabled = false;
-        submit.textContent = 'Create my invoices';
-        fail(err.message || 'Could not create invoices. Try again.');
+        submit.textContent = 'Create my invoice';
+        fail(err.message || 'Could not create the invoice. Try again.');
       });
     });
 
