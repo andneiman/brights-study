@@ -17,14 +17,11 @@
   'use strict';
 
   // ---- Vendor --------------------------------------------------------------
-  // Each site shows its own domain: brights.study or aplusbrights.com.
-  var DOMAIN = /brights\.study$/i.test(location.hostname) ? 'brights.study' : 'aplusbrights.com';
   var VENDOR = {
     displayName: 'A+ Brights',          // vendor name in ClassWallet / ESA marketplaces
     legalName: 'Magent Tech Inc',
     address: ['251 Little Falls Dr', 'Wilmington, DE 19808'],
-    website: 'www.' + DOMAIN,
-    email: 'team@' + DOMAIN,
+    website: 'www.aplusbrights.com',   // always A+ Brights on the invoice
     logo: '/main/img/invoice/logo.png'  // 475 x 144 px
   };
 
@@ -37,7 +34,6 @@
       program: 'Arizona Empowerment Scholarship Account (ESA)',
       platform: 'ClassWallet Direct Pay',
       category: 'Curriculum',
-      guide: 'www.' + DOMAIN + '/main/arizona-esa-classwallet.html',
       payLines: function (inv) {
         return [
           'Sign in to ClassWallet through the Arizona ESA portal. In Direct Pay, click PAY.',
@@ -169,7 +165,6 @@
   function buildPdf(jspdf, logo, inv, state) {
     var doc = new jspdf.jsPDF({ unit: 'pt', format: 'letter' });
     var W = doc.internal.pageSize.getWidth();
-    var H = doc.internal.pageSize.getHeight();
     var M = 54;
     var ink = [38, 38, 38], muted = [115, 115, 115], rule = [225, 225, 225];
     function color(c) { doc.setTextColor(c[0], c[1], c[2]); }
@@ -187,7 +182,7 @@
     y += 56;
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(10);
-    var vendorLines = ['Vendor: ' + VENDOR.displayName, VENDOR.legalName].concat(VENDOR.address, [VENDOR.website, VENDOR.email]);
+    var vendorLines = ['Vendor: ' + VENDOR.displayName, VENDOR.legalName].concat(VENDOR.address, [VENDOR.website]);
     color(ink);
     vendorLines.forEach(function (l, i) { doc.text(l, M, y + i * 14); });
 
@@ -221,7 +216,7 @@
         doc.text(r, x, y + 18 + i * 15);
       });
     }
-    var billRows = [inv.parent, inv.email].concat(inv.phone ? [inv.phone] : []);
+    var billRows = [inv.parent].concat(inv.phone ? [inv.phone] : []);
     block(M, 'Bill to (parent, ESA account holder)', billRows);
     block(W / 2 + 10, 'Student', [inv.student, state.program]);
     y += 18 + Math.max(billRows.length, 2) * 15 + 24;
@@ -283,11 +278,6 @@
     var py = y + 42;
     wrapped.forEach(function (w) { doc.text(w, M + 16, py); py += w.length * 13 + 2; });
 
-    // Footer
-    doc.setFontSize(9);
-    color(muted);
-    doc.text('Questions about this invoice: ' + VENDOR.email, M, H - 46);
-    if (state.guide) doc.text('Step-by-step guide: ' + state.guide, M, H - 32);
     return doc;
   }
 
