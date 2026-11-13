@@ -106,3 +106,7 @@
 .cw-help p { color: var(--ink-70); line-height: 1.6; font-size: 15px; }
 .cw-help a { color: var(--link); }
 @media (max-width: 860px) { .cw-next-list { grid-template-columns: 1fr; } .cw-next { padding: 22px; } }
+.cw-steps-sec { padding-top: 24px; }
+.cw-steps-title { font-size: 32px; letter-spacing: -0.02em; margin: 0; }
+.cw-steps-title + .cw-steps { margin-top: 24px; }
+@media (max-width: 860px) { .cw-steps-sec { padding-top: 8px; } .cw-steps-title { font-size: 26px; } .cw-steps-title + .cw-steps { margin-top: 18px; } }
