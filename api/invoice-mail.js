@@ -1,5 +1,5 @@
 const { invoiceLetter } = require("../lib/invoiceEmail");
-const { sevenBitPdf, wrapBase64 } = require("../lib/pdfMail");
+const { sevenBitPdf } = require("../lib/pdfMail");
 
 const MAIL_URL = "https://brights-mail.hi-sender.workers.dev/send";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -121,7 +121,7 @@ module.exports = async function handler(req, res) {
           filename: child.filename,
           type: "application/pdf",
           disposition: "attachment",
-          content: wrapBase64(child.pdf),
+          content: child.pdf.toString("latin1"),
         })),
       }),
     });
