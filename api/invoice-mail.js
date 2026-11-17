@@ -46,6 +46,12 @@ function cleanName(value) {
   return String(value || "").replace(/[\u0000-\u001f]/g, "").trim().slice(0, 40);
 }
 
+// A form post turns "+" in base64 into a space, which breaks the PDF. Base64 has no spaces.
+function pdfBytes(value) {
+  const raw = String(value || "").replace(/ /g, "+").replace(/\s/g, "");
+  return Buffer.from(raw, "base64");
+}
+
 module.exports = async function handler(req, res) {
   const wantsHtml = !String(req.headers.accept || "").includes("application/json")
     && !String(req.headers["content-type"] || "").includes("application/json");
@@ -77,14 +83,14 @@ module.exports = async function handler(req, res) {
     const ready = [];
     for (const child of children) {
       const first = cleanName(child.first);
-      const number = cleanName(child.number);
-      const filename = String(child.filename || `A-Brights-invoice-${number}.pdf`).replace(/[^A-Za-z0-9.-]+/g, "-").slice(0, 120);
-      const pdf = Buffer.from(String(child.pdf || ""), "base64");
+      const number = String(child.number || "").replace(/[^A-Za-z0-9-]+/g, "").slice(0, 40);
+      const filename = `${number}.pdf`;
+      const pdf = pdfBytes(child.pdf);
       if (!first || !number) {
         fail(res, wantsHtml, 400, "The invoice is missing a name.", "child");
         return;
       }
-      if (pdf.length < 5 || pdf.subarray(0, 4).toString() !== "%PDF" || pdf.length > MAX_PDF) {
+      if (pdf.length < 5 || pdf.subarray(0, 4).toString() !== "%PDF" || !pdf.includes(Buffer.from("%%EOF")) || pdf.length > MAX_PDF) {
         fail(res, wantsHtml, 400, "The invoice file is not a PDF.", "pdf");
         return;
       }
