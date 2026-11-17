@@ -1,5 +1,6 @@
 const { invoiceLetter } = require("../lib/invoiceEmail");
 const { sevenBitPdf } = require("../lib/pdfMail");
+const { invoicePdf } = require("../lib/invoicePdf");
 
 const MAIL_URL = "https://brights-mail.hi-sender.workers.dev/send";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -53,10 +54,80 @@ function pdfBytes(value) {
   return Buffer.from(raw, "base64");
 }
 
+const PIXEL = Buffer.from("R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", "base64");
+const ESA_COURSE = "Learn How to Learn Smart (with AI)";
+const ESA_AMOUNT = 69;
+
+// The ESA onboarding may not call this site from script, but it may load an image.
+// It sends the names and number as an image request and the PDF is built here.
+async function fromImage(req, res) {
+  const q = new URL(req.url, "https://www.brights.study").searchParams;
+  const asJson = q.get("format") === "json";
+  const done = (status, payload) => {
+    if (asJson) return json(res, status, payload);
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "image/gif");
+    res.setHeader("Cache-Control", "no-store");
+    res.end(PIXEL);
+  };
+  const key = process.env.BRIGHTS_MAIL_KEY;
+  if (!key) return done(503, { error: "Invoice email is not configured yet.", code: "mail_not_configured" });
+  const to = String(q.get("to") || "").trim().toLowerCase();
+  const parentFirst = cleanName(q.get("parentFirst"));
+  const parent = cleanName(q.get("parent"));
+  const first = cleanName(q.get("first"));
+  const student = cleanName(q.get("student"));
+  const number = String(q.get("number") || "");
+  const date = String(q.get("date") || "");
+  if (!EMAIL_RE.test(to) || to.length > 254) return done(400, { error: "Enter a valid email address.", code: "email" });
+  if (!parentFirst || !parent || !first || !student) return done(400, { error: "The invoice is missing a name.", code: "child" });
+  if (!/^BR-AZ-\d{6}-\d{3}$/.test(number) || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    return done(400, { error: "The invoice number is not valid.", code: "number" });
+  }
+  const pdf = sevenBitPdf(invoicePdf({ number, date, parent, student, course: ESA_COURSE, amount: ESA_AMOUNT }));
+  const result = await sendLetter(key, to, parentFirst, [{ first, number, filename: `${number}.pdf`, pdf }]);
+  if (result.error) console.error("invoice-mail", result.code, result.error);
+  return done(result.error ? 502 : 200, result);
+}
+
+async function sendLetter(key, to, parentFirst, ready) {
+  const letter = invoiceLetter(parentFirst, ready);
+  const mail = await fetch(MAIL_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${key}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: { email: "hello@mail.brights.study", name: "Brights" },
+      to: [to],
+      subject: letter.subject,
+      html: letter.html,
+      text: letter.text,
+      replyTo: "team@brights.study",
+      attachments: ready.map((child) => ({
+        filename: child.filename,
+        type: "application/pdf",
+        disposition: "attachment",
+        content: child.pdf.toString("latin1"),
+      })),
+    }),
+  });
+  const data = await mail.json().catch(() => ({}));
+  if (!mail.ok || !data.messageId) {
+    return { error: data.error || "The invoice email was not accepted.", code: data.code || "mail" };
+  }
+  return { messageId: data.messageId };
+}
+
 module.exports = async function handler(req, res) {
   const wantsHtml = !String(req.headers.accept || "").includes("application/json")
     && !String(req.headers["content-type"] || "").includes("application/json");
   try {
+    if (req.method === "GET") {
+      await fromImage(req, res);
+      return;
+    }
     if (req.method !== "POST") {
       fail(res, wantsHtml, 405, "Method not allowed", "method");
       return;
@@ -103,31 +174,9 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    const letter = invoiceLetter(parentFirst, ready);
-    const mail = await fetch(MAIL_URL, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${key}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: { email: "hello@mail.brights.study", name: "Brights" },
-        to: [to],
-        subject: letter.subject,
-        html: letter.html,
-        text: letter.text,
-        replyTo: "team@brights.study",
-        attachments: ready.map((child) => ({
-          filename: child.filename,
-          type: "application/pdf",
-          disposition: "attachment",
-          content: child.pdf.toString("latin1"),
-        })),
-      }),
-    });
-    const data = await mail.json().catch(() => ({}));
-    if (!mail.ok || !data.messageId) {
-      fail(res, wantsHtml, 502, data.error || "The invoice email was not accepted.", data.code || "mail");
+    const data = await sendLetter(key, to, parentFirst, ready);
+    if (data.error) {
+      fail(res, wantsHtml, 502, data.error, data.code);
       return;
     }
     if (wantsHtml) htmlPage(res, 200, "Your invoice is on its way. You can close this tab.");
