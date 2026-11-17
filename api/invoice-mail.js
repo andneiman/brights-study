@@ -1,4 +1,5 @@
 const { invoiceLetter } = require("../lib/invoiceEmail");
+const { sevenBitPdf, wrapBase64 } = require("../lib/pdfMail");
 
 const MAIL_URL = "https://brights-mail.hi-sender.workers.dev/send";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -85,7 +86,7 @@ module.exports = async function handler(req, res) {
       const first = cleanName(child.first);
       const number = String(child.number || "").replace(/[^A-Za-z0-9-]+/g, "").slice(0, 40);
       const filename = `${number}.pdf`;
-      const pdf = pdfBytes(child.pdf);
+      const pdf = sevenBitPdf(pdfBytes(child.pdf));
       if (!first || !number) {
         fail(res, wantsHtml, 400, "The invoice is missing a name.", "child");
         return;
@@ -120,7 +121,7 @@ module.exports = async function handler(req, res) {
           filename: child.filename,
           type: "application/pdf",
           disposition: "attachment",
-          content: child.pdf.toString("base64"),
+          content: wrapBase64(child.pdf),
         })),
       }),
     });
