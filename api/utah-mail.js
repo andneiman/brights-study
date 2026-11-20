@@ -9,7 +9,7 @@ function cleanName(value) {
 }
 
 // The Utah onboarding loads this as an image (it may not call this site from script).
-// Fields: to, parentFirst, kids (first names joined by "|").
+// Fields: to, and optionally parentFirst and kids (first names joined by "|").
 module.exports = async function handler(req, res) {
   const q = new URL(req.url, "https://www.brights.study").searchParams;
   const asJson = q.get("format") === "json";
@@ -34,7 +34,6 @@ module.exports = async function handler(req, res) {
     const parentFirst = cleanName(q.get("parentFirst"));
     const kids = String(q.get("kids") || "").split("|").map(cleanName).filter(Boolean).slice(0, 6);
     if (!EMAIL_RE.test(to) || to.length > 254) return done(400, { error: "Enter a valid email address.", code: "email" });
-    if (!parentFirst || !kids.length) return done(400, { error: "A name is missing.", code: "names" });
     const letter = utahLetter(parentFirst, kids);
     const mail = await fetch(MAIL_URL, {
       method: "POST",
